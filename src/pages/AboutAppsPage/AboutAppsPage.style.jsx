@@ -8,7 +8,6 @@ export const Root = styled.div`
   margin: 0 auto;
   background-image: url(${background});
   background-size: 100% 785px;
-  // background-size: contain;
   background-repeat: no-repeat;
   background-color: #000;
 `;
@@ -29,13 +28,12 @@ export const Top = styled.div`
 
 export const PageTitleWrapper = styled.div`
   margin-top: 66px;
-  width: 329.599px;
+  width: 330px;
   height: 98.4px;
   display: flex;
   justify-content: center;
   position: absolute;
   z-index: 2;
-  // background-color: #000;
 `;
 export const PageTitle = styled.h1`
   color: #fff;
@@ -45,8 +43,8 @@ export const PageTitle = styled.h1`
   margin: -6px 8.8px;
 `;
 export const IconTitle = styled.div`
-  width: 135.799px;
-  height: 93.8px;
+  width: 136px;
+  height: 94px;
   background-image: url(${titleIcon});
   background-size: contain;
   background-repeat: no-repeat;
