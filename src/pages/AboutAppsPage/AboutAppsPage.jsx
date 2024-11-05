@@ -1,5 +1,17 @@
 import * as S from './AboutAppsPage.style';
 
 export default function AboutAppsPage() {
-  return <S.Container>APPS 소개 페이지</S.Container>;
+  return (
+    <S.Root>
+      <S.Container>
+        <S.Top>
+          <S.PageTitleWrapper>
+            <S.PageTitle>ABOUT</S.PageTitle>
+            <S.IconTitle></S.IconTitle>
+          </S.PageTitleWrapper>
+        </S.Top>
+      </S.Container>
+      {/* 지민 */}
+    </S.Root>
+  );
 }
