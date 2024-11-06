@@ -23,6 +23,16 @@ export default function AboutAppsPage() {
         <S.IntroToActLine></S.IntroToActLine>
       </S.Container>
       {/* 지민 */}
+      <S.TeamContainer>
+        <S.TeamIntroWrapper>
+          <S.TeamIntroTitle>APPS와 함께하는 사람들</S.TeamIntroTitle>
+          <S.TeamIntroContent>
+            APPS 동아리 내 동아리 부원들을 소개할게요
+            <br />
+            카드를 클릭하여 APPS 부원들의 인터뷰를 만나보세요!
+          </S.TeamIntroContent>
+        </S.TeamIntroWrapper>
+      </S.TeamContainer>
     </S.Root>
   );
 }
