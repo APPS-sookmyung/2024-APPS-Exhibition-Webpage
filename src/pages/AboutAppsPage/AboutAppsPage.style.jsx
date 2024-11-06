@@ -51,3 +51,34 @@ export const IconTitle = styled.div`
   margin-top: 4.6px;
   background-color: #3f69ff;
 `;
+
+export const IntroAPPSTitle = styled.p`
+  color: #fff;
+  text-align: center;
+  font-family: 'Dolce Vita Heavy';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.2px;
+  margin: 45px 0 31px 0;
+`;
+
+export const IntroAPPSContent = styled.p`
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -1px;
+  margin: 0 0 53px 0;
+`;
+export const IntroToActLine = styled.div`
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(90deg, #ff5400, #3f69ff);
+  background-size: 962px 2px;
+  background-position: center center;
+  background-repeat: no-repeat;
+`;
