@@ -97,10 +97,9 @@ export const TeamIntroWrapper = styled.div`
   margin-top: 140px;
 `;
 
-export const TeamIntroTitle = styled.h2`
+export const TeamIntroTitle = styled.h1`
   color: #fff;
   text-align: center;
-  font-family: Pretendard;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -1.6px;
@@ -110,7 +109,6 @@ export const TeamIntroTitle = styled.h2`
 export const TeamIntroContent = styled.p`
   color: #c7c7c7;
   text-align: center;
-  font-family: Pretendard;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
