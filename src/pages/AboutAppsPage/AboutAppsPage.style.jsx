@@ -82,3 +82,35 @@ export const IntroToActLine = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 `;
+
+export const TeamContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const TeamIntroWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 140px;
+`;
+
+export const TeamIntroTitle = styled.h1`
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.6px;
+  margin: 0;
+`;
+
+export const TeamIntroContent = styled.p`
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0;
+`;
