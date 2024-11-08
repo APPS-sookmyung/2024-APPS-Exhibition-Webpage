@@ -83,6 +83,32 @@ export const IntroToActLine = styled.div`
   background-repeat: no-repeat;
 `;
 
+export const ActivitesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const ActivitesTitle = styled.div`
+  color: #fff;
+  text-align: center;
+  font-family: 'Dolce Vita Heavy';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -2px;
+  margin: 113px 0 16px 0;
+`;
+
+export const ActivitesContent = styled.div`
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0 0 80px 0;
+`;
+
 export const TeamContainer = styled.div`
   display: flex;
   flex-direction: column;

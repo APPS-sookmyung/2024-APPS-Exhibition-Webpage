@@ -22,6 +22,12 @@ export default function AboutAppsPage() {
         </S.IntroAPPSContent>
         <S.IntroToActLine></S.IntroToActLine>
       </S.TopToIntroContainer>
+      <S.ActivitesContainer>
+        <S.ActivitesTitle>ACTIVITES</S.ActivitesTitle>
+        <S.ActivitesContent>
+          APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
+        </S.ActivitesContent>
+      </S.ActivitesContainer>
       {/* 지민 */}
       <S.TeamContainer>
         <S.TeamIntroWrapper>
