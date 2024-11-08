@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import background from '../../images/background/about_background.svg';
 import titleIcon from '../../images/icons/about_APPS.svg';
+import activeback from '../../images//activities/about_active_sample.png';
 
 export const Root = styled.div`
   width: 100%;
@@ -107,6 +108,79 @@ export const ActivitesContent = styled.div`
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0 0 80px 0;
+`;
+
+export const Activites = styled.div`
+  display: flex;
+  width: 100%;
+  height: 1200px;
+  justify-content: center;
+`;
+
+export const ActiveCard = styled.div`
+  width: 470px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 20px;
+   background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 27.33%
+    ),
+    url(${activeback}) lightgray 50% / cover no-repeat;
+  background-size: cover;
+}
+`;
+
+export const ActiveTextWrapper = styled.div`
+  z-index: 2;
+  position: absolute;
+  width: 470px;
+  justify-content: center;
+`;
+
+export const ActiveName = styled.h2`
+  margin: 30px 0 133px 30px;
+  display: inline-flex;
+  padding: 13px 43px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--orange, #ff5400);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+`;
+
+export const ActiveIntroWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 36px 0;
+`;
+
+export const ActiveIntro = styled.p`
+  color: #fff;
+  width: 410px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  margin: 0;
+  white-space: pre-line;
+`;
+
+export const ActiveBackBlur = styled.div`
+  position: absolute;
+  width: 470px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
 `;
 
 export const TeamContainer = styled.div`

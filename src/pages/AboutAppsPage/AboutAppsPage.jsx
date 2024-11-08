@@ -1,4 +1,5 @@
 import * as S from './AboutAppsPage.style';
+import ActiveCard from '../../components/ActiveCard';
 
 export default function AboutAppsPage() {
   return (
@@ -27,6 +28,9 @@ export default function AboutAppsPage() {
         <S.ActivitesContent>
           APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
         </S.ActivitesContent>
+        <S.Activites>
+          <ActiveCard />
+        </S.Activites>
       </S.ActivitesContainer>
       {/* 지민 */}
       <S.TeamContainer>
