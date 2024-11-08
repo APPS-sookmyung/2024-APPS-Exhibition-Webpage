@@ -12,7 +12,7 @@ export const Root = styled.div`
   background-color: #000;
 `;
 
-export const Container = styled.div`
+export const TopToIntroContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

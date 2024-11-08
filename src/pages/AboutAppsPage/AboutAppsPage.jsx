@@ -3,7 +3,7 @@ import * as S from './AboutAppsPage.style';
 export default function AboutAppsPage() {
   return (
     <S.Root>
-      <S.Container>
+      <S.TopToIntroContainer>
         <S.Top>
           <S.PageTitleWrapper>
             <S.PageTitle>ABOUT</S.PageTitle>
@@ -21,7 +21,7 @@ export default function AboutAppsPage() {
           활발한 소통과 피드백을 통해 개인과 공동체 발전을 촉진합니다.
         </S.IntroAPPSContent>
         <S.IntroToActLine></S.IntroToActLine>
-      </S.Container>
+      </S.TopToIntroContainer>
       {/* 지민 */}
       <S.TeamContainer>
         <S.TeamIntroWrapper>
