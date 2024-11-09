@@ -1,4 +1,3 @@
-import seminar from '../images/activities/about_seminar.jpg';
 import basicstudy from '../images/activities/about_basicstudy.jpg';
 import normalstudy from '../images/activities/about_normalstudy.jpg';
 import DevTalk from '../images/activities/about_DevTalk.jpg';
@@ -9,12 +8,6 @@ import teamproject from '../images/activities/about_teamproject.jpg';
 import exhibition from '../images/activities/about_exhibition.jpg';
 
 export const activitiesArr = [
-  {
-    name: '정기 세미나',
-    intro:
-      '매주 목요일 저녁 6시에 모여 약 1시간 동안 정기 세미나를 진행합니다.\n이 시간에는 각 팀별 스터디와 프로젝트의 진행 상황을 발표하고, 10-15분 정도 DevTalk을 진행합니다.',
-    img: seminar,
-  },
   {
     name: '기초 스터디',
     intro:
