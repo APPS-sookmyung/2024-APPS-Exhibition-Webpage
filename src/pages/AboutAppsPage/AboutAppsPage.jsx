@@ -1,5 +1,6 @@
 import * as S from './AboutAppsPage.style';
 import ActiveCard from '../../components/ActiveCard';
+import { activitiesArr } from '../../database/activity_list';
 
 export default function AboutAppsPage() {
   return (
@@ -29,7 +30,15 @@ export default function AboutAppsPage() {
           APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
         </S.ActivitesContent>
         <S.Activites>
-          <ActiveCard />
+          {activitiesArr.map((activity) => {
+            return (
+              <ActiveCard
+                activeName={activity.name}
+                activeIntro={activity.intro}
+                activeImg={activity.img}
+              />
+            );
+          })}
         </S.Activites>
       </S.ActivitesContainer>
       {/* 지민 */}

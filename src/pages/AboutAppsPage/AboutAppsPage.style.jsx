@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import background from '../../images/background/about_background.svg';
 import titleIcon from '../../images/icons/about_APPS.svg';
-import activeback from '../../images//activities/about_active_sample.png';
 
 export const Root = styled.div`
   width: 100%;
@@ -112,9 +111,11 @@ export const ActivitesContent = styled.div`
 
 export const Activites = styled.div`
   display: flex;
-  width: 100%;
-  height: 1200px;
+  flex-wrap: wrap;
+  max-width: 1000px;
   justify-content: center;
+  gap: 28px 20px;
+  margin: auto;
 `;
 
 export const ActiveCard = styled.div`
@@ -122,13 +123,10 @@ export const ActiveCard = styled.div`
   height: 300px;
   flex-shrink: 0;
   border-radius: 20px;
-   background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0) 27.33%
-    ),
-    url(${activeback}) lightgray 50% / cover no-repeat;
+  background-color: lightgray;
+  background-position: 50%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 `;
 
@@ -140,7 +138,7 @@ export const ActiveTextWrapper = styled.div`
 `;
 
 export const ActiveName = styled.h2`
-  margin: 30px 0 133px 30px;
+  margin: 30px 0 0 30px;
   display: inline-flex;
   padding: 13px 43px;
   justify-content: center;
@@ -157,9 +155,10 @@ export const ActiveName = styled.h2`
 
 export const ActiveIntroWrapper = styled.div`
   width: 100%;
+  height: 184px;
   display: flex;
   justify-content: center;
-  margin: 0 0 36px 0;
+  align-items: end;
 `;
 
 export const ActiveIntro = styled.p`
