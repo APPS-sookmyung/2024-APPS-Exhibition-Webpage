@@ -7,11 +7,18 @@ export const HomePage = styled.div`
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid red; /* 임시코드 */
+  border: 1px solid red;
 `;
 
 export const HomeMainWrapper = styled.section`
-  background-image: url('../../images/background/home-background1.svg');
+  position: relative;
+  background-image: url('/images/background/home-background1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -57px -93px;
+  padding: 100px 0 360px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const TitleWrapper = styled.div`
