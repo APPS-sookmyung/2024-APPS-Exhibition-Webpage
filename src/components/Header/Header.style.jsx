@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
 
 export const Header = styled.header`
   display: flex;
@@ -19,6 +24,7 @@ export const Logo = styled.div`
 
 export const Menu = styled.div`
   margin: 0 50px;
+  text-decoration: none;
 `;
 
 export const MenuStyle = styled.span`
