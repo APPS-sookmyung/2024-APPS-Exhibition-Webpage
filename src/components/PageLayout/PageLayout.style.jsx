@@ -6,4 +6,5 @@ export const Layout = styled.div`
   flex: 1;
   width: 100%;
   background: ${({ background }) => background};
+  background-color: #000000;
 `;

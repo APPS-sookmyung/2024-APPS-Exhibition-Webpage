@@ -18,10 +18,11 @@ export const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding: 70px;
+  padding-right: 70px;
 `;
 
 export const ExhibitionTitle = styled.h3`
+  margin: 0;
   color: #fff;
   text-align: center;
   font-family: 'Dolce Vita Heavy';
@@ -31,6 +32,7 @@ export const ExhibitionTitle = styled.h3`
 `;
 
 export const APPSTitle = styled.h1`
+  margin: 0;
   color: #fff;
   text-align: center;
   font-family: 'Dolce Vita Heavy';
