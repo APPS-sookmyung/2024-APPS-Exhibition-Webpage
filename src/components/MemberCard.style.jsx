@@ -1,14 +1,20 @@
 import styled from 'styled-components';
 
 export const MemberCard = styled.div`
+  position: relative;
   width: 220px;
   height: 254px;
+  flex-shrink: 0;
   border-radius: 18px;
-  background: #2051ff;
+  background-color: ${(props) => props.backgroundColor || '#2051ff'};
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 56px;
+  justify-content: center;
+  cursor: pointer;
+  &: hover {
+    background-color: #ff5400;
+  }
 `;
 
 export const MemberImage = styled.img`
