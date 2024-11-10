@@ -12,7 +12,7 @@ export const Root = styled.div`
   background-color: #000;
 `;
 
-export const Container = styled.div`
+export const TopToIntroContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,6 +81,105 @@ export const IntroToActLine = styled.div`
   background-size: 962px 2px;
   background-position: center;
   background-repeat: no-repeat;
+`;
+
+export const ActivitesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const ActivitesTitle = styled.div`
+  color: #fff;
+  text-align: center;
+  font-family: 'Dolce Vita Heavy';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -2px;
+  margin: 113px 0 16px 0;
+`;
+
+export const ActivitesContent = styled.div`
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0 0 80px 0;
+`;
+
+export const Activites = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: center;
+  gap: 28px 20px;
+  margin: auto;
+`;
+
+export const ActiveCard = styled.div`
+  width: 470px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background-color: lightgray;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+`;
+
+export const ActiveTextWrapper = styled.div`
+  z-index: 2;
+  position: absolute;
+  width: 470px;
+  justify-content: center;
+`;
+
+export const ActiveName = styled.h2`
+  margin: 30px 0 0 30px;
+  display: inline-flex;
+  padding: 13px 43px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--orange, #ff5400);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+`;
+
+export const ActiveIntroWrapper = styled.div`
+  width: 100%;
+  height: 184px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+`;
+
+export const ActiveIntro = styled.p`
+  color: #fff;
+  width: 410px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  margin: 0;
+  white-space: pre-line;
+`;
+
+export const ActiveBackBlur = styled.div`
+  position: absolute;
+  width: 470px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
 `;
 
 export const TeamContainer = styled.div`

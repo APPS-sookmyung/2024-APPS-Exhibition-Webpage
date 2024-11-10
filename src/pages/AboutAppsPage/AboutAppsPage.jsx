@@ -1,9 +1,11 @@
 import * as S from './AboutAppsPage.style';
+import ActiveCard from '../../components/ActiveCard';
+import { activitiesArr } from '../../database/activity_list';
 
 export default function AboutAppsPage() {
   return (
     <S.Root>
-      <S.Container>
+      <S.TopToIntroContainer>
         <S.Top>
           <S.PageTitleWrapper>
             <S.PageTitle>ABOUT</S.PageTitle>
@@ -21,7 +23,24 @@ export default function AboutAppsPage() {
           활발한 소통과 피드백을 통해 개인과 공동체 발전을 촉진합니다.
         </S.IntroAPPSContent>
         <S.IntroToActLine></S.IntroToActLine>
-      </S.Container>
+      </S.TopToIntroContainer>
+      <S.ActivitesContainer>
+        <S.ActivitesTitle>ACTIVITES</S.ActivitesTitle>
+        <S.ActivitesContent>
+          APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
+        </S.ActivitesContent>
+        <S.Activites>
+          {activitiesArr.map((activity) => {
+            return (
+              <ActiveCard
+                activeName={activity.name}
+                activeIntro={activity.intro}
+                activeImg={activity.img}
+              />
+            );
+          })}
+        </S.Activites>
+      </S.ActivitesContainer>
       {/* 지민 */}
       <S.TeamContainer>
         <S.TeamIntroWrapper>
