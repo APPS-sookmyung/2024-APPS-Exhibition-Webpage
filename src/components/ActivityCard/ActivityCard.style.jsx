@@ -9,7 +9,6 @@ export const ActivityCard = styled.div`
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-}
 `;
 
 export const ActivityTextWrapper = styled.div`
