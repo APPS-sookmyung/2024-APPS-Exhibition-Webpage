@@ -1,5 +1,5 @@
 import * as S from './AboutAppsPage.style';
-import ActiveCard from '../../components/ActiveCard';
+import ActivityCard from '../../components/ActivityCard/ActivityCard';
 import { activitiesArr } from '../../database/activity_list';
 
 export default function AboutAppsPage() {
@@ -24,23 +24,26 @@ export default function AboutAppsPage() {
         </S.IntroAPPSContent>
         <S.IntroToActLine></S.IntroToActLine>
       </S.TopToIntroContainer>
-      <S.ActivitesContainer>
-        <S.ActivitesTitle>ACTIVITES</S.ActivitesTitle>
-        <S.ActivitesContent>
-          APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
-        </S.ActivitesContent>
-        <S.Activites>
+
+      <S.ActivitiesContainer>
+        <S.ActivitiesTitleWrapper>
+          <S.ActivitiesTitle>ACTIVITIES</S.ActivitiesTitle>
+          <S.ActivitiesDescription>
+            APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
+          </S.ActivitiesDescription>
+        </S.ActivitiesTitleWrapper>
+        <S.ActivitiesCardWrapper>
           {activitiesArr.map((activity) => {
             return (
-              <ActiveCard
-                activeName={activity.name}
-                activeIntro={activity.intro}
-                activeImg={activity.img}
+              <ActivityCard
+                activityName={activity.name}
+                activityIntro={activity.intro}
+                activityImg={activity.img}
               />
             );
           })}
-        </S.Activites>
-      </S.ActivitesContainer>
+        </S.ActivitiesCardWrapper>
+      </S.ActivitiesContainer>
       {/* 지민 */}
       <S.TeamContainer>
         <S.TeamIntroWrapper>
