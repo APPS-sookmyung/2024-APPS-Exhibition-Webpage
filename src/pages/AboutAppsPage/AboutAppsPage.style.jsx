@@ -35,6 +35,7 @@ export const PageTitleWrapper = styled.div`
   position: absolute;
   z-index: 2;
 `;
+
 export const PageTitle = styled.h1`
   color: #fff;
   font-size: 65px;
@@ -42,6 +43,7 @@ export const PageTitle = styled.h1`
   letter-spacing: -3.25px;
   margin: -6px 8.8px;
 `;
+
 export const IconTitle = styled.div`
   width: 136px;
   height: 94px;
@@ -155,4 +157,22 @@ export const TeamIntroContent = styled.p`
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0;
+`;
+
+export const MemberList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 56px 0;
+  max-width: 880px;
+  margin: 0 auto;
+  margin-top: 32px;
+  & > div:nth-child(even) {
+    margin-top: 32px;
+  }
+`;
+
+export const MemberWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 0;
 `;
