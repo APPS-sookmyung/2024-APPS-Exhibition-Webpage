@@ -186,6 +186,15 @@ export default function AboutAppsPage() {
           })}
         </S.ActivitiesCardWrapper>
       </S.ActivitiesContainer>
+
+      <S.CalendarContainer>
+        <S.CalendarTitleWrapper>
+          <S.CalendarTitle>11기는 어떤 활동을 하였나요?</S.CalendarTitle>
+          <S.CalendarDescription>
+            이전 기수 활동은 이렇게 이루어졌어요
+          </S.CalendarDescription>
+        </S.CalendarTitleWrapper>
+      </S.CalendarContainer>
       {/* 지민 */}
       <S.TeamContainer>
         <S.TeamIntroWrapper>

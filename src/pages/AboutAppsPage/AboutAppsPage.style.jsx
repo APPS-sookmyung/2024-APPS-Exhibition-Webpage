@@ -127,6 +127,37 @@ export const ActivitiesCardWrapper = styled.div`
   margin: auto;
 `;
 
+export const CalendarContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const CalendarTitleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 113px;
+  gap: 16px;
+`;
+
+export const CalendarTitle = styled.div`
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.6px;
+`;
+
+export const CalendarDescription = styled.div`
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0 0 108px 0;
+`;
+
 export const TeamContainer = styled.div`
   display: flex;
   flex-direction: column;
