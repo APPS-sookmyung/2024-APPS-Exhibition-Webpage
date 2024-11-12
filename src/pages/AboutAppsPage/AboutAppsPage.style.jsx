@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import background from '../../images/background/about_background.svg';
-import titleIcon from '../../images/icons/about_APPS.svg';
 
 export const Root = styled.div`
   width: 100%;
   min-height: 5000px;
   margin: 0 auto;
-  background-image: url(${background});
+  background-image: url('./images/background/about_background.svg');
   background-size: 100% 785px;
   background-repeat: no-repeat;
   background-color: #000;
@@ -47,7 +45,7 @@ export const PageTitle = styled.h1`
 export const IconTitle = styled.div`
   width: 136px;
   height: 94px;
-  background-image: url(${titleIcon});
+  background-image: url('./images/icons/about_APPS.svg');
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 4.6px;
