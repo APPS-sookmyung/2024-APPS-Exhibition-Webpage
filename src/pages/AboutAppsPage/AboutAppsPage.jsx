@@ -1,6 +1,8 @@
 import * as S from './AboutAppsPage.style';
 import ActivityCard from '../../components/ActivityCard/ActivityCard';
 import { activitiesArr } from '../../database/activity_list';
+import CalendarCard from '../../components/CalendarCard/CalendarCard';
+import { calendarArr } from '../../database/calendar_list';
 import MemberCard from '../../components/MemberCard';
 
 export default function AboutAppsPage() {
@@ -194,6 +196,32 @@ export default function AboutAppsPage() {
             이전 기수 활동은 이렇게 이루어졌어요
           </S.CalendarDescription>
         </S.CalendarTitleWrapper>
+        <S.CalendarCardWrapper>
+          <S.RegularCalendarCard>
+            <S.RegularCalendarWrapper>
+              <S.RegularCalendarDot></S.RegularCalendarDot>
+              <S.RegularCalendarName>매달 정기 활동</S.RegularCalendarName>
+            </S.RegularCalendarWrapper>
+            <S.RegularScheduleWrapper>
+              {[
+                'DevTalk',
+                '스터디 진행 상황 발표',
+                '프로젝트 진행 상황 발표',
+              ].map((activity) => {
+                return <S.RegularSchedule>{activity}</S.RegularSchedule>;
+              })}
+            </S.RegularScheduleWrapper>
+          </S.RegularCalendarCard>
+          {calendarArr.map((calendar) => {
+            return (
+              <CalendarCard
+                month={calendar.month}
+                schedule={calendar.schedule}
+                regular={calendar.regular}
+              />
+            );
+          })}
+        </S.CalendarCardWrapper>
       </S.CalendarContainer>
       {/* 지민 */}
       <S.TeamContainer>

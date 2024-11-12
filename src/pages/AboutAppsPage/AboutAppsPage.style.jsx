@@ -158,6 +158,71 @@ export const CalendarDescription = styled.div`
   margin: 0 0 108px 0;
 `;
 
+export const CalendarCardWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: center;
+  gap: 0;
+  margin: auto;
+`;
+
+export const RegularCalendarCard = styled.div`
+  width: 331.2px;
+  height: 139.84px;
+  flex-shrink: 0;
+  border-radius: 18.4px;
+  background: var(--blue, #3f69ff);
+  margin: 82px 0 0 110px;
+`;
+
+export const RegularCalendarWrapper = styled.div`
+  display: flex;
+  padding: 20px 0 0 26px;
+  align-items: center;
+  gap: 12px;
+`;
+
+export const RegularCalendarDot = styled.div`
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  background-image: url('/images/icons/about_calendar_white_dot.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+`;
+
+export const RegularCalendarName = styled.h3`
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 0;
+`;
+
+export const RegularScheduleWrapper = styled.div`
+  padding: 13.7px 25.8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7.8px 9px;
+`;
+
+export const RegularSchedule = styled.div`
+  display: inline-flex;
+  height: 17px;
+  padding: 4.6px 14.7px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.3px;
+  border-radius: 18.4px;
+  background: #fff;
+  color: var(--blue, #3f69ff);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+`;
+
 export const TeamContainer = styled.div`
   display: flex;
   flex-direction: column;
