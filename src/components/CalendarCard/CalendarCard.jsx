@@ -5,7 +5,7 @@ export default function CalendarCard({ month, schedule, regular }) {
     <S.CalendarCard className={regular ? 'regular' : ''}>
       <S.CalendarMonthWrapper>
         <S.CalendarMonthDot></S.CalendarMonthDot>
-        <S.CalendarMonth>{month}</S.CalendarMonth>
+        <S.CalendarMonth>{month}월</S.CalendarMonth>
       </S.CalendarMonthWrapper>
       <S.ScheduleWrapper>
         {schedule.map((activity) => {
