@@ -1,8 +1,8 @@
 import * as S from './CalendarCard.style';
 
-export default function CalendarCard({ month, schedule, regular }) {
+export default function CalendarCard({ month, schedule }) {
   return (
-    <S.CalendarCard className={regular ? 'regular' : ''}>
+    <S.CalendarCard>
       <S.CalendarMonthWrapper>
         <S.CalendarMonthDot></S.CalendarMonthDot>
         <S.CalendarMonth>{month}월</S.CalendarMonth>

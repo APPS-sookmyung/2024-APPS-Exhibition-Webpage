@@ -54,9 +54,6 @@ export const ScheduleWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  .regular & {
-    gap: 7.8px 9px;
-  }
 `;
 
 export const Schedule = styled.div`

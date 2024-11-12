@@ -217,7 +217,6 @@ export default function AboutAppsPage() {
               <CalendarCard
                 month={calendar.month}
                 schedule={calendar.schedule}
-                regular={calendar.regular}
               />
             );
           })}
