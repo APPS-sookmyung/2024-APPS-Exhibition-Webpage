@@ -1,4 +1,9 @@
 import * as s from './ProjectPage.style';
+import {
+  githubIcon,
+  webPageLinkIcon,
+  appStoreIcon,
+} from '../../images/socials';
 
 export default function ProjectPage() {
   return (
@@ -14,10 +19,10 @@ export default function ProjectPage() {
               <p>프로젝트 공유하기</p>
             </s.ShareBtn>
             <s.LinkBtns>
-              <s.LinkBtn />
-              <s.LinkBtn />
-              <s.LinkBtn />
-              <s.LinkBtn />
+              <s.LinkBtn src={githubIcon} />
+              <s.LinkBtn src={githubIcon} />
+              <s.LinkBtn src={webPageLinkIcon} />
+              <s.LinkBtn src={appStoreIcon} />
             </s.LinkBtns>
           </s.TopBtnContainer>
         </s.Top>
