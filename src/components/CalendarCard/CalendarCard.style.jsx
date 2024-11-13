@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const CalendarCard = styled.div`
-  width: 220.8px;
-  height: 220.8px;
+  width: 221px;
+  height: 221px;
   flex-shrink: 0;
-  border-radius: 18.4px;
+  border-radius: 18px;
   border: 1px solid #fff;
 
   &:hover {
-    width: 221.8px;
-    height: 221.8px;
+    width: 222px;
+    height: 222px;
     border: 0;
     background: var(--orange, #ff5400);
   }
@@ -50,7 +50,7 @@ export const CalendarMonth = styled.h3`
 `;
 
 export const ScheduleWrapper = styled.div`
-  padding: 13.7px 25.8px;
+  padding: 14px 26px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -59,14 +59,15 @@ export const ScheduleWrapper = styled.div`
 export const Schedule = styled.div`
   display: inline-flex;
   width: fit-content;
-  padding: 4.6px 14.7px;
+  padding: 5px 15px;
   justify-content: center;
   align-items: center;
-  gap: 7.3px;
-  border-radius: 18.4px;
+  gap: 7px;
+  border-radius: 18px;
   background: var(--blue, #3f69ff);
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.7px;
+  white-space: pre-line;
 `;

@@ -193,7 +193,7 @@ export default function AboutAppsPage() {
         <S.CalendarTitleWrapper>
           <S.CalendarTitle>11기는 어떤 활동을 하였나요?</S.CalendarTitle>
           <S.CalendarDescription>
-            이전 기수 활동은 이렇게 이루어졌어요
+            매달 진행된 다양한 활동들을 살펴보세요
           </S.CalendarDescription>
         </S.CalendarTitleWrapper>
         <S.CalendarCardWrapper>
@@ -207,19 +207,14 @@ export default function AboutAppsPage() {
                 'DevTalk',
                 '스터디 진행 상황 발표',
                 '프로젝트 진행 상황 발표',
-              ].map((activity) => {
-                return <S.RegularSchedule>{activity}</S.RegularSchedule>;
-              })}
+              ].map((activity) => (
+                <S.RegularSchedule>{activity}</S.RegularSchedule>
+              ))}
             </S.RegularScheduleWrapper>
           </S.RegularCalendarCard>
-          {calendarArr.map((calendar) => {
-            return (
-              <CalendarCard
-                month={calendar.month}
-                schedule={calendar.schedule}
-              />
-            );
-          })}
+          {calendarArr.map((calendar) => (
+            <CalendarCard month={calendar.month} schedule={calendar.schedule} />
+          ))}
         </S.CalendarCardWrapper>
       </S.CalendarContainer>
       {/* 지민 */}

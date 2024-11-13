@@ -166,8 +166,8 @@ export const CalendarCardWrapper = styled.div`
 `;
 
 export const RegularCalendarCard = styled.div`
-  width: 331.2px;
-  height: 139.84px;
+  width: 331px;
+  height: 140px;
   flex-shrink: 0;
   border-radius: 18.4px;
   background: var(--blue, #3f69ff);
@@ -200,7 +200,7 @@ export const RegularCalendarName = styled.h3`
 `;
 
 export const RegularScheduleWrapper = styled.div`
-  padding: 13.7px 25.8px;
+  padding: 14px 26px;
   display: flex;
   flex-wrap: wrap;
   gap: 7.8px 9px;
@@ -209,11 +209,11 @@ export const RegularScheduleWrapper = styled.div`
 export const RegularSchedule = styled.div`
   display: inline-flex;
   height: 17px;
-  padding: 4.6px 14.7px;
+  padding: 5px 15px;
   justify-content: center;
   align-items: center;
-  gap: 7.3px;
-  border-radius: 18.4px;
+  gap: 7px;
+  border-radius: 18px;
   background: #fff;
   color: var(--blue, #3f69ff);
   font-size: 14px;
