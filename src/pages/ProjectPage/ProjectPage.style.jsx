@@ -156,3 +156,65 @@ export const LinkBtn = styled.img`
     height: 30px;
   }
 `;
+
+export const YoutubeContainer = styled.div`
+  width: 100%;
+  max-width: 960px;
+  height: 540px;
+  border: 1px solid #fff;
+  margin-top: 64px;
+`;
+
+export const Line = styled.div`
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin: 40px 0;
+`;
+
+export const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+`;
+
+export const ServiceIntro = styled.h2`
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 24px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 18px;
+  }
+`;
+
+export const ServiceDetail = styled.p`
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  display: flex;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
+`;
+
+export const StackContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+`;
