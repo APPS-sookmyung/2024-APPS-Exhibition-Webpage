@@ -27,7 +27,7 @@ export const Top = styled.div`
 export const PageTitleWrapper = styled.div`
   margin-top: 66px;
   width: 330px;
-  height: 98.4px;
+  height: 98px;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -38,7 +38,7 @@ export const PageTitle = styled.h1`
   color: #fff;
   font-size: 65px;
   font-weight: 700;
-  letter-spacing: -3.25px;
+  letter-spacing: -3.2px;
   margin: -6px 8.8px;
 `;
 
@@ -48,7 +48,7 @@ export const IconTitle = styled.div`
   background-image: url('./images/icons/about_APPS.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 4.6px;
+  margin-top: 5px;
   background-color: #3f69ff;
 `;
 
@@ -169,7 +169,7 @@ export const RegularCalendarCard = styled.div`
   width: 331px;
   height: 140px;
   flex-shrink: 0;
-  border-radius: 18.4px;
+  border-radius: 18px;
   background: var(--blue, #3f69ff);
   margin: 82px 0 0 110px;
 `;
