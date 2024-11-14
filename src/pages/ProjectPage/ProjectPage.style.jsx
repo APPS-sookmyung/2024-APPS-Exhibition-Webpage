@@ -7,7 +7,6 @@ import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 export const Root = styled.div`
   width: 100%;
   min-height: 5000px;
-  margin: 0 auto;
   background-image: url(${background});
   background-size: contain;
   background-repeat: no-repeat;
@@ -15,10 +14,11 @@ export const Root = styled.div`
 `;
 
 export const Container = styled.div`
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* max-width: 1300px; */
+  max-width: 1100px;
   padding: 62px 70px 0 70px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
@@ -36,6 +36,8 @@ export const CloseBtn = styled.img.attrs({
   align-self: flex-end;
   width: 36px;
   height: 36px;
+  padding: 10px;
+  margin: -10px -10px -10px 0;
 `;
 
 export const Top = styled.div`
@@ -75,9 +77,12 @@ export const Description = styled.p`
 `;
 
 export const TopBtnContainer = styled.div`
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  row-gap: 10px;
+  flex-wrap: wrap;
 `;
 
 export const ShareBtn = styled.div`
@@ -159,62 +164,126 @@ export const LinkBtn = styled.img`
 
 export const YoutubeContainer = styled.div`
   width: 100%;
-  max-width: 960px;
-  height: 540px;
-  border: 1px solid #fff;
-  margin-top: 64px;
+  display: flex;
+  justify-content: baseline;
 `;
 
-export const Line = styled.div`
+export const Youtube = styled.div`
   width: 100%;
-  height: 1px;
-  background-color: #fff;
+  margin-top: 64px;
+  padding-top: 56.25%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const Line = styled.img`
+  width: 100%;
   margin: 40px 0;
 `;
 
-export const Center = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+export const Center = styled.div``;
 
 export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+  color: #fff;
 `;
 
 export const ServiceIntro = styled.h2`
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
-  color: #fff;
+  letter-spacing: -1px;
+  padding-bottom: 12px;
   margin: 0;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    font-size: 24px;
+    font-size: 22px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
 
 export const ServiceDetail = styled.p`
-  font-size: 24px;
-  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  padding-bottom: 40px;
   margin: 0;
-  display: flex;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 
 export const StackContainer = styled.div`
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: baseline;
+  &:not(:first-child) {
+    gap: 20px;
+
+    @media (max-width: ${BREAKPOINTS[1]}px) {
+      gap: 14px;
+    }
+    @media (max-width: ${BREAKPOINTS[0]}px) {
+      gap: 8px;
+    }
+  }
+
+  div {
+    display: inline-flex;
+    padding: 5px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    background: #fff;
+
+    @media (max-width: ${BREAKPOINTS[1]}px) {
+      padding: 4px 12px;
+    }
+    @media (max-width: ${BREAKPOINTS[0]}px) {
+      padding: 3px 10px;
+    }
+  }
+
+  img {
+    max-height: 24px;
+    min-height: 21px;
+
+    @media (max-width: ${BREAKPOINTS[1]}px) {
+      max-height: 22px;
+      min-height: 18px;
+    }
+    @media (max-width: ${BREAKPOINTS[0]}px) {
+      max-height: 18px;
+      min-height: 14px;
+    }
+  }
+
+  p {
+    color: var(--pink, #ff88fb);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    margin: 0;
+    white-space: nowrap;
+
+    @media (max-width: ${BREAKPOINTS[1]}px) {
+      font-size: 14px;
+    }
+    @media (max-width: ${BREAKPOINTS[0]}px) {
+      font-size: 12px;
+    }
+  }
 `;
