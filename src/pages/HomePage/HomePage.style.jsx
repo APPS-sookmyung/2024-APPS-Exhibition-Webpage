@@ -92,10 +92,11 @@ export const SectionSubTitle = styled.h4`
 `;
 
 export const SectionContent = styled.div`
-  /* 임시 */
-  color: white;
+  display: flex;
+  justify-content: center;
   height: 458px;
   border: 1px solid red;
+  gap: 59px;
 `;
 
 export const MemberFeedback = styled.section``;

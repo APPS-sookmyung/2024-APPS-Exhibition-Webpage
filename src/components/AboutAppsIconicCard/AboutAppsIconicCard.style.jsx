@@ -15,8 +15,7 @@ export const ImageWrapper = styled.div`
 
 export const Title = styled.span`
   padding-bottom: 14px;
-  /* color: var(--pink, #ff88fb); */
-  color: white;
+  color: ${({ color }) => color};
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -25,8 +24,7 @@ export const Title = styled.span`
 
 export const Description = styled.p`
   margin: 0;
-  /* color: var(--pink, #ff88fb); */
-  color: white;
+  color: ${({ color }) => color};
   text-align: center;
   font-size: 14px;
   letter-spacing: -0.7px;
