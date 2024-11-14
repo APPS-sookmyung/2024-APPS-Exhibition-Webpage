@@ -21,7 +21,7 @@ export const calendarArr = [
   },
   {
     month: 6,
-    schedule: ['신입부원 프로젝트 \n획 피드백'],
+    schedule: ['신입부원 프로젝트\n기획 피드백'],
   },
   {
     month: 7,
