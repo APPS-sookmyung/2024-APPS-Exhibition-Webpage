@@ -49,13 +49,43 @@ export const APPSSubTitle = styled.span`
   text-align: center;
   font-family: 'Dolce Vita Heavy';
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: -1.2px;
 `;
 
-export const AboutAPPS = styled.section``;
+// About
+export const AboutAPPSWrapper = styled.section``;
+
+export const SectionTitleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+`;
+
+export const SectionTitleImageWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
+export const SectionTitle = styled.h2`
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-family: 'Dolce Vita Heavy';
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: -3.25px;
+`;
+
+export const SectionSubTitle = styled.h4`
+  margin: 0;
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+`;
 
 export const MemberFeedback = styled.section``;
 
