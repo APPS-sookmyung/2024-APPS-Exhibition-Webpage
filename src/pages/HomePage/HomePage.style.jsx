@@ -54,7 +54,11 @@ export const APPSSubTitle = styled.span`
 `;
 
 // About
-export const AboutAPPSWrapper = styled.section``;
+export const AboutAPPSWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+`;
 
 export const SectionTitleWrapper = styled.div`
   display: flex;
@@ -85,6 +89,13 @@ export const SectionSubTitle = styled.h4`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
+`;
+
+export const SectionContent = styled.div`
+  /* 임시 */
+  color: white;
+  height: 458px;
+  border: 1px solid red;
 `;
 
 export const MemberFeedback = styled.section``;

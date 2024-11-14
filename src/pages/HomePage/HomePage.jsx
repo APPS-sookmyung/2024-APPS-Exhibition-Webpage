@@ -1,5 +1,10 @@
 import * as S from './HomePage.style';
-import { Header, PageLayout, Footer } from '../../components';
+import {
+  Header,
+  PageLayout,
+  Footer,
+  AboutAppsIconicCard,
+} from '../../components';
 
 export default function HomePage() {
   return (
@@ -23,6 +28,9 @@ export default function HomePage() {
               숙명여자대학교 소프트웨어학부 웹 앱 개발 학회
             </S.SectionSubTitle>
           </S.SectionTitleWrapper>
+          <S.SectionContent>
+            <AboutAppsIconicCard />
+          </S.SectionContent>
         </S.AboutAPPSWrapper>
 
         <S.MemberFeedback></S.MemberFeedback>
