@@ -1,7 +1,7 @@
 import * as S from './AboutAppsPage.style';
 import ActivityCard from '../../components/ActivityCard/ActivityCard';
 import { activitiesArr } from '../../database/activity_list';
-import MemberCard from '../../components/MemberCard';
+import MemberCard from '../../components/MemberCard/MemberCard';
 
 export default function AboutAppsPage() {
   const members = [
