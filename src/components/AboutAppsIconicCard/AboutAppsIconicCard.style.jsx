@@ -30,4 +30,5 @@ export const Description = styled.p`
   text-align: center;
   font-size: 14px;
   letter-spacing: -0.7px;
+  white-space: pre-line;
 `;
