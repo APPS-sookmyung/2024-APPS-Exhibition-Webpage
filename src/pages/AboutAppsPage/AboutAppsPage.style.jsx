@@ -39,7 +39,7 @@ export const PageTitle = styled.h1`
   font-size: 65px;
   font-weight: 700;
   letter-spacing: -3.2px;
-  margin: -6px 8.8px;
+  margin: -6px 9px;
 `;
 
 export const IconTitle = styled.div`
@@ -203,7 +203,7 @@ export const RegularScheduleWrapper = styled.div`
   padding: 14px 26px;
   display: flex;
   flex-wrap: wrap;
-  gap: 7.8px 9px;
+  gap: 8px 9px;
 `;
 
 export const RegularSchedule = styled.div`
