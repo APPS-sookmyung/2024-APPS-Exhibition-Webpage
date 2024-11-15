@@ -26,7 +26,7 @@ export default function ProjectPage() {
           <S.TopBtnContainer>
             <S.ShareBtn>
               <S.ShareIcon src="images/icons/share.svg" alt="" />
-              <p>프로젝트 공유하기</p>
+              <S.ShareText>프로젝트 공유하기</S.ShareText>
             </S.ShareBtn>
             <S.LinkBtns>
               <a
@@ -34,28 +34,28 @@ export default function ProjectPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <S.LinkBtn src="images/socials/github.svg" />
+                <S.LinkBtn src="images/socials/github.svg" alt="github" />
               </a>
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <S.LinkBtn src="images/socials/github.svg" />
+                <S.LinkBtn src="images/socials/github.svg" alt="github" />
               </a>
               <a
                 href="https://yourwebsite.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <S.LinkBtn src="images/socials/webpage-link.svg" />
+                <S.LinkBtn src="images/socials/webpage-link.svg" alt="link" />
               </a>
               <a
                 href="https://appstore.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <S.LinkBtn src="images/socials/app-store.svg" />
+                <S.LinkBtn src="images/socials/app-store.svg" alt="appstore" />
               </a>
             </S.LinkBtns>
           </S.TopBtnContainer>
@@ -70,11 +70,11 @@ export default function ProjectPage() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
               gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              />
             </S.Youtube>
           </S.YoutubeContainer>
         </S.Top>
-        <S.Line src="images/background/projects_line.svg" />
+        <S.Line src="images/background/projects_line.svg" alt="" />
         <S.Center>
           <S.Content>
             <S.ServiceIntro>서비스 소개</S.ServiceIntro>
@@ -90,17 +90,16 @@ export default function ProjectPage() {
               )}
             </S.ServiceDetail>
             <S.ServiceIntro>기술 스택</S.ServiceIntro>
-            <S.StackContainer>
-              <div>
-                <img src="images/techStacks/firebase.svg" alt="" />
-
-                <p>Google Firebase</p>
-              </div>
-              <div>
-                <img src="images/techStacks/nextjS.svg" alt="" />
-                <p>NextJS</p>
-              </div>
-            </S.StackContainer>
+            <S.StackList>
+              <S.StackItem>
+                <S.StackIcon src="images/techStacks/firebase.svg" alt="" />
+                <S.StackText>Google Firebase</S.StackText>
+              </S.StackItem>
+              <S.StackItem>
+                <S.StackIcon src="images/techStacks/nextjS.svg" alt="" />
+                <S.StackText>NextJS</S.StackText>
+              </S.StackItem>
+            </S.StackList>
           </S.Content>
         </S.Center>
       </S.Container>

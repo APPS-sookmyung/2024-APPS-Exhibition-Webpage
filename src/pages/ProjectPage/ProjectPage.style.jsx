@@ -94,23 +94,6 @@ export const ShareBtn = styled.div`
   @media (max-width: ${BREAKPOINTS[0]}px) {
     padding: 2px 16px;
   }
-
-  p {
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    margin: 0;
-    white-space: nowrap;
-
-    @media (max-width: ${BREAKPOINTS[1]}px) {
-      font-size: 18px;
-    }
-    @media (max-width: ${BREAKPOINTS[0]}px) {
-      font-size: 14px;
-    }
-  }
 `;
 
 export const ShareIcon = styled.img`
@@ -121,6 +104,23 @@ export const ShareIcon = styled.img`
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 14px;
     height: 28px;
+  }
+`;
+
+export const ShareText = styled.p`
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 0;
+  white-space: nowrap;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
   }
 `;
 
@@ -217,9 +217,12 @@ export const ServiceDetail = styled.p`
   }
 `;
 
-export const StackContainer = styled.div`
+export const StackList = styled.ul`
   display: flex;
   justify-content: baseline;
+  padding-left: 0;
+  margin: 0;
+
   &:not(:first-child) {
     gap: 20px;
 
@@ -230,51 +233,52 @@ export const StackContainer = styled.div`
       gap: 8px;
     }
   }
+`;
 
-  div {
-    display: inline-flex;
-    padding: 5px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 20px;
-    background: #fff;
+export const StackItem = styled.li`
+  list-style: none;
+  display: inline-flex;
+  padding: 5px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 20px;
+  background: #fff;
 
-    @media (max-width: ${BREAKPOINTS[1]}px) {
-      padding: 4px 12px;
-    }
-    @media (max-width: ${BREAKPOINTS[0]}px) {
-      padding: 3px 10px;
-    }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 4px 12px;
   }
-
-  img {
-    max-height: 24px;
-    min-height: 21px;
-
-    @media (max-width: ${BREAKPOINTS[1]}px) {
-      max-height: 22px;
-      min-height: 18px;
-    }
-    @media (max-width: ${BREAKPOINTS[0]}px) {
-      max-height: 18px;
-      min-height: 14px;
-    }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 3px 10px;
   }
+`;
 
-  p {
-    color: var(--pink, #ff88fb);
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: -0.8px;
-    margin: 0;
-    white-space: nowrap;
+export const StackIcon = styled.img`
+  max-height: 24px;
+  min-height: 21px;
 
-    @media (max-width: ${BREAKPOINTS[1]}px) {
-      font-size: 14px;
-    }
-    @media (max-width: ${BREAKPOINTS[0]}px) {
-      font-size: 12px;
-    }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    max-height: 22px;
+    min-height: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    max-height: 18px;
+    min-height: 14px;
+  }
+`;
+
+export const StackText = styled.p`
+  color: var(--pink, #ff88fb);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  margin: 0;
+  white-space: nowrap;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 14px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 12px;
   }
 `;
