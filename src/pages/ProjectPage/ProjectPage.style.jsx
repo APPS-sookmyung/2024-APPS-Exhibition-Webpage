@@ -1,13 +1,10 @@
 import styled from 'styled-components';
-import x_pink from '../../images/icons/x_pink.svg';
-import background from '../../images/background/projects_background.svg';
-import share from '../../images/icons/share.svg';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const Root = styled.div`
   width: 100%;
   min-height: 5000px;
-  background-image: url(${background});
+  background-image: url('/images/background/projects_background.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #000;
@@ -29,10 +26,7 @@ export const Container = styled.div`
   }
 `;
 
-export const CloseBtn = styled.img.attrs({
-  src: x_pink,
-  alt: 'Close',
-})`
+export const CloseBtn = styled.img`
   align-self: flex-end;
   width: 36px;
   height: 36px;
@@ -119,10 +113,7 @@ export const ShareBtn = styled.div`
   }
 `;
 
-export const ShareIcon = styled.img.attrs({
-  src: share,
-  alt: 'Share',
-})`
+export const ShareIcon = styled.img`
   width: 20px;
   height: 24px;
   margin-right: 10px;
