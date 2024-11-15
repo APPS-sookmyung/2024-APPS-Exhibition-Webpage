@@ -66,10 +66,10 @@ export default function ProjectPage() {
                 height="315"
                 src="https://www.youtube-nocookie.com/embed/4j7LGMc9ZGU"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
               gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </S.Youtube>
           </S.YoutubeContainer>
