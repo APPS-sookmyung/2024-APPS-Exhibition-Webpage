@@ -1,6 +1,11 @@
 import * as S from './HomePage.style';
-import { Header, PageLayout, Footer } from '../../components';
-import { SOCIAL_MEDIA_LINKS } from '../../database/socialMediaLinks';
+import {
+  Header,
+  PageLayout,
+  Footer,
+  SocialMediaLinkCards,
+} from '../../components';
+import { SOCIAL_MEDIA_LINKS_CARD } from '../../database/socialMediaLinkCards.js';
 
 export default function HomePage() {
   return (
@@ -21,25 +26,18 @@ export default function HomePage() {
             APPS 소식을 더 빨리 알고 싶다면
           </S.SocialLinksTitle>
           <S.SocialLinksContent>
-            {SOCIAL_MEDIA_LINKS.map((social) => (
-              <S.StyledLink key={social.platform} to={social.link}>
-                <S.SocialLinksCard>
-                  <S.SocialLinksCardImage>
-                    <img src={social.icon} alt={social.platform} />
-                  </S.SocialLinksCardImage>
-                  <S.SocialLinksCardDescription>
-                    <S.SocialLinksCardTitle>
-                      {social.platform}
-                    </S.SocialLinksCardTitle>
-                    <S.SocialLinksCardAccount>
-                      {social.accountName}
-                    </S.SocialLinksCardAccount>
-                  </S.SocialLinksCardDescription>
-                </S.SocialLinksCard>
-              </S.StyledLink>
+            {SOCIAL_MEDIA_LINKS_CARD.map((social) => (
+              <SocialMediaLinkCards
+                key={social.platform}
+                platform={social.platform}
+                link={social.link}
+                icon={social.icon}
+                accountName={social.accountName}
+              />
             ))}
           </S.SocialLinksContent>
         </S.SocialLinks>
+
         <S.ProjectList></S.ProjectList>
       </S.HomePage>
     </PageLayout>

@@ -1,4 +1,4 @@
-export const SOCIAL_MEDIA_LINKS = [
+export const SOCIAL_MEDIA_LINKS_CARD = [
   {
     platform: 'LinkedIn',
     accountName: '@sookmyung-apps',
