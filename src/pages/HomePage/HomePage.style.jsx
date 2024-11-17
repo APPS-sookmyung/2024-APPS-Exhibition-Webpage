@@ -105,6 +105,23 @@ export const SectionContent = styled.div`
 
   &:first-child {
     justify-content: flex-start;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(
+        to right,
+        #ff88fb,
+        #5bfb67 38%,
+        #ff5400 62.7%,
+        #3f69ff 88.6%
+      );
+    }
   }
 
   &:last-child {
