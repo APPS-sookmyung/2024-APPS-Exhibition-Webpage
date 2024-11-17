@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const HomePage = styled.div`
   display: flex;
@@ -59,6 +60,59 @@ export const AboutAPPS = styled.section``;
 
 export const MemberFeedback = styled.section``;
 
-export const SocialLinks = styled.section``;
+export const SocialLinks = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+`;
+
+export const SocialLinksTitle = styled.h5`
+  margin: 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  /* letter-spacing: -1.6px; */
+`;
+
+export const SocialLinksContent = styled.div`
+  display: flex;
+  gap: 112px;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
+export const SocialLinksCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+`;
+
+export const SocialLinksCardImage = styled.div``;
+
+export const SocialLinksCardDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const SocialLinksCardTitle = styled.span`
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.9px;
+`;
+
+export const SocialLinksCardAccount = styled.span`
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.9px;
+`;
 
 export const ProjectList = styled.section``;
