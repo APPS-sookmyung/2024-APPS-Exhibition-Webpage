@@ -3,6 +3,9 @@ import {
   Header,
   PageLayout,
   Footer,
+  SocialMediaLinkCards,
+} from '../../components';
+import { SOCIAL_MEDIA_LINKS_CARD } from '../../database/socialMediaLinkCards.js';
   AboutAppsIconicCard,
 } from '../../components';
 import { APPS_CORE_VALUE_CARDS } from '../../database';
@@ -61,7 +64,22 @@ export default function HomePage() {
 
         <S.MemberFeedback></S.MemberFeedback>
 
-        <S.SocialLinks></S.SocialLinks>
+        <S.SocialLinks>
+          <S.SocialLinksTitle>
+            APPS 소식을 더 빨리 알고 싶다면
+          </S.SocialLinksTitle>
+          <S.SocialLinksContent>
+            {SOCIAL_MEDIA_LINKS_CARD.map((social) => (
+              <SocialMediaLinkCards
+                key={social.platform}
+                platform={social.platform}
+                link={social.link}
+                icon={social.icon}
+                accountName={social.accountName}
+              />
+            ))}
+          </S.SocialLinksContent>
+        </S.SocialLinks>
 
         <S.ProjectList></S.ProjectList>
       </S.HomePage>

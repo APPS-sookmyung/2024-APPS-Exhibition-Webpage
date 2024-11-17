@@ -156,6 +156,24 @@ export const SectionContentInnerBox = styled.div`
 
 export const MemberFeedback = styled.section``;
 
-export const SocialLinks = styled.section``;
+export const SocialLinks = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+`;
+
+export const SocialLinksTitle = styled.h5`
+  margin: 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  /* letter-spacing: -1.6px; */
+`;
+
+export const SocialLinksContent = styled.div`
+  display: flex;
+  gap: 112px;
+`;
 
 export const ProjectList = styled.section``;
