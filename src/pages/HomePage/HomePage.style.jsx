@@ -62,3 +62,50 @@ export const MemberFeedback = styled.section``;
 export const SocialLinks = styled.section``;
 
 export const ProjectList = styled.section``;
+
+export const ShareLinks = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 80px;
+`;
+
+export const ShareLinksTitle = styled.h5`
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  /* letter-spacing: -1.6px; */
+`;
+
+export const ShareLinksContent = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+`;
+
+export const LinkBox = styled.div`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  background: #fff;
+  padding: 13px 43px;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.9px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    background: var(--pink, #ff88fb);
+    color: #fff;
+  }
+`;
