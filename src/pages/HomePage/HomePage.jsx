@@ -1,5 +1,6 @@
 import * as S from './HomePage.style';
 import { Header, PageLayout, Footer } from '../../components';
+import { SOCIAL_MEDIA_LINKS } from '../../database/socialMediaLinks';
 
 export default function HomePage() {
   return (
@@ -20,39 +21,23 @@ export default function HomePage() {
             APPS 소식을 더 빨리 알고 싶다면
           </S.SocialLinksTitle>
           <S.SocialLinksContent>
-            <S.StyledLink to="https://www.linkedin.com/company/sookmyung-apps/">
-              <S.SocialLinksCard>
-                <S.SocialLinksCardImage>
-                  <img
-                    src="/images/socials/linkedin-active.svg"
-                    alt="Linkedin"
-                  />
-                </S.SocialLinksCardImage>
-                <S.SocialLinksCardDescription>
-                  <S.SocialLinksCardTitle>LinkedIn</S.SocialLinksCardTitle>
-                  <S.SocialLinksCardAccount>
-                    @sookmyung-apps
-                  </S.SocialLinksCardAccount>
-                </S.SocialLinksCardDescription>
-              </S.SocialLinksCard>
-            </S.StyledLink>
-
-            <S.StyledLink to="https://www.instagram.com/sookmyung_apps/">
-              <S.SocialLinksCard>
-                <S.SocialLinksCardImage>
-                  <img
-                    src="/images/socials/instagram-deactivate.svg"
-                    alt="Instagram"
-                  />
-                </S.SocialLinksCardImage>
-                <S.SocialLinksCardDescription>
-                  <S.SocialLinksCardTitle>Instagram</S.SocialLinksCardTitle>
-                  <S.SocialLinksCardAccount>
-                    @sookmyung_apps
-                  </S.SocialLinksCardAccount>
-                </S.SocialLinksCardDescription>
-              </S.SocialLinksCard>
-            </S.StyledLink>
+            {SOCIAL_MEDIA_LINKS.map((social) => (
+              <S.StyledLink key={social.platform} to={social.link}>
+                <S.SocialLinksCard>
+                  <S.SocialLinksCardImage>
+                    <img src={social.icon} alt={social.platform} />
+                  </S.SocialLinksCardImage>
+                  <S.SocialLinksCardDescription>
+                    <S.SocialLinksCardTitle>
+                      {social.platform}
+                    </S.SocialLinksCardTitle>
+                    <S.SocialLinksCardAccount>
+                      {social.accountName}
+                    </S.SocialLinksCardAccount>
+                  </S.SocialLinksCardDescription>
+                </S.SocialLinksCard>
+              </S.StyledLink>
+            ))}
           </S.SocialLinksContent>
         </S.SocialLinks>
         <S.ProjectList></S.ProjectList>
