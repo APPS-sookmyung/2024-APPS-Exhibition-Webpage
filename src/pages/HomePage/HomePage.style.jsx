@@ -7,6 +7,7 @@ export const HomePage = styled.div`
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 200px;
 `;
 
 export const HomeMainWrapper = styled.section`
@@ -49,13 +50,109 @@ export const APPSSubTitle = styled.span`
   text-align: center;
   font-family: 'Dolce Vita Heavy';
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: -1.2px;
 `;
 
-export const AboutAPPS = styled.section``;
+// About
+export const AboutAPPSWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+`;
+
+export const SectionTitleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+`;
+
+export const SectionTitleImageWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
+export const SectionTitle = styled.h2`
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-family: 'Dolce Vita Heavy';
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: -3.25px;
+`;
+
+export const SectionSubTitle = styled.h4`
+  margin: 0;
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+`;
+
+export const SectionContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px;
+`;
+
+export const SectionContent = styled.div`
+  display: flex;
+
+  &:first-child {
+    justify-content: flex-start;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(
+        to right,
+        #ff88fb,
+        #5bfb67 38%,
+        #ff5400 62.7%,
+        #3f69ff 88.6%
+      );
+    }
+  }
+
+  &:last-child {
+    justify-content: flex-end;
+  }
+`;
+
+export const SectionContentInnerBox = styled.div`
+  display: flex;
+  padding: 30px 31px;
+  gap: 60px;
+  position: relative;
+
+  &:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff88fb, #5bfb67);
+  }
+
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff5400, #3f69ff);
+  }
+`;
 
 export const MemberFeedback = styled.section``;
 
