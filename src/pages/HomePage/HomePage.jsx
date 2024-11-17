@@ -82,6 +82,21 @@ export default function HomePage() {
         </S.SocialLinks>
 
         <S.ProjectList></S.ProjectList>
+
+        <S.ShareLinks>
+          <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
+          <S.ShareLinksContent>
+            <S.StyledLink to="/">
+              <S.LinkButton>링크 공유하기</S.LinkButton>
+            </S.StyledLink>
+            <S.StyledLink
+              to="https://forms.gle/k14eA7Kk9bxD7aTm6"
+              target="_blank"
+            >
+              <S.LinkButton>12기 알림 신청하기</S.LinkButton>
+            </S.StyledLink>
+          </S.ShareLinksContent>
+        </S.ShareLinks>
       </S.HomePage>
     </PageLayout>
   );
