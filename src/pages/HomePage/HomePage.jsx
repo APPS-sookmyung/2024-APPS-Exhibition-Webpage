@@ -59,17 +59,30 @@ export default function HomePage() {
               숙명여자대학교 소프트웨어학부 웹 앱 개발 학회
             </S.SectionSubTitle>
           </S.SectionTitleWrapper>
-          <S.SectionContent>
-            {CARD_DATA.map((card, index) => (
-              <AboutAppsIconicCard
-                key={index}
-                imageSrc={card.imageSrc}
-                title={card.title}
-                description={card.description}
-                color={card.color}
-              />
-            ))}
-          </S.SectionContent>
+          <S.SectionContentWrapper>
+            <S.SectionContent>
+              {CARD_DATA.slice(0, 2).map((card, index) => (
+                <AboutAppsIconicCard
+                  key={index}
+                  imageSrc={card.imageSrc}
+                  title={card.title}
+                  description={card.description}
+                  color={card.color}
+                />
+              ))}
+            </S.SectionContent>
+            <S.SectionContent>
+              {CARD_DATA.slice(2, 4).map((card, index) => (
+                <AboutAppsIconicCard
+                  key={index}
+                  imageSrc={card.imageSrc}
+                  title={card.title}
+                  description={card.description}
+                  color={card.color}
+                />
+              ))}
+            </S.SectionContent>
+          </S.SectionContentWrapper>
         </S.AboutAPPSWrapper>
 
         <S.MemberFeedback></S.MemberFeedback>

@@ -91,12 +91,25 @@ export const SectionSubTitle = styled.h4`
   letter-spacing: -1px;
 `;
 
+export const SectionContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px;
+  border: 1px solid red;
+`;
+
 export const SectionContent = styled.div`
   display: flex;
-  justify-content: center;
-  height: 458px;
-  border: 1px solid red;
-  gap: 59px;
+  padding: 30px 31px;
+  gap: 60px;
+
+  &:first-child {
+    justify-content: flex-start;
+  }
+
+  &:last-child {
+    justify-content: flex-end;
+  }
 `;
 
 export const MemberFeedback = styled.section``;
