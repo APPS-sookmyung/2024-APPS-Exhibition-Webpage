@@ -13,6 +13,7 @@ export const HomePage = styled.div`
   width: 100%;
   margin: 0 auto;
   margin-bottom: 200px;
+  gap: 113px;
 `;
 
 export const HomeMainWrapper = styled.section`
