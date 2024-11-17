@@ -61,26 +61,31 @@ export default function HomePage() {
           </S.SectionTitleWrapper>
           <S.SectionContentWrapper>
             <S.SectionContent>
-              {CARD_DATA.slice(0, 2).map((card, index) => (
-                <AboutAppsIconicCard
-                  key={index}
-                  imageSrc={card.imageSrc}
-                  title={card.title}
-                  description={card.description}
-                  color={card.color}
-                />
-              ))}
+              {' '}
+              <S.SectionContentInnerBox>
+                {CARD_DATA.slice(0, 2).map((card, index) => (
+                  <AboutAppsIconicCard
+                    key={index}
+                    imageSrc={card.imageSrc}
+                    title={card.title}
+                    description={card.description}
+                    color={card.color}
+                  />
+                ))}{' '}
+              </S.SectionContentInnerBox>
             </S.SectionContent>
             <S.SectionContent>
-              {CARD_DATA.slice(2, 4).map((card, index) => (
-                <AboutAppsIconicCard
-                  key={index}
-                  imageSrc={card.imageSrc}
-                  title={card.title}
-                  description={card.description}
-                  color={card.color}
-                />
-              ))}
+              <S.SectionContentInnerBox>
+                {CARD_DATA.slice(2, 4).map((card, index) => (
+                  <AboutAppsIconicCard
+                    key={index}
+                    imageSrc={card.imageSrc}
+                    title={card.title}
+                    description={card.description}
+                    color={card.color}
+                  />
+                ))}
+              </S.SectionContentInnerBox>
             </S.SectionContent>
           </S.SectionContentWrapper>
         </S.AboutAPPSWrapper>

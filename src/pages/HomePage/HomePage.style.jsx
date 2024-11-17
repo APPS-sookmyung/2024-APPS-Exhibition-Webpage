@@ -7,6 +7,7 @@ export const HomePage = styled.div`
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 200px;
 `;
 
 export const HomeMainWrapper = styled.section`
@@ -95,13 +96,10 @@ export const SectionContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 70px;
-  border: 1px solid red;
 `;
 
 export const SectionContent = styled.div`
   display: flex;
-  padding: 30px 31px;
-  gap: 60px;
 
   &:first-child {
     justify-content: flex-start;
@@ -126,6 +124,33 @@ export const SectionContent = styled.div`
 
   &:last-child {
     justify-content: flex-end;
+  }
+`;
+
+export const SectionContentInnerBox = styled.div`
+  display: flex;
+  padding: 30px 31px;
+  gap: 60px;
+  position: relative;
+
+  &:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff88fb, #5bfb67);
+  }
+
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff5400, #3f69ff);
   }
 `;
 
