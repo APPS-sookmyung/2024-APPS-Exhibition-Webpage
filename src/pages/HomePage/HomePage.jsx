@@ -4,11 +4,10 @@ import {
   PageLayout,
   Footer,
   SocialMediaLinkCards,
-} from '../../components';
-import { SOCIAL_MEDIA_LINKS_CARD } from '../../database/socialMediaLinkCards.js';
   AboutAppsIconicCard,
 } from '../../components';
-import { APPS_CORE_VALUE_CARDS } from '../../database';
+import {} from '../../database/socialMediaLinkCards.js';
+import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
 export default function HomePage() {
   return (
