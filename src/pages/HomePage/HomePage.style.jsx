@@ -91,14 +91,16 @@ export const ShareLinksContent = styled.div`
   gap: 70px;
 `;
 
-export const LinkBox = styled.div`
+export const LinkButton = styled.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 30px;
+  border: none;
   background: #fff;
-  padding: 13px 43px;
+  padding: 13px 0;
+  width: 180px;
   color: #000;
   text-align: center;
   font-size: 18px;
