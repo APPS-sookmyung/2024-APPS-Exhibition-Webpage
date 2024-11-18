@@ -1,8 +1,20 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
+`;
+
+const smoothGradientAnimation = keyframes`
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 `;
 
 export const HomePage = styled.div`
@@ -125,6 +137,8 @@ export const SectionContent = styled.div`
         #ff5400 62.7%,
         #3f69ff 88.6%
       );
+      background-size: 200% 100%;
+      animation: ${smoothGradientAnimation} 3s linear infinite;
     }
   }
 
@@ -141,11 +155,6 @@ export const SectionContentInnerBox = styled.div`
 `;
 
 export const SectionContentInnerBox1 = styled(SectionContentInnerBox)`
-  display: flex;
-  padding: 30px 31px;
-  gap: 60px;
-  position: relative;
-
   &:first-child::before {
     content: '';
     position: absolute;
@@ -154,15 +163,12 @@ export const SectionContentInnerBox1 = styled(SectionContentInnerBox)`
     right: 0;
     height: 2px;
     background: linear-gradient(to right, #ff88fb, #5bfb67);
+    background-size: 200% 100%;
+    animation: ${smoothGradientAnimation} 3s linear infinite;
   }
 `;
 
 export const SectionContentInnerBox2 = styled(SectionContentInnerBox)`
-  display: flex;
-  padding: 30px 31px;
-  gap: 60px;
-  position: relative;
-
   &:last-child::after {
     content: '';
     position: absolute;
@@ -171,6 +177,8 @@ export const SectionContentInnerBox2 = styled(SectionContentInnerBox)`
     right: 0;
     height: 2px;
     background: linear-gradient(to right, #ff5400, #3f69ff);
+    background-size: 200% 100%;
+    animation: ${smoothGradientAnimation} 3s linear infinite;
   }
 `;
 

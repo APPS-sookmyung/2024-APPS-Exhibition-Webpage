@@ -6,7 +6,6 @@ import {
   SocialMediaLinkCards,
   AboutAppsIconicCard,
 } from '../../components';
-import {} from '../../database/socialMediaLinkCards.js';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
 export default function HomePage() {
