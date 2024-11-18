@@ -4,7 +4,7 @@ import {
   PageLayout,
   Footer,
   SocialMediaLinkCards,
-  AboutAppsIconicCard,
+  AboutAppsCoreValueCard,
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
@@ -34,7 +34,7 @@ export default function HomePage() {
             <S.SectionContent>
               <S.SectionContentInnerBox1>
                 {APPS_CORE_VALUE_CARDS.slice(0, 2).map((card, index) => (
-                  <AboutAppsIconicCard
+                  <AboutAppsCoreValueCard
                     key={index}
                     imageSrc={card.imageSrc}
                     title={card.title}
@@ -47,7 +47,7 @@ export default function HomePage() {
             <S.SectionContent>
               <S.SectionContentInnerBox2>
                 {APPS_CORE_VALUE_CARDS.slice(2, 4).map((card, index) => (
-                  <AboutAppsIconicCard
+                  <AboutAppsCoreValueCard
                     key={index}
                     imageSrc={card.imageSrc}
                     title={card.title}

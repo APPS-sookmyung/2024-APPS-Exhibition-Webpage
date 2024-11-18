@@ -1,18 +1,18 @@
-import * as S from './AboutAppsIconicCard.style';
+import * as S from './AboutAppsCoreValueCard.style';
 
-export default function AboutAppsIconicCard({
+export default function AboutAppsCoreValueCard({
   imageSrc,
   title,
   description,
   color,
 }) {
   return (
-    <S.AboutAppsIconicCard>
+    <S.AboutAppsCoreValueCard>
       <S.ImageWrapper>
         <img src={imageSrc} alt={title} />
       </S.ImageWrapper>
       <S.Title color={color}>{title}</S.Title>
       <S.Description color={color}>{description}</S.Description>
-    </S.AboutAppsIconicCard>
+    </S.AboutAppsCoreValueCard>
   );
 }
