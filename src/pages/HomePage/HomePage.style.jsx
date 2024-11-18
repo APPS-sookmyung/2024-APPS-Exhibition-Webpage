@@ -138,6 +138,13 @@ export const SectionContentInnerBox = styled.div`
   padding: 30px 31px;
   gap: 60px;
   position: relative;
+`;
+
+export const SectionContentInnerBox1 = styled(SectionContentInnerBox)`
+  display: flex;
+  padding: 30px 31px;
+  gap: 60px;
+  position: relative;
 
   &:first-child::before {
     content: '';
@@ -148,6 +155,13 @@ export const SectionContentInnerBox = styled.div`
     height: 2px;
     background: linear-gradient(to right, #ff88fb, #5bfb67);
   }
+`;
+
+export const SectionContentInnerBox2 = styled(SectionContentInnerBox)`
+  display: flex;
+  padding: 30px 31px;
+  gap: 60px;
+  position: relative;
 
   &:last-child::after {
     content: '';

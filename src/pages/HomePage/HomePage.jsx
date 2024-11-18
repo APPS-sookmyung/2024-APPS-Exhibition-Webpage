@@ -28,12 +28,12 @@ export default function HomePage() {
               <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
             </S.SectionTitleImageWrapper>
             <S.SectionSubTitle>
-              숙명여자대학교 소프트웨어학부 웹 앱 개발 학회
+              숙명여자대학교 소프트웨어학부 웹·앱 개발 학회
             </S.SectionSubTitle>
           </S.SectionTitleWrapper>
           <S.SectionContentWrapper>
             <S.SectionContent>
-              <S.SectionContentInnerBox>
+              <S.SectionContentInnerBox1>
                 {APPS_CORE_VALUE_CARDS.slice(0, 2).map((card, index) => (
                   <AboutAppsIconicCard
                     key={index}
@@ -43,10 +43,10 @@ export default function HomePage() {
                     color={card.color}
                   />
                 ))}
-              </S.SectionContentInnerBox>
+              </S.SectionContentInnerBox1>
             </S.SectionContent>
             <S.SectionContent>
-              <S.SectionContentInnerBox>
+              <S.SectionContentInnerBox2>
                 {APPS_CORE_VALUE_CARDS.slice(2, 4).map((card, index) => (
                   <AboutAppsIconicCard
                     key={index}
@@ -56,7 +56,7 @@ export default function HomePage() {
                     color={card.color}
                   />
                 ))}
-              </S.SectionContentInnerBox>
+              </S.SectionContentInnerBox2>
             </S.SectionContent>
           </S.SectionContentWrapper>
         </S.AboutAPPSWrapper>
