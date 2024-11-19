@@ -3,7 +3,8 @@ import ActivityCard from '../../components/ActivityCard/ActivityCard';
 import { activitiesArr } from '../../database/activity_list';
 import CalendarCard from '../../components/CalendarCard/CalendarCard';
 import { calendarArr } from '../../database/calendar_list';
-import MemberCard from '../../components/MemberCard';
+import { MemberCard } from '../../components';
+import Footer from '../../components/Footer';
 
 export default function AboutAppsPage() {
   const members = [
@@ -247,6 +248,9 @@ export default function AboutAppsPage() {
           ))}
         </S.MemberList>
       </S.TeamContainer>
+      <div>
+        <Footer />
+      </div>
     </S.Root>
   );
 }
