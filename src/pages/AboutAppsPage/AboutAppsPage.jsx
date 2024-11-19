@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import * as S from './AboutAppsPage.style';
-import ActivityCard from '../../components/ActivityCard/ActivityCard';
 import { activitiesArr } from '../../database/activity_list';
-import MemberCard from '../../components/MemberCard/MemberCard';
 import MEMBERS from '../../database/members';
-import Modal from '../../components/Modal/Modal';
-import CalendarCard from '../../components/CalendarCard/CalendarCard';
 import { calendarArr } from '../../database/calendar_list';
-import { MemberCard } from '../../components';
-import Footer from '../../components/Footer';
+import {
+  MemberCard,
+  Modal,
+  Footer,
+  ActivityCard,
+  CalendarCard,
+} from '../../components';
 
 export default function AboutAppsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -1,14 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import * as S from './Modal.style';
-import { ReactComponent as GitHubIcon } from '../../images/socials/github.svg';
-import { ReactComponent as LinkedInIcon } from '../../images/socials/linkedin.svg';
-import { ReactComponent as TstoryIcon } from '../../images/socials/tstory.svg';
-import { ReactComponent as VelogIcon } from '../../images/socials/velog.svg';
-import { ReactComponent as DividerIcon } from '../../images/icons/divider.svg';
-import { ReactComponent as CloseIcon } from '../../images/icons/x_orange.svg';
 
 export default function Modal({ member, closeModal }) {
-  const questions = [
+  const QUESTIONS = [
     '자기소개 부탁드립니다!',
     'APPS 활동 중 가장 기억에 남았던 순간은?',
     'APPS 이전과 이후, 나의 변화 이야기를 들려주세요!',
@@ -56,7 +50,7 @@ export default function Modal({ member, closeModal }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <GitHubIcon />
+                      <img src="../../images/socials/github.svg" alt="깃허브" />
                     </a>
                   )}
                   {member.snsLinks.linkedin && (
@@ -65,7 +59,10 @@ export default function Modal({ member, closeModal }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <LinkedInIcon />
+                      <img
+                        src="../../images/socials/linkedin.svg"
+                        alt="링크드인"
+                      />
                     </a>
                   )}
                   {member.snsLinks.tstory && (
@@ -74,7 +71,10 @@ export default function Modal({ member, closeModal }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <TstoryIcon />
+                      <img
+                        src="../../images/socials/tstory.svg"
+                        alt="티스토리"
+                      />
                     </a>
                   )}
                   {member.snsLinks.velog && (
@@ -83,7 +83,7 @@ export default function Modal({ member, closeModal }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <VelogIcon />
+                      <img src="../../images/socials/velog.svg" alt="벨로그" />
                     </a>
                   )}
                 </>
@@ -92,10 +92,10 @@ export default function Modal({ member, closeModal }) {
           </S.MemberDetailSection>
         </S.MemberDetailWrapper>
         <S.Divider>
-          <DividerIcon />
+          <img src="../../images/icons/divider.svg" alt="라인" />
         </S.Divider>
         <S.QASection>
-          {questions.map((question, index) => (
+          {QUESTIONS.map((question, index) => (
             <S.QuestionWrapper key={index}>
               <S.QuestionLabel>Q{index + 1}</S.QuestionLabel>
               <S.QuestionItem>
@@ -107,7 +107,7 @@ export default function Modal({ member, closeModal }) {
         </S.QASection>
 
         <S.CloseButton onClick={closeModal}>
-          <CloseIcon />
+          <img src="../../images/icons/x_orange.svg" alt="닫기" />
         </S.CloseButton>
       </S.Modal>
     </S.ModalWrapper>
