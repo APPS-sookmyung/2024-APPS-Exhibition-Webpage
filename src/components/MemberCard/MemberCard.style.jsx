@@ -20,7 +20,6 @@ export const MemberCard = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   &:hover {
     background-color: #ff5400;
   }
