@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  text-align: center;
   background-color: #212121;
   width: 100%;
   height: auto;
-  margin-top: ${(props) => (props.isAboutPage ? '200px' : '124px')};
 `;
 
 export const Footer = styled.footer`
@@ -23,27 +25,19 @@ export const Logo = styled.div`
   margin-top: 24px;
 `;
 
-export const DeveloperSection = styled.div`
-  margin-top: 15px;
-  color: #fff;
-  font-family: Pretendard;
-  font-size: 14px;
-  font-weight: 700;
+export const TeamSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 `;
 
-export const DesignerSection = styled.div`
-  margin: 18px 0 14px 0;
-  color: #fff;
-  font-family: Pretendard;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
+export const TeamCategory = styled.div`
+  margin-bottom: 20px;
 `;
 
-export const SectionTitle = styled.h3`
+export const CategoryTitle = styled.strong`
   margin: 0;
   color: #fff;
-  font-family: Pretendard;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -59,18 +53,13 @@ export const TeamMemberContainer = styled.div`
 `;
 export const TeamMember = styled.span`
   color: #fff;
-  font-family: Pretendard;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin: 0;
 `;
 
 export const InfoSection = styled.div`
   color: #c3c3c3;
   text-align: center;
-  font-family: Pretendard;
   font-size: 9px;
   font-style: normal;
   font-weight: 400;

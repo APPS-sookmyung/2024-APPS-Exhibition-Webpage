@@ -5,7 +5,7 @@ export default function Footer() {
     <S.FooterWrapper>
       <S.Footer>
         <S.Logo>
-          <img src="/images/logo/logo-white-footer.svg" alt="APPS 로고" />
+          <img src="/images/logo/logo-white.svg" alt="APPS 로고" />
         </S.Logo>
 
         <S.TeamSection>
