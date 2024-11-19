@@ -4,9 +4,8 @@ import {
   PageLayout,
   Footer,
   SocialMediaLinkCards,
-  AboutAppsIconicCard,
+  AboutAppsCoreValueCard,
 } from '../../components';
-import {} from '../../database/socialMediaLinkCards.js';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
 export default function HomePage() {
@@ -28,14 +27,14 @@ export default function HomePage() {
               <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
             </S.SectionTitleImageWrapper>
             <S.SectionSubTitle>
-              숙명여자대학교 소프트웨어학부 웹 앱 개발 학회
+              숙명여자대학교 소프트웨어학부 웹·앱 개발 학회
             </S.SectionSubTitle>
           </S.SectionTitleWrapper>
           <S.SectionContentWrapper>
             <S.SectionContent>
-              <S.SectionContentInnerBox>
+              <S.SectionContentInnerBox1>
                 {APPS_CORE_VALUE_CARDS.slice(0, 2).map((card, index) => (
-                  <AboutAppsIconicCard
+                  <AboutAppsCoreValueCard
                     key={index}
                     imageSrc={card.imageSrc}
                     title={card.title}
@@ -43,12 +42,12 @@ export default function HomePage() {
                     color={card.color}
                   />
                 ))}
-              </S.SectionContentInnerBox>
+              </S.SectionContentInnerBox1>
             </S.SectionContent>
             <S.SectionContent>
-              <S.SectionContentInnerBox>
+              <S.SectionContentInnerBox2>
                 {APPS_CORE_VALUE_CARDS.slice(2, 4).map((card, index) => (
-                  <AboutAppsIconicCard
+                  <AboutAppsCoreValueCard
                     key={index}
                     imageSrc={card.imageSrc}
                     title={card.title}
@@ -56,7 +55,7 @@ export default function HomePage() {
                     color={card.color}
                   />
                 ))}
-              </S.SectionContentInnerBox>
+              </S.SectionContentInnerBox2>
             </S.SectionContent>
           </S.SectionContentWrapper>
         </S.AboutAPPSWrapper>
