@@ -6,7 +6,15 @@ export const MemberCard = styled.div`
   height: 254px;
   flex-shrink: 0;
   border-radius: 18px;
-  background-color: ${(props) => props.backgroundColor || '#2051ff'};
+  background-color: ${(props) =>
+    props.backgroundColor ||
+    (props.index % 8 === 0 ||
+    props.index % 8 === 3 ||
+    props.index % 8 === 5 ||
+    props.index % 8 === 6
+      ? '#2051FF'
+      : '#3F69FF')};
+
   display: flex;
   flex-direction: column;
   align-items: center;
