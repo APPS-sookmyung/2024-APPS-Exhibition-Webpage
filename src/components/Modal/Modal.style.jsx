@@ -57,7 +57,7 @@ export const MemberImage = styled.img`
 `;
 
 export const MemberDetailWrapper = styled.div`
-  flex-direction: row;
+  display: flex;
 `;
 
 export const InfoWrapper = styled.div`
@@ -152,7 +152,7 @@ export const QASection = styled.div`
 
 export const QuestionWrapper = styled.div`
   margin-bottom: 46px;
-  flex-direction: row;
+  display: flex;
   gap: 33px;
 `;
 
