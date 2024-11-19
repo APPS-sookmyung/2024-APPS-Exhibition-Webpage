@@ -8,6 +8,8 @@ const members = [
     snsLinks: {
       github: 'https://github.com/username',
       linkedin: 'https://linkedin.com/in/username',
+      velog: 'https://velog.com/username',
+      tstory: 'https://tstory.com/username',
     },
     answers: [
       '안녕하세요, 저는 경민서입니다!',
@@ -24,6 +26,7 @@ const members = [
     snsLinks: {
       github: 'https://github.com/username',
       linkedin: 'https://linkedin.com/in/username',
+      velog: 'https://velog.com/username',
     },
     answers: [
       '안녕하세요, 저는 정지원입니다!',
