@@ -78,14 +78,7 @@ export default function AboutAppsPage() {
               name={member.name}
               title={member.title}
               position={member.position}
-              backgroundColor={
-                index % 8 === 0 ||
-                index % 8 === 3 ||
-                index % 8 === 5 ||
-                index % 8 === 6
-                  ? '#2051FF'
-                  : '#3F69FF'
-              }
+              index={index} // index를 props로 전달
               onClick={() => openModal(member)}
             />
           ))}
