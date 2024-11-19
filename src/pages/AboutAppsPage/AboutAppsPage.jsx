@@ -1,150 +1,26 @@
+import React, { useState } from 'react';
 import * as S from './AboutAppsPage.style';
 import ActivityCard from '../../components/ActivityCard/ActivityCard';
 import { activitiesArr } from '../../database/activity_list';
 import MemberCard from '../../components/MemberCard/MemberCard';
+import members from '../../database/members';
+import Modal from '../../components/Modal/Modal';
 
 export default function AboutAppsPage() {
-  const members = [
-    {
-      name: '경민서',
-      title: '컴퓨터과학 21',
-      position: '회장',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '정지원',
-      title: '컴퓨터과학 21',
-      position: '부회장',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '류미성',
-      title: '컴퓨터과학 21',
-      position: '프론트엔드장',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '주아정',
-      title: '컴퓨터과학 21',
-      position: '백엔드장',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '윤현서',
-      title: '컴퓨터과학 21',
-      position: '10기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '이지은',
-      title: '컴퓨터과학 21',
-      position: '10기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '이해림',
-      title: '컴퓨터과학 21',
-      position: '10기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '정서연',
-      title: '컴퓨터과학 21',
-      position: '10기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '김혜림',
-      title: '컴퓨터과학 21',
-      position: '10.5기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '하예영',
-      title: '컴퓨터과학 21',
-      position: '10.5기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '권유진',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '김준희',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '김지민',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '방지희',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '백수민',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '신정은',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '유하연',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '윤서빈',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '윤정란',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '윤지원',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '이다빈',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '하지민',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-    {
-      name: '홍연주',
-      title: '컴퓨터과학 21',
-      position: '11기',
-      image: 'ryumisung.png',
-    },
-  ];
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedMember, setSelectedMember] = useState(null);
 
+  const openModal = (member) => {
+    console.log('Opening modal for:', member);
+    setSelectedMember(member);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    console.log('Closing modal');
+    setSelectedMember(null);
+    setIsModalOpen(false);
+  };
   return (
     <S.Root>
       <S.TopToIntroContainer>
@@ -166,7 +42,6 @@ export default function AboutAppsPage() {
         </S.IntroAPPSContent>
         <S.IntroToActLine></S.IntroToActLine>
       </S.TopToIntroContainer>
-
       <S.ActivitiesContainer>
         <S.ActivitiesTitleWrapper>
           <S.ActivitiesTitle>ACTIVITIES</S.ActivitiesTitle>
@@ -186,7 +61,6 @@ export default function AboutAppsPage() {
           })}
         </S.ActivitiesCardWrapper>
       </S.ActivitiesContainer>
-      {/* 지민 */}
       <S.TeamContainer>
         <S.TeamIntroWrapper>
           <S.TeamIntroTitle>APPS와 함께하는 사람들</S.TeamIntroTitle>
@@ -212,10 +86,13 @@ export default function AboutAppsPage() {
                   ? '#2051FF'
                   : '#3F69FF'
               }
+              onClick={() => openModal(member)}
             />
           ))}
         </S.MemberList>
       </S.TeamContainer>
+      {isModalOpen && <Modal member={selectedMember} closeModal={closeModal} />}
+      console.log('isModalOpen:', isModalOpen);
     </S.Root>
   );
 }
