@@ -7,9 +7,10 @@ export default function MemberCard({
   title,
   position,
   backgroundColor,
+  onClick,
 }) {
   return (
-    <S.MemberCard backgroundColor={backgroundColor}>
+    <S.MemberCard backgroundColor={backgroundColor} onClick={onClick}>
       <S.MemberImage src={image} alt={`${name} 프로필 이미지`} />
       <S.NameAndPositionWrapper>
         <S.MemberName>{name}</S.MemberName>
