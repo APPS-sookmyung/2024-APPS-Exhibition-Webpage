@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import * as S from './AboutAppsPage.style';
-import ActivityCard from '../../components/ActivityCard/ActivityCard';
-import { activitiesArr } from '../../database/activity_list';
-import MemberCard from '../../components/MemberCard/MemberCard';
-import MEMBERS from '../../database/members';
-import Modal from '../../components/Modal/Modal';
-import CalendarCard from '../../components/CalendarCard/CalendarCard';
-import { calendarArr } from '../../database/calendar_list';
-import { MemberCard } from '../../components';
-import Footer from '../../components/Footer';
+import { MEMBERS, ACTIVITY_LIST, MONTHLY_ACTIVITY_LIST } from '../../database';
+import {
+  MemberCard,
+  Modal,
+  Footer,
+  ActivityCard,
+  CalendarCard,
+} from '../../components';
 
 export default function AboutAppsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -54,7 +53,7 @@ export default function AboutAppsPage() {
           </S.ActivitiesDescription>
         </S.ActivitiesTitleWrapper>
         <S.ActivitiesCardWrapper>
-          {activitiesArr.map((activity) => {
+          {ACTIVITY_LIST.map((activity) => {
             return (
               <ActivityCard
                 activityName={activity.name}
@@ -88,7 +87,7 @@ export default function AboutAppsPage() {
               ))}
             </S.RegularScheduleWrapper>
           </S.RegularCalendarCard>
-          {calendarArr.map((calendar) => (
+          {MONTHLY_ACTIVITY_LIST.map((calendar) => (
             <CalendarCard month={calendar.month} schedule={calendar.schedule} />
           ))}
         </S.CalendarCardWrapper>

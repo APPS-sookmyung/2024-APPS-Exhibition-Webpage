@@ -1,4 +1,4 @@
-export const calendarArr = [
+export const MONTHLY_ACTIVITY_LIST = [
   {
     month: 3,
     schedule: [

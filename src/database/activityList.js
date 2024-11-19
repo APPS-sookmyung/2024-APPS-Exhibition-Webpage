@@ -1,4 +1,4 @@
-export const activitiesArr = [
+export const ACTIVITY_LIST = [
   {
     name: '기초 스터디',
     intro:
