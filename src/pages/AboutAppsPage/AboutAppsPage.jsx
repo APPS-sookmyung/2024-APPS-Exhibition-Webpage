@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import * as S from './AboutAppsPage.style';
-import { activitiesArr } from '../../database/activity_list';
-import MEMBERS from '../../database/members';
-import { calendarArr } from '../../database/calendar_list';
+import { MEMBERS, ACTIVITY_LIST, MONTHLY_ACTIVITY_LIST } from '../../database';
 import {
   MemberCard,
   Modal,
@@ -55,7 +53,7 @@ export default function AboutAppsPage() {
           </S.ActivitiesDescription>
         </S.ActivitiesTitleWrapper>
         <S.ActivitiesCardWrapper>
-          {activitiesArr.map((activity) => {
+          {ACTIVITY_LIST.map((activity) => {
             return (
               <ActivityCard
                 activityName={activity.name}
@@ -89,7 +87,7 @@ export default function AboutAppsPage() {
               ))}
             </S.RegularScheduleWrapper>
           </S.RegularCalendarCard>
-          {calendarArr.map((calendar) => (
+          {MONTHLY_ACTIVITY_LIST.map((calendar) => (
             <CalendarCard month={calendar.month} schedule={calendar.schedule} />
           ))}
         </S.CalendarCardWrapper>
