@@ -1,9 +1,10 @@
+import React, { useEffect } from 'react';
 import * as S from './Modal.style';
 import { ReactComponent as GitHubIcon } from '../../images/socials/github.svg';
 import { ReactComponent as LinkedInIcon } from '../../images/socials/linkedin.svg';
 import { ReactComponent as TstoryIcon } from '../../images/socials/tstory.svg';
 import { ReactComponent as VelogIcon } from '../../images/socials/velog.svg';
-import { ReactComponent as Divider } from '../../images/icons/divider.svg';
+import { ReactComponent as DividerIcon } from '../../images/icons/divider.svg';
 import { ReactComponent as CloseIcon } from '../../images/icons/x_orange.svg';
 
 export default function Modal({ member, closeModal }) {
@@ -12,6 +13,14 @@ export default function Modal({ member, closeModal }) {
     'APPS 활동 중 가장 기억에 남았던 순간은?',
     'APPS 이전과 이후, 나의 변화 이야기를 들려주세요!',
   ];
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
 
   return (
     <S.ModalWrapper>
@@ -82,15 +91,17 @@ export default function Modal({ member, closeModal }) {
             </S.SNSSection>
           </S.MemberDetailSection>
         </S.MemberDetailWrapper>
-
-        <Divider />
-
+        <S.Divider>
+          <DividerIcon />
+        </S.Divider>
         <S.QASection>
           {questions.map((question, index) => (
             <S.QuestionWrapper key={index}>
               <S.QuestionLabel>Q{index + 1}</S.QuestionLabel>
-              <S.Question>{question}</S.Question>
-              <S.Answer>{member.answers[index]}</S.Answer>
+              <S.QuestionItem>
+                <S.Question>{question}</S.Question>
+                <S.Answer>{member.answers[index]}</S.Answer>
+              </S.QuestionItem>
             </S.QuestionWrapper>
           ))}
         </S.QASection>

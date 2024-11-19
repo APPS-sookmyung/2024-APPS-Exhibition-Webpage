@@ -6,18 +6,17 @@ export const ModalWrapper = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999px;
+  z-index: 9999;
 `;
 
 export const Modal = styled.div`
-  background: gray;
+  background: rgba(0, 0, 0, 0.7);
   width: 1100px;
   height: 680px;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
@@ -88,7 +87,6 @@ export const MemberName = styled.h2`
 export const MemberPositionInfo = styled.p`
   color: #fff;
   margin: 0;
-  font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -99,11 +97,7 @@ export const MemberPositionInfo = styled.p`
 export const MemberInfo = styled.h3`
   color: var(--orange_sub, #ffe0b8);
   margin: 0;
-  font-family: Pretendard;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   letter-spacing: -0.8px;
 `;
 
@@ -146,58 +140,50 @@ export const SNSSection = styled.div`
   margin-top: 0;
   margin-bottom: 0;
 `;
-
 export const Divider = styled.div`
   position: absolute;
-  top: 279px;
+  top: 268px;
   left: 70px;
-  width: 960px;
-  height: 0;
-  border-top: 1px solid #ff5400;
-  flex-shrink: 0;
+  background: none;
+  border: 1px;
+  margin: 0;
 `;
 
 export const QASection = styled.div`
   position: absolute;
   top: 316px;
-  left: 128px;
+  left: 71px;
   text-align: left;
 `;
 
 export const QuestionWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
   margin-bottom: 46px;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
 `;
 
 export const QuestionLabel = styled.strong`
   color: var(--orange, #ff5400);
-  font-family: Pretendard;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
   letter-spacing: -1px;
+`;
+
+export const QuestionItem = styled.div`
+  gap: 46px;
 `;
 
 export const Question = styled.p`
   color: #fff;
-  font-family: Pretendard;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
   letter-spacing: -1px;
   margin-bottom: 4px;
+  margin: 0px;
 `;
 
 export const Answer = styled.div`
   color: #fff;
-  font-family: Pretendard;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.7px;
   margin: 0;
 `;
