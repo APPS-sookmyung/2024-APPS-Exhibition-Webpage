@@ -3,7 +3,7 @@ import * as S from './AboutAppsPage.style';
 import ActivityCard from '../../components/ActivityCard/ActivityCard';
 import { activitiesArr } from '../../database/activity_list';
 import MemberCard from '../../components/MemberCard/MemberCard';
-import members from '../../database/members';
+import MEMBERS from '../../database/members';
 import Modal from '../../components/Modal/Modal';
 
 export default function AboutAppsPage() {
@@ -71,7 +71,7 @@ export default function AboutAppsPage() {
           </S.TeamIntroContent>
         </S.TeamIntroWrapper>
         <S.MemberList>
-          {members.map((member, index) => (
+          {MEMBERS.map((member, index) => (
             <MemberCard
               key={index}
               image={require(`../../images/memberProfiles/${member.image}`)}

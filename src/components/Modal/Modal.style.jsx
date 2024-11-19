@@ -41,7 +41,6 @@ export const MemberCard = styled.div`
   left: 70px;
   display: flex;
   align-items: center;
-  position: relative;
   width: 294px;
   height: 142px;
   border-radius: 20px;
@@ -58,7 +57,6 @@ export const MemberImage = styled.img`
 `;
 
 export const MemberDetailWrapper = styled.div`
-  display: flex;
   flex-direction: row;
 `;
 
@@ -88,9 +86,6 @@ export const MemberPositionInfo = styled.p`
   color: #fff;
   margin: 0;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   letter-spacing: -0.8px;
 `;
 
@@ -133,7 +128,6 @@ export const SNSSection = styled.div`
   position: absolute;
   top: 187px;
   left: 394px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -158,7 +152,6 @@ export const QASection = styled.div`
 
 export const QuestionWrapper = styled.div`
   margin-bottom: 46px;
-  display: flex;
   flex-direction: row;
   gap: 33px;
 `;
@@ -177,8 +170,7 @@ export const Question = styled.p`
   color: #fff;
   font-size: 20px;
   letter-spacing: -1px;
-  margin-bottom: 4px;
-  margin: 0px;
+  margin: 0 0 4px;
 `;
 
 export const Answer = styled.div`

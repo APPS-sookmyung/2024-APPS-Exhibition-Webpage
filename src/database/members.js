@@ -1,4 +1,4 @@
-const members = [
+const MEMBERS = [
   {
     name: '경민서',
     title: '컴퓨터과학 21',
@@ -373,4 +373,4 @@ const members = [
   },
 ];
 
-export default members;
+export default MEMBERS;
