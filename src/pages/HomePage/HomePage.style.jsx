@@ -32,7 +32,6 @@ export const HomeMainWrapper = styled.section`
   position: relative;
   background-image: url('/images/background/home-background1.svg');
   background-repeat: no-repeat;
-  background-position: -57px -93px;
   padding: 200px 0 360px;
 `;
 

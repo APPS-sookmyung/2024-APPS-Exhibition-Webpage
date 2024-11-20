@@ -7,6 +7,10 @@ export const StyledLink = styled(Link)`
 
 export const HeaderWrapper = styled.div`
   background: #212121;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 `;
 
 export const Header = styled.header`
