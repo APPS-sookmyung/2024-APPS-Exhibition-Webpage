@@ -5,6 +5,7 @@ import {
   Footer,
   SocialMediaLinkCards,
   AboutAppsCoreValueCard,
+  MemberFeedbackCardList,
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
@@ -60,7 +61,9 @@ export default function HomePage() {
           </S.SectionContentWrapper>
         </S.AboutAPPSWrapper>
 
-        <S.MemberFeedback></S.MemberFeedback>
+        <S.MemberFeedback>
+          <MemberFeedbackCardList />
+        </S.MemberFeedback>
 
         <S.SocialLinks>
           <S.SocialLinksTitle>
