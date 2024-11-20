@@ -74,6 +74,8 @@ export default function HomePage() {
                 link={social.link}
                 icon={social.icon}
                 accountName={social.accountName}
+                activeIcon={social.activeIcon}
+                deActiveIcon={social.deActiveIcon}
               />
             ))}
           </S.SocialLinksContent>
