@@ -35,6 +35,7 @@ export const MenuStyle = styled.span`
   display: inline-block;
   width: max-content;
   color: #fff;
+  font-weight: 700;
   font-size: 14px;
   padding: 22px;
   cursor: pointer;
@@ -43,7 +44,7 @@ export const MenuStyle = styled.span`
     color 0.2s ease;
 
   &:hover {
-    font-weight: 700;
+    color: var(--pink, #ff88fb);
   }
 `;
 
