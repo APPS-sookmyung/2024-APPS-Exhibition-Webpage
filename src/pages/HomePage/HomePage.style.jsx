@@ -23,8 +23,8 @@ export const HomePage = styled.div`
   justify-content: center;
   max-width: 1100px;
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 200px;
+  margin: 0 auto 200px;
+  padding-top: 60px;
   gap: 113px;
 `;
 
@@ -32,6 +32,7 @@ export const HomeMainWrapper = styled.section`
   position: relative;
   background-image: url('/images/background/home-background1.svg');
   background-repeat: no-repeat;
+  background-position: -57px -93px;
   padding: 200px 0 360px;
 `;
 

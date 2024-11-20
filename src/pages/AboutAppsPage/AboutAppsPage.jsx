@@ -7,6 +7,8 @@ import {
   Footer,
   ActivityCard,
   CalendarCard,
+  Header,
+  PageLayout,
 } from '../../components';
 
 export default function AboutAppsPage() {
@@ -25,99 +27,105 @@ export default function AboutAppsPage() {
     setIsModalOpen(false);
   };
   return (
-    <S.Root>
-      <S.TopToIntroContainer>
-        <S.Top>
-          <S.PageTitleWrapper>
-            <S.PageTitle>ABOUT</S.PageTitle>
-            <S.IconTitle></S.IconTitle>
-          </S.PageTitleWrapper>
-        </S.Top>
-        <S.IntroAPPSTitle>INTRODUCTION</S.IntroAPPSTitle>
-        <S.IntroAPPSContent>
-          APPS는 모바일 앱&웹 프로그래밍 동아리로,
-          <br />
-          기술과 아이디어를 통해 프로젝트를 진행하며
-          <br />
-          개발 능력을 향상시키고 커뮤니티 내에서 성장합니다.
-          <br />
-          활발한 소통과 피드백을 통해 개인과 공동체 발전을 촉진합니다.
-        </S.IntroAPPSContent>
-        <S.IntroToActLine></S.IntroToActLine>
-      </S.TopToIntroContainer>
-      <S.ActivitiesContainer>
-        <S.ActivitiesTitleWrapper>
-          <S.ActivitiesTitle>ACTIVITIES</S.ActivitiesTitle>
-          <S.ActivitiesDescription>
-            APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
-          </S.ActivitiesDescription>
-        </S.ActivitiesTitleWrapper>
-        <S.ActivitiesCardWrapper>
-          {ACTIVITY_LIST.map((activity) => {
-            return (
-              <ActivityCard
-                activityName={activity.name}
-                activityIntro={activity.intro}
-                activityImg={activity.img}
-              />
-            );
-          })}
-        </S.ActivitiesCardWrapper>
-      </S.ActivitiesContainer>
-      <S.CalendarContainer>
-        <S.CalendarTitleWrapper>
-          <S.CalendarTitle>11기는 어떤 활동을 하였나요?</S.CalendarTitle>
-          <S.CalendarDescription>
-            매달 진행된 다양한 활동들을 살펴보세요
-          </S.CalendarDescription>
-        </S.CalendarTitleWrapper>
-        <S.CalendarCardWrapper>
-          <S.RegularCalendarCard>
-            <S.RegularCalendarWrapper>
-              <S.RegularCalendarDot></S.RegularCalendarDot>
-              <S.RegularCalendarName>매달 정기 활동</S.RegularCalendarName>
-            </S.RegularCalendarWrapper>
-            <S.RegularScheduleWrapper>
-              {[
-                'DevTalk',
-                '스터디 진행 상황 발표',
-                '프로젝트 진행 상황 발표',
-              ].map((activity) => (
-                <S.RegularSchedule>{activity}</S.RegularSchedule>
-              ))}
-            </S.RegularScheduleWrapper>
-          </S.RegularCalendarCard>
-          {MONTHLY_ACTIVITY_LIST.map((calendar) => (
-            <CalendarCard month={calendar.month} schedule={calendar.schedule} />
-          ))}
-        </S.CalendarCardWrapper>
-      </S.CalendarContainer>
-      {/* 지민 */}
-      <S.TeamContainer>
-        <S.TeamIntroWrapper>
-          <S.TeamIntroTitle>APPS와 함께하는 사람들</S.TeamIntroTitle>
-          <S.TeamIntroContent>
-            APPS 동아리 내 동아리 부원들을 소개할게요
+    <PageLayout header={<Header />} footer={<Footer />}>
+      <S.Root>
+        <S.TopToIntroContainer>
+          <S.Top>
+            <S.PageTitleWrapper>
+              <S.PageTitle>ABOUT</S.PageTitle>
+              <S.IconTitle></S.IconTitle>
+            </S.PageTitleWrapper>
+          </S.Top>
+          <S.IntroAPPSTitle>INTRODUCTION</S.IntroAPPSTitle>
+          <S.IntroAPPSContent>
+            APPS는 모바일 앱&웹 프로그래밍 동아리로,
             <br />
-            카드를 클릭하여 APPS 부원들의 인터뷰를 만나보세요!
-          </S.TeamIntroContent>
-        </S.TeamIntroWrapper>
-        <S.MemberList>
-          {MEMBERS.map((member, index) => (
-            <MemberCard
-              key={index}
-              image={require(`../../images/memberProfiles/${member.image}`)}
-              name={member.name}
-              title={member.title}
-              position={member.position}
-              index={index} // index를 props로 전달
-              onClick={() => openModal(member)}
-            />
-          ))}
-        </S.MemberList>
-      </S.TeamContainer>
-      {isModalOpen && <Modal member={selectedMember} closeModal={closeModal} />}
-      console.log('isModalOpen:', isModalOpen);
-    </S.Root>
+            기술과 아이디어를 통해 프로젝트를 진행하며
+            <br />
+            개발 능력을 향상시키고 커뮤니티 내에서 성장합니다.
+            <br />
+            활발한 소통과 피드백을 통해 개인과 공동체 발전을 촉진합니다.
+          </S.IntroAPPSContent>
+          <S.IntroToActLine></S.IntroToActLine>
+        </S.TopToIntroContainer>
+        <S.ActivitiesContainer>
+          <S.ActivitiesTitleWrapper>
+            <S.ActivitiesTitle>ACTIVITIES</S.ActivitiesTitle>
+            <S.ActivitiesDescription>
+              APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
+            </S.ActivitiesDescription>
+          </S.ActivitiesTitleWrapper>
+          <S.ActivitiesCardWrapper>
+            {ACTIVITY_LIST.map((activity) => {
+              return (
+                <ActivityCard
+                  activityName={activity.name}
+                  activityIntro={activity.intro}
+                  activityImg={activity.img}
+                />
+              );
+            })}
+          </S.ActivitiesCardWrapper>
+        </S.ActivitiesContainer>
+        <S.CalendarContainer>
+          <S.CalendarTitleWrapper>
+            <S.CalendarTitle>11기는 어떤 활동을 하였나요?</S.CalendarTitle>
+            <S.CalendarDescription>
+              매달 진행된 다양한 활동들을 살펴보세요
+            </S.CalendarDescription>
+          </S.CalendarTitleWrapper>
+          <S.CalendarCardWrapper>
+            <S.RegularCalendarCard>
+              <S.RegularCalendarWrapper>
+                <S.RegularCalendarDot></S.RegularCalendarDot>
+                <S.RegularCalendarName>매달 정기 활동</S.RegularCalendarName>
+              </S.RegularCalendarWrapper>
+              <S.RegularScheduleWrapper>
+                {[
+                  'DevTalk',
+                  '스터디 진행 상황 발표',
+                  '프로젝트 진행 상황 발표',
+                ].map((activity) => (
+                  <S.RegularSchedule>{activity}</S.RegularSchedule>
+                ))}
+              </S.RegularScheduleWrapper>
+            </S.RegularCalendarCard>
+            {MONTHLY_ACTIVITY_LIST.map((calendar) => (
+              <CalendarCard
+                month={calendar.month}
+                schedule={calendar.schedule}
+              />
+            ))}
+          </S.CalendarCardWrapper>
+        </S.CalendarContainer>
+        <S.TeamContainer>
+          <S.TeamIntroWrapper>
+            <S.TeamIntroTitle>APPS와 함께하는 사람들</S.TeamIntroTitle>
+            <S.TeamIntroContent>
+              APPS 동아리 내 동아리 부원들을 소개할게요
+              <br />
+              카드를 클릭하여 APPS 부원들의 인터뷰를 만나보세요!
+            </S.TeamIntroContent>
+          </S.TeamIntroWrapper>
+          <S.MemberList>
+            {MEMBERS.map((member, index) => (
+              <MemberCard
+                key={index}
+                image={require(`../../images/memberProfiles/${member.image}`)}
+                name={member.name}
+                title={member.title}
+                position={member.position}
+                index={index} // index를 props로 전달
+                onClick={() => openModal(member)}
+              />
+            ))}
+          </S.MemberList>
+        </S.TeamContainer>
+        {isModalOpen && (
+          <Modal member={selectedMember} closeModal={closeModal} />
+        )}
+        console.log('isModalOpen:', isModalOpen);
+      </S.Root>
+    </PageLayout>
   );
 }
