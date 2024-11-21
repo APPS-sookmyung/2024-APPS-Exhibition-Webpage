@@ -17,6 +17,12 @@ const smoothGradientAnimation = keyframes`
   }
 `;
 
+export const HomePageBackground = styled.div`
+  background-image: url('/images/background/home-background.svg');
+  background-repeat: no-repeat;
+  background-position: center -60px;
+`;
+
 export const HomePage = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,15 +30,11 @@ export const HomePage = styled.div`
   max-width: 1100px;
   width: 100%;
   margin: 0 auto 200px;
-  padding-top: 60px;
   gap: 113px;
 `;
 
 export const HomeMainWrapper = styled.section`
   position: relative;
-  background-image: url('/images/background/home-background1.svg');
-  background-repeat: no-repeat;
-  background-position: -57px -93px;
   padding: 200px 0 360px;
 `;
 

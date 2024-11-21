@@ -5,6 +5,7 @@ import {
   Footer,
   SocialMediaLinkCards,
   AboutAppsCoreValueCard,
+  MemberFeedbackCards,
   MemberFeedbackCardList,
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
@@ -12,14 +13,15 @@ import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 export default function HomePage() {
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
-      <S.HomePage>
-        <S.HomeMainWrapper>
-          <S.TitleWrapper>
-            <S.ExhibitionTitle>Exhibition 2024</S.ExhibitionTitle>
-            <S.APPSTitle>Sookmyung APPS</S.APPSTitle>
-            <S.APPSSubTitle>WEB & APP PROGRAMMING CLUB</S.APPSSubTitle>
-          </S.TitleWrapper>
-        </S.HomeMainWrapper>
+      <S.HomePageBackground>
+        <S.HomePage>
+          <S.HomeMainWrapper>
+            <S.TitleWrapper>
+              <S.ExhibitionTitle>EXHIBITION 2024</S.ExhibitionTitle>
+              <S.APPSTitle>Sookmyung APPS</S.APPSTitle>
+              <S.APPSSubTitle>WEB & APP PROGRAMMING CLUB</S.APPSSubTitle>
+            </S.TitleWrapper>
+          </S.HomeMainWrapper>
 
         <S.SectionWrapper>
           <S.SectionTitleWrapper>
@@ -96,23 +98,24 @@ export default function HomePage() {
           </S.SocialLinksContent>
         </S.SocialLinks>
 
-        <S.ProjectList></S.ProjectList>
+          <S.ProjectList></S.ProjectList>
 
-        <S.ShareLinks>
-          <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
-          <S.ShareLinksContent>
-            <S.StyledLink to="/">
-              <S.LinkButton>링크 공유하기</S.LinkButton>
-            </S.StyledLink>
-            <S.StyledLink
-              to="https://forms.gle/k14eA7Kk9bxD7aTm6"
-              target="_blank"
-            >
-              <S.LinkButton>12기 알림 신청하기</S.LinkButton>
-            </S.StyledLink>
-          </S.ShareLinksContent>
-        </S.ShareLinks>
-      </S.HomePage>
+          <S.ShareLinks>
+            <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
+            <S.ShareLinksContent>
+              <S.StyledLink to="/">
+                <S.LinkButton>링크 공유하기</S.LinkButton>
+              </S.StyledLink>
+              <S.StyledLink
+                to="https://forms.gle/k14eA7Kk9bxD7aTm6"
+                target="_blank"
+              >
+                <S.LinkButton>12기 알림 신청하기</S.LinkButton>
+              </S.StyledLink>
+            </S.ShareLinksContent>
+          </S.ShareLinks>
+        </S.HomePage>
+      </S.HomePageBackground>
     </PageLayout>
   );
 }
