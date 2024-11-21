@@ -32,7 +32,10 @@ export const Tab = styled.div`
   }
 `;
 
-export const ProjectCardContainer = styled.div``;
+export const ProjectCardContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+`;
 
 export const ProjectCard = styled.div`
   display: flex;

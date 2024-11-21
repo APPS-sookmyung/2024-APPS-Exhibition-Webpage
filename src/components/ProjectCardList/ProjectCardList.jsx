@@ -26,21 +26,23 @@ const ProjectCardList = () => {
       </S.TabBar>
 
       <S.ProjectCardContainer>
-        {/* {PROJECT_LIST.map((project) => { */}
-        <S.ProjectCard>
-          <S.ProjectCardImage>임시</S.ProjectCardImage>
-          <S.ProjectCardContent>
-            <S.ProjectTitleWrapper>
-              <S.ProjectTitle>HABOR!</S.ProjectTitle>
-              <S.ProjectSubTitle>2030 멘토 -멘티 커뮤니티</S.ProjectSubTitle>
-            </S.ProjectTitleWrapper>
-            <S.ProjectBadgeWrapper>
-              <S.ProjectBadge># 4기</S.ProjectBadge>
-              <S.ProjectBadge># 4기</S.ProjectBadge>
-            </S.ProjectBadgeWrapper>
-          </S.ProjectCardContent>
-        </S.ProjectCard>
-        ;{/* })} */}
+        {PROJECT_LIST.map((project) => {
+          return (
+            <S.ProjectCard>
+              <S.ProjectCardImage>임시</S.ProjectCardImage>
+              <S.ProjectCardContent>
+                <S.ProjectTitleWrapper>
+                  <S.ProjectTitle>{project.name}</S.ProjectTitle>
+                  <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
+                </S.ProjectTitleWrapper>
+                <S.ProjectBadgeWrapper>
+                  <S.ProjectBadge># 4기</S.ProjectBadge>
+                  <S.ProjectBadge># 4기</S.ProjectBadge>
+                </S.ProjectBadgeWrapper>
+              </S.ProjectCardContent>
+            </S.ProjectCard>
+          );
+        })}
       </S.ProjectCardContainer>
     </S.ProjectCardList>
   );
