@@ -5,6 +5,7 @@ import {
   Footer,
   SocialMediaLinkCards,
   AboutAppsCoreValueCard,
+  MemberFeedbackCardList,
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
@@ -20,7 +21,7 @@ export default function HomePage() {
           </S.TitleWrapper>
         </S.HomeMainWrapper>
 
-        <S.AboutAPPSWrapper>
+        <S.SectionWrapper>
           <S.SectionTitleWrapper>
             <S.SectionTitleImageWrapper>
               <S.SectionTitle>About</S.SectionTitle>
@@ -58,9 +59,23 @@ export default function HomePage() {
               </S.SectionContentInnerBox2>
             </S.SectionContent>
           </S.SectionContentWrapper>
-        </S.AboutAPPSWrapper>
+        </S.SectionWrapper>
 
-        <S.MemberFeedback></S.MemberFeedback>
+        <S.SectionWrapper>
+          <S.SectionTitleWrapper>
+            <S.SectionTitleImageWrapper>
+              <S.SectionTitle>부원들이 말하는</S.SectionTitle>
+              <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
+            </S.SectionTitleImageWrapper>
+            <S.SectionSubTitle>
+              서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
+              지향합니다
+            </S.SectionSubTitle>
+          </S.SectionTitleWrapper>
+          <S.SectionContentWrapper>
+            <MemberFeedbackCardList />
+          </S.SectionContentWrapper>
+        </S.SectionWrapper>
 
         <S.SocialLinks>
           <S.SocialLinksTitle>
