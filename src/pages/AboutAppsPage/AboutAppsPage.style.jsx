@@ -4,6 +4,7 @@ export const Root = styled.div`
   width: 100%;
   min-height: 5000px;
   margin: 0 auto;
+  padding-top: 60px;
   background-image: url('./images/background/about_background.svg');
   background-size: 100% 785px;
   background-repeat: no-repeat;

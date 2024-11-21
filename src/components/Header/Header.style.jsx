@@ -7,6 +7,10 @@ export const StyledLink = styled(Link)`
 
 export const HeaderWrapper = styled.div`
   background: #212121;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 `;
 
 export const Header = styled.header`
@@ -35,6 +39,7 @@ export const MenuStyle = styled.span`
   display: inline-block;
   width: max-content;
   color: #fff;
+  font-weight: 700;
   font-size: 14px;
   padding: 22px;
   cursor: pointer;
@@ -43,7 +48,7 @@ export const MenuStyle = styled.span`
     color 0.2s ease;
 
   &:hover {
-    font-weight: 700;
+    color: var(--pink, #ff88fb);
   }
 `;
 
