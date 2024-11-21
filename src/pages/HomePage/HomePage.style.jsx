@@ -75,7 +75,7 @@ export const APPSSubTitle = styled.span`
 `;
 
 // About
-export const AboutAPPSWrapper = styled.section`
+export const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -90,6 +90,7 @@ export const SectionTitleWrapper = styled.div`
 
 export const SectionTitleImageWrapper = styled.div`
   display: flex;
+  justify-content: center;
   gap: 16px;
 `;
 
@@ -183,8 +184,6 @@ export const SectionContentInnerBox2 = styled(SectionContentInnerBox)`
     animation: ${smoothGradientAnimation} 3s linear infinite;
   }
 `;
-
-export const MemberFeedback = styled.section``;
 
 export const SocialLinks = styled.section`
   display: flex;
