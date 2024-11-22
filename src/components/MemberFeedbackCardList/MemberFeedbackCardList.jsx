@@ -7,9 +7,15 @@ export default function MemberFeedbackCardList() {
       {MEMBER_FEEDBACK.map((feedback, index) => (
         <S.CardWrapper key={index}>
           <S.BalloonCard>
-            {feedback.text}
+            <S.BalloonCardContentBody>
+              <S.BalloonCardContent>{feedback.reviewText}</S.BalloonCardContent>
+              <S.BalloonCardReviewMember>
+                {feedback.reviewMember}
+              </S.BalloonCardReviewMember>
+            </S.BalloonCardContentBody>
             <S.BalloonTail />
           </S.BalloonCard>
+
           <S.Character>
             <img src={feedback.image} alt="캐릭터 이미지" />
           </S.Character>
