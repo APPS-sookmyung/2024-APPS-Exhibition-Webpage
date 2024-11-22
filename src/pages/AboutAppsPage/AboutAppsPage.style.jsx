@@ -210,12 +210,12 @@ export const CalendarCardWrapper = styled.div`
 `;
 
 export const RegularCalendarCard = styled.div`
-  width: 331px;
+  width: 330px;
   height: 140px;
   flex-shrink: 0;
   border-radius: 18px;
   background: var(--blue, #3f69ff);
-  margin: 82px 0 0 110px;
+  margin: 122px 0 0 110px;
 `;
 
 export const RegularCalendarWrapper = styled.div`
@@ -263,6 +263,7 @@ export const RegularSchedule = styled.div`
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.7px;
+  word-wrap: break-word;
 `;
 
 export const TeamContainer = styled.div`
