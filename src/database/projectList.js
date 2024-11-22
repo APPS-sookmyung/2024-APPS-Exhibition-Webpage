@@ -4,6 +4,7 @@ export const PROJECT_LIST = [
   {
     id: 1,
     name: 'Cookiee-',
+    generation: ['9기', '10기'],
     category: PROJECT_CATEGORIES.APP,
     imageUrl: '/images/thumbnail/img-thumbnail-1.png',
     youtubeVideoId: '8AoxG-zcm-E',
@@ -70,6 +71,7 @@ export const PROJECT_LIST = [
   {
     id: 5,
     name: '새미새',
+    generation: ['10기'],
     category: PROJECT_CATEGORIES.WEB,
     imageUrl: '/images/thumbnail/img-thumbnail-5.png',
     youtubeVideoId: 'I0p1C07SrjQ',
@@ -136,6 +138,7 @@ export const PROJECT_LIST = [
   {
     id: 6,
     name: 'Sookmyung Software!',
+    generation: ['10기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/img-thumbnail-6.png',
     youtubeVideoId: 'KZv26cax0JI',

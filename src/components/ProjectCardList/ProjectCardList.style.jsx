@@ -56,7 +56,7 @@ export const ProjectCardContent = styled.div`
   height: 260px;
   border-radius: 20px;
   background: #f1f1f1;
-  padding: 28px 24px;
+  padding: 24px 20px;
   box-sizing: border-box;
   transition:
     background-color 0.3s ease,
@@ -94,7 +94,7 @@ export const ProjectBadge = styled.div`
   left: 0;
   border-radius: 20px;
   background: #818181;
-  padding: 5px 16px;
+  padding: 5px 14px 5px 12px;
   color: #fff;
   font-size: 14px;
   transition:

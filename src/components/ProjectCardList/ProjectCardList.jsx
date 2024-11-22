@@ -1,11 +1,13 @@
 import * as S from './ProjectCardList.style';
-import { PROJECT_LIST } from '../../database';
+import {
+  PROJECT_CATEGORIES,
+  PROJECT_CATEGORY_LIST,
+  PROJECT_LIST,
+} from '../../database';
 import { useState } from 'react';
 
-const TAB_BAR_LIST = ['All', 'App', 'Web', '신입부원'];
-
 const ProjectCardList = () => {
-  const [selectedTab, setSelectedTab] = useState('All');
+  const [selectedTab, setSelectedTab] = useState(PROJECT_CATEGORIES.ALL);
 
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
@@ -14,7 +16,7 @@ const ProjectCardList = () => {
   return (
     <S.ProjectCardList>
       <S.TabBar>
-        {TAB_BAR_LIST.map((tab) => (
+        {Object.values(PROJECT_CATEGORIES).map((tab) => (
           <S.Tab
             key={tab}
             onClick={() => handleTabClick(tab)}
@@ -28,7 +30,7 @@ const ProjectCardList = () => {
       <S.ProjectCardContainer>
         {PROJECT_LIST.map((project) => {
           return (
-            <S.ProjectCard>
+            <S.ProjectCard key={project.id}>
               <S.ProjectCardImage>임시</S.ProjectCardImage>
               <S.ProjectCardContent>
                 <S.ProjectTitleWrapper>
@@ -36,8 +38,15 @@ const ProjectCardList = () => {
                   <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
                 </S.ProjectTitleWrapper>
                 <S.ProjectBadgeWrapper>
-                  <S.ProjectBadge># 4기</S.ProjectBadge>
-                  <S.ProjectBadge># 4기</S.ProjectBadge>
+                  <S.ProjectBadge>
+                    #
+                    {PROJECT_CATEGORY_LIST.find(
+                      (item) => item.category === project.category,
+                    )?.label || ''}
+                  </S.ProjectBadge>
+                  <S.ProjectBadge>
+                    {project.generation.map((gen) => `#${gen}`).join(' ')}
+                  </S.ProjectBadge>
                 </S.ProjectBadgeWrapper>
               </S.ProjectCardContent>
             </S.ProjectCard>
