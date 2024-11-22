@@ -5,7 +5,7 @@ export default function MemberFeedbackCardList() {
   return (
     <S.MemberFeedbackCardList>
       {MEMBER_FEEDBACK.map((feedback, index) => (
-        <S.CardWrapper key={index}>
+        <S.CardWrapper key={index} index={index}>
           <S.BalloonCard>
             <S.BalloonCardContentBody>
               <S.BalloonCardContent>{feedback.reviewText}</S.BalloonCardContent>

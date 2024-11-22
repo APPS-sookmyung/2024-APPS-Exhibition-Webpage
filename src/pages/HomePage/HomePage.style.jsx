@@ -75,11 +75,10 @@ export const APPSSubTitle = styled.span`
   letter-spacing: -1.2px;
 `;
 
-// About
 export const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 `;
 
 export const SectionTitleWrapper = styled.div`
@@ -103,6 +102,10 @@ export const SectionTitle = styled.h2`
   font-size: 65px;
   font-weight: 700;
   letter-spacing: -3.25px;
+`;
+
+export const SmallSectionTitle = styled(SectionTitle)`
+  font-size: 50px;
 `;
 
 export const SectionSubTitle = styled.h4`

@@ -26,7 +26,7 @@ export default function HomePage() {
           <S.SectionWrapper>
             <S.SectionTitleWrapper>
               <S.SectionTitleImageWrapper>
-                <S.SectionTitle>About</S.SectionTitle>
+                <S.SectionTitle>ABOUT</S.SectionTitle>
                 <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
               </S.SectionTitleImageWrapper>
               <S.SectionSubTitle>
@@ -66,7 +66,7 @@ export default function HomePage() {
           <S.SectionWrapper>
             <S.SectionTitleWrapper>
               <S.SectionTitleImageWrapper>
-                <S.SectionTitle>부원들이 말하는</S.SectionTitle>
+                <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
                 <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
               </S.SectionTitleImageWrapper>
               <S.SectionSubTitle>
