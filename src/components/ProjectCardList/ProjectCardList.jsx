@@ -20,7 +20,7 @@ const ProjectCardList = () => {
           <S.Tab
             key={tab}
             onClick={() => handleTabClick(tab)}
-            className={selectedTab === tab ? 'selected' : ''}
+            isActive={selectedTab === tab}
           >
             {tab}
           </S.Tab>
@@ -28,30 +28,32 @@ const ProjectCardList = () => {
       </S.TabBar>
 
       <S.ProjectCardContainer>
-        {PROJECT_LIST.map((project) => {
-          return (
-            <S.ProjectCard key={project.id}>
-              <S.ProjectCardImage>임시</S.ProjectCardImage>
-              <S.ProjectCardContent>
-                <S.ProjectTitleWrapper>
-                  <S.ProjectTitle>{project.name}</S.ProjectTitle>
-                  <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
-                </S.ProjectTitleWrapper>
-                <S.ProjectBadgeWrapper>
-                  <S.ProjectBadge>
-                    #
-                    {PROJECT_CATEGORY_LIST.find(
-                      (item) => item.category === project.category,
-                    )?.label || ''}
-                  </S.ProjectBadge>
-                  <S.ProjectBadge>
-                    {project.generation.map((gen) => `#${gen}`).join(' ')}
-                  </S.ProjectBadge>
-                </S.ProjectBadgeWrapper>
-              </S.ProjectCardContent>
-            </S.ProjectCard>
-          );
-        })}
+        {PROJECT_LIST.filter(
+          (project) =>
+            selectedTab === PROJECT_CATEGORIES.ALL ||
+            project.category === selectedTab,
+        ).map((project) => (
+          <S.ProjectCard key={project.id}>
+            <S.ProjectCardImage>임시</S.ProjectCardImage>
+            <S.ProjectCardContent>
+              <S.ProjectTitleWrapper>
+                <S.ProjectTitle>{project.name}</S.ProjectTitle>
+                <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
+              </S.ProjectTitleWrapper>
+              <S.ProjectBadgeWrapper>
+                <S.ProjectBadge>
+                  #
+                  {PROJECT_CATEGORY_LIST.find(
+                    (item) => item.category === project.category,
+                  )?.label || ''}
+                </S.ProjectBadge>
+                <S.ProjectBadge>
+                  {project.generation.map((gen) => `#${gen}`).join(' ')}
+                </S.ProjectBadge>
+              </S.ProjectBadgeWrapper>
+            </S.ProjectCardContent>
+          </S.ProjectCard>
+        ))}
       </S.ProjectCardContainer>
     </S.ProjectCardList>
   );
