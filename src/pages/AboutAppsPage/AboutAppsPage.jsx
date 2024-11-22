@@ -2,7 +2,7 @@ import { useState } from 'react';
 import * as S from './AboutAppsPage.style';
 import {
   MEMBERS,
-  ACTIVITY_LIST,
+  ACTIVITY_CARD_LIST,
   MONTHLY_ACTIVITY_LIST,
   STYLED_SQUARE_COLOR_CARDS,
   WEEKLY_ACTIVITY_LIST,
@@ -82,7 +82,7 @@ export default function AboutAppsPage() {
             </S.ActivitiesDescription>
           </S.ActivitiesTitleWrapper>
           <S.ActivitiesCardWrapper>
-            {ACTIVITY_LIST.map((activity) => (
+            {ACTIVITY_CARD_LIST.map((activity) => (
               <ActivityCard
                 activityName={activity.name}
                 activityIntro={activity.intro}

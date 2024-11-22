@@ -1,4 +1,4 @@
-export * from './activityList';
+export * from './activityCardList';
 export * from './appsCoreValueCards';
 export * from './memberFeedback';
 export * from './members';

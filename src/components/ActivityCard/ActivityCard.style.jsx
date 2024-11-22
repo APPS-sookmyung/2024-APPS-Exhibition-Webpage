@@ -45,10 +45,10 @@ export const ActivityIntroWrapper = styled.div`
 export const ActivityIntro = styled.p`
   color: #fff;
   width: 410px;
-  font-size: 14px;
+  font-size: 16x;
   letter-spacing: -0.7px;
   margin: 0;
-  white-space: pre-line;
+  word-break: keep-all;
 `;
 
 export const ActivityBackBlur = styled.div`
