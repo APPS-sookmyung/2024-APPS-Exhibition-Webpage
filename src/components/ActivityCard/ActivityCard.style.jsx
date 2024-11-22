@@ -45,7 +45,7 @@ export const ActivityIntroWrapper = styled.div`
 export const ActivityIntro = styled.p`
   color: #fff;
   width: 410px;
-  font-size: 16x;
+  font-size: 16px;
   letter-spacing: -0.7px;
   margin: 0;
   word-break: keep-all;
@@ -60,4 +60,7 @@ export const ActivityBackBlur = styled.div`
   border: 1px solid #fff;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
+  transition:
+    background 0.3s ease,
+    border 0.3s ease;
 `;
