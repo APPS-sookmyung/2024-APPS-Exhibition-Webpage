@@ -75,7 +75,6 @@ export const StyledSquareWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition
 `;
 
 export const StyledSquares = styled.div`
