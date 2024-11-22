@@ -34,9 +34,6 @@ export const HomePage = styled.div`
   margin: 0 auto 200px;
   gap: 113px;
 
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    gap: 100px;
-  }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     gap: 80px;
   }
@@ -47,10 +44,10 @@ export const HomeMainWrapper = styled.section`
   padding: 200px 0 360px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    padding: 200px 0 360px;
+    padding: 200px 0 300px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 200px 0 360px;
+    padding: 200px 0 240px;
   }
 `;
 
@@ -141,9 +138,28 @@ export const SectionTitleImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   gap: 16px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 14px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 12px;
+  }
+
+  img {
+    @media (max-width: ${BREAKPOINTS[1]}px) {
+      height: 60px;
+    }
+    @media (max-width: ${BREAKPOINTS[0]}px) {
+      height: 40px;
+    }
+  }
 `;
 
 export const SectionTitle = styled.h2`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   color: #fff;
   text-align: center;
@@ -173,7 +189,7 @@ export const SmallSectionTitle = styled(SectionTitle)`
     font-size: 32px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    font-size: 18px;
+    font-size: 24px;
   }
 `;
 
@@ -184,6 +200,7 @@ export const SectionSubTitle = styled.h4`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
+  word-break: keep-all;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
@@ -313,12 +330,19 @@ export const SocialLinksContent = styled.div`
     gap: 60px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    gap: 40px;
+    gap: 30px;
   }
 `;
 
 export const ProjectList = styled.section`
   padding: 0 70px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 0 50px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 0 10px;
+  }
 `;
 
 export const ShareLinks = styled.section`

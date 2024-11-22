@@ -1,9 +1,17 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const ProjectCardList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 40px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 20px;
+  }
 `;
 
 export const TabBar = styled.div`
@@ -15,10 +23,13 @@ export const TabBar = styled.div`
 `;
 
 export const Tab = styled.div`
-  background: ${(props) => (props.isActive ? '#ff88fb' : '#333')};
+  display: flex;
+  justify-content: center;
+  background: ${(props) => (props.isActive ? '#ff88fb' : '')};
   margin: 5px;
   border-radius: 30px;
-  padding: 12px 78px;
+  padding: 12px;
+  width: 100%;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -29,6 +40,16 @@ export const Tab = styled.div`
 
   &:hover {
     background-color: #ff88fb;
+  }
+
+  @media (max-width: ${BREAKPOINTS[2]}px) {
+  }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 8px;
+    font-size: 16px;
   }
 `;
 

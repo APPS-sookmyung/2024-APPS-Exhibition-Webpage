@@ -14,7 +14,17 @@ export const SocialLinksCard = styled.div`
   gap: 18px;
 `;
 
-export const SocialLinksCardImage = styled.div``;
+export const SocialLinksCardImage = styled.div`
+  display: flex;
+  height: 90px;
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: 80px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: 60px;
+  }
+`;
 
 export const SocialLinksCardDescription = styled.div`
   display: flex;
