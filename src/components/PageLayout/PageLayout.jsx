@@ -11,7 +11,7 @@ const PageLayout = ({
     <S.Layout className={className} background={background}>
       {header}
       {children}
-      {/* {footer} */}
+      {footer}
     </S.Layout>
   );
 };
