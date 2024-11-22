@@ -20,7 +20,7 @@ const smoothGradientAnimation = keyframes`
 export const HomePageBackground = styled.div`
   background-image: url('/images/background/home-background.svg');
   background-repeat: no-repeat;
-  background-position: center -60px;
+  background-position: center 0;
 `;
 
 export const HomePage = styled.div`

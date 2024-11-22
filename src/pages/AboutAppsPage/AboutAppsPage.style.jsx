@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Root = styled.div`
   width: 100%;
-  min-height: 5000px;
-  margin: 0 auto;
+  margin: 0 auto 200px;
   padding-top: 60px;
   background-image: url('./images/background/about_background.svg');
   background-size: 100% 785px;
