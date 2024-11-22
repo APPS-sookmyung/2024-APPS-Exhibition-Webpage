@@ -205,7 +205,9 @@ export const SocialLinksContent = styled.div`
   gap: 112px;
 `;
 
-export const ProjectList = styled.section``;
+export const ProjectList = styled.section`
+  padding: 0 70px;
+`;
 
 export const ShareLinks = styled.section`
   display: flex;
