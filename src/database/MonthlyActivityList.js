@@ -14,7 +14,7 @@ export const MONTHLY_ACTIVITY_LIST = [
     schedule: [
       '2024 프로젝트 팀 빌딩',
       '기초 스터디 - JavaScript',
-      'Microsoft Power Auto-mate로 업무 자동화하기” 핸즈온 세션 참가',
+      "'Microsoft Power Auto-mate로 업무 자동화하기' 핸즈온 세션 참가",
     ],
   },
   {
