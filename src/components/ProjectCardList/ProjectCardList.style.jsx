@@ -37,10 +37,6 @@ export const ProjectCardContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
 `;
 
-export const ProjectCard = styled.div`
-  display: flex;
-`;
-
 export const ProjectCardImage = styled.div`
   width: 310px;
   height: 260px;
@@ -63,10 +59,6 @@ export const ProjectCardContent = styled.div`
   transition:
     background-color 0.3s ease,
     transform 0.2s ease;
-
-  &:hover {
-    background-color: #ff88fb;
-  }
 `;
 
 export const ProjectTitleWrapper = styled.div`
@@ -79,12 +71,14 @@ export const ProjectTitle = styled.strong`
   font-family: 'Dolce Vita Heavy';
   font-size: 24px;
   font-weight: 700;
+  transition: color 0.3s ease;
 `;
 
 export const ProjectSubTitle = styled.span`
   color: #818181;
   font-size: 16px;
   font-weight: 500;
+  transition: color 0.3s ease;
 `;
 
 export const ProjectBadgeWrapper = styled.div`
@@ -103,5 +97,28 @@ export const ProjectBadge = styled.div`
   font-size: 14px;
   transition:
     background-color 0.3s ease,
-    transform 0.2s ease;
+    transform 0.2s ease,
+    color 0.3s ease,
+    border 0.3s ease;
+`;
+
+export const ProjectCard = styled.div`
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+
+    ${ProjectCardContent} {
+      background-color: #ff88fb;
+    }
+
+    ${ProjectTitle}, ${ProjectSubTitle} {
+      color: #fff;
+    }
+
+    ${ProjectBadge} {
+      background-color: #fff;
+      color: #ff88fb;
+    }
+  }
 `;
