@@ -33,6 +33,13 @@ export const HomePage = styled.div`
   width: 100%;
   margin: 0 auto 200px;
   gap: 113px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 100px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 80px;
+  }
 `;
 
 export const HomeMainWrapper = styled.section`
@@ -190,6 +197,13 @@ export const SectionContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 70px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 0 50px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 0 20px;
+  }
 `;
 
 export const SectionContent = styled.div`
@@ -225,9 +239,14 @@ export const SectionContent = styled.div`
 
 export const SectionContentInnerBox = styled.div`
   display: flex;
-  padding: 30px 31px;
+  padding: 30px;
   gap: 60px;
   position: relative;
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 20px;
+    gap: 40px;
+  }
 `;
 
 export const SectionContentInnerBox1 = styled(SectionContentInnerBox)`
@@ -263,6 +282,13 @@ export const SocialLinks = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 80px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 60px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 40px;
+  }
 `;
 
 export const SocialLinksTitle = styled.h5`
@@ -282,6 +308,13 @@ export const SocialLinksTitle = styled.h5`
 export const SocialLinksContent = styled.div`
   display: flex;
   gap: 112px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 60px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 40px;
+  }
 `;
 
 export const ProjectList = styled.section`
@@ -294,6 +327,13 @@ export const ShareLinks = styled.section`
   justify-content: center;
   align-content: center;
   gap: 80px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 60px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 40px;
+  }
 `;
 
 export const ShareLinksTitle = styled.h5`
@@ -315,13 +355,19 @@ export const ShareLinksContent = styled.div`
   display: flex;
   justify-content: center;
   gap: 70px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 50px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 30px;
+  }
 `;
 
 export const LinkButton = styled.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   border-radius: 30px;
   border: none;
   background: #fff;
@@ -333,6 +379,7 @@ export const LinkButton = styled.button`
   font-weight: 500;
   letter-spacing: -0.9px;
   cursor: pointer;
+  gap: 8px;
   transition:
     background 0.3s ease,
     color 0.3s ease;
@@ -340,5 +387,15 @@ export const LinkButton = styled.button`
   &:hover {
     background: var(--pink, #ff88fb);
     color: #fff;
+  }
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 150px;
+    font-size: 14px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 130px;
+    padding: 10px 0;
+    font-size: 14px;
   }
 `;

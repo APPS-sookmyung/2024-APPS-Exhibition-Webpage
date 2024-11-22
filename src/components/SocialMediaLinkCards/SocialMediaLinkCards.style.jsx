@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
@@ -26,6 +27,10 @@ export const SocialLinksCardTitle = styled.span`
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.9px;
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
 
 export const SocialLinksCardAccount = styled.span`
@@ -34,4 +39,8 @@ export const SocialLinksCardAccount = styled.span`
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.9px;
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
