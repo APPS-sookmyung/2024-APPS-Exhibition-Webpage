@@ -46,10 +46,6 @@ export const MenuStyle = styled.span`
   transition:
     font-weight 0.2s ease,
     color 0.2s ease;
-
-  &:hover {
-    color: var(--pink, #ff88fb);
-  }
 `;
 
 export const RecruitmentAlertLink = styled(MenuStyle)``;
