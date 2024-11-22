@@ -48,8 +48,8 @@ export const Tab = styled.div`
     font-size: 18px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 8px;
-    font-size: 16px;
+    padding: 2px;
+    font-size: 14px;
   }
 `;
 
@@ -141,6 +141,7 @@ export const ProjectBadge = styled.div`
   padding: 5px 14px 5px 12px;
   color: #fff;
   font-size: 14px;
+  font-weight: 500;
   transition:
     background-color 0.3s ease,
     transform 0.2s ease,
