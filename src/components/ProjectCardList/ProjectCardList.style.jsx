@@ -34,7 +34,9 @@ export const Tab = styled.div`
 
 export const ProjectCardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(402px, 1fr));
+  gap: 24px 0;
+  justify-items: center;
 `;
 
 export const ProjectCardImage = styled.div`
@@ -104,6 +106,14 @@ export const ProjectBadge = styled.div`
 
 export const ProjectCard = styled.div`
   display: flex;
+
+  &:nth-child(odd) {
+    justify-self: start;
+  }
+
+  &:nth-child(even) {
+    justify-self: end;
+  }
 
   &:hover {
     cursor: pointer;
