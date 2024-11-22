@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
@@ -37,6 +38,13 @@ export const HomePage = styled.div`
 export const HomeMainWrapper = styled.section`
   position: relative;
   padding: 200px 0 360px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 200px 0 360px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 200px 0 360px;
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -44,6 +52,13 @@ export const TitleWrapper = styled.div`
   flex-direction: column;
   align-items: end;
   padding-right: 70px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding-right: 40px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding-right: 30px;
+  }
 `;
 
 export const ExhibitionTitle = styled.h3`
@@ -54,6 +69,16 @@ export const ExhibitionTitle = styled.h3`
   font-size: 65px;
   font-weight: 700;
   letter-spacing: -3.25px;
+
+  @media (max-width: ${BREAKPOINTS[2]}px) {
+    font-size: 52px;
+  }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 40px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 28px;
+  }
 `;
 
 export const APPSTitle = styled.h1`
@@ -64,6 +89,16 @@ export const APPSTitle = styled.h1`
   font-size: 100px;
   font-weight: 700;
   letter-spacing: -5px;
+
+  @media (max-width: ${BREAKPOINTS[2]}px) {
+    font-size: 80px;
+  }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 60px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 44px;
+  }
 `;
 
 export const APPSSubTitle = styled.span`
@@ -73,6 +108,13 @@ export const APPSSubTitle = styled.span`
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -1.2px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
 
 export const SectionWrapper = styled.section`
