@@ -15,7 +15,7 @@ export const TabBar = styled.div`
 `;
 
 export const Tab = styled.div`
-  background: ${(props) => (props.active ? '#ff88fb' : '#333')};
+  background: ${(props) => (props.isActive ? '#ff88fb' : '#333')};
   margin: 5px;
   border-radius: 30px;
   padding: 12px 78px;
