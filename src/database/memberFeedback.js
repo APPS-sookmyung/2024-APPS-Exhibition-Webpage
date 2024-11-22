@@ -24,3 +24,12 @@ export const MEMBER_FEEDBACK = [
     image: '/images/character/character-blue.svg',
   },
 ];
+
+export const IMAGE_BASE_PATH = '/images/character';
+
+export const MEMBER_FEEDBACK_CHARACTER = [
+  { color: 'pink', image: `${IMAGE_BASE_PATH}/character-pink.svg` },
+  { color: 'green', image: `${IMAGE_BASE_PATH}/character-green.svg` },
+  { color: 'orange', image: `${IMAGE_BASE_PATH}/character-orange.svg` },
+  { color: 'blue', image: `${IMAGE_BASE_PATH}/character-blue.svg` },
+];

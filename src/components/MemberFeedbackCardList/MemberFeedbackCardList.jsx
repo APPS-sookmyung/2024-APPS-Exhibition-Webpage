@@ -1,4 +1,4 @@
-import { MEMBER_FEEDBACK } from '../../database';
+import { MEMBER_FEEDBACK, MEMBER_FEEDBACK_CHARACTER } from '../../database';
 import * as S from './MemberFeedbackCardList.style';
 
 export default function MemberFeedbackCardList() {
@@ -17,7 +17,10 @@ export default function MemberFeedbackCardList() {
           </S.BalloonCard>
 
           <S.Character>
-            <img src={feedback.image} alt="캐릭터 이미지" />
+            <img
+              src={MEMBER_FEEDBACK_CHARACTER[index]?.image}
+              alt="캐릭터 이미지"
+            />
           </S.Character>
         </S.CardWrapper>
       ))}

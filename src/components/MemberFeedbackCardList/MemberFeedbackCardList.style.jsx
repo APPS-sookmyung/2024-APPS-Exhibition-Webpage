@@ -60,6 +60,11 @@ export const BalloonTail = styled.div`
 
 export const Character = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
 `;
