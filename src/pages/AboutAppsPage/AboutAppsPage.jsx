@@ -115,7 +115,7 @@ export default function AboutAppsPage() {
                 name={member.name}
                 title={member.title}
                 position={member.position}
-                index={index} // index를 props로 전달
+                index={index}
                 onClick={() => openModal(member)}
               />
             ))}

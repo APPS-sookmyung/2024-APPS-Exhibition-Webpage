@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const Root = styled.div`
   width: 100%;
@@ -243,6 +244,13 @@ export const TeamIntroTitle = styled.h1`
   font-weight: 700;
   letter-spacing: -1.6px;
   margin: 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 26px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 22px;
+  }
 `;
 
 export const TeamIntroContent = styled.p`
@@ -252,17 +260,36 @@ export const TeamIntroContent = styled.p`
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 16px;
+  }
 `;
 
 export const MemberList = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 56px 0;
-  max-width: 880px;
   margin: 0 auto;
   margin-top: 32px;
   & > div:nth-child(even) {
     margin-top: 32px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 44px 0;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+
+    & > div:nth-child(even) {
+      margin-top: 0px;
+    }
   }
 `;
 
