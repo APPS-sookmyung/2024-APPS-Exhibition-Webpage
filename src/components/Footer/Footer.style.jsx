@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const FooterWrapper = styled.footer`
   display: flex;
@@ -43,7 +44,17 @@ export const TeamMemberContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 30px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 4px;
+  }
 `;
+
 export const TeamMember = styled.span`
   color: #fff;
   font-size: 12px;
@@ -52,6 +63,8 @@ export const TeamMember = styled.span`
 export const AddressSection = styled.div`
   color: #c3c3c3;
   font-size: 12px;
+  padding: 20px;
+  word-break: keep-all;
 `;
 
 export const Address = styled.p`
