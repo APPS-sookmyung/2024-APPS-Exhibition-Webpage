@@ -144,10 +144,30 @@ export const SectionTitle = styled.h2`
   font-size: 65px;
   font-weight: 700;
   letter-spacing: -3.25px;
+
+  @media (max-width: ${BREAKPOINTS[2]}px) {
+    font-size: 52px;
+  }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 40px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 28px;
+  }
 `;
 
 export const SmallSectionTitle = styled(SectionTitle)`
   font-size: 50px;
+
+  @media (max-width: ${BREAKPOINTS[2]}px) {
+    font-size: 40px;
+  }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 32px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 18px;
+  }
 `;
 
 export const SectionSubTitle = styled.h4`
@@ -157,6 +177,13 @@ export const SectionSubTitle = styled.h4`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
 
 export const SectionContentWrapper = styled.div`
@@ -243,7 +270,13 @@ export const SocialLinksTitle = styled.h5`
   color: #fff;
   font-size: 32px;
   font-weight: 700;
-  /* letter-spacing: -1.6px; */
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 28px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 20px;
+  }
 `;
 
 export const SocialLinksContent = styled.div`
@@ -269,7 +302,13 @@ export const ShareLinksTitle = styled.h5`
   font-size: 32px;
   font-weight: 700;
   margin: 0;
-  /* letter-spacing: -1.6px; */
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 28px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 20px;
+  }
 `;
 
 export const ShareLinksContent = styled.div`
