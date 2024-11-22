@@ -1,26 +1,27 @@
 import styled from 'styled-components';
 
 export const CalendarCard = styled.div`
-  width: 221px;
-  height: 221px;
-  flex-shrink: 0;
+  width: 220px;
   border-radius: 18px;
   border: 1px solid #fff;
+  transition: all 0.2s ease;
 
   &:hover {
-    width: 222px;
-    height: 222px;
-    border: 0;
+    border: 1px solid var(--orange, #ff5400);
     background: var(--orange, #ff5400);
   }
 
   &:hover ${() => CalendarMonthDot} {
     background-image: url('/images/icons/about_calendar_white_dot.svg');
+    transition: background-image 0.2s ease;
   }
 
   &:hover ${() => Schedule} {
     background: #fff;
     color: var(--orange, #ff5400);
+    transition:
+      background 0.2s ease,
+      color 0.2s ease;
   }
 `;
 
@@ -50,7 +51,7 @@ export const CalendarMonth = styled.h3`
 `;
 
 export const ScheduleWrapper = styled.div`
-  padding: 14px 26px;
+  padding: 14px 20px 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -69,5 +70,5 @@ export const Schedule = styled.div`
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.7px;
-  white-space: pre-line;
+  word-break: keep-all;
 `;
