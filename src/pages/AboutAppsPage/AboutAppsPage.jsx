@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import * as S from './AboutAppsPage.style';
-import { MEMBERS, ACTIVITY_LIST, MONTHLY_ACTIVITY_LIST } from '../../database';
+import {
+  MEMBERS,
+  ACTIVITY_LIST,
+  MONTHLY_ACTIVITY_LIST,
+  STYLED_SQUARE_COLOR_CARDS,
+} from '../../database';
 import {
   MemberCard,
   Modal,
@@ -33,8 +38,34 @@ export default function AboutAppsPage() {
           <S.Top>
             <S.PageTitleWrapper>
               <S.PageTitle>ABOUT</S.PageTitle>
+              <S.PageSubTitle>APPS 소개</S.PageSubTitle>
               <S.IconTitle></S.IconTitle>
             </S.PageTitleWrapper>
+            <S.SquareContainer>
+              {STYLED_SQUARE_COLOR_CARDS.map((colors) => {
+                return (
+                  <S.StyledSquareWrapper>
+                    {colors.map((left) => {
+                      return (
+                        <S.StyledSquares>
+                          {left.map((c) => {
+                            return (
+                              <>
+                                {c === 'square2' ? (
+                                  <S.StyledSquare2></S.StyledSquare2>
+                                ) : (
+                                  <S.StyledSquare color={c}></S.StyledSquare>
+                                )}
+                              </>
+                            );
+                          })}
+                        </S.StyledSquares>
+                      );
+                    })}
+                  </S.StyledSquareWrapper>
+                );
+              })}
+            </S.SquareContainer>
           </S.Top>
           <S.IntroAPPSTitle>INTRODUCTION</S.IntroAPPSTitle>
           <S.IntroAPPSContent>

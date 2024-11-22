@@ -18,7 +18,7 @@ export const TopToIntroContainer = styled.div`
 
 export const Top = styled.div`
   width: 100%;
-  min-height: 234px;
+  height: 234px;
   background-color: #3f69ff;
   justify-content: center;
   display: flex;
@@ -42,6 +42,15 @@ export const PageTitle = styled.h1`
   margin: -6px 9px;
 `;
 
+export const PageSubTitle = styled.h1`
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  position: absolute;
+  padding: 75px 0 0 117px;
+`;
+
 export const IconTitle = styled.div`
   width: 136px;
   height: 94px;
@@ -49,7 +58,42 @@ export const IconTitle = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 5px;
-  background-color: #3f69ff;
+`;
+
+export const SquareContainer = styled.div`
+  width: 100%;
+  min-height: 234px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const StyledSquareWrapper = styled.div`
+  width: 100%;
+  max-width: 961px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const StyledSquares = styled.div`
+  display: flex;
+  height: 50px;
+`;
+
+export const StyledSquare = styled.div`
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: ${(props) => props.color || ''};
+`;
+
+export const StyledSquare2 = styled.div`
+  width: 50px;
+  height: 34px;
+  border-radius: 12px;
+  background: #2051ff;
 `;
 
 export const IntroAPPSTitle = styled.h2`
