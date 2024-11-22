@@ -21,6 +21,7 @@ export const HomePageBackground = styled.div`
   background-image: url('/images/background/home-background.svg');
   background-repeat: no-repeat;
   background-position: center 0;
+  overflow: hidden;
 `;
 
 export const HomePage = styled.div`

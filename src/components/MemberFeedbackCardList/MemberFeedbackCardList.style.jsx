@@ -1,9 +1,23 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const moveLeft = keyframes`
+  0% {
+    transform: translateX(100%); 
+  }
+  50% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+`;
 
 export const MemberFeedbackCardList = styled.div`
   display: flex;
+  position: relative;
   gap: 40px;
-  margin: 20px;
+  margin: 20px 0;
+  width: 100%;
 `;
 
 export const CardWrapper = styled.div`
@@ -11,6 +25,8 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
+  animation: ${moveLeft} 5s linear infinite;
 `;
 
 export const BalloonCard = styled.div`
@@ -65,10 +81,4 @@ export const Character = styled.div`
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-
-  img {
-    margin: 0;
-    padding: 0;
-    height: auto;
-  }
 `;
