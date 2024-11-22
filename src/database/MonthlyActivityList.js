@@ -50,3 +50,9 @@ export const MONTHLY_ACTIVITY_LIST = [
     schedule: ['2024 온라인 전시회 사이트 오픈'],
   },
 ];
+
+export const WEEKLY_ACTIVITY_LIST = [
+  'DevTalk',
+  '일반 스터디 진행 상황 발표',
+  '팀 프로젝트 진행 상황 발표',
+];

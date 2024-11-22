@@ -5,6 +5,7 @@ import {
   ACTIVITY_LIST,
   MONTHLY_ACTIVITY_LIST,
   STYLED_SQUARE_COLOR_CARDS,
+  WEEKLY_ACTIVITY_LIST,
 } from '../../database';
 import {
   MemberCard,
@@ -104,11 +105,7 @@ export default function AboutAppsPage() {
                 <S.RegularCalendarName>매주 정기 활동</S.RegularCalendarName>
               </S.RegularCalendarWrapper>
               <S.RegularScheduleWrapper>
-                {[
-                  'DevTalk',
-                  '일반 스터디 진행 상황 발표',
-                  '팀 프로젝트 진행 상황 발표',
-                ].map((activity) => (
+                {WEEKLY_ACTIVITY_LIST.map((activity) => (
                   <S.RegularSchedule>{activity}</S.RegularSchedule>
                 ))}
               </S.RegularScheduleWrapper>
