@@ -38,6 +38,7 @@ export default function AboutAppsPage() {
           <S.Top>
             <S.PageTitleWrapper>
               <S.PageTitle>ABOUT</S.PageTitle>
+              <S.PageSubTitle>APPS 소개</S.PageSubTitle>
               <S.IconTitle></S.IconTitle>
             </S.PageTitleWrapper>
             <S.SquareContainer>

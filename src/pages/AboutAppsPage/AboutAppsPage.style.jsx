@@ -42,6 +42,15 @@ export const PageTitle = styled.h1`
   margin: -6px 9px;
 `;
 
+export const PageSubTitle = styled.h1`
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  position: absolute;
+  padding: 75px 0 0 117px;
+`;
+
 export const IconTitle = styled.div`
   width: 136px;
   height: 94px;
