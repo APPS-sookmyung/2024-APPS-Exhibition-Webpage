@@ -20,6 +20,10 @@ export const Modal = styled.div`
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 90%;
@@ -67,23 +71,18 @@ export const CloseButton = styled.button`
 `;
 
 export const MemberCard = styled.div`
-  position: absolute;
-  top: 97px;
-  left: 70px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   width: 294px;
   height: 142px;
   border-radius: 20px;
   background-color: #ff5400;
+  margin: 0;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    position: relative;
-    top: 60px;
     width: 230px;
     height: 120px;
-    left: 0;
-    margin: 0 auto;
   }
 `;
 
@@ -103,16 +102,16 @@ export const MemberImage = styled.img`
 
 export const MemberDetailWrapper = styled.div`
   display: flex;
-  flex-direction: row; /* 가로 배열 */
-  justify-content: flex-start; /* 왼쪽 정렬 */
-  align-items: flex-start; /* 위쪽 정렬 */
-  width: 100%;
-  height: auto;
+  flex-direction: row;
+  gap: 20px;
+  top: 97px;
+  margin-top: 50px;
+  margin-left: 40px;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     gap: 10px;
-    flex-direction: row;
-    align-items: stretch;
+    margin-top: 40px;
+    margin-left: 20px;
   }
 `;
 
@@ -169,18 +168,17 @@ export const MemberInfo = styled.h3`
 `;
 
 export const MemberDetailSection = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 20px;
-  margin-top: 98px;
-  margin-left: 394px;
+  top: 98px;
+  left: 394px;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    margin: 0;
     top: 60px;
+    left: 240px;
     gap: 10px;
   }
 `;
@@ -220,12 +218,10 @@ export const SNSSection = styled.div`
 `;
 
 export const Divider = styled.div`
-  position: absolute;
-  top: 268px;
-  left: 70px;
   background: none;
   border: 1px;
   margin: 0;
+  width: 100%;
 
   img {
     width: 100%;
@@ -233,32 +229,37 @@ export const Divider = styled.div`
   }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    top: 240px;
-    left: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
     width: calc(100% - 80px);
   }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    top: 200px;
-    left: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
     width: calc(100% - 40px);
   }
 `;
 
 export const QASection = styled.div`
-  position: absolute;
-  top: 316px;
-  left: 71px;
   text-align: left;
+  margin-top: 30px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    top: 280px;
-    left: 40px;
+    gap: 12px;
+    margin-top: 25px;
+    margin-left: 40px;
   }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    top: 240px;
-    left: 20px;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 `;
 
@@ -286,6 +287,7 @@ export const QuestionLabel = styled.strong`
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
   }
+
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 16px;
   }
@@ -297,6 +299,7 @@ export const QuestionItem = styled.div`
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 24px;
   }
+
   @media (max-width: ${BREAKPOINTS[0]}px) {
     gap: 16px;
   }
@@ -311,6 +314,7 @@ export const Question = styled.p`
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
   }
+
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 16px;
   }
@@ -325,7 +329,26 @@ export const Answer = styled.div`
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
   }
+
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    font-size: 10px;
+    font-size: 11px;
+  }
+`;
+
+export const SNSLinkWrapper = styled.div`
+  display: flex;
+  gap: 12px;
+`;
+
+export const SNSLink = styled.a`
+  color: #fff;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 12px;
   }
 `;
