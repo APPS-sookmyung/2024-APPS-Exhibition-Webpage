@@ -34,7 +34,9 @@ const ProjectCardList = () => {
             project.category === selectedTab,
         ).map((project) => (
           <S.ProjectCard key={project.id}>
-            <S.ProjectCardImage>임시</S.ProjectCardImage>
+            <S.ProjectCardImage>
+              <img src="./images/thumbnails/img-thumbnail-1.png" />
+            </S.ProjectCardImage>
             <S.ProjectCardContent>
               <S.ProjectTitleWrapper>
                 <S.ProjectTitle>{project.name}</S.ProjectTitle>

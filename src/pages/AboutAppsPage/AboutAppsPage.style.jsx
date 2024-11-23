@@ -197,7 +197,7 @@ export const CalendarDescription = styled.div`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
-  margin: 0 0 108px 0;
+  margin-bottom: 40px;
 `;
 
 export const CalendarCardWrapper = styled.div`
@@ -304,7 +304,7 @@ export const MemberList = styled.div`
   gap: 56px 0;
   max-width: 880px;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 40px;
   & > div:nth-child(even) {
     margin-top: 32px;
   }
