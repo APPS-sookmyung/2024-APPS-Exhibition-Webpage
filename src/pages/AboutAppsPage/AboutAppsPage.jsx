@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import * as S from './AboutAppsPage.style';
-import { MEMBERS, ACTIVITY_LIST, MONTHLY_ACTIVITY_LIST } from '../../database';
+import {
+  MEMBERS,
+  ACTIVITY_CARD_LIST,
+  MONTHLY_ACTIVITY_LIST,
+  STYLED_SQUARE_COLOR_CARDS,
+  WEEKLY_ACTIVITY_LIST,
+} from '../../database';
 import {
   MemberCard,
   Modal,
@@ -33,8 +39,28 @@ export default function AboutAppsPage() {
           <S.Top>
             <S.PageTitleWrapper>
               <S.PageTitle>ABOUT</S.PageTitle>
+              <S.PageSubTitle>APPS 소개</S.PageSubTitle>
               <S.IconTitle></S.IconTitle>
             </S.PageTitleWrapper>
+            <S.SquareContainer>
+              {STYLED_SQUARE_COLOR_CARDS.map((colors) => (
+                <S.StyledSquareWrapper>
+                  {colors.map((left) => (
+                    <S.StyledSquares>
+                      {left.map((c) => (
+                        <>
+                          {c === 'square2' ? (
+                            <S.StyledSquare2></S.StyledSquare2>
+                          ) : (
+                            <S.StyledSquare color={c}></S.StyledSquare>
+                          )}
+                        </>
+                      ))}
+                    </S.StyledSquares>
+                  ))}
+                </S.StyledSquareWrapper>
+              ))}
+            </S.SquareContainer>
           </S.Top>
           <S.IntroAPPSTitle>INTRODUCTION</S.IntroAPPSTitle>
           <S.IntroAPPSContent>
@@ -56,15 +82,13 @@ export default function AboutAppsPage() {
             </S.ActivitiesDescription>
           </S.ActivitiesTitleWrapper>
           <S.ActivitiesCardWrapper>
-            {ACTIVITY_LIST.map((activity) => {
-              return (
-                <ActivityCard
-                  activityName={activity.name}
-                  activityIntro={activity.intro}
-                  activityImg={activity.img}
-                />
-              );
-            })}
+            {ACTIVITY_CARD_LIST.map((activity) => (
+              <ActivityCard
+                activityName={activity.name}
+                activityIntro={activity.intro}
+                activityImg={activity.img}
+              />
+            ))}
           </S.ActivitiesCardWrapper>
         </S.ActivitiesContainer>
         <S.CalendarContainer>
@@ -78,14 +102,10 @@ export default function AboutAppsPage() {
             <S.RegularCalendarCard>
               <S.RegularCalendarWrapper>
                 <S.RegularCalendarDot></S.RegularCalendarDot>
-                <S.RegularCalendarName>매달 정기 활동</S.RegularCalendarName>
+                <S.RegularCalendarName>매주 정기 활동</S.RegularCalendarName>
               </S.RegularCalendarWrapper>
               <S.RegularScheduleWrapper>
-                {[
-                  'DevTalk',
-                  '스터디 진행 상황 발표',
-                  '프로젝트 진행 상황 발표',
-                ].map((activity) => (
+                {WEEKLY_ACTIVITY_LIST.map((activity) => (
                   <S.RegularSchedule>{activity}</S.RegularSchedule>
                 ))}
               </S.RegularScheduleWrapper>

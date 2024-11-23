@@ -5,8 +5,8 @@ import {
   Footer,
   SocialMediaLinkCards,
   AboutAppsCoreValueCard,
-  MemberFeedbackCards,
   MemberFeedbackCardList,
+  ProjectCardList,
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
@@ -23,82 +23,84 @@ export default function HomePage() {
             </S.TitleWrapper>
           </S.HomeMainWrapper>
 
-        <S.SectionWrapper>
-          <S.SectionTitleWrapper>
-            <S.SectionTitleImageWrapper>
-              <S.SectionTitle>About</S.SectionTitle>
-              <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
-            </S.SectionTitleImageWrapper>
-            <S.SectionSubTitle>
-              숙명여자대학교 소프트웨어학부 웹·앱 개발 학회
-            </S.SectionSubTitle>
-          </S.SectionTitleWrapper>
-          <S.SectionContentWrapper>
-            <S.SectionContent>
-              <S.SectionContentInnerBox1>
-                {APPS_CORE_VALUE_CARDS.slice(0, 2).map((card, index) => (
-                  <AboutAppsCoreValueCard
-                    key={index}
-                    imageSrc={card.imageSrc}
-                    title={card.title}
-                    description={card.description}
-                    color={card.color}
-                  />
-                ))}
-              </S.SectionContentInnerBox1>
-            </S.SectionContent>
-            <S.SectionContent>
-              <S.SectionContentInnerBox2>
-                {APPS_CORE_VALUE_CARDS.slice(2, 4).map((card, index) => (
-                  <AboutAppsCoreValueCard
-                    key={index}
-                    imageSrc={card.imageSrc}
-                    title={card.title}
-                    description={card.description}
-                    color={card.color}
-                  />
-                ))}
-              </S.SectionContentInnerBox2>
-            </S.SectionContent>
-          </S.SectionContentWrapper>
-        </S.SectionWrapper>
+          <S.SectionWrapper>
+            <S.SectionTitleWrapper>
+              <S.SectionTitleImageWrapper>
+                <S.SectionTitle>ABOUT</S.SectionTitle>
+                <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
+              </S.SectionTitleImageWrapper>
+              <S.SectionSubTitle>
+                숙명여자대학교 소프트웨어학부 웹·앱 개발 학회
+              </S.SectionSubTitle>
+            </S.SectionTitleWrapper>
+            <S.SectionContentWrapper>
+              <S.SectionContent>
+                <S.SectionContentInnerBox1>
+                  {APPS_CORE_VALUE_CARDS.slice(0, 2).map((card, index) => (
+                    <AboutAppsCoreValueCard
+                      key={index}
+                      imageSrc={card.imageSrc}
+                      title={card.title}
+                      description={card.description}
+                      color={card.color}
+                    />
+                  ))}
+                </S.SectionContentInnerBox1>
+              </S.SectionContent>
+              <S.SectionContent>
+                <S.SectionContentInnerBox2>
+                  {APPS_CORE_VALUE_CARDS.slice(2, 4).map((card, index) => (
+                    <AboutAppsCoreValueCard
+                      key={index}
+                      imageSrc={card.imageSrc}
+                      title={card.title}
+                      description={card.description}
+                      color={card.color}
+                    />
+                  ))}
+                </S.SectionContentInnerBox2>
+              </S.SectionContent>
+            </S.SectionContentWrapper>
+          </S.SectionWrapper>
 
-        <S.SectionWrapper>
-          <S.SectionTitleWrapper>
-            <S.SectionTitleImageWrapper>
-              <S.SectionTitle>부원들이 말하는</S.SectionTitle>
-              <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
-            </S.SectionTitleImageWrapper>
-            <S.SectionSubTitle>
-              서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
-              지향합니다
-            </S.SectionSubTitle>
-          </S.SectionTitleWrapper>
-          <S.SectionContentWrapper>
-            <MemberFeedbackCardList />
-          </S.SectionContentWrapper>
-        </S.SectionWrapper>
+          <S.SectionWrapper>
+            <S.SectionTitleWrapper>
+              <S.SectionTitleImageWrapper>
+                <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
+                <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
+              </S.SectionTitleImageWrapper>
+              <S.SectionSubTitle>
+                서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
+                지향합니다
+              </S.SectionSubTitle>
+            </S.SectionTitleWrapper>
+            <S.SectionContentWrapper>
+              <MemberFeedbackCardList />
+            </S.SectionContentWrapper>
+          </S.SectionWrapper>
 
-        <S.SocialLinks>
-          <S.SocialLinksTitle>
-            APPS 소식을 더 빨리 알고 싶다면
-          </S.SocialLinksTitle>
-          <S.SocialLinksContent>
-            {SOCIAL_MEDIA_LINKS_CARD.map((social) => (
-              <SocialMediaLinkCards
-                key={social.platform}
-                platform={social.platform}
-                link={social.link}
-                icon={social.icon}
-                accountName={social.accountName}
-                activeIcon={social.activeIcon}
-                deActiveIcon={social.deActiveIcon}
-              />
-            ))}
-          </S.SocialLinksContent>
-        </S.SocialLinks>
+          <S.SocialLinks>
+            <S.SocialLinksTitle>
+              APPS 소식을 더 빨리 알고 싶다면
+            </S.SocialLinksTitle>
+            <S.SocialLinksContent>
+              {SOCIAL_MEDIA_LINKS_CARD.map((social) => (
+                <SocialMediaLinkCards
+                  key={social.platform}
+                  platform={social.platform}
+                  link={social.link}
+                  icon={social.icon}
+                  accountName={social.accountName}
+                  activeIcon={social.activeIcon}
+                  deActiveIcon={social.deActiveIcon}
+                />
+              ))}
+            </S.SocialLinksContent>
+          </S.SocialLinks>
 
-          <S.ProjectList></S.ProjectList>
+          <S.ProjectList>
+            <ProjectCardList />
+          </S.ProjectList>
 
           <S.ShareLinks>
             <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>

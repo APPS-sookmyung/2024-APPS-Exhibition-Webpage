@@ -3,8 +3,7 @@ import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const Root = styled.div`
   width: 100%;
-  min-height: 5000px;
-  margin: 0 auto;
+  margin: 0 auto 200px;
   padding-top: 60px;
   background-image: url('./images/background/about_background.svg');
   background-size: 100% 785px;
@@ -20,7 +19,7 @@ export const TopToIntroContainer = styled.div`
 
 export const Top = styled.div`
   width: 100%;
-  min-height: 234px;
+  height: 234px;
   background-color: #3f69ff;
   justify-content: center;
   display: flex;
@@ -44,6 +43,15 @@ export const PageTitle = styled.h1`
   margin: -6px 9px;
 `;
 
+export const PageSubTitle = styled.h1`
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  position: absolute;
+  padding: 75px 0 0 117px;
+`;
+
 export const IconTitle = styled.div`
   width: 136px;
   height: 94px;
@@ -51,7 +59,42 @@ export const IconTitle = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 5px;
-  background-color: #3f69ff;
+`;
+
+export const SquareContainer = styled.div`
+  width: 100%;
+  min-height: 234px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const StyledSquareWrapper = styled.div`
+  width: 100%;
+  max-width: 961px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const StyledSquares = styled.div`
+  display: flex;
+  height: 50px;
+`;
+
+export const StyledSquare = styled.div`
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: ${(props) => props.color || ''};
+`;
+
+export const StyledSquare2 = styled.div`
+  width: 50px;
+  height: 34px;
+  border-radius: 12px;
+  background: #2051ff;
 `;
 
 export const IntroAPPSTitle = styled.h2`
@@ -155,7 +198,7 @@ export const CalendarDescription = styled.div`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
-  margin: 0 0 108px 0;
+  margin-bottom: 40px;
 `;
 
 export const CalendarCardWrapper = styled.div`
@@ -168,12 +211,12 @@ export const CalendarCardWrapper = styled.div`
 `;
 
 export const RegularCalendarCard = styled.div`
-  width: 331px;
+  width: 330px;
   height: 140px;
   flex-shrink: 0;
   border-radius: 18px;
   background: var(--blue, #3f69ff);
-  margin: 82px 0 0 110px;
+  margin: 122px 0 0 110px;
 `;
 
 export const RegularCalendarWrapper = styled.div`
@@ -221,6 +264,7 @@ export const RegularSchedule = styled.div`
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.7px;
+  word-wrap: break-word;
 `;
 
 export const TeamContainer = styled.div`
@@ -274,7 +318,7 @@ export const MemberList = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 56px 0;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 40px;
   & > div:nth-child(even) {
     margin-top: 32px;
   }

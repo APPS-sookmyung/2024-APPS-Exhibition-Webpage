@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
@@ -28,11 +29,26 @@ export const Logo = styled.div`
   cursor: pointer;
   padding: 22px;
   margin: 0 30px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin: 0 10px;
+    padding: 14px;
+  }
 `;
 
 export const Menu = styled.div`
   margin: 0 50px;
   text-decoration: none;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    margin: 0 40px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin: 0 10px;
+  }
 `;
 
 export const MenuStyle = styled.span`
@@ -47,8 +63,11 @@ export const MenuStyle = styled.span`
     font-weight 0.2s ease,
     color 0.2s ease;
 
-  &:hover {
-    color: var(--pink, #ff88fb);
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 14px;
   }
 `;
 

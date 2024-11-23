@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const AboutAppsCoreValueCard = styled.div`
   display: flex;
@@ -11,6 +12,13 @@ export const ImageWrapper = styled.div`
   width: 100%;
   height: 80px;
   padding-bottom: 13px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    height: 60px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: 40px;
+  }
 `;
 
 export const Title = styled.span`
@@ -20,6 +28,13 @@ export const Title = styled.span`
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -1px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
 
 export const Description = styled.p`
@@ -27,6 +42,7 @@ export const Description = styled.p`
   color: ${({ color }) => color};
   text-align: center;
   font-size: 14px;
+  font-weight: 500;
   letter-spacing: -0.7px;
   white-space: pre-line;
 `;
