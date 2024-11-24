@@ -85,24 +85,25 @@ export const ProjectCardContent = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 120px;
   border-radius: 20px;
   background: #f1f1f1;
-  padding: 20px 18px 16px;
+  padding: 16px 18px;
   box-sizing: border-box;
   transition:
     background-color 0.3s ease,
     transform 0.2s ease;
+  gap: 8px;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     padding: 16px 16px 12px;
-    height: 100px;
   }
 `;
 
-export const ProjectTitleWrapper = styled.div`
+export const ProjectTitleBadgeWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const ProjectTitle = styled.strong`
@@ -112,6 +113,9 @@ export const ProjectTitle = styled.strong`
   font-weight: 700;
   transition: color 0.3s ease;
 
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 20px;
+  }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 18px;
   }
@@ -138,7 +142,7 @@ export const ProjectBadge = styled.div`
   left: 0;
   border-radius: 20px;
   background: #818181;
-  padding: 5px 14px 5px 12px;
+  padding: 5px 12px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -148,7 +152,12 @@ export const ProjectBadge = styled.div`
     color 0.3s ease,
     border 0.3s ease;
 
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 4px 10px;
+    font-size: 13px;
+  }
   @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 4px 8px;
     font-size: 12px;
   }
 `;

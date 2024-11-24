@@ -38,21 +38,21 @@ const ProjectCardList = () => {
               <img src="./images/thumbnails/img-thumbnail-1.png" />
             </S.ProjectCardImage>
             <S.ProjectCardContent>
-              <S.ProjectTitleWrapper>
+              <S.ProjectTitleBadgeWrapper>
                 <S.ProjectTitle>{project.name}</S.ProjectTitle>
-                <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
-              </S.ProjectTitleWrapper>
-              <S.ProjectBadgeWrapper>
-                <S.ProjectBadge>
-                  #
-                  {PROJECT_CATEGORY_LIST.find(
-                    (item) => item.category === project.category,
-                  )?.label || ''}
-                </S.ProjectBadge>
-                <S.ProjectBadge>
-                  {project.generation.map((gen) => `#${gen}`).join(' ')}
-                </S.ProjectBadge>
-              </S.ProjectBadgeWrapper>
+                <S.ProjectBadgeWrapper>
+                  <S.ProjectBadge>
+                    #
+                    {PROJECT_CATEGORY_LIST.find(
+                      (item) => item.category === project.category,
+                    )?.label || ''}
+                  </S.ProjectBadge>
+                  <S.ProjectBadge>
+                    {project.generation.map((gen) => `#${gen}`).join(' ')}
+                  </S.ProjectBadge>
+                </S.ProjectBadgeWrapper>
+              </S.ProjectTitleBadgeWrapper>
+              <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
             </S.ProjectCardContent>
           </S.ProjectCard>
         ))}
