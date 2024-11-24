@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const Root = styled.div`
   width: 100%;
@@ -22,6 +23,12 @@ export const Top = styled.div`
   background-color: #3f69ff;
   justify-content: center;
   display: flex;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    height: 187px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: 117px;
+  }
 `;
 
 export const PageTitleWrapper = styled.div`
@@ -32,6 +39,14 @@ export const PageTitleWrapper = styled.div`
   justify-content: center;
   position: absolute;
   z-index: 2;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    margin-top: 53px;
+    height: 78px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin-top: 33px;
+    height: 49px;
+  }
 `;
 
 export const PageTitle = styled.h1`
@@ -40,6 +55,12 @@ export const PageTitle = styled.h1`
   font-weight: 700;
   letter-spacing: -3.2px;
   margin: -6px 9px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 45px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 32px;
+  }
 `;
 
 export const PageSubTitle = styled.h1`
@@ -49,6 +70,14 @@ export const PageSubTitle = styled.h1`
   letter-spacing: -1px;
   position: absolute;
   padding: 75px 0 0 117px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+    padding: 60px 0 0 94px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+    padding: 38px 0 0 58px;
+  }
 `;
 
 export const IconTitle = styled.div`
@@ -58,6 +87,14 @@ export const IconTitle = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 5px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 108px;
+    height: 75px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 68px;
+    height: 47px;
+  }
 `;
 
 export const SquareContainer = styled.div`
@@ -66,6 +103,7 @@ export const SquareContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 `;
 
 export const StyledSquareWrapper = styled.div`
@@ -75,11 +113,26 @@ export const StyledSquareWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    height: 40px;
+    width: 1000px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: 25px;
+    width: 500px;
+  }
 `;
 
 export const StyledSquares = styled.div`
   display: flex;
   height: 50px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    height: 40px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: 25px;
+  }
 `;
 
 export const StyledSquare = styled.div`
@@ -87,6 +140,17 @@ export const StyledSquare = styled.div`
   height: 50px;
   border-radius: 12px;
   background: ${(props) => props.color || ''};
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+  }
 `;
 
 export const StyledSquare2 = styled.div`
@@ -94,6 +158,17 @@ export const StyledSquare2 = styled.div`
   height: 34px;
   border-radius: 12px;
   background: #2051ff;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 40px;
+    height: 27px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 25px;
+    height: 17px;
+    border-radius: 6px;
+  }
 `;
 
 export const IntroAPPSTitle = styled.h2`
@@ -105,6 +180,14 @@ export const IntroAPPSTitle = styled.h2`
   line-height: 28px;
   letter-spacing: -1.2px;
   margin: 45px 0 31px 0;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 22px;
+    margin: 36px 0 25px 0;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 18px;
+    margin: 27px 0 15px 0;
+  }
 `;
 
 export const IntroAPPSContent = styled.p`
@@ -115,6 +198,14 @@ export const IntroAPPSContent = styled.p`
   line-height: 28px;
   letter-spacing: -1px;
   margin: 0 0 53px 0;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+    margin: 0 0 42px 0;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+    margin: 0 0 26px 0;
+  }
 `;
 
 export const IntroToActLine = styled.div`
@@ -125,6 +216,12 @@ export const IntroToActLine = styled.div`
   background-size: 962px 2px;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    background-size: 600px 1px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    background-size: 380px 1px;
+  }
 `;
 
 export const ActivitiesContainer = styled.div`
@@ -139,6 +236,12 @@ export const ActivitiesTitleWrapper = styled.div`
   justify-content: center;
   margin-top: 113px;
   gap: 16px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    margin-top: 90px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin-top: 56px;
+  }
 `;
 
 export const ActivitiesTitle = styled.div`
@@ -149,6 +252,13 @@ export const ActivitiesTitle = styled.div`
   font-weight: 700;
   line-height: 28px;
   letter-spacing: -2px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 28px;
+  }
 `;
 
 export const ActivitiesDescription = styled.div`
@@ -158,6 +268,14 @@ export const ActivitiesDescription = styled.div`
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0 0 80px 0;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+    margin: 0 0 64px 0;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+    margin: 0 0 40px 0;
+  }
 `;
 
 export const ActivitiesCardWrapper = styled.div`
@@ -167,6 +285,9 @@ export const ActivitiesCardWrapper = styled.div`
   justify-content: center;
   gap: 28px 20px;
   margin: auto;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 22px 16px;
+  }
 `;
 
 export const CalendarContainer = styled.div`
@@ -181,6 +302,12 @@ export const CalendarTitleWrapper = styled.div`
   justify-content: center;
   margin-top: 113px;
   gap: 16px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    margin-top: 90px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin-top: 56px;
+  }
 `;
 
 export const CalendarTitle = styled.div`
@@ -189,6 +316,13 @@ export const CalendarTitle = styled.div`
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -1.6px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 24px;
+  }
 `;
 
 export const CalendarDescription = styled.div`
@@ -198,6 +332,14 @@ export const CalendarDescription = styled.div`
   font-weight: 500;
   letter-spacing: -1px;
   margin-bottom: 40px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
 `;
 
 export const CalendarCardWrapper = styled.div`
@@ -215,7 +357,15 @@ export const RegularCalendarCard = styled.div`
   flex-shrink: 0;
   border-radius: 18px;
   background: var(--blue, #3f69ff);
-  margin: 122px 0 0 110px;
+  margin: 138px 0 0 110px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 297px;
+    margin: 112px 0 0 103px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 178px;
+    margin: 61px 178px 0 0;
+  }
 `;
 
 export const RegularCalendarWrapper = styled.div`
@@ -223,6 +373,14 @@ export const RegularCalendarWrapper = styled.div`
   padding: 20px 0 0 26px;
   align-items: center;
   gap: 12px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 18px 0 0 23px;
+    gap: 10px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 10px 0 0 13px;
+    gap: 6px;
+  }
 `;
 
 export const RegularCalendarDot = styled.div`
@@ -232,6 +390,14 @@ export const RegularCalendarDot = styled.div`
   background-image: url('/images/icons/about_calendar_white_dot.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 9px;
+    height: 9px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 5px;
+    height: 5px;
+  }
 `;
 
 export const RegularCalendarName = styled.h3`
@@ -241,6 +407,12 @@ export const RegularCalendarName = styled.h3`
   font-weight: 600;
   letter-spacing: -1px;
   margin: 0;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
 
 export const RegularScheduleWrapper = styled.div`
@@ -248,6 +420,12 @@ export const RegularScheduleWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px 9px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 12px 22px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 4px 5px;
+  }
 `;
 
 export const RegularSchedule = styled.div`
@@ -264,6 +442,14 @@ export const RegularSchedule = styled.div`
   font-weight: 600;
   letter-spacing: -0.7px;
   word-wrap: break-word;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 12px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 10px;
+    height: 12px;
+    padding: 5px 10px;
+  }
 `;
 
 export const TeamContainer = styled.div`
