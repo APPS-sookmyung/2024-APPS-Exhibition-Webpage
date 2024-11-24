@@ -266,7 +266,6 @@ export const ActivitiesTitle = styled.div`
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 32px;
   }
-
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 28px;
   }
