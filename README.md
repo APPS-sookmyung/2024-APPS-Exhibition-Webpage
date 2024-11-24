@@ -1,4 +1,5 @@
 <div align="center">
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/7095ac79-cbbf-4e52-b8bb-2046481125d7/deploy-status)](https://app.netlify.com/sites/2024-apps-exhibition/deploys)
   <h1>Sookmyung APPS Exhibition 2024</h1>
   <p><a href='https://github.com/APPS-sookmyung'>숙명여자대학교 소프트웨어학부 학회 APPS</a>   온라인 전시회</p>
   <!-- <img src="./readme_assets/img-mainpage.png" align="center" style="width: 700px" alt="APPS 소개" />  -->
@@ -38,11 +39,11 @@
 | :----------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
 |                                                             HTML5                                                              |                                                             CSS3                                                             |                                                        JavaScript (ES6)                                                         |                                                             React.js                                                              |
 
-<!-- ### **Back-end**
+### **Back-end**
 
-| <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/vercel.svg" alt="Vercel" width="50px" height="50px" /> |
-| :--------------------------------------------------------------------------------------------------------------------: |
-|                                                         Vercel                                                         | -->
+| <img src="https://www.cdnlogo.com/logos/n/75/netlify.svg" alt="Vercel" width="50px" height="50px" /> |
+| :--------------------------------------------------------------------------------------------------: |
+|                                               Netlify                                                |
 
 ### **Version Control**
 
@@ -66,12 +67,12 @@
 
 <br />
 
-|                                               이미지                                                |                                           이름 (세부 전공)                                           |   역할    | 개발 내용 |
-| :-------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :-------: | :-------: |
-| <img src="https://avatars.githubusercontent.com/u/100200965?v=4" alt="김준희 프로필" width="80px"/> |     <a href="https://github.com/junheekim61" target="_blank">김준희<br />(소프트웨어학부 22)</a>     | Front-end |           |
-| <img src="https://avatars.githubusercontent.com/u/128569095?v=4" alt="류미성 프로필" width="80px"/> |     <a href="https://github.com/misung-dev" target="_blank">류미성<br /> (소프트웨어학부 21)</a>     | Front-end |           |
-| <img src="https://avatars.githubusercontent.com/u/162579635?v=4" alt="이다빈 프로필" width="80px"/> |     <a href="https://github.com/ninum12" target="_blank"> 이다빈<br /> (소프트웨어학부 24) </a>      | Front-end |           |
-| <img src="https://avatars.githubusercontent.com/u/163178666?v=4" alt="하지민 프로필" width="80px"/> | <a href="https://github.com/j1m1n-ha" target="_blank"> 하지민<br /> (수학과, 소프트웨어학부 22) </a> | Front-end |
+|                                               이미지                                                |                                       이름 (세부 전공)                                       |   역할    |                                            개발 내용                                            |
+| :-------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :-------: | :---------------------------------------------------------------------------------------------: |
+| <img src="https://avatars.githubusercontent.com/u/100200965?v=4" alt="김준희 프로필" width="80px"/> | <a href="https://github.com/junheekim61" target="_blank">김준희<br />(소프트웨어학부 22)</a> | Front-end |                           프로젝트별 상세 페이지 구현<br>반응형 구현                            |
+| <img src="https://avatars.githubusercontent.com/u/128569095?v=4" alt="류미성 프로필" width="80px"/> | <a href="https://github.com/misung-dev" target="_blank">류미성<br /> (소프트웨어학부 21)</a> | Front-end |                               홈 화면 페이지 구현<br>반응형 구현                                |
+| <img src="https://avatars.githubusercontent.com/u/162579635?v=4" alt="이다빈 프로필" width="80px"/> | <a href="https://github.com/ninum12" target="_blank"> 이다빈<br /> (소프트웨어학부 24) </a>  | Front-end |                           APPS 소개 및 활동 섹션 구현<br>반응형 구현                            |
+| <img src="https://avatars.githubusercontent.com/u/163178666?v=4" alt="하지민 프로필" width="80px"/> | <a href="https://github.com/j1m1n-ha" target="_blank"> 하지민<br /> (소프트웨어학부 22) </a> | Front-end | APPS 부원 소개 섹션 구현<br/> 부원별 상세 소개 모달 구현<br>Footer 컴포넌트 구현<br>반응형 구현 |
 
 <br />
 
