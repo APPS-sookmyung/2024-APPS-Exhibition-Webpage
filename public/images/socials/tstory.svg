@@ -1,0 +1,19 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 9.89011C0 4.42795 4.42795 0 9.89011 0H40.1099C45.572 0 50 4.42795 50 9.89011V40.1099C50 45.572 45.572 50 40.1099 50H9.89011C4.42795 50 0 45.572 0 40.1099V9.89011Z" fill="#EB531F"/>
+  <circle cx="15.1429" cy="15.1429" r="4.14286" fill="white"/>
+  <circle cx="25.5003" cy="15.1429" r="4.14286" fill="white"/>
+  <circle cx="25.5003" cy="25.5003" r="4.14286" fill="white"/>
+  <circle cx="25.5003" cy="35.8567" r="4.14286" fill="white"/>
+  <circle cx="35.8567" cy="15.1429" r="4.14286" fill="white"/>
+  <g transform="translate(10, 10)">
+    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="Group 2415">
+        <circle id="Ellipse 44" cx="4.14286" cy="4.14286" r="4.14286" fill="white"/>
+        <circle id="Ellipse 44_2" cx="14.5003" cy="4.14286" r="4.14286" fill="white"/>
+        <circle id="Ellipse 44_3" cx="14.5003" cy="14.5003" r="4.14286" fill="white"/>
+        <circle id="Ellipse 44_4" cx="14.5003" cy="24.8567" r="4.14286" fill="white"/>
+        <circle id="Ellipse 44_5" cx="24.8567" cy="4.14286" r="4.14286" fill="white"/>
+      </g>
+    </svg>
+  </g>
+</svg>
