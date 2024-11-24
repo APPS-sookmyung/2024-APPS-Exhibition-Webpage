@@ -10,6 +10,7 @@ export const ActivityCard = styled.div`
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
+
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 340px;
     height: 217px;
@@ -21,6 +22,7 @@ export const ActivityTextWrapper = styled.div`
   position: absolute;
   width: 470px;
   justify-content: center;
+
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 340px;
   }
@@ -40,6 +42,7 @@ export const ActivityName = styled.h2`
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -1px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     margin: 30px 0 0 30px;
     font-size: 18px;
@@ -58,6 +61,7 @@ export const ActivityIntroWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: end;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     height: 184px;
   }
@@ -73,6 +77,7 @@ export const ActivityIntro = styled.p`
   letter-spacing: -0.7px;
   margin: 0;
   word-break: keep-all;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 14px;
   }
@@ -94,6 +99,7 @@ export const ActivityBackBlur = styled.div`
   transition:
     background 0.3s ease,
     border 0.3s ease;
+
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 340px;
     height: 217px;

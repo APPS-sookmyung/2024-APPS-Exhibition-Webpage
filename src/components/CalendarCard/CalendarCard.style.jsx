@@ -25,6 +25,7 @@ export const CalendarCard = styled.div`
       background 0.2s ease,
       color 0.2s ease;
   }
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 198px;
     min-height: 160px;
@@ -42,6 +43,7 @@ export const CalendarMonthWrapper = styled.div`
   padding: 20px 0 0 26px;
   align-items: center;
   gap: 12px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 18px 0 0 23px;
     gap: 10px;
@@ -59,6 +61,7 @@ export const CalendarMonthDot = styled.div`
   background-image: url('/images/icons/about_calendar_blue_dot.svg');
   background-size: contain;
   background-repeat: no-repeat;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 9px;
     height: 9px;
@@ -76,6 +79,7 @@ export const CalendarMonth = styled.h3`
   font-weight: 600;
   letter-spacing: -1px;
   margin: 0;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
   }
@@ -89,6 +93,7 @@ export const ScheduleWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 12px 18px 22px;
     gap: 9px;
@@ -113,6 +118,7 @@ export const Schedule = styled.div`
   font-weight: 600;
   letter-spacing: -0.7px;
   word-break: keep-all;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
   }

@@ -23,6 +23,7 @@ export const Top = styled.div`
   background-color: #3f69ff;
   justify-content: center;
   display: flex;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     height: 187px;
   }
@@ -39,6 +40,7 @@ export const PageTitleWrapper = styled.div`
   justify-content: center;
   position: absolute;
   z-index: 2;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     margin-top: 53px;
     height: 78px;
@@ -55,6 +57,7 @@ export const PageTitle = styled.h1`
   font-weight: 700;
   letter-spacing: -3.2px;
   margin: -6px 9px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 45px;
   }
@@ -70,6 +73,7 @@ export const PageSubTitle = styled.h1`
   letter-spacing: -1px;
   position: absolute;
   padding: 75px 0 0 117px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
     padding: 60px 0 0 94px;
@@ -87,6 +91,7 @@ export const IconTitle = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 5px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 108px;
     height: 75px;
@@ -113,6 +118,7 @@ export const StyledSquareWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     height: 40px;
     width: 1000px;
@@ -126,10 +132,10 @@ export const StyledSquareWrapper = styled.div`
 export const StyledSquares = styled.div`
   display: flex;
   height: 50px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     height: 40px;
   }
-
   @media (max-width: ${BREAKPOINTS[0]}px) {
     height: 25px;
   }
@@ -140,12 +146,12 @@ export const StyledSquare = styled.div`
   height: 50px;
   border-radius: 12px;
   background: ${(props) => props.color || ''};
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 40px;
     height: 40px;
     border-radius: 10px;
   }
-
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 25px;
     height: 25px;
@@ -158,12 +164,12 @@ export const StyledSquare2 = styled.div`
   height: 34px;
   border-radius: 12px;
   background: #2051ff;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 40px;
     height: 27px;
     border-radius: 10px;
   }
-
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 25px;
     height: 17px;
@@ -180,6 +186,7 @@ export const IntroAPPSTitle = styled.h2`
   line-height: 28px;
   letter-spacing: -1.2px;
   margin: 45px 0 31px 0;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 22px;
     margin: 36px 0 25px 0;
@@ -198,6 +205,7 @@ export const IntroAPPSContent = styled.p`
   line-height: 28px;
   letter-spacing: -1px;
   margin: 0 0 53px 0;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
     margin: 0 0 42px 0;
@@ -216,6 +224,7 @@ export const IntroToActLine = styled.div`
   background-size: 962px 2px;
   background-position: center;
   background-repeat: no-repeat;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     background-size: 600px 1px;
   }
@@ -236,6 +245,7 @@ export const ActivitiesTitleWrapper = styled.div`
   justify-content: center;
   margin-top: 113px;
   gap: 16px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     margin-top: 90px;
   }
@@ -252,6 +262,7 @@ export const ActivitiesTitle = styled.div`
   font-weight: 700;
   line-height: 28px;
   letter-spacing: -2px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 32px;
   }
@@ -268,6 +279,7 @@ export const ActivitiesDescription = styled.div`
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0 0 80px 0;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
     margin: 0 0 64px 0;
@@ -285,6 +297,7 @@ export const ActivitiesCardWrapper = styled.div`
   justify-content: center;
   gap: 28px 20px;
   margin: auto;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 22px 16px;
   }
@@ -302,6 +315,7 @@ export const CalendarTitleWrapper = styled.div`
   justify-content: center;
   margin-top: 113px;
   gap: 16px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     margin-top: 90px;
   }
@@ -316,6 +330,7 @@ export const CalendarTitle = styled.div`
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -1.6px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 28px;
   }
@@ -332,6 +347,7 @@ export const CalendarDescription = styled.div`
   font-weight: 500;
   letter-spacing: -1px;
   margin-bottom: 40px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
     margin-bottom: 32px;
@@ -358,6 +374,7 @@ export const RegularCalendarCard = styled.div`
   border-radius: 18px;
   background: var(--blue, #3f69ff);
   margin: 138px 0 0 110px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 297px;
     margin: 112px 0 0 103px;
@@ -373,6 +390,7 @@ export const RegularCalendarWrapper = styled.div`
   padding: 20px 0 0 26px;
   align-items: center;
   gap: 12px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 18px 0 0 23px;
     gap: 10px;
@@ -390,6 +408,7 @@ export const RegularCalendarDot = styled.div`
   background-image: url('/images/icons/about_calendar_white_dot.svg');
   background-size: contain;
   background-repeat: no-repeat;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 9px;
     height: 9px;
@@ -407,6 +426,7 @@ export const RegularCalendarName = styled.h3`
   font-weight: 600;
   letter-spacing: -1px;
   margin: 0;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
   }
@@ -420,6 +440,7 @@ export const RegularScheduleWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px 9px;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 12px 22px;
   }
@@ -442,6 +463,7 @@ export const RegularSchedule = styled.div`
   font-weight: 600;
   letter-spacing: -0.7px;
   word-wrap: break-word;
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
   }
