@@ -137,7 +137,7 @@ export const PROJECT_LIST = [
   },
   {
     id: 6,
-    name: 'Sookmyung Software!',
+    name: 'BDB - Birth Day Buddy',
     generation: ['10기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/img-thumbnail-6.png',

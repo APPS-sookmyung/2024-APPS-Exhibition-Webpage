@@ -22,7 +22,9 @@ export const HomePageBackground = styled.div`
   background-image: url('/images/background/home-background.svg');
   background-repeat: no-repeat;
   background-position: center 0;
+  background-size: cover;
   overflow: hidden;
+  height: 100%;
 `;
 
 export const HomePage = styled.div`
@@ -341,7 +343,7 @@ export const ProjectList = styled.section`
     padding: 0 50px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 `;
 
