@@ -17,8 +17,6 @@ export const Modal = styled.div`
   background: rgba(0, 0, 0, 0.7);
   width: 1100px;
   height: 680px;
-  flex-direction: column;
-  align-items: flex-start;
   position: relative;
   padding: 32px;
   display: flex;
@@ -78,7 +76,6 @@ export const MemberCard = styled.div`
   height: 142px;
   border-radius: 20px;
   background-color: #ff5400;
-  margin: 0;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 230px;
@@ -171,7 +168,6 @@ export const MemberDetailSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
   gap: 20px;
   top: 98px;
   left: 394px;
@@ -218,9 +214,7 @@ export const SNSSection = styled.div`
 `;
 
 export const Divider = styled.div`
-  background: none;
-  border: 1px;
-  margin: 0;
+  border: 0;
   width: 100%;
 
   img {
