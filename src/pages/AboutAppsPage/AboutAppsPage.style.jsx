@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   margin: 0 auto 200px;
   padding-top: 60px;
@@ -237,21 +240,15 @@ export const ActivitiesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 30px;
 `;
 
 export const ActivitiesTitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 113px;
   gap: 16px;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    margin-top: 90px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    margin-top: 56px;
-  }
+  margin-top: 113px;
 `;
 
 export const ActivitiesTitle = styled.div`
@@ -290,15 +287,20 @@ export const ActivitiesDescription = styled.div`
 `;
 
 export const ActivitiesCardWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 960px;
   gap: 28px 20px;
   margin: auto;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 22px 16px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -312,15 +314,8 @@ export const CalendarTitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 113px;
   gap: 16px;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    margin-top: 90px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    margin-top: 56px;
-  }
+  margin-top: 113px;
 `;
 
 export const CalendarTitle = styled.div`
@@ -345,15 +340,15 @@ export const CalendarDescription = styled.div`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 14px;
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 `;
 
