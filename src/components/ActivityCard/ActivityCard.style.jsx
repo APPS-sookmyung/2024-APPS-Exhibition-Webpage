@@ -74,8 +74,8 @@ export const ActivityBackBlur = styled.div`
   border-radius: 20px;
 
   transition:
-    box-shadow 0.3s ease,
-    background 1s ease;
+    box-shadow 0.5s ease,
+    background 0.5s ease;
 
   &:hover {
     background: rgba(0, 0, 0, 0.5);
