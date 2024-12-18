@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const ActivityCard = styled.div`
-  box-sizing: border-box;
   height: 300px;
   width: 100%;
   flex-shrink: 0;
@@ -10,14 +9,6 @@ export const ActivityCard = styled.div`
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-
-  transition:
-    box-shadow 0.3s ease,
-    background 1s ease;
-
-  &:hover {
-    box-shadow: 0 0 0 1px #fff; /* border 효과처럼 보이게 만듦 */
-  }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     height: 236px;
@@ -73,5 +64,22 @@ export const ActivityIntro = styled.p`
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
+  }
+`;
+
+export const ActivityBackBlur = styled.div`
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+  transition:
+    box-shadow 0.3s ease,
+    background 1s ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 0 1px #fff;
   }
 `;

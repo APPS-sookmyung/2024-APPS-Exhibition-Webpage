@@ -19,28 +19,26 @@ export default function ActivityCard({
   const linearGradient =
     'linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 27.33%), ';
 
-  const Blur = 'linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), ';
-
   return (
     <S.ActivityCard
       onMouseOut={handleMouseOut}
       onMouseOver={handleMouseOver}
-      style={
-        isHovering
-          ? {
-              backgroundImage: Blur + linearGradient + `url(${activityImg})`,
-            }
-          : {
-              backgroundImage: linearGradient + `url(${activityImg})`,
-            }
-      }
+      style={{
+        backgroundImage: linearGradient + `url(${activityImg})`,
+      }}
     >
-      <S.ActivityTextWrapper>
-        <S.ActivityName>{activityName}</S.ActivityName>
-        <S.ActivityIntroWrapper>
-          {isHovering ? <S.ActivityIntro>{activityIntro}</S.ActivityIntro> : ''}
-        </S.ActivityIntroWrapper>
-      </S.ActivityTextWrapper>
+      <S.ActivityBackBlur>
+        <S.ActivityTextWrapper>
+          <S.ActivityName>{activityName}</S.ActivityName>
+          <S.ActivityIntroWrapper>
+            {isHovering ? (
+              <S.ActivityIntro>{activityIntro}</S.ActivityIntro>
+            ) : (
+              ''
+            )}
+          </S.ActivityIntroWrapper>
+        </S.ActivityTextWrapper>
+      </S.ActivityBackBlur>
     </S.ActivityCard>
   );
 }
