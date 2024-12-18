@@ -27,13 +27,18 @@ export default function ActivityCard({
         backgroundImage: linearGradient + `url(${activityImg})`,
       }}
     >
-      <S.ActivityTextWrapper>
-        <S.ActivityName>{activityName}</S.ActivityName>
-        <S.ActivityIntroWrapper>
-          {isHovering ? <S.ActivityIntro>{activityIntro}</S.ActivityIntro> : ''}
-        </S.ActivityIntroWrapper>
-      </S.ActivityTextWrapper>
-      {isHovering ? <S.ActivityBackBlur></S.ActivityBackBlur> : ''}
+      <S.ActivityBackBlur>
+        <S.ActivityTextWrapper>
+          <S.ActivityName>{activityName}</S.ActivityName>
+          <S.ActivityIntroWrapper>
+            {isHovering ? (
+              <S.ActivityIntro>{activityIntro}</S.ActivityIntro>
+            ) : (
+              ''
+            )}
+          </S.ActivityIntroWrapper>
+        </S.ActivityTextWrapper>
+      </S.ActivityBackBlur>
     </S.ActivityCard>
   );
 }
