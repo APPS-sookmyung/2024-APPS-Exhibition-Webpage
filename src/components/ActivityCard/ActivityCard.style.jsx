@@ -11,11 +11,12 @@ export const ActivityCard = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 
+  transition:
+    box-shadow 0.3s ease,
+    background 1s ease;
+
   &:hover {
-    border: 1px solid #fff;
-    transition:
-      background 0.3s ease,
-      border 0.3s ease;
+    box-shadow: 0 0 0 1px #fff; /* border 효과처럼 보이게 만듦 */
   }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
