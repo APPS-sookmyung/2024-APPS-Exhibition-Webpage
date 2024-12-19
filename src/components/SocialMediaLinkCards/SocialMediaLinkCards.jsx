@@ -15,6 +15,7 @@ const SocialMediaLinkCards = ({
       to={link}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      target="_blank"
     >
       <S.SocialLinksCard>
         <S.SocialLinksCardImage>
