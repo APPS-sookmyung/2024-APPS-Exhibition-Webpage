@@ -27,7 +27,10 @@ export default function HomePage() {
             <S.SectionTitleWrapper>
               <S.SectionTitleImageWrapper>
                 <S.SectionTitle>ABOUT</S.SectionTitle>
-                <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
+                <img
+                  src="/images/logo/logo-gradation-motion.svg"
+                  alt="앱스 로고"
+                />
               </S.SectionTitleImageWrapper>
               <S.SectionSubTitle>
                 숙명여자대학교 소프트웨어학부 웹·앱 개발 학회
@@ -67,7 +70,10 @@ export default function HomePage() {
             <S.SectionTitleWrapper>
               <S.SectionTitleImageWrapper>
                 <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
-                <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
+                <img
+                  src="/images/logo/logo-gradation-motion.svg"
+                  alt="앱스 로고"
+                />
               </S.SectionTitleImageWrapper>
               <S.SectionSubTitle>
                 서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
