@@ -489,6 +489,13 @@ export const TeamIntroTitle = styled.h1`
   font-weight: 700;
   letter-spacing: -1.6px;
   margin: 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 26px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 22px;
+  }
 `;
 
 export const TeamIntroContent = styled.p`
@@ -498,22 +505,37 @@ export const TeamIntroContent = styled.p`
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 16px;
+  }
 `;
 
 export const MemberList = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 56px 0;
+  grid-auto-rows: 254px;
   max-width: 880px;
+  gap: 56px 0;
   margin: 0 auto;
-  margin-top: 40px;
-  & > div:nth-child(even) {
-    margin-top: 32px;
-  }
-`;
 
-export const MemberWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 0;
+  & > div:nth-child(odd) {
+    margin-top: 40px;
+  }
+
+  & > div:nth-child(even) {
+    margin-top: 72px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 44px 0;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 0;
+  }
 `;

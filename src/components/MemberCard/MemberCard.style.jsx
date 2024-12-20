@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const MemberCard = styled.div`
   position: relative;
-  width: 220px;
-  height: 254px;
+  aspect-ratio: 220 / 254;
   flex-shrink: 0;
   border-radius: 18px;
   background-color: ${(props) =>
@@ -20,8 +19,14 @@ export const MemberCard = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  max-width: 220px;
+  height: auto;
   &:hover {
     background-color: #ff5400;
+
+    h3 {
+      color: #ffe0b8;
+    }
   }
 `;
 
