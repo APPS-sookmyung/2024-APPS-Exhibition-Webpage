@@ -10,6 +10,15 @@ import {
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
+const handleCopyClipBoard = async () => {
+  try {
+    await navigator.clipboard.writeText('https://2024-apps.netlify.app/');
+    alert('클립보드에 링크가 복사되었어요.');
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export default function HomePage() {
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
@@ -106,7 +115,13 @@ export default function HomePage() {
             <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
             <S.ShareLinksContent>
               <S.StyledLink to="/">
-                <S.LinkButton>링크 공유하기</S.LinkButton>
+                <S.LinkButton
+                  onClick={() =>
+                    handleCopyClipBoard('https://2024-apps.netlify.app/')
+                  }
+                >
+                  링크 공유하기
+                </S.LinkButton>
               </S.StyledLink>
               <S.StyledLink
                 to="https://forms.gle/k14eA7Kk9bxD7aTm6"
