@@ -316,11 +316,17 @@ export const TeamIntroContent = styled.p`
 export const MemberList = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 254px;
+  max-width: 880px;
   gap: 56px 0;
   margin: 0 auto;
-  margin-top: 40px;
+
+  & > div:nth-child(odd) {
+    margin-top: 40px;
+  }
+
   & > div:nth-child(even) {
-    margin-top: 32px;
+    margin-top: 72px;
   }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
@@ -328,17 +334,7 @@ export const MemberList = styled.div`
     gap: 44px 0;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 32px;
-
-    & > div:nth-child(even) {
-      margin-top: 0px;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 0;
   }
-`;
-
-export const MemberWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 0;
 `;
