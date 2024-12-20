@@ -15,6 +15,7 @@ import {
   CalendarCard,
   Header,
   PageLayout,
+  FallingBlocks,
 } from '../../components';
 
 export default function AboutAppsPage() {
@@ -32,6 +33,7 @@ export default function AboutAppsPage() {
     setSelectedMember(null);
     setIsModalOpen(false);
   };
+
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
       <S.Root>
@@ -43,22 +45,13 @@ export default function AboutAppsPage() {
               <S.IconTitle></S.IconTitle>
             </S.PageTitleWrapper>
             <S.SquareContainer>
-              {STYLED_SQUARE_COLOR_CARDS.map((colors) => (
-                <S.StyledSquareWrapper>
-                  {colors.map((left) => (
-                    <S.StyledSquares>
-                      {left.map((c) => (
-                        <>
-                          {c === 'square2' ? (
-                            <S.StyledSquare2></S.StyledSquare2>
-                          ) : (
-                            <S.StyledSquare color={c}></S.StyledSquare>
-                          )}
-                        </>
-                      ))}
-                    </S.StyledSquares>
-                  ))}
-                </S.StyledSquareWrapper>
+              {STYLED_SQUARE_COLOR_CARDS.map((blocks) => (
+                <FallingBlocks
+                  delay={blocks.delay}
+                  toY={blocks.toY}
+                  time={blocks.time}
+                  colors={blocks.colors}
+                />
               ))}
             </S.SquareContainer>
           </S.Top>
