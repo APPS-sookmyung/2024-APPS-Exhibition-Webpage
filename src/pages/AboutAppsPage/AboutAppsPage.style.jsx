@@ -328,6 +328,10 @@ export const MemberList = styled.div`
   & > div:nth-child(even) {
     margin-top: 72px;
   }
+  @media (min-width: ${BREAKPOINTS[1]}px) {
+    grid-template-columns: repeat(4, minmax(0, 220px));
+    justify-content: center;
+  }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     grid-template-columns: repeat(2, 1fr);
