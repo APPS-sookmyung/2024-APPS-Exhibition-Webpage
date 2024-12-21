@@ -187,12 +187,13 @@ export const Content = styled.div`
   color: #fff;
 `;
 
-export const ServiceIntro = styled.h2`
+export const SubTitle = styled.h2`
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -1px;
   padding-bottom: 12px;
   margin: 0;
+  color: #fff;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 22px;
@@ -220,8 +221,8 @@ export const ServiceDetail = styled.p`
 export const StackList = styled.ul`
   display: flex;
   justify-content: baseline;
-  padding-left: 0;
   margin: 0;
+  padding: 0 0 40px 0;
 
   &:not(:first-child) {
     gap: 20px;
@@ -281,4 +282,26 @@ export const StackText = styled.p`
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 12px;
   }
+`;
+
+export const Bottom = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+`;
+
+export const DeveloperCardContainer = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+`;
+
+export const ReviewContainer = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
