@@ -29,7 +29,9 @@ export default function ActivityCard({
     >
       <S.ActivityBackBlur>
         <S.ActivityTextWrapper>
-          <S.ActivityName>{activityName}</S.ActivityName>
+          <S.ActivityNameWrapper>
+            <S.ActivityName>{activityName}</S.ActivityName>
+          </S.ActivityNameWrapper>
           <S.ActivityIntroWrapper>
             {isHovering ? (
               <S.ActivityIntro>{activityIntro}</S.ActivityIntro>
