@@ -2,17 +2,13 @@ import styled from 'styled-components';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const ActivityCard = styled.div`
-  height: 300px;
   width: 100%;
+  aspect-ratio: 3/2;
   flex-shrink: 0;
   border-radius: 20px;
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    height: 236px;
-  }
 `;
 
 export const ActivityTextWrapper = styled.div`
@@ -20,6 +16,9 @@ export const ActivityTextWrapper = styled.div`
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 20px;
+  }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 16px;
   }
 `;
 
@@ -41,6 +40,10 @@ export const ActivityName = styled.h2`
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 16px;
     padding: 10px 36px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+    padding: 8px 24px;
   }
 `;
 
