@@ -19,13 +19,16 @@ export const ReviewBox = styled.div`
   font-weight: 500;
   letter-spacing: -0.8px;
 
+  p {
+    margin: 0;
+  }
+
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 14px;
     padding: 20px 18px;
 
     div {
       float: left;
-      height: 160px;
       margin-right: 13px;
       margin-bottom: 6px;
     }

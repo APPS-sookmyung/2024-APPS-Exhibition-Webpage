@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const DeveloperCard = styled.div`
   box-sizing: border-box;
@@ -17,6 +18,11 @@ export const DeveloperCard = styled.div`
   /* &:hover {
     background-color: #ff5400;
   } */
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 98px;
+    height: 126px;
+  }
 `;
 
 export const DeveloperImage = styled.img`
@@ -25,6 +31,12 @@ export const DeveloperImage = styled.img`
   border-radius: 100%;
   background-color: #373737;
   margin-top: 20px;
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 70px;
+    height: 70px;
+    margin-top: 14px;
+  }
 `;
 
 export const DeveloperName = styled.h2`
@@ -33,6 +45,10 @@ export const DeveloperName = styled.h2`
   letter-spacing: -0.6px;
   margin: 11px 0 0 0;
   color: ${(props) => (props.part === 'frontend' ? '#fff' : '#000')};
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin: 5px 0 0 0;
+  }
 `;
 
 export const DeveloperPosition = styled.p`
@@ -42,6 +58,10 @@ export const DeveloperPosition = styled.p`
   letter-spacing: -0.5px;
   margin: 2px 0 0 0;
   color: ${(props) => (props.part === 'frontend' ? '#FDDEFF' : '#008309')};
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin-top: 0px;
+  }
 `;
 
 export const LeaderBadge = styled.p`
@@ -57,4 +77,10 @@ export const LeaderBadge = styled.p`
   white-space: nowrap;
   top: -24px;
   left: 60px;
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 9px;
+    top: -24px;
+    left: 32px;
+  }
 `;

@@ -8,7 +8,6 @@ export default function ReviewCard({
   name,
   part,
   position,
-  isLeader,
   review,
 }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 300);
@@ -17,17 +16,14 @@ export default function ReviewCard({
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 480);
     };
-
     window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return isMobile ? (
-    // 화면이 480px 이하일 때의 렌더링
+    // 화면이 480px 이하일 때
     <S.ReviewContainer>
       <S.ReviewBox part={part}>
         <DeveloperCard
@@ -41,7 +37,7 @@ export default function ReviewCard({
       </S.ReviewBox>
     </S.ReviewContainer>
   ) : (
-    // 화면이 480px 초과일 때의 렌더링
+    // 화면이 480px 초과일 때
     <S.ReviewContainer>
       <DeveloperCard
         index={index}
