@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const DeveloperCard = styled.div`
+  box-sizing: border-box;
   position: relative;
   width: 140px;
   height: 165px;

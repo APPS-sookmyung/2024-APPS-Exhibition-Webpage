@@ -297,11 +297,12 @@ export const DeveloperCardContainer = styled.div`
   gap: 16px;
   padding-bottom: 40px;
   padding-top: 10px;
+  flex-wrap: wrap;
 `;
 
 export const ReviewContainer = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  row-gap: 30px;
 `;

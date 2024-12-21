@@ -2,12 +2,12 @@ import React from 'react';
 import * as S from './DeveloperCard.style';
 
 export default function DeveloperCard({
+  index,
   image,
   name,
   part,
   position,
   isLeader,
-  index,
 }) {
   const handleDeveloperClick = () => {
     console.log('개발자 클릭');

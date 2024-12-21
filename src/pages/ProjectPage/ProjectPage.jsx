@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { DeveloperCard } from '../../components';
 import { developers } from '../../database/developers';
 import * as S from './ProjectPage.style';
+import ReviewCard from '../../components/ReviewCard';
 
 export default function ProjectPage() {
   const navigate = useNavigate();
@@ -110,21 +111,27 @@ export default function ProjectPage() {
           <S.DeveloperCardContainer>
             {developers.map((developer) => (
               <DeveloperCard
+                index={developer.index}
                 image={developer.image}
                 name={developer.name}
                 part={developer.part}
                 position={developer.position}
                 isLeader={developer.isLeader}
-                index={developer.index}
               />
             ))}
           </S.DeveloperCardContainer>
           <S.SubTitle>회고</S.SubTitle>
           <S.ReviewContainer>
-            {/* <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard /> */}
+            {developers.map((developer) => (
+              <ReviewCard
+                index={developer.index}
+                image={developer.image}
+                name={developer.name}
+                part={developer.part}
+                position={developer.position}
+                review={developer.review}
+              />
+            ))}
           </S.ReviewContainer>
         </S.Bottom>
       </S.Container>
