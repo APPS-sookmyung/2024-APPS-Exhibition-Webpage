@@ -48,12 +48,14 @@ export default function AboutAppsPage() {
               {STYLED_SQUARE_COLOR_CARDS.map((blocks) => (
                 <FallingBlocks
                   delay={blocks.delay}
+                  fromY={blocks.fromY}
                   toY={blocks.toY}
                   time={blocks.time}
                   colors={blocks.colors}
                 />
               ))}
             </S.SquareContainer>
+            <S.TopBackgroundColor />
           </S.Top>
           <S.IntroAPPSTitle>INTRODUCTION</S.IntroAPPSTitle>
           <S.IntroAPPSContent>
@@ -111,7 +113,7 @@ export default function AboutAppsPage() {
             ))}
           </S.CalendarCardWrapper>
         </S.CalendarContainer>
-        <S.TeamContainer>
+        {/* <S.TeamContainer>
           <S.TeamIntroWrapper>
             <S.TeamIntroTitle>APPS와 함께하는 사람들</S.TeamIntroTitle>
             <S.TeamIntroContent>
@@ -133,7 +135,7 @@ export default function AboutAppsPage() {
               />
             ))}
           </S.MemberList>
-        </S.TeamContainer>
+        </S.TeamContainer> */}
         {isModalOpen && (
           <Modal member={selectedMember} closeModal={closeModal} />
         )}

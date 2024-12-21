@@ -22,16 +22,15 @@ export const TopToIntroContainer = styled.div`
 
 export const Top = styled.div`
   width: 100%;
-  height: 234px;
-  background-color: #3f69ff;
+  height: 250px;
   justify-content: center;
   display: flex;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    height: 187px;
+    height: 200px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    height: 117px;
+    height: 125px;
   }
 `;
 
@@ -42,7 +41,7 @@ export const PageTitleWrapper = styled.div`
   display: flex;
   justify-content: center;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     margin-top: 53px;
@@ -106,12 +105,28 @@ export const IconTitle = styled.div`
 `;
 
 export const SquareContainer = styled.div`
+  z-index: 2;
   width: 100%;
   min-height: 234px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+`;
+
+export const TopBackgroundColor = styled.div`
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 234px;
+  background-color: #3f69ff;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    height: 187px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: 117px;
+  }
 `;
 
 export const IntroAPPSTitle = styled.h2`

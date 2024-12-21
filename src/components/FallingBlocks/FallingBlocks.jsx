@@ -1,8 +1,8 @@
 import * as S from './FallingBlocks.style';
 import { useState, useEffect } from 'react';
 
-export default function FallingBlocks({ delay, toY, time, colors }) {
-  const [yPos, setYPos] = useState(10);
+export default function FallingBlocks({ delay, fromY, toY, time, colors }) {
+  const [yPos, setYPos] = useState(fromY);
   const [isFalling, setIsFalling] = useState(false);
 
   useEffect(() => {
