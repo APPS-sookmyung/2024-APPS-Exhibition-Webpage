@@ -140,7 +140,7 @@ export const MEMBERS = [
   },
   {
     name: '김혜림',
-    title: '데이터사이언스스 23',
+    title: '데이터사이언스 23',
     position: '10.5기',
     image: 'kimhyerim.png',
     techStack: ['React', 'Spring'],
