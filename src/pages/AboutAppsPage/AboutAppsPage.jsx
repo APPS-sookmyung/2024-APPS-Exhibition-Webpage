@@ -55,7 +55,7 @@ export default function AboutAppsPage() {
                 />
               ))}
             </S.SquareContainer>
-            <S.TopBackgroundColor />
+            <S.TopBackgroundColor></S.TopBackgroundColor>
           </S.Top>
           <S.IntroAPPSTitle>INTRODUCTION</S.IntroAPPSTitle>
           <S.IntroAPPSContent>
@@ -67,7 +67,9 @@ export default function AboutAppsPage() {
             <br />
             활발한 소통과 피드백을 통해 개인과 공동체 발전을 촉진합니다.
           </S.IntroAPPSContent>
-          <S.IntroToActLine></S.IntroToActLine>
+          <S.IntroToActLineWrapper>
+            <S.IntroToActLine></S.IntroToActLine>
+          </S.IntroToActLineWrapper>
         </S.TopToIntroContainer>
         <S.ActivitiesContainer>
           <S.ActivitiesTitleWrapper>
@@ -105,6 +107,7 @@ export default function AboutAppsPage() {
                 ))}
               </S.RegularScheduleWrapper>
             </S.RegularCalendarCard>
+            <S.CalendarCardSpace></S.CalendarCardSpace>
             {MONTHLY_ACTIVITY_LIST.map((calendar) => (
               <CalendarCard
                 month={calendar.month}

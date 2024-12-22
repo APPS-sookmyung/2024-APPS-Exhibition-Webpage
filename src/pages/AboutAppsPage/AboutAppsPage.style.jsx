@@ -168,21 +168,25 @@ export const IntroAPPSContent = styled.p`
   }
 `;
 
-export const IntroToActLine = styled.div`
+export const IntroToActLineWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 2px;
-  background-image: linear-gradient(90deg, #ff5400, #3f69ff);
-  background-size: 962px 2px;
-  background-position: center;
-  background-repeat: no-repeat;
+  justify-content: center;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    background-size: 600px 1px;
+    height: 1px;
   }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    background-size: 380px 1px;
-  }
+`;
+
+export const IntroToActLine = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 962px;
+  background-image: linear-gradient(90deg, #ff5400, #3f69ff);
+  background-size: 90% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 export const ActivitiesContainer = styled.div`
@@ -236,9 +240,8 @@ export const ActivitiesDescription = styled.div`
 `;
 
 export const ActivitiesCardWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   max-width: 960px;
@@ -247,9 +250,6 @@ export const ActivitiesCardWrapper = styled.div`
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 22px 16px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -308,6 +308,13 @@ export const CalendarCardWrapper = styled.div`
   justify-content: center;
   gap: 0;
   margin: auto;
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 10px;
+  }
 `;
 
 export const RegularCalendarCard = styled.div`
@@ -323,8 +330,9 @@ export const RegularCalendarCard = styled.div`
     margin: 112px 0 0 103px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    width: 178px;
-    margin: 61px 178px 0 0;
+    width: 100%;
+    min-height: 130px;
+    margin: 72px 0 0 0;
   }
 `;
 
@@ -339,7 +347,7 @@ export const RegularCalendarWrapper = styled.div`
     gap: 10px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 10px 0 0 13px;
+    padding: 15px 0 0 20px;
     gap: 6px;
   }
 `;
@@ -388,12 +396,14 @@ export const RegularScheduleWrapper = styled.div`
     padding: 12px 22px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    gap: 4px 5px;
+    padding: 10px 14px 17px;
+    gap: 7px;
   }
 `;
 
 export const RegularSchedule = styled.div`
   display: inline-flex;
+  width: fit-content;
   height: 17px;
   padding: 5px 15px;
   justify-content: center;
@@ -405,15 +415,21 @@ export const RegularSchedule = styled.div`
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.7px;
-  word-wrap: break-word;
+  word-break: keep-all;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: auto;
     font-size: 10px;
-    height: 12px;
     padding: 5px 10px;
+  }
+`;
+
+export const CalendarCardSpace = styled.div`
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 100%;
   }
 `;
 
