@@ -50,6 +50,7 @@ export const MEMBERS = [
     snsLinks: {
       github: 'https://github.com/misung-dev',
       linkedin: 'https://www.linkedin.com/in/misungdev/',
+      hashnode: 'https://ryumii.hashnode.dev/',
     },
     answers: [
       '안녕하세요. 프론트엔드장 류미성입니다. \n온라인 명함 보관 서비스 <Wellet>과 <2024 APPS 온라인 전시회>의 Front-end 개발을 담당하였습니다.',
@@ -65,7 +66,7 @@ export const MEMBERS = [
     techStack: ['Spring', 'MySQL', 'AWS', 'GCP'],
     snsLinks: {
       github: 'https://github.com/ajung7038',
-      github_blog: 'https://ajung7038.github.io',
+      githubblog: 'https://ajung7038.github.io',
       linkedin: 'http://www.linkedin.com/in/ajeong0613',
       velog: 'https://velog.io/@ajeong7038/posts',
       tstory: 'https://ajeong7038.tistory.com/',
