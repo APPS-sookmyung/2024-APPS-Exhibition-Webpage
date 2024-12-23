@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-export const checkMateStyles = css`
+export const exhibitionStyles = css`
   * {
     font-family: Pretendard;
   }
