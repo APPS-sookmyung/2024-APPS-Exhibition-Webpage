@@ -437,6 +437,15 @@ export const TeamContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 160px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 100px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 60px;
+  }
 `;
 
 export const TeamIntroWrapper = styled.div`
@@ -454,6 +463,13 @@ export const TeamIntroTitle = styled.h1`
   font-weight: 700;
   letter-spacing: -1.6px;
   margin: 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 26px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 22px;
+  }
 `;
 
 export const TeamIntroContent = styled.p`
@@ -463,22 +479,34 @@ export const TeamIntroContent = styled.p`
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
 
 export const MemberList = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 56px 0;
-  max-width: 880px;
+  grid-template-columns: repeat(4, minmax(180px, 220px));
+  row-gap: 40px;
+  column-gap: 0;
+  max-width: 100%;
   margin: 0 auto;
-  margin-top: 40px;
+  padding: 0 16px;
   & > div:nth-child(even) {
-    margin-top: 32px;
+    margin-top: 20px;
   }
-`;
 
-export const MemberWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 0;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    grid-template-columns: repeat(3, minmax(150px, 190px));
+    row-gap: 36px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    grid-template-columns: repeat(2, minmax(120px, 160px));
+    row-gap: 24px;
+  }
 `;

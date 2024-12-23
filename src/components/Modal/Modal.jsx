@@ -25,13 +25,13 @@ export default function Modal({ member, closeModal }) {
               src={require(`../../images/memberProfiles/${member.image}`)}
               alt={member.name}
             />
-            <S.InfoWrapper>
+            <S.MemberInfoWrapper>
               <S.NameAndPositionWrapper>
                 <S.MemberName>{member.name}</S.MemberName>
                 <S.MemberPositionInfo>{member.position}</S.MemberPositionInfo>
               </S.NameAndPositionWrapper>
               <S.MemberInfo>{member.title}</S.MemberInfo>
-            </S.InfoWrapper>
+            </S.MemberInfoWrapper>
           </S.MemberCard>
 
           <S.MemberDetailSection>
