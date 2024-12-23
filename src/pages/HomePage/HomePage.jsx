@@ -54,6 +54,7 @@ export default function HomePage() {
                       imageSrc={card.imageSrc}
                       title={card.title}
                       description={card.description}
+                      keywords={card.keywords}
                       color={card.color}
                     />
                   ))}
@@ -67,6 +68,7 @@ export default function HomePage() {
                       imageSrc={card.imageSrc}
                       title={card.title}
                       description={card.description}
+                      keywords={card.keywords}
                       color={card.color}
                     />
                   ))}
