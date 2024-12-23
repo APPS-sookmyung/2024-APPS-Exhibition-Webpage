@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const FallingBlocksLine = styled.div`
-  position: absolute;
+  position: relative;
   top: ${(props) => props.yPos}px;
   width: 100%;
   max-width: 961px;
@@ -20,6 +20,8 @@ export const FallingBlocksLine = styled.div`
     width: 500px;
   }
 `;
+
+export const SquaresFragment = styled.div``;
 
 export const StyledSquares = styled.div`
   display: flex;

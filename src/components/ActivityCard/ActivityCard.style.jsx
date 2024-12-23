@@ -2,26 +2,31 @@ import styled from 'styled-components';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const ActivityCard = styled.div`
-  height: 300px;
   width: 100%;
+  max-width: 470px;
+  aspect-ratio: 47/30;
   flex-shrink: 0;
   border-radius: 20px;
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    height: 236px;
-  }
 `;
 
 export const ActivityTextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 80%;
   padding: 30px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    padding: 20px;
+    padding: 24px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 16px;
   }
 `;
+
+export const ActivityNameWrapper = styled.div``;
 
 export const ActivityName = styled.h2`
   margin: 0;
@@ -39,20 +44,19 @@ export const ActivityName = styled.h2`
   letter-spacing: -1px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    font-size: 16px;
-    padding: 10px 36px;
+    padding: 10px 32px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+    padding: 8px 24px;
   }
 `;
 
 export const ActivityIntroWrapper = styled.div`
-  height: 184px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    height: 154px;
-  }
 `;
 
 export const ActivityIntro = styled.p`
@@ -62,7 +66,7 @@ export const ActivityIntro = styled.p`
   margin: 0;
   word-break: keep-all;
 
-  @media (max-width: ${BREAKPOINTS[1]}px) {
+  @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 12px;
   }
 `;
