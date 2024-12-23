@@ -21,6 +21,8 @@ export const FallingBlocksLine = styled.div`
   }
 `;
 
+export const SquaresFragment = styled.div``;
+
 export const StyledSquares = styled.div`
   display: flex;
   height: 50px;
