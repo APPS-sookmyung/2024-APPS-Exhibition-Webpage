@@ -3,7 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { exhibitionStyles, pretendardFont, resetStyles } from './styles';
+import {
+  exhibitionStyles,
+  pretendardFont,
+  dolcevitaFont,
+  resetStyles,
+} from './styles';
 import { css } from 'styled-components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +19,7 @@ root.render(
         ${resetStyles}
         ${exhibitionStyles}
         ${pretendardFont}
+        ${dolcevitaFont}
       `}
     />
   </React.StrictMode>,
