@@ -53,6 +53,18 @@ export default function Modal({ member, closeModal }) {
                       <img src="../../images/socials/github.svg" alt="깃허브" />
                     </a>
                   )}
+                  {member.snsLinks.githubblog && (
+                    <a
+                      href={member.snsLinks.githubblog}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../../images/socials/github.svg"
+                        alt="깃허브블로그"
+                      />
+                    </a>
+                  )}
                   {member.snsLinks.linkedin && (
                     <a
                       href={member.snsLinks.linkedin}
@@ -86,6 +98,18 @@ export default function Modal({ member, closeModal }) {
                       <img src="../../images/socials/velog.svg" alt="벨로그" />
                     </a>
                   )}
+                  {member.snsLinks.hashnode && (
+                    <a
+                      href={member.snsLinks.hashnode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../../images/socials/hashnode.svg"
+                        alt="해시노드"
+                      />
+                    </a>
+                  )}
                 </>
               )}
             </S.SNSSection>
@@ -100,7 +124,11 @@ export default function Modal({ member, closeModal }) {
               <S.QuestionLabel>Q{index + 1}</S.QuestionLabel>
               <S.QuestionItem>
                 <S.Question>{question}</S.Question>
-                <S.Answer>{member.answers[index]}</S.Answer>
+                <S.Answer>
+                  {member.answers[index].split('\n').map((line, lineIndex) => (
+                    <p key={lineIndex}>{line}</p>
+                  ))}
+                </S.Answer>
               </S.QuestionItem>
             </S.QuestionWrapper>
           ))}
