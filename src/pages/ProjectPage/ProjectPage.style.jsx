@@ -130,6 +130,13 @@ export const LinkBtns = styled.div`
   align-items: center;
   gap: 12px;
 
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+  }
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 10px;
   }
@@ -138,7 +145,13 @@ export const LinkBtns = styled.div`
   }
 `;
 
-export const LinkBtn = styled.img`
+export const LinkBtn = styled.div`
+  p {
+    margin: 0;
+  }
+`;
+
+export const LinkIcon = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 10px;

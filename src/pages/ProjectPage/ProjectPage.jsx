@@ -37,28 +37,46 @@ export default function ProjectPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <S.LinkBtn src="images/socials/github.svg" alt="github" />
+                <S.LinkBtn>
+                  <S.LinkIcon src="images/socials/github.svg" alt="github" />
+                  <p>Client</p>
+                </S.LinkBtn>
               </a>
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <S.LinkBtn src="images/socials/github.svg" alt="github" />
+                <S.LinkBtn>
+                  <S.LinkIcon src="images/socials/github.svg" alt="github" />
+                  <p>Server</p>
+                </S.LinkBtn>
               </a>
               <a
                 href="https://yourwebsite.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <S.LinkBtn src="images/socials/webpage-link.svg" alt="link" />
+                <S.LinkBtn>
+                  <S.LinkIcon
+                    src="images/socials/webpage-link.svg"
+                    alt="link"
+                  />
+                  <p>Youtube</p>
+                </S.LinkBtn>
               </a>
               <a
                 href="https://appstore.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <S.LinkBtn src="images/socials/app-store.svg" alt="appstore" />
+                <S.LinkBtn>
+                  <S.LinkIcon
+                    src="images/socials/app-store.svg"
+                    alt="appstore"
+                  />
+                  <p>AppStore</p>
+                </S.LinkBtn>
               </a>
             </S.LinkBtns>
           </S.TopBtnContainer>
