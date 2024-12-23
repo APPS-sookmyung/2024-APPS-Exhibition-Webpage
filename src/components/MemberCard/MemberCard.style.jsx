@@ -30,7 +30,8 @@ export const MemberImage = styled.img`
   height: 136px;
   border-radius: 100%;
   background-color: #373737;
-  margin-top: 32px;
+  object-fit: cover;
+  object-position: center;
 `;
 
 export const MemberInfoWrapper = styled.div`
