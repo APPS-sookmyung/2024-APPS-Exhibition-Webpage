@@ -124,7 +124,11 @@ export default function Modal({ member, closeModal }) {
               <S.QuestionLabel>Q{index + 1}</S.QuestionLabel>
               <S.QuestionItem>
                 <S.Question>{question}</S.Question>
-                <S.Answer>{member.answers[index]}</S.Answer>
+                <S.Answer>
+                  {member.answers[index].split('\n').map((line, lineIndex) => (
+                    <p key={lineIndex}>{line}</p>
+                  ))}
+                </S.Answer>
               </S.QuestionItem>
             </S.QuestionWrapper>
           ))}
