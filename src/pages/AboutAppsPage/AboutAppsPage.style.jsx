@@ -413,7 +413,7 @@ export const RegularSchedule = styled.div`
   display: inline-flex;
   width: fit-content;
   height: 17px;
-  padding: 5px 15px;
+  padding: 12px 15px;
   justify-content: center;
   align-items: center;
   gap: 7px;
@@ -422,7 +422,6 @@ export const RegularSchedule = styled.div`
   color: var(--blue, #3f69ff);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: -0.7px;
   word-break: keep-all;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
