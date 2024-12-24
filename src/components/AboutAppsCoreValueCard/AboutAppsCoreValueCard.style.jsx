@@ -44,5 +44,11 @@ export const Description = styled.p`
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.7px;
-  white-space: pre-line;
+  word-break: keep-all;
+  line-height: 1.2;
+`;
+
+export const Hashtag = styled.span`
+  white-space: nowrap;
+  display: inline-block;
 `;

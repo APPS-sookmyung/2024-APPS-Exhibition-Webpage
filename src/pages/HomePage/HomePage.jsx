@@ -10,6 +10,15 @@ import {
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 
+const handleCopyClipBoard = async () => {
+  try {
+    await navigator.clipboard.writeText('https://2024-apps.netlify.app/');
+    alert('클립보드에 링크가 복사되었어요.');
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export default function HomePage() {
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
@@ -27,7 +36,10 @@ export default function HomePage() {
             <S.SectionTitleWrapper>
               <S.SectionTitleImageWrapper>
                 <S.SectionTitle>ABOUT</S.SectionTitle>
-                <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
+                <img
+                  src="/images/logo/logo-gradation-motion.svg"
+                  alt="앱스 로고"
+                />
               </S.SectionTitleImageWrapper>
               <S.SectionSubTitle>
                 숙명여자대학교 소프트웨어학부 웹·앱 개발 학회
@@ -42,6 +54,7 @@ export default function HomePage() {
                       imageSrc={card.imageSrc}
                       title={card.title}
                       description={card.description}
+                      keywords={card.keywords}
                       color={card.color}
                     />
                   ))}
@@ -55,6 +68,7 @@ export default function HomePage() {
                       imageSrc={card.imageSrc}
                       title={card.title}
                       description={card.description}
+                      keywords={card.keywords}
                       color={card.color}
                     />
                   ))}
@@ -67,7 +81,10 @@ export default function HomePage() {
             <S.SectionTitleWrapper>
               <S.SectionTitleImageWrapper>
                 <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
-                <img src="/images/logo/logo-gradation.svg" alt="앱스 로고" />
+                <img
+                  src="/images/logo/logo-gradation-motion.svg"
+                  alt="앱스 로고"
+                />
               </S.SectionTitleImageWrapper>
               <S.SectionSubTitle>
                 서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
@@ -106,7 +123,13 @@ export default function HomePage() {
             <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
             <S.ShareLinksContent>
               <S.StyledLink to="/">
-                <S.LinkButton>링크 공유하기</S.LinkButton>
+                <S.LinkButton
+                  onClick={() =>
+                    handleCopyClipBoard('https://2024-apps.netlify.app/')
+                  }
+                >
+                  링크 공유하기
+                </S.LinkButton>
               </S.StyledLink>
               <S.StyledLink
                 to="https://forms.gle/k14eA7Kk9bxD7aTm6"

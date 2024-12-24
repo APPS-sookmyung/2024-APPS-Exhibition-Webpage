@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   margin: 0 auto 200px;
   padding-top: 60px;
@@ -19,16 +22,15 @@ export const TopToIntroContainer = styled.div`
 
 export const Top = styled.div`
   width: 100%;
-  height: 234px;
-  background-color: #3f69ff;
+  height: 250px;
   justify-content: center;
   display: flex;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    height: 187px;
+    height: 200px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    height: 117px;
+    height: 125px;
   }
 `;
 
@@ -39,7 +41,7 @@ export const PageTitleWrapper = styled.div`
   display: flex;
   justify-content: center;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     margin-top: 53px;
@@ -53,6 +55,7 @@ export const PageTitleWrapper = styled.div`
 
 export const PageTitle = styled.h1`
   color: #fff;
+  font-family: 'Dolce Vita Heavy';
   font-size: 65px;
   font-weight: 700;
   letter-spacing: -3.2px;
@@ -90,7 +93,7 @@ export const IconTitle = styled.div`
   background-image: url('./images/icons/about_APPS.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 5px;
+  margin-top: -5px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 108px;
@@ -103,6 +106,7 @@ export const IconTitle = styled.div`
 `;
 
 export const SquareContainer = styled.div`
+  z-index: 2;
   width: 100%;
   min-height: 234px;
   display: flex;
@@ -111,69 +115,18 @@ export const SquareContainer = styled.div`
   overflow: hidden;
 `;
 
-export const StyledSquareWrapper = styled.div`
+export const TopBackgroundColor = styled.div`
+  position: absolute;
+  z-index: 0;
   width: 100%;
-  max-width: 961px;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 234px;
+  background-color: #3f69ff;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    height: 40px;
-    width: 1000px;
+    height: 187px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    height: 25px;
-    width: 500px;
-  }
-`;
-
-export const StyledSquares = styled.div`
-  display: flex;
-  height: 50px;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    height: 40px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    height: 25px;
-  }
-`;
-
-export const StyledSquare = styled.div`
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  background: ${(props) => props.color || ''};
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    width: 25px;
-    height: 25px;
-    border-radius: 6px;
-  }
-`;
-
-export const StyledSquare2 = styled.div`
-  width: 50px;
-  height: 34px;
-  border-radius: 12px;
-  background: #2051ff;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    width: 40px;
-    height: 27px;
-    border-radius: 10px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    width: 25px;
-    height: 17px;
-    border-radius: 6px;
+    height: 117px;
   }
 `;
 
@@ -216,42 +169,40 @@ export const IntroAPPSContent = styled.p`
   }
 `;
 
-export const IntroToActLine = styled.div`
+export const IntroToActLineWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 2px;
-  background-image: linear-gradient(90deg, #ff5400, #3f69ff);
-  background-size: 962px 2px;
-  background-position: center;
-  background-repeat: no-repeat;
+  justify-content: center;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    background-size: 600px 1px;
+    height: 1px;
   }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    background-size: 380px 1px;
-  }
+`;
+
+export const IntroToActLine = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 962px;
+  background-image: linear-gradient(90deg, #ff5400, #3f69ff);
+  background-size: 90% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 export const ActivitiesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 30px;
 `;
 
 export const ActivitiesTitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 113px;
   gap: 16px;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    margin-top: 90px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    margin-top: 56px;
-  }
+  margin-top: 113px;
 `;
 
 export const ActivitiesTitle = styled.div`
@@ -290,15 +241,20 @@ export const ActivitiesDescription = styled.div`
 `;
 
 export const ActivitiesCardWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 960px;
   gap: 28px 20px;
   margin: auto;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 22px 16px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -312,15 +268,8 @@ export const CalendarTitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 113px;
   gap: 16px;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    margin-top: 90px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    margin-top: 56px;
-  }
+  margin-top: 113px;
 `;
 
 export const CalendarTitle = styled.div`
@@ -345,15 +294,15 @@ export const CalendarDescription = styled.div`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 14px;
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 `;
 
@@ -364,6 +313,13 @@ export const CalendarCardWrapper = styled.div`
   justify-content: center;
   gap: 0;
   margin: auto;
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 10px;
+  }
 `;
 
 export const RegularCalendarCard = styled.div`
@@ -379,8 +335,9 @@ export const RegularCalendarCard = styled.div`
     margin: 112px 0 0 103px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    width: 178px;
-    margin: 61px 178px 0 0;
+    width: 100%;
+    min-height: 130px;
+    margin: 72px 0 0 0;
   }
 `;
 
@@ -395,7 +352,7 @@ export const RegularCalendarWrapper = styled.div`
     gap: 10px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 10px 0 0 13px;
+    padding: 15px 0 0 20px;
     gap: 6px;
   }
 `;
@@ -444,12 +401,14 @@ export const RegularScheduleWrapper = styled.div`
     padding: 12px 22px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    gap: 4px 5px;
+    padding: 10px 14px 17px;
+    gap: 7px;
   }
 `;
 
 export const RegularSchedule = styled.div`
   display: inline-flex;
+  width: fit-content;
   height: 17px;
   padding: 5px 15px;
   justify-content: center;
@@ -461,15 +420,21 @@ export const RegularSchedule = styled.div`
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.7px;
-  word-wrap: break-word;
+  word-break: keep-all;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: auto;
     font-size: 10px;
-    height: 12px;
     padding: 5px 10px;
+  }
+`;
+
+export const CalendarCardSpace = styled.div`
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 100%;
   }
 `;
 

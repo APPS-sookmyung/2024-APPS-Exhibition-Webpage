@@ -4,6 +4,7 @@ export default function AboutAppsCoreValueCard({
   imageSrc,
   title,
   description,
+  keywords,
   color,
 }) {
   return (
@@ -13,6 +14,11 @@ export default function AboutAppsCoreValueCard({
       </S.ImageWrapper>
       <S.Title color={color}>{title}</S.Title>
       <S.Description color={color}>{description}</S.Description>
+      <S.Description color={color}>
+        {keywords.map((keyword, index) => (
+          <S.Hashtag key={index}>{keyword}&nbsp;</S.Hashtag>
+        ))}
+      </S.Description>
     </S.AboutAppsCoreValueCard>
   );
 }

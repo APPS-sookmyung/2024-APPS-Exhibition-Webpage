@@ -8,8 +8,8 @@ export default function CalendarCard({ month, schedule }) {
         <S.CalendarMonth>{month}월</S.CalendarMonth>
       </S.CalendarMonthWrapper>
       <S.ScheduleWrapper>
-        {schedule.map((activity) => (
-          <S.Schedule>{activity}</S.Schedule>
+        {schedule.map((activity, index) => (
+          <S.Schedule key={index}>{activity}</S.Schedule>
         ))}
       </S.ScheduleWrapper>
     </S.CalendarCard>

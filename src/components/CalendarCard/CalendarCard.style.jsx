@@ -29,12 +29,10 @@ export const CalendarCard = styled.div`
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 198px;
     min-height: 160px;
-    border-radius: 18px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    width: 178px;
+    width: 100%;
     min-height: 130px;
-    border-radius: 18px;
   }
 `;
 

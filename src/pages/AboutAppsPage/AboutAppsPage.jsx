@@ -15,6 +15,7 @@ import {
   CalendarCard,
   Header,
   PageLayout,
+  FallingBlocks,
 } from '../../components';
 
 export default function AboutAppsPage() {
@@ -32,6 +33,7 @@ export default function AboutAppsPage() {
     setSelectedMember(null);
     setIsModalOpen(false);
   };
+
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
       <S.Root>
@@ -43,24 +45,18 @@ export default function AboutAppsPage() {
               <S.IconTitle></S.IconTitle>
             </S.PageTitleWrapper>
             <S.SquareContainer>
-              {STYLED_SQUARE_COLOR_CARDS.map((colors) => (
-                <S.StyledSquareWrapper>
-                  {colors.map((left) => (
-                    <S.StyledSquares>
-                      {left.map((c) => (
-                        <>
-                          {c === 'square2' ? (
-                            <S.StyledSquare2></S.StyledSquare2>
-                          ) : (
-                            <S.StyledSquare color={c}></S.StyledSquare>
-                          )}
-                        </>
-                      ))}
-                    </S.StyledSquares>
-                  ))}
-                </S.StyledSquareWrapper>
+              {STYLED_SQUARE_COLOR_CARDS.map((blocks, index) => (
+                <FallingBlocks
+                  key={index}
+                  delay={blocks.delay}
+                  fromY={blocks.fromY}
+                  toY={blocks.toY}
+                  time={blocks.time}
+                  colors={blocks.colors}
+                />
               ))}
             </S.SquareContainer>
+            <S.TopBackgroundColor></S.TopBackgroundColor>
           </S.Top>
           <S.IntroAPPSTitle>INTRODUCTION</S.IntroAPPSTitle>
           <S.IntroAPPSContent>
@@ -72,7 +68,9 @@ export default function AboutAppsPage() {
             <br />
             활발한 소통과 피드백을 통해 개인과 공동체 발전을 촉진합니다.
           </S.IntroAPPSContent>
-          <S.IntroToActLine></S.IntroToActLine>
+          <S.IntroToActLineWrapper>
+            <S.IntroToActLine></S.IntroToActLine>
+          </S.IntroToActLineWrapper>
         </S.TopToIntroContainer>
         <S.ActivitiesContainer>
           <S.ActivitiesTitleWrapper>
@@ -82,8 +80,9 @@ export default function AboutAppsPage() {
             </S.ActivitiesDescription>
           </S.ActivitiesTitleWrapper>
           <S.ActivitiesCardWrapper>
-            {ACTIVITY_CARD_LIST.map((activity) => (
+            {ACTIVITY_CARD_LIST.map((activity, index) => (
               <ActivityCard
+                key={index}
                 activityName={activity.name}
                 activityIntro={activity.intro}
                 activityImg={activity.img}
@@ -105,13 +104,15 @@ export default function AboutAppsPage() {
                 <S.RegularCalendarName>매주 정기 활동</S.RegularCalendarName>
               </S.RegularCalendarWrapper>
               <S.RegularScheduleWrapper>
-                {WEEKLY_ACTIVITY_LIST.map((activity) => (
-                  <S.RegularSchedule>{activity}</S.RegularSchedule>
+                {WEEKLY_ACTIVITY_LIST.map((activity, index) => (
+                  <S.RegularSchedule key={index}>{activity}</S.RegularSchedule>
                 ))}
               </S.RegularScheduleWrapper>
             </S.RegularCalendarCard>
-            {MONTHLY_ACTIVITY_LIST.map((calendar) => (
+            <S.CalendarCardSpace></S.CalendarCardSpace>
+            {MONTHLY_ACTIVITY_LIST.map((calendar, index) => (
               <CalendarCard
+                key={index}
                 month={calendar.month}
                 schedule={calendar.schedule}
               />
