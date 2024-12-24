@@ -241,8 +241,9 @@ export const ActivitiesDescription = styled.div`
 `;
 
 export const ActivitiesCardWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   justify-content: center;
   width: 100%;
   max-width: 960px;
@@ -251,6 +252,9 @@ export const ActivitiesCardWrapper = styled.div`
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 22px 16px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
