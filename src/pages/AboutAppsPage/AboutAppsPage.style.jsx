@@ -59,7 +59,7 @@ export const PageTitle = styled.h1`
   font-size: 65px;
   font-weight: 700;
   letter-spacing: -3.2px;
-  margin: -6px 9px;
+  margin: 0px 9px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 45px;
@@ -75,15 +75,17 @@ export const PageSubTitle = styled.h1`
   font-weight: 500;
   letter-spacing: -1px;
   position: absolute;
-  padding: 75px 0 0 117px;
+  padding: 75px 0 0 100px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    font-size: 18px;
-    padding: 60px 0 0 94px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 60px 0 0 72px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    font-size: 14px;
-    padding: 38px 0 0 58px;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 38px 0 0 56px;
   }
 `;
 
@@ -313,12 +315,13 @@ export const CalendarCardWrapper = styled.div`
   justify-content: center;
   gap: 0;
   margin: auto;
+  padding: 30px;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    padding: 10px;
+    padding: 30px;
   }
 `;
 
@@ -410,7 +413,7 @@ export const RegularSchedule = styled.div`
   display: inline-flex;
   width: fit-content;
   height: 17px;
-  padding: 5px 15px;
+  padding: 12px 15px;
   justify-content: center;
   align-items: center;
   gap: 7px;
@@ -419,7 +422,6 @@ export const RegularSchedule = styled.div`
   color: var(--blue, #3f69ff);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: -0.7px;
   word-break: keep-all;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {

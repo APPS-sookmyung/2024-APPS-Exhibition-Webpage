@@ -114,7 +114,6 @@ export const Schedule = styled.div`
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: -0.7px;
   word-break: keep-all;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {

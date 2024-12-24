@@ -69,7 +69,7 @@ export const ActivityIntro = styled.p`
   margin: 0;
   color: #fff;
   font-size: 16px;
-  letter-spacing: -0.7px;
+  // letter-spacing: -0.7px;
   word-break: keep-all;
   line-height: 1.2;
 
