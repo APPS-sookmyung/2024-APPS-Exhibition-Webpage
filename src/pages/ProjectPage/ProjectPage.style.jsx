@@ -52,6 +52,7 @@ export const Title = styled.h1`
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 32px;
+    margin-bottom: 8px;
   }
 `;
 
@@ -86,7 +87,7 @@ export const ShareBtn = styled.div`
   align-items: center;
   justify-content: center;
   padding: 13px 43px;
-  margin: 0 10px 0 0;
+  margin: 0 10px 16px 0;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 4px 16px;
@@ -130,6 +131,13 @@ export const LinkBtns = styled.div`
   align-items: center;
   gap: 12px;
 
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+  }
+
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 10px;
   }
@@ -138,7 +146,13 @@ export const LinkBtns = styled.div`
   }
 `;
 
-export const LinkBtn = styled.img`
+export const LinkBtn = styled.div`
+  p {
+    margin: 4px 0 0 0;
+  }
+`;
+
+export const LinkIcon = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -187,12 +201,13 @@ export const Content = styled.div`
   color: #fff;
 `;
 
-export const ServiceIntro = styled.h2`
+export const SubTitle = styled.h2`
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -1px;
   padding-bottom: 12px;
   margin: 0;
+  color: #fff;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 22px;
@@ -206,6 +221,7 @@ export const ServiceDetail = styled.p`
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.8px;
+  line-height: 140%;
   padding-bottom: 40px;
   margin: 0;
 
@@ -220,8 +236,8 @@ export const ServiceDetail = styled.p`
 export const StackList = styled.ul`
   display: flex;
   justify-content: baseline;
-  padding-left: 0;
   margin: 0;
+  padding: 0 0 40px 0;
 
   &:not(:first-child) {
     gap: 20px;
@@ -281,4 +297,28 @@ export const StackText = styled.p`
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 12px;
   }
+`;
+
+export const Bottom = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+`;
+
+export const DeveloperCardContainer = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+`;
+
+export const ReviewContainer = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-bottom: 40px;
 `;

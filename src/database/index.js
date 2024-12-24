@@ -7,3 +7,4 @@ export * from './projectCategoryList';
 export * from './projectList';
 export * from './socialMediaLinkCards';
 export * from './styledSquareColorCards';
+export * from './projectRecommend';
