@@ -30,7 +30,7 @@ export default function FallingBlocks({ delay, fromY, toY, time, colors }) {
   }, [isFalling, toY, time]);
 
   return (
-    <S.FallingBlocksLine yPos={yPos}>
+    <S.FallingBlocksLine ypos={yPos}>
       {colors.map((left, leftIndex) => (
         <S.StyledSquares key={leftIndex}>
           {left.map((c, cIndex) => (
