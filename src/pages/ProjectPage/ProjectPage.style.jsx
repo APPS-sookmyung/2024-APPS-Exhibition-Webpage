@@ -28,10 +28,19 @@ export const Container = styled.div`
 
 export const CloseBtn = styled.img`
   align-self: flex-end;
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   padding: 10px;
   margin: -10px -10px -10px 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 51px;
+    height: 51px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 46px;
+    height: 46px;
+  }
 `;
 
 export const Top = styled.div`
@@ -187,6 +196,13 @@ export const Youtube = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    margin-top: 46px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin-top: 40px;
   }
 `;
 
