@@ -14,7 +14,6 @@ export const exhibitionStyles = css`
   }
 
   body {
-    height: 100%;
     -ms-overflow-style: none;
     overflow-x: hidden;
   }
