@@ -16,6 +16,7 @@ export const SocialLinksCard = styled.div`
 
 export const SocialLinksCardImage = styled.div`
   display: flex;
+  justify-content: center;
   height: 90px;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
