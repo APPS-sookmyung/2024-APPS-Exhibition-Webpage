@@ -8,7 +8,7 @@ export const ACTIVITY_CARD_LIST = [
   {
     name: '일반 스터디',
     intro:
-      '공통 관심 분야를 중심으로 스터디를 자유롭게 개설하여, 매주 일정 분량의 강의나 책 등 자료를 통해 학습합니다.\n이후 각자 배운 내용을 활용하는 과제를 수행하며 팀별 모임을 갖고, 매주 정기 세미나에서 스터디원이 돌아가며 스터디 내용을 발표합니다.\n2024년에는 React, Node.js, Spring, Java, iOS 등의 스터디가 운영되었습니다.',
+      '스터디를 자유롭게 개설하여, 매주 일정 분량의 강의나 책 등 자료를 통해 학습합니다.\n이후 각자 배운 내용을 활용하는 과제를 수행하며 팀별 모임을 갖고, 매주 정기 세미나에서 스터디 내용을 발표합니다.\n2024년에는 React, Node.js, Spring, Java, iOS 등의 스터디가 운영되었습니다.',
     img: './images/activities/activity_normal_study.png',
   },
   {
@@ -43,7 +43,8 @@ export const ACTIVITY_CARD_LIST = [
   },
   {
     name: '오프라인 전시회',
-    intro: '한 해 동안 진행한 프로젝트들을 한자리에 모아 전시하는 행사입니다.',
+    intro:
+      '한 해 동안 진행된 프로젝트를 한자리에 모아 전시하는 행사입니다.\nAPPS 멤버들이 1년 동안 기획하고 개발한 16개의 작품을 소개하며, 학우 및 교직원들에게 직접 체험할 수 있는 기회를 제공했습니다.',
     img: './images/activities/activity_exhibition.png',
   },
 ];
