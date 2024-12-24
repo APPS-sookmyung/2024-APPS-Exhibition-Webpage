@@ -3,7 +3,7 @@ import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const FallingBlocksLine = styled.div`
   position: relative;
-  top: ${(props) => props.yPos}px;
+  top: ${(props) => props.ypos}px;
   width: 100%;
   max-width: 961px;
   height: 50px;
