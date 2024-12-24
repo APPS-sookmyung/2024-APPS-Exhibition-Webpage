@@ -52,6 +52,7 @@ export const Title = styled.h1`
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 32px;
+    margin-bottom: 8px;
   }
 `;
 
@@ -86,7 +87,7 @@ export const ShareBtn = styled.div`
   align-items: center;
   justify-content: center;
   padding: 13px 43px;
-  margin: 0 10px 0 0;
+  margin: 0 10px 16px 0;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 4px 16px;
@@ -147,7 +148,7 @@ export const LinkBtns = styled.div`
 
 export const LinkBtn = styled.div`
   p {
-    margin: 0;
+    margin: 4px 0 0 0;
   }
 `;
 
@@ -220,6 +221,7 @@ export const ServiceDetail = styled.p`
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.8px;
+  line-height: 140%;
   padding-bottom: 40px;
   margin: 0;
 
@@ -318,4 +320,5 @@ export const ReviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  padding-bottom: 40px;
 `;

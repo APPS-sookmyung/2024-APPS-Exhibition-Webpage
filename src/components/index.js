@@ -11,3 +11,5 @@ export { default as PageLayout } from './PageLayout';
 export { default as ProjectCardList } from './ProjectCardList';
 export { default as SocialMediaLinkCards } from './SocialMediaLinkCards';
 export { default as FallingBlocks } from './FallingBlocks';
+export { default as ProjectRecommend } from './ProjectRecommend';
+export { default as ReviewCard } from './ReviewCard';

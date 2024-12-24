@@ -1,8 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import { DeveloperCard } from '../../components';
+import { DeveloperCard, ProjectRecommend, ReviewCard } from '../../components';
 import { developers } from '../../database/developers';
 import * as S from './ProjectPage.style';
-import ReviewCard from '../../components/ReviewCard';
 
 export default function ProjectPage() {
   const navigate = useNavigate();
@@ -111,7 +110,6 @@ export default function ProjectPage() {
               )}
             </S.ServiceDetail>
             <S.SubTitle>기술 스택</S.SubTitle>
-
             <S.StackList>
               <S.StackItem>
                 <S.StackIcon src="images/techStacks/firebase.svg" alt="" />
@@ -129,7 +127,7 @@ export default function ProjectPage() {
           <S.DeveloperCardContainer>
             {developers.map((developer) => (
               <DeveloperCard
-                index={developer.index}
+                key={developer.index}
                 image={developer.image}
                 name={developer.name}
                 part={developer.part}
@@ -142,7 +140,7 @@ export default function ProjectPage() {
           <S.ReviewContainer>
             {developers.map((developer) => (
               <ReviewCard
-                index={developer.index}
+                key={developer.index}
                 image={developer.image}
                 name={developer.name}
                 part={developer.part}
@@ -151,6 +149,8 @@ export default function ProjectPage() {
               />
             ))}
           </S.ReviewContainer>
+          <S.SubTitle>프로젝트 더보기</S.SubTitle>
+          <ProjectRecommend />
         </S.Bottom>
       </S.Container>
     </S.Root>

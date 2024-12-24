@@ -47,7 +47,7 @@ export const DeveloperName = styled.h2`
   color: ${(props) => (props.part === 'frontend' ? '#fff' : '#000')};
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    margin: 5px 0 0 0;
+    margin: 9px 0 2px 0;
   }
 `;
 
@@ -75,12 +75,12 @@ export const LeaderBadge = styled.p`
   position: absolute;
   padding: 6px 8px;
   white-space: nowrap;
-  top: -24px;
+  top: -14px;
   left: 60px;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 9px;
-    top: -24px;
+    top: -10px;
     left: 32px;
   }
 `;
