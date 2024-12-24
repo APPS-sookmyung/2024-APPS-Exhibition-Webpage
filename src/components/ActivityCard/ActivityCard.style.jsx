@@ -35,10 +35,7 @@ export const ActivityBackBlur = styled.div`
   }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    padding: 24px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 16px;
+    padding: 20px;
   }
 `;
 
@@ -63,11 +60,8 @@ export const ActivityName = styled.h2`
   letter-spacing: -1px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    padding: 10px 32px;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    font-size: 14px;
-    padding: 8px 24px;
+    font-size: 16px;
+    padding: 10px 36px;
   }
 `;
 
@@ -79,7 +73,7 @@ export const ActivityIntro = styled.p`
   word-break: keep-all;
   line-height: 1.2;
 
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    font-size: 14px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 12px;
   }
 `;

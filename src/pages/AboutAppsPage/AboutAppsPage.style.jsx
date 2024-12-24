@@ -55,6 +55,7 @@ export const PageTitleWrapper = styled.div`
 
 export const PageTitle = styled.h1`
   color: #fff;
+  font-family: 'Dolce Vita Heavy';
   font-size: 65px;
   font-weight: 700;
   letter-spacing: -3.2px;
@@ -92,7 +93,7 @@ export const IconTitle = styled.div`
   background-image: url('./images/icons/about_APPS.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 5px;
+  margin-top: -5px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     width: 108px;
@@ -240,8 +241,9 @@ export const ActivitiesDescription = styled.div`
 `;
 
 export const ActivitiesCardWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   justify-content: center;
   width: 100%;
   max-width: 960px;
@@ -250,6 +252,9 @@ export const ActivitiesCardWrapper = styled.div`
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 22px 16px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
