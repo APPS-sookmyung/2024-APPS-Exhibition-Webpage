@@ -13,7 +13,6 @@ import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
 const handleCopyClipBoard = async () => {
   try {
     await navigator.clipboard.writeText('https://2024-apps.netlify.app/');
-    alert('클립보드에 링크가 복사되었어요.');
   } catch (err) {
     console.log(err);
   }
