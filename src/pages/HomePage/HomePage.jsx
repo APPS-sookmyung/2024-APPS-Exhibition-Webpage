@@ -9,6 +9,8 @@ import {
   ProjectCardList,
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const handleCopyClipBoard = async () => {
   try {
@@ -19,10 +21,22 @@ const handleCopyClipBoard = async () => {
 };
 
 export default function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get('scrollTo');
+    if (scrollTo) {
+      const element = document.getElementById(scrollTo);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
       <S.HomePageTopBackground>
-        {' '}
         <S.HomePage>
           <S.HomeMainWrapper>
             <S.TitleWrapper>
@@ -113,8 +127,12 @@ export default function HomePage() {
               ))}
             </S.SocialLinksContent>
           </S.SocialLinks>
+
+          <div id="project-section"></div>
           <S.ProjectList>
-            <ProjectCardList />
+            <S.ProjectList>
+              <ProjectCardList />
+            </S.ProjectList>
           </S.ProjectList>
         </S.HomePage>
       </S.HomePageTopBackground>

@@ -33,7 +33,7 @@ export default function ProjectPage() {
       <S.Container>
         <S.CloseBtn
           src="../../images/icons/x_pink.svg"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/?scrollTo=project-section')}
         />
         <S.Top>
           <S.Title>{projectData.name}</S.Title>
@@ -42,7 +42,7 @@ export default function ProjectPage() {
             <S.ShareBtn
               onClick={() => handleCopyClipBoard(projectData.webpageLinkUrl)}
             >
-              <S.ShareIcon src="../../images/icons/share.svg" alt="" />
+              <S.ShareIcon src="../../images/icons/share.svg" alt="공유하기" />
               <S.ShareText>프로젝트 공유하기</S.ShareText>
             </S.ShareBtn>
             <S.LinkBtns>
