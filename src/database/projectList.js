@@ -6,7 +6,7 @@ export const PROJECT_LIST = [
     name: 'WELLET',
     generation: ['10기', '10.5기', '11기'],
     category: PROJECT_CATEGORIES.WEB,
-    imageUrl: './images/thumbnails/img-thumbnail-1.png',
+    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://wellet.netlify.app',
@@ -22,7 +22,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/kimjunhee.png',
+        image: '/images/memberProfiles/kimjunhee.png',
         name: '김준희',
         part: 'frontend',
         position: '프론트엔드장',
@@ -32,7 +32,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 1,
-        image: '../../images/memberProfiles/ryumisung.png',
+        image: '/images/memberProfiles/ryumisung.png',
         name: '류미성',
         part: 'frontend',
         position: '프론트엔드',
@@ -42,7 +42,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 2,
-        image: '../../images/memberProfiles/kimhyerim.png',
+        image: '/images/memberProfiles/kimhyerim.png',
         name: '김혜림',
         part: 'frontend',
         position: '프론트엔드',
@@ -52,7 +52,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 3,
-        image: '../../images/memberProfiles/jooajung.png',
+        image: '/images/memberProfiles/jooajung.png',
         name: '주아정',
         part: 'backend',
         position: '백엔드장',
@@ -62,7 +62,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 4,
-        image: '../../images/memberProfiles/leehaerim.png',
+        image: '/images/memberProfiles/leehaerim.png',
         name: '이해림',
         part: 'backend',
         position: '백엔드',
@@ -72,7 +72,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 5,
-        image: '../../images/memberProfiles/hayeyoung.png',
+        image: '/images/memberProfiles/hayeyoung.png',
         name: '하예영',
         part: 'backend',
         position: '백엔드',
@@ -82,7 +82,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 6,
-        image: '../../images/memberProfiles/kimsoojin.png',
+        image: '/images/memberProfiles/kimsoojin.png',
         name: '김수진',
         part: 'design',
         position: '디자인',
@@ -91,7 +91,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 7,
-        image: '../../images/memberProfiles/moonseoyoung.png',
+        image: '/images/memberProfiles/moonseoyoung.png',
         name: '문서영',
         part: 'design',
         position: '디자인',
@@ -167,7 +167,7 @@ export const PROJECT_LIST = [
     name: 'Cookiee-',
     generation: ['10기'],
     category: PROJECT_CATEGORIES.APP,
-    imageUrl: './images/thumbnails/cookiee-.png',
+    imageUrl: '/images/thumbnails/cookiee-.png',
     youtubeVideoId: 'ezB4ZwOh0-Y',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -184,7 +184,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/kyungminseo.png',
+        image: '/images/memberProfiles/kyungminseo.png',
         name: '경민서',
         part: 'frontend',
         position: '프론트엔드',
@@ -241,7 +241,7 @@ export const PROJECT_LIST = [
     name: 'OUTFOOT',
     generation: ['10기', '10.5기'],
     category: PROJECT_CATEGORIES.APP,
-    imageUrl: './images/thumbnails/img-thumbnail-1.png',
+    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -258,7 +258,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/jeongjiwon.png',
+        image: '/images/memberProfiles/jeongjiwon.png',
         name: '정지원',
         part: 'frontend',
         position: '프론트엔드장',
@@ -268,7 +268,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 1,
-        image: '../../images/memberProfiles/jeongseoyeon.png',
+        image: '/images/memberProfiles/jeongseoyeon.png',
         name: '정서연',
         part: 'frontend',
         position: '프론트엔드',
@@ -278,7 +278,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 2,
-        image: '../../images/memberProfiles/leehaerim.png',
+        image: '/images/memberProfiles/leehaerim.png',
         name: '이해림',
         part: 'frontend',
         position: '프론트엔드',
@@ -288,7 +288,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 3,
-        image: '../../images/memberProfiles/jooajung.png',
+        image: '/images/memberProfiles/jooajung.png',
         name: '주아정',
         part: 'backend',
         position: '백엔드장',
@@ -298,7 +298,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 4,
-        image: '../../images/memberProfiles/leejieun.png',
+        image: '/images/memberProfiles/leejieun.png',
         name: '이지은',
         part: 'backend',
         position: '백엔드',
@@ -308,7 +308,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 5,
-        image: '../../images/memberProfiles/yoonhyeonseo.png',
+        image: '/images/memberProfiles/yoonhyeonseo.png',
         name: '윤현서',
         part: 'backend',
         position: '백엔드',
@@ -390,19 +390,18 @@ export const PROJECT_LIST = [
       },
     ],
   },
-
   {
     id: 4,
     name: '숙메추Real',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/sookmechu-real.jpg',
+    imageUrl: '/images/thumbnails/sookmechu-real.jpg',
     youtubeVideoId: 'zxaE0FIQRZ4',
     downloadLinkUrl: null,
-    webpageLinkUrl: '',
+    webpageLinkUrl: 'https://2024-sookmechu-real.vercel.app/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/Heoooooo/2024-Sookmechu_real.git',
+      clientUrl: 'https://github.com/Heoooooo/2024-Sookmechu_real.git',
+      serverUrl: '',
     },
     summary:
       '학교 다니며 매일 고민되는 식사 메뉴, 맛있는 음식들로 추천받아보세요 !',
@@ -413,7 +412,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/yuhayeon.png',
+        image: '/images/memberProfiles/yuhayeon.png',
         name: '유하연',
         part: 'frontend',
         position: '프론트엔드',
@@ -442,13 +441,13 @@ export const PROJECT_LIST = [
     name: 'StudyTracker',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/studytracker.png',
+    imageUrl: '/images/thumbnails/studytracker.png',
     youtubeVideoId: 'PykXOLwgGC0',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://yoon-jr.github.io/2024-StudyTracker/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/yoon-jr/2024-StudyTracker',
+      clientUrl: 'https://github.com/yoon-jr/2024-StudyTracker',
+      serverUrl: '',
     },
     summary: '나만의 공부 관리 메이트 StudyTacker',
     introduction:
@@ -458,7 +457,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/yoonjeongran.png',
+        image: '/images/memberProfiles/yoonjeongran.png',
         name: '윤정란',
         part: 'frontend',
         position: '프론트엔드',
@@ -487,7 +486,7 @@ export const PROJECT_LIST = [
     name: 'studypage',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/studypage.jpg',
+    imageUrl: '/images/thumbnails/studypage.jpg',
     youtubeVideoId: 'cdGniy_KXRY',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://seobin0224.github.io/2024-studypage/',
@@ -503,7 +502,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/yoonseobin.png',
+        image: '/images/memberProfiles/yoonseobin.png',
         name: '윤서빈',
         part: 'frontend',
         position: '프론트엔드',
@@ -536,14 +535,14 @@ export const PROJECT_LIST = [
     name: '여기저기',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/hereandthere.png',
+    imageUrl: '/images/thumbnails/hereandthere.png',
     youtubeVideoId: 'NjM8R7YXVTs',
     downloadLinkUrl: null,
     webpageLinkUrl:
       'https://hereandthere-v6q9-bweqxeq5z-yeonjoos-projects.vercel.app',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/y-Joo492/hereandthere.git',
+      clientUrl: 'https://github.com/y-Joo492/hereandthere.git',
+      serverUrl: '',
     },
     summary: '여행의 순간을 기억하고 간직하세요!',
     introduction:
@@ -553,7 +552,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/hongyeonjoo.png',
+        image: '/images/memberProfiles/hongyeonjoo.png',
         name: '홍연주',
         part: 'frontend',
         position: '프론트엔드',
@@ -582,13 +581,13 @@ export const PROJECT_LIST = [
     name: '펫토리 (PETTORY)',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/pettory.png',
+    imageUrl: '/images/thumbnails/pettory.png',
     youtubeVideoId: '3t1Fp17HLys',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://suminb99.github.io/2024-MYP/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/suminb99/2024-MYP',
+      clientUrl: 'https://github.com/suminb99/2024-MYP',
+      serverUrl: '',
     },
     summary: '귀여운 동물 사진에 나만의 스토리를 담아보세요!',
     introduction:
@@ -598,7 +597,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/baeksumin.png',
+        image: '/images/memberProfiles/baeksumin.png',
         name: '백수민',
         part: 'frontend',
         position: '프론트엔드',
@@ -627,13 +626,13 @@ export const PROJECT_LIST = [
     name: 'BookMemories',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/bookmemories.png',
+    imageUrl: '/images/thumbnails/bookmemories.png',
     youtubeVideoId: '0v4HJo_0gzk',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://jimni3155.github.io/2024-BookMemories/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/jimni3155/2024-BookMemories',
+      clientUrl: 'https://github.com/jimni3155/2024-BookMemories',
+      serverUrl: '',
     },
     summary: '책 속의 기억을 펼쳐보세요!',
     introduction:
@@ -643,7 +642,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/kimjimin.png',
+        image: '/images/memberProfiles/kimjimin.png',
         name: '김지민',
         part: 'frontend',
         position: '프론트엔드',
@@ -672,13 +671,13 @@ export const PROJECT_LIST = [
     name: 'GreenTalk',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/greentalk.png',
+    imageUrl: '/images/thumbnails/greentalk.png',
     youtubeVideoId: 'djZltHR4lRM',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://apps-sookmyung.github.io/2024-GreenTalk/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/APPS-sookmyung/2024-GreenTalk',
+      clientUrl: 'https://github.com/APPS-sookmyung/2024-GreenTalk',
+      serverUrl: '',
     },
     summary: '식물과의 하루를 기록하고 탐색해보세요!',
     introduction:
@@ -688,7 +687,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/hajimin.png',
+        image: '/images/memberProfiles/hajimin.png',
         name: '하지민',
         part: 'frontend',
         position: '프론트엔드',
@@ -721,13 +720,13 @@ export const PROJECT_LIST = [
     name: 'MERRY TREE',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/merry-tree.png',
+    imageUrl: '/images/thumbnails/merry-tree.png',
     youtubeVideoId: 'F2kmcZaM2Fc',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://merry-tree.netlify.app/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/APPS-sookmyung/2024-MERRY-TREE',
+      clientUrl: 'https://github.com/APPS-sookmyung/2024-MERRY-TREE',
+      serverUrl: '',
     },
     summary: '게임을 통해 오너먼트를 얻어 트리를 꾸며보세요!',
     introduction:
@@ -737,7 +736,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/bangjihee.png',
+        image: '/images/memberProfiles/bangjihee.png',
         name: '방지희',
         part: 'frontend',
         position: '프론트엔드',
@@ -766,13 +765,13 @@ export const PROJECT_LIST = [
     name: '주량도',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/juryangdo.png',
+    imageUrl: '/images/thumbnails/juryangdo.png',
     youtubeVideoId: 'Br-72VztyG8',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://juryangdo.netlify.app/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/APPS-sookmyung/2024-Juryangdo',
+      clientUrl: 'https://github.com/APPS-sookmyung/2024-Juryangdo',
+      serverUrl: '',
     },
     summary: '당신의 주량을 확인하세요',
     introduction:
@@ -782,7 +781,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/leedabin.png',
+        image: '/images/memberProfiles/leedabin.png',
         name: '이다빈',
         part: 'frontend',
         position: '프론트엔드',
@@ -811,13 +810,13 @@ export const PROJECT_LIST = [
     name: 'BDB - Birth Day Buddy',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/birthdaybuddy.png',
+    imageUrl: '/images/thumbnails/birthdaybuddy.png',
     youtubeVideoId: 'nmGqivk0R_g',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://birthdaybuddy2024.vercel.app/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/Kwonyujin04/2024-birthday',
+      clientUrl: 'https://github.com/Kwonyujin04/2024-birthday',
+      serverUrl: '',
     },
     summary: '생일 축하의 새로운 패러다임을 BDB에서 만나보아요.',
     introduction:
@@ -827,7 +826,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/kwonyujin.png',
+        image: '/images/memberProfiles/kwonyujin.png',
         name: '권유진',
         part: 'frontend',
         position: '프론트엔드',
@@ -856,13 +855,13 @@ export const PROJECT_LIST = [
     name: 'Stattracker',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/stattracker.png',
+    imageUrl: '/images/thumbnails/stattracker.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://rosaze.github.io/2024-Stattracker/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/rosaze/2024-Stattracker',
+      clientUrl: 'https://github.com/rosaze/2024-Stattracker',
+      serverUrl: '',
     },
     summary: '당신의 대학 생활 능력치 스탯을 키워주세요!',
     introduction:
@@ -872,7 +871,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/yoonjiwon.png',
+        image: '/images/memberProfiles/yoonjiwon.png',
         name: '윤지원',
         part: 'frontend',
         position: '프론트엔드',
@@ -901,13 +900,13 @@ export const PROJECT_LIST = [
     name: 'Emotion',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/emotion.png',
+    imageUrl: '/images/thumbnails/emotion.png',
     youtubeVideoId: 'z4ByAJIVJeM',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://2024-emotion.vercel.app/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/eunground/2024-Emotion.git',
+      clientUrl: 'https://github.com/eunground/2024-Emotion.git',
+      serverUrl: '',
     },
     summary: '당신의 기억을 저장하세요.',
     introduction:
@@ -917,7 +916,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/shinjeongeun.png',
+        image: '/images/memberProfiles/shinjeongeun.png',
         name: '신정은',
         part: 'frontend',
         position: '프론트엔드',
@@ -946,13 +945,13 @@ export const PROJECT_LIST = [
     name: '카공도',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/img-thumbnail-1.png',
+    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://cagongdo.netlify.app/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/APPS-sookmyung/2024-Cagongdo',
+      clientUrl: 'https://github.com/APPS-sookmyung/2024-Cagongdo',
+      serverUrl: '',
     },
     summary: '내 주변 카공맛집 찾기',
     introduction:
@@ -962,7 +961,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/kimjunhee.png',
+        image: '/images/memberProfiles/kimjunhee.png',
         name: '김준희',
         part: 'frontend',
         position: '프론트엔드',
