@@ -5,12 +5,7 @@ export const MEMBER_FEEDBACK = [
     reviewMember: 'APPS 10.5기 부원, 주ㅇㅇ',
     image: '/images/character/character-pink.svg',
   },
-  {
-    reviewText:
-      'APPS에서 꾸준한 스터디와 프로젝트를 통해 개발 역량을 키우고, 결과물을 소개하며 뿌듯함과 성장의 기쁨을 경험할 수 있었습니다!',
-    reviewMember: 'APPS 10기 부원, 정ㅇㅇ',
-    image: '/images/character/character-orange.svg',
-  },
+
   {
     reviewText:
       'APPS에서의 체계적인 스터디와 협업을 통해 개발 역량을 키우고, 다양한 활동과 성과를 통해 기술적으로 크게 성장할 수 있었어요.',
@@ -25,7 +20,7 @@ export const MEMBER_FEEDBACK = [
   },
   {
     reviewText:
-      'APPS의 열정적인 분위기와 도전하는 문화를 통해 다양한 활동에 도전하고, 자신감을 얻으며 성장할 수 있었어요.',
+      '열정적인 분위기와 도전하는 문화를 통해 다양한 활동에 도전하고, 자신감을 얻으며 성장할 수 있었어요.',
     reviewMember: 'APPS 11기 부원, 윤ㅇㅇ',
     image: '/images/character/character-pink.svg',
   },
@@ -106,6 +101,12 @@ export const MEMBER_FEEDBACK = [
       'APPS에서 부원들의 도전하는 모습을 보며 영향을 받아, 걱정보다 해보고자 하는 마음으로 변화해 더 많은 도전에 나설 수 있었습니다!',
     reviewMember: 'APPS 11기 부원, 권ㅇㅇ',
     image: '/images/character/character-green.svg',
+  },
+  {
+    reviewText:
+      'APPS에서 꾸준한 스터디와 프로젝트를 통해 개발 역량을 키우고, 결과물을 소개하며 뿌듯함과 성장의 기쁨을 경험할 수 있었습니다!',
+    reviewMember: 'APPS 10기 부원, 정ㅇㅇ',
+    image: '/images/character/character-orange.svg',
   },
 ];
 

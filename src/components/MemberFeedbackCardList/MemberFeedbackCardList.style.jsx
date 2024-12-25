@@ -68,6 +68,7 @@ export const BalloonCardContent = styled.p`
   font-weight: 500;
   letter-spacing: -0.9px;
   word-break: keep-all;
+  line-height: 1.2;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 14px;
