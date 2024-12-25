@@ -4,6 +4,7 @@ import {
   PROJECT_CATEGORY_LIST,
   PROJECT_LIST,
 } from '../../database';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const ProjectCardList = () => {
@@ -34,26 +35,28 @@ const ProjectCardList = () => {
             project.category === selectedTab,
         ).map((project) => (
           <S.ProjectCard key={project.id}>
-            <S.ProjectCardImage>
-              <img src={project.imageUrl} />
-            </S.ProjectCardImage>
-            <S.ProjectCardContent>
-              <S.ProjectTitleBadgeWrapper>
-                <S.ProjectTitle>{project.name}</S.ProjectTitle>
-                <S.ProjectBadgeWrapper>
-                  <S.ProjectBadge>
-                    #
-                    {PROJECT_CATEGORY_LIST.find(
-                      (item) => item.category === project.category,
-                    )?.label || ''}
-                  </S.ProjectBadge>
-                  <S.ProjectBadge>
-                    {project.generation.map((gen) => `#${gen}`).join(' ')}
-                  </S.ProjectBadge>
-                </S.ProjectBadgeWrapper>
-              </S.ProjectTitleBadgeWrapper>
-              <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
-            </S.ProjectCardContent>
+            <Link to={`/projects/${project.id}`}>
+              <S.ProjectCardImage>
+                <img src={project.imageUrl} alt={project.name} />
+              </S.ProjectCardImage>
+              <S.ProjectCardContent>
+                <S.ProjectTitleBadgeWrapper>
+                  <S.ProjectTitle>{project.name}</S.ProjectTitle>
+                  <S.ProjectBadgeWrapper>
+                    <S.ProjectBadge>
+                      #
+                      {PROJECT_CATEGORY_LIST.find(
+                        (item) => item.category === project.category,
+                      )?.label || ''}
+                    </S.ProjectBadge>
+                    <S.ProjectBadge>
+                      {project.generation.map((gen) => `#${gen}`).join(' ')}
+                    </S.ProjectBadge>
+                  </S.ProjectBadgeWrapper>
+                </S.ProjectTitleBadgeWrapper>
+                <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
+              </S.ProjectCardContent>
+            </Link>
           </S.ProjectCard>
         ))}
       </S.ProjectCardContainer>

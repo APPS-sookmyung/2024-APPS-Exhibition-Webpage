@@ -33,7 +33,7 @@ export const HomePage = styled.div`
 `;
 
 export const HomePageTopBackground = styled.div`
-  background-image: url('/images/background/home-background.svg');
+  background-image: url('/images/background/home-background-top.svg');
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -358,7 +358,7 @@ export const HomePageBottomBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/images/background/home-background-2.svg');
+  background-image: url('/images/background/home-background-bottom.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
