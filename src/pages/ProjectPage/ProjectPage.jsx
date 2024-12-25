@@ -115,7 +115,6 @@ export default function ProjectPage() {
                 height="315"
                 src={`https://www.youtube.com/embed/${projectData.youtubeVideoId}`}
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
               gyroscope; picture-in-picture"
                 allowFullScreen
@@ -123,7 +122,7 @@ export default function ProjectPage() {
             </S.Youtube>
           </S.YoutubeContainer>
         </S.Top>
-        <S.Line src="images/background/projects_line.svg" alt="" />
+        <S.Line src="../../images/background/projects_line.svg" alt="" />
         <S.Center>
           <S.Content>
             <S.SubTitle>서비스 소개</S.SubTitle>
