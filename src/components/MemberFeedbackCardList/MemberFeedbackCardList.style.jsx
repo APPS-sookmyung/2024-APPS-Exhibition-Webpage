@@ -1,15 +1,15 @@
 import styled, { keyframes } from 'styled-components';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
-const moveLeft = keyframes`
+const moveRight = keyframes`
   0% {
-    transform: translateX(100%); 
+    transform: translateX(-100%);
   }
   50% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); 
+    transform: translateX(100%);
   }
 `;
 
@@ -33,7 +33,7 @@ export const CardWrapper = styled.div`
   align-items: center;
   margin-top: ${({ index }) => (index % 2 === 0 ? '' : '100px')};
   gap: 10px;
-  animation: ${moveLeft} 5s linear infinite;
+  animation: ${moveRight} 7s linear infinite;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     gap: 6px;
