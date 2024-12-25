@@ -44,7 +44,7 @@ export const MEMBER_FEEDBACK = [
   },
   {
     reviewText:
-      'APPS에서 소중한 사람들과 함께하며 나를 더 잘 이해하고, 다양한 도전과 성취를 통해 성장의 의미를 깨달을 수 있었습니다!',
+      '소중한 사람들과 함께하며 나를 더 잘 이해하고, 다양한 도전과 성취를 통해 성장의 의미를 깨달을 수 있었습니다!',
     reviewMember: 'APPS 10기 부원, 경ㅇㅇ',
     image: '/images/character/character-pink.svg',
   },

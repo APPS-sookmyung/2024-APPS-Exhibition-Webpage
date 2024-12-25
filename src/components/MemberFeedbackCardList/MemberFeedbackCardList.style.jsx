@@ -1,29 +1,30 @@
 import styled, { keyframes } from 'styled-components';
 import { BREAKPOINTS } from '../../styles/mediaQueries.style';
-
-const moveRight = keyframes`
+const moveRightInfinite = keyframes`
   0% {
-    transform: translateX(-100%);
-  }
-  50% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%); 
   }
 `;
 
 export const MemberFeedbackCardList = styled.div`
   display: flex;
   position: relative;
-  width: 100%;
+  justify-content: center;
+  width: calc(300% + 40px);
+  animation: ${moveRightInfinite} 30s linear infinite;
+  transform: translateX(-33.33%);
   gap: 40px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     gap: 30px;
+    transform: translateX(-33.33%);
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     gap: 20px;
+    transform: translateX(-33.33%);
   }
 `;
 
@@ -33,7 +34,6 @@ export const CardWrapper = styled.div`
   align-items: center;
   margin-top: ${({ index }) => (index % 2 === 0 ? '' : '100px')};
   gap: 10px;
-  animation: ${moveRight} 7s linear infinite;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     gap: 6px;
