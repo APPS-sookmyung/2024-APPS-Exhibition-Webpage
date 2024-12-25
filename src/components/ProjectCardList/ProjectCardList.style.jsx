@@ -28,7 +28,7 @@ export const Tab = styled.div`
   background: ${(props) => (props.isActive ? '#ff88fb' : '')};
   margin: 5px;
   border-radius: 30px;
-  padding: 12px;
+  padding: 16px;
   width: 100%;
   color: #fff;
   font-size: 20px;
@@ -42,13 +42,11 @@ export const Tab = styled.div`
     background-color: #ff88fb;
   }
 
-  @media (max-width: ${BREAKPOINTS[2]}px) {
-  }
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 18px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 2px;
+    padding: 6px 2px;
     font-size: 14px;
   }
 `;

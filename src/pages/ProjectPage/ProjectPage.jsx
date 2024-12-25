@@ -33,7 +33,7 @@ export default function ProjectPage() {
       <S.Container>
         <S.CloseBtn
           src="../../images/icons/x_pink.svg"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/?scrollTo=project-section')}
         />
         <S.Top>
           <S.Title>{projectData.name}</S.Title>
