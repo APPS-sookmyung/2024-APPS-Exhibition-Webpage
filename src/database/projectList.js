@@ -82,7 +82,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 6,
-        image: null,
+        image: '../../images/memberProfiles/kimsoojin.png',
         name: '김수진',
         part: 'design',
         position: '디자인',
@@ -91,7 +91,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 7,
-        image: null,
+        image: '../../images/memberProfiles/moonseoyoung.png',
         name: '문서영',
         part: 'design',
         position: '디자인',
