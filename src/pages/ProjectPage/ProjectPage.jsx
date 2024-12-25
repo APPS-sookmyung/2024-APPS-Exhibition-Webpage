@@ -132,17 +132,38 @@ export default function ProjectPage() {
         <S.Bottom>
           <S.SubTitle>개발자</S.SubTitle>
           <S.DeveloperCardContainer>
-            {projectData.memberList.map((developer) => (
-              <DeveloperCard
-                key={developer.index}
-                image={developer.image}
-                name={developer.name}
-                part={developer.part}
-                position={developer.position}
-                isLeader={developer.isLeader}
-              />
-            ))}
+            {projectData.memberList
+              .filter((developer) => developer.part !== 'design') // part가 'design'이 아닌 경우만 필터링
+              .map((developer) => (
+                <DeveloperCard
+                  key={developer.index}
+                  image={developer.image}
+                  name={developer.name}
+                  part={developer.part}
+                  position={developer.position}
+                  isLeader={developer.isLeader}
+                />
+              ))}
           </S.DeveloperCardContainer>
+          {projectData.memberList.some((member) => member.part === 'design') ? (
+            <>
+              <S.SubTitle>디자인</S.SubTitle>
+              <S.DesignerCardContainer>
+                {projectData.memberList
+                  .filter((developer) => developer.part === 'design') // part가 'design'이 아닌 경우만 필터링
+                  .map((developer) => (
+                    <DeveloperCard
+                      key={developer.index}
+                      image={developer.image}
+                      name={developer.name}
+                      part={developer.part}
+                      position={developer.position}
+                      isLeader={developer.isLeader}
+                    />
+                  ))}
+              </S.DesignerCardContainer>
+            </>
+          ) : null}
           <S.SubTitle>회고</S.SubTitle>
           <S.ReviewContainer>
             {projectData.memberList.map((developer) => (

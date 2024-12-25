@@ -24,20 +24,22 @@ export default function ReviewCard({
 
   return isMobile ? (
     // 화면이 480px 이하일 때
-    <S.ReviewContainer>
-      <S.ReviewBox part={part}>
-        <DeveloperCard
-          index={index}
-          image={image}
-          name={name}
-          part={part}
-          position={position}
-        />
-        <p>{review}</p>
-      </S.ReviewBox>
-    </S.ReviewContainer>
-  ) : (
-    // 화면이 480px 초과일 때
+    review ? (
+      <S.ReviewContainer>
+        <S.ReviewBox part={part}>
+          <DeveloperCard
+            index={index}
+            image={image}
+            name={name}
+            part={part}
+            position={position}
+          />
+          <p>{review}</p>
+        </S.ReviewBox>
+      </S.ReviewContainer>
+    ) : null
+  ) : // 화면이 480px 초과일 때
+  review ? (
     <S.ReviewContainer>
       <DeveloperCard
         index={index}
@@ -50,5 +52,5 @@ export default function ReviewCard({
         <p>{review}</p>
       </S.ReviewBox>
     </S.ReviewContainer>
-  );
+  ) : null;
 }
