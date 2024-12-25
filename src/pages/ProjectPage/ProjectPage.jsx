@@ -42,7 +42,7 @@ export default function ProjectPage() {
             <S.ShareBtn
               onClick={() => handleCopyClipBoard(projectData.webpageLinkUrl)}
             >
-              <S.ShareIcon src="../../images/icons/share.svg" alt="" />
+              <S.ShareIcon src="../../images/icons/share.svg" alt="공유하기" />
               <S.ShareText>프로젝트 공유하기</S.ShareText>
             </S.ShareBtn>
             <S.LinkBtns>

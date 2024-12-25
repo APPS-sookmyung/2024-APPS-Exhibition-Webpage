@@ -22,7 +22,6 @@ export default function HomePage() {
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
       <S.HomePageTopBackground>
-        {' '}
         <S.HomePage>
           <S.HomeMainWrapper>
             <S.TitleWrapper>
