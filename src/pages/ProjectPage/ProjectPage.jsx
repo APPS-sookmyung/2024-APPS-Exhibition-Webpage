@@ -1,6 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { DeveloperCard, ProjectRecommend, ReviewCard } from '../../components';
-import { developers } from '../../database/developers';
 import * as S from './ProjectPage.style';
 import { PROJECT_LIST } from '../../database';
 
