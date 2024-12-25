@@ -6,7 +6,7 @@ export const PROJECT_LIST = [
     name: 'WELLET',
     generation: ['10기', '11기'],
     category: PROJECT_CATEGORIES.WEB,
-    imageUrl: '/images/thumbnail/example-thumbnail.png',
+    imageUrl: './images/thumbnails/img-thumbnail-1.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://wellet.netlify.app',
@@ -22,7 +22,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: kimjunhee,
+        image: 'kimjunhee.png',
         name: '김준희',
         part: 'frontend',
         position: '프론트엔드장',
@@ -32,7 +32,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 1,
-        image: ryumisung,
+        image: 'ryumisung.png',
         name: '류미성',
         part: 'frontend',
         position: '프론트엔드',
@@ -42,7 +42,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 2,
-        image: kimhyerim,
+        image: 'kimhyerim.png',
         name: '김혜림',
         part: 'frontend',
         position: '프론트엔드',
@@ -52,7 +52,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 3,
-        image: jooajung,
+        image: 'jooajung.png',
         name: '주아정',
         part: 'backend',
         position: '백엔드장',
@@ -62,7 +62,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 4,
-        image: leehaerim,
+        image: 'leehaerim.png',
         name: '이해림',
         part: 'backend',
         position: '백엔드',
@@ -72,7 +72,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 5,
-        image: hayeyoung,
+        image: 'hayeyoung.png',
         name: '하예영',
         part: 'backend',
         position: '백엔드',
@@ -167,7 +167,7 @@ export const PROJECT_LIST = [
     name: 'Stattracker',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/stattracker.png',
+    imageUrl: './images/thumbnails/stattracker.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://rosaze.github.io/2024-Stattracker/',
@@ -183,7 +183,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: yoonjiwon,
+        image: 'yoonjiwon.png',
         name: '윤지원',
         part: 'frontend',
         position: '프론트엔드',
@@ -212,7 +212,7 @@ export const PROJECT_LIST = [
     name: '카공도',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/example-thumbnail.png',
+    imageUrl: './images/thumbnails/img-thumbnail-1.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://cagongdo.netlify.app/',
@@ -228,7 +228,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: kimjunhee,
+        image: 'kimjunhee.png',
         name: '김준희',
         part: 'frontend',
         position: '프론트엔드',
@@ -268,7 +268,7 @@ export const PROJECT_LIST = [
     name: '숙메추Real',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/sookmechu-real.jpg',
+    imageUrl: './images/thumbnails/sookmechu-real.jpg',
     youtubeVideoId: 'zxaE0FIQRZ4',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -285,7 +285,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: yuhayeon,
+        image: 'yuhayeon.png',
         name: '유하연',
         part: 'frontend',
         position: '프론트엔드',
@@ -314,7 +314,7 @@ export const PROJECT_LIST = [
     name: 'StudyTracker',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/studytracker.png',
+    imageUrl: './images/thumbnails/studytracker.png',
     youtubeVideoId: 'PykXOLwgGC0',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://yoon-jr.github.io/2024-StudyTracker/',
@@ -330,7 +330,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: yoonjeongran,
+        image: 'yoonjeongran.png',
         name: '윤정란',
         part: 'frontend',
         position: '프론트엔드',
@@ -359,7 +359,7 @@ export const PROJECT_LIST = [
     name: 'studypage',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/studypage.jpg',
+    imageUrl: './images/thumbnails/studypage.jpg',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://seobin0224.github.io/2024-studypage/',
@@ -375,7 +375,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: yoonseobin,
+        image: 'yoonseobin.png',
         name: '윤서빈',
         part: 'frontend',
         position: '프론트엔드',
@@ -408,7 +408,7 @@ export const PROJECT_LIST = [
     name: '여기저기',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/hereandthere.png',
+    imageUrl: './images/thumbnails/hereandthere.png',
     youtubeVideoId: 'NjM8R7YXVTs',
     downloadLinkUrl: null,
     webpageLinkUrl:
@@ -425,7 +425,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: hongyeonjoo,
+        image: 'hongyeonjoo.png',
         name: '홍연주',
         part: 'frontend',
         position: '프론트엔드',
@@ -454,7 +454,7 @@ export const PROJECT_LIST = [
     name: '펫토리 (PETTORY)',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/pettory.png',
+    imageUrl: './images/thumbnails/pettory.png',
     youtubeVideoId: '3t1Fp17HLys',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://suminb99.github.io/2024-MYP/',
@@ -470,7 +470,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: baeksumin,
+        image: 'baeksumin.png',
         name: '백수민',
         part: 'frontend',
         position: '프론트엔드',
@@ -499,7 +499,7 @@ export const PROJECT_LIST = [
     name: 'BookMemories',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/bookmemories.png',
+    imageUrl: './images/thumbnails/bookmemories.png',
     youtubeVideoId: '0v4HJo_0gzk',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://jimni3155.github.io/2024-BookMemories/',
@@ -515,7 +515,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: kimjimin,
+        image: 'kimjimin.png',
         name: '김지민',
         part: 'frontend',
         position: '프론트엔드',
@@ -544,7 +544,7 @@ export const PROJECT_LIST = [
     name: 'GreenTalk',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/greentalk.png',
+    imageUrl: './images/thumbnails/greentalk.png',
     youtubeVideoId: 'djZltHR4lRM',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://apps-sookmyung.github.io/2024-GreenTalk/',
@@ -560,7 +560,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: hajimin,
+        image: 'hajimin.png',
         name: '하지민',
         part: 'frontend',
         position: '프론트엔드',
@@ -593,7 +593,7 @@ export const PROJECT_LIST = [
     name: 'MERRY TREE',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/merry-tree.png',
+    imageUrl: './images/thumbnails/merry-tree.png',
     youtubeVideoId: 'F2kmcZaM2Fc',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://merry-tree.netlify.app/',
@@ -609,7 +609,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: bangjihee,
+        image: 'bangjihee.png',
         name: '방지희',
         part: 'frontend',
         position: '프론트엔드',
@@ -638,7 +638,7 @@ export const PROJECT_LIST = [
     name: '주량도',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/juryangdo.png',
+    imageUrl: './images/thumbnails/juryangdo.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://juryangdo.netlify.app/',
@@ -654,7 +654,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: leedabin,
+        image: 'leedabin.png',
         name: '이다빈',
         part: 'frontend',
         position: '프론트엔드',
@@ -683,7 +683,7 @@ export const PROJECT_LIST = [
     name: 'BDB - Birth Day Buddy',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/birthdaybuddy.png',
+    imageUrl: './images/thumbnails/birthdaybuddy.png',
     youtubeVideoId: 'nmGqivk0R_g',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://birthdaybuddy2024.vercel.app/',
@@ -699,7 +699,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: kwonyujin,
+        image: 'kwonyujin.png',
         name: '권유진',
         part: 'frontend',
         position: '프론트엔드',
@@ -726,9 +726,9 @@ export const PROJECT_LIST = [
   {
     id: 14,
     name: 'Cookiee-',
-    generation: ['10기기'],
+    generation: ['10기'],
     category: PROJECT_CATEGORIES.APP,
-    imageUrl: '/images/thumbnail/cookiee-.png',
+    imageUrl: './images/thumbnails/cookiee-.png',
     youtubeVideoId: 'ezB4ZwOh0-Y',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -737,7 +737,7 @@ export const PROJECT_LIST = [
       serverUrl: 'https://github.com/SMWU-Cookiee/Cookiee-Server',
     },
     summary:
-      '하루하루의 쿠키를 모아보세요! ([혹시 길어도 되면 뒤에도 붙여주세요] 사진으로 나만의 캘린더를 꾸미고, 기록하면서 일상을 캘린더로 디자인하는 색다른 경험을 누려보세요!)',
+      '하루하루의 쿠키를 모아보세요! 사진으로 나만의 캘린더를 꾸미고, 기록하면서 일상을 캘린더로 디자인하는 색다른 경험을 누려보세요!',
     introduction:
       'Cookiee-는 일상 속에서 경험하는 소중한 순간들을 아름답게 간직하고 싶은 마음에서 시작되었습니다. 우리의 하루하루는 특별한 순간들로 가득 차 있지만, 그 순간들을 더 감성적이고 생생하게 기록할 수 있는 방법을 찾고 싶었습니다.\n\nCookiee-는 이런 마음에서 탄생했습니다. 사진과 함께 감정을 기록하고, 순간을 더 특별하게 기억할 수 있도록 돕기 위해 우리는 이 서비스를 만들었습니다. Cookiee-는 여러분의 하루하루를 더욱 특별하게 만들기 위해, 일상의 작은 행복을 간직하고, 나누는 새로운 방식을 제안합니다.',
     description:
@@ -745,7 +745,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: kyungminseo,
+        image: 'kyungminseo.png',
         name: '경민서',
         part: 'frontend',
         position: '프론트엔드',
@@ -802,7 +802,7 @@ export const PROJECT_LIST = [
     name: 'Emotion',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/emotion.png',
+    imageUrl: './images/thumbnails/emotion.png',
     youtubeVideoId: 'z4ByAJIVJeM',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://2024-emotion.vercel.app/',
@@ -818,7 +818,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: shinjeongeun,
+        image: 'shinjeongeun.png',
         name: '신정은',
         part: 'frontend',
         position: '프론트엔드',
@@ -847,7 +847,7 @@ export const PROJECT_LIST = [
     name: 'OUTFOOT',
     generation: ['10기'],
     category: PROJECT_CATEGORIES.APP,
-    imageUrl: '/images/thumbnail/example-thumbnail.png',
+    imageUrl: './images/thumbnails/img-thumbnail-1.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -864,7 +864,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: jeongjiwon,
+        image: 'jeongjiwon.png',
         name: '정지원',
         part: 'frontend',
         position: '프론트엔드장',
@@ -873,7 +873,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 0,
-        image: jeongseoyeon,
+        image: 'jeongseoyeon.png',
         name: '정서연',
         part: 'frontend',
         position: '프론트엔드',
@@ -882,7 +882,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 0,
-        image: leehaerim,
+        image: 'leehaerim.png',
         name: '이해림',
         part: 'frontend',
         position: '프론트엔드',
@@ -891,7 +891,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 0,
-        image: jooajung,
+        image: 'jooajung.png',
         name: '주아정',
         part: 'backend',
         position: '백엔드장',
@@ -900,7 +900,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 0,
-        image: leejieun,
+        image: 'leejieun.png',
         name: '이지은',
         part: 'backend',
         position: '백엔드',
@@ -909,7 +909,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 0,
-        image: yoonhyeonseo,
+        image: 'yoonhyeonseo.png',
         name: '윤현서',
         part: 'backend',
         position: '백엔드',
