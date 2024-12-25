@@ -74,7 +74,6 @@ export default function HomePage() {
             </S.SectionContentWrapper>
           </S.SectionWrapper>
         </S.HomePageTopBackground>
-
         <S.SectionWrapper>
           <S.SectionTitleWrapper>
             <S.SectionTitleImageWrapper>
@@ -93,7 +92,6 @@ export default function HomePage() {
             <MemberFeedbackCardList />
           </S.SectionContentWrapper>
         </S.SectionWrapper>
-
         <S.SocialLinks>
           <S.SocialLinksTitle>
             APPS 소식을 더 빨리 알고 싶다면
@@ -112,31 +110,34 @@ export default function HomePage() {
             ))}
           </S.SocialLinksContent>
         </S.SocialLinks>
-
         <S.ProjectList>
           <ProjectCardList />
         </S.ProjectList>
+      </S.HomePage>
 
-        <S.ShareLinks>
-          <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
-          <S.ShareLinksContent>
-            <S.StyledLink to="/">
-              <S.LinkButton
-                onClick={() =>
-                  handleCopyClipBoard('https://2024-apps.netlify.app/')
-                }
+      <S.HomePage>
+        <S.HomePageBottomBackground>
+          <S.ShareLinks>
+            <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
+            <S.ShareLinksContent>
+              <S.StyledLink to="/">
+                <S.LinkButton
+                  onClick={() =>
+                    handleCopyClipBoard('https://2024-apps.netlify.app/')
+                  }
+                >
+                  링크 공유하기
+                </S.LinkButton>
+              </S.StyledLink>
+              <S.StyledLink
+                to="https://forms.gle/k14eA7Kk9bxD7aTm6"
+                target="_blank"
               >
-                링크 공유하기
-              </S.LinkButton>
-            </S.StyledLink>
-            <S.StyledLink
-              to="https://forms.gle/k14eA7Kk9bxD7aTm6"
-              target="_blank"
-            >
-              <S.LinkButton>12기 알림 신청하기</S.LinkButton>
-            </S.StyledLink>
-          </S.ShareLinksContent>
-        </S.ShareLinks>
+                <S.LinkButton>12기 알림 신청하기</S.LinkButton>
+              </S.StyledLink>
+            </S.ShareLinksContent>
+          </S.ShareLinks>
+        </S.HomePageBottomBackground>
       </S.HomePage>
     </PageLayout>
   );
