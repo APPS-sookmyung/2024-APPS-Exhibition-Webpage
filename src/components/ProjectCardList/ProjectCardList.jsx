@@ -35,7 +35,7 @@ const ProjectCardList = () => {
         ).map((project) => (
           <S.ProjectCard key={project.id}>
             <S.ProjectCardImage>
-              <img src="./images/thumbnails/img-thumbnail-1.png" />
+              <img src={project.imageUrl} />
             </S.ProjectCardImage>
             <S.ProjectCardContent>
               <S.ProjectTitleBadgeWrapper>
