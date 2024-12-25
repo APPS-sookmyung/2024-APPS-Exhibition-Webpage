@@ -281,7 +281,7 @@ export const PROJECT_LIST = [
     introduction:
       '숙메추Real 웹페이지를 통해 매일매일 고민되는 식사 메뉴들을 추천받아 보세요 ! 숙대 맛집 지도에 있는 식당들마다 숙대생들이 자주먹는 맛있는 메뉴들과 가게마다 특별한 점을 소개합니다. 일상 속에서 먹었던 음식들과 가게들을 기억하기 쉽게 기록해보세요 !',
     description:
-      '🐥맛집  지도 속 가게들에 대한 정보얻기\n지도 속 가게들을 클릭하여 가게에 대한 맛있는 메뉴와 특징들을 알 수 있습니다.\n🐥앞으로 갈 To Eat List 작성하기\n가고 싶었던 가게 혹은 갈 예정인 가게와 먹을 메뉴를 리스트할 수 있습니다.\n\n🐥메뉴 추천 받기\n메뉴가 고민된다면 가게들을 랜덤하게 추천받을 수 있습니다.\n\n🐥나의 기록 저장하기\n내가 갔던 가게들에 대한 좋은 점, 안 좋은 점을 기록하여 오랫동안 기억하고, 검색 기능이 있어 편하게 찾아볼 수 있습니다.',
+      '🐥맛집  지도 속 가게들에 대한 정보얻기\n지도 속 가게들을 클릭하여 가게에 대한 맛있는 메뉴와 특징들을 알 수 있습니다.\n\n🐥앞으로 갈 To Eat List 작성하기\n가고 싶었던 가게 혹은 갈 예정인 가게와 먹을 메뉴를 리스트할 수 있습니다.\n\n🐥메뉴 추천 받기\n메뉴가 고민된다면 가게들을 랜덤하게 추천받을 수 있습니다.\n\n🐥나의 기록 저장하기\n내가 갔던 가게들에 대한 좋은 점, 안 좋은 점을 기록하여 오랫동안 기억하고, 검색 기능이 있어 편하게 찾아볼 수 있습니다.',
     memberList: [
       {
         index: 0,
@@ -364,8 +364,8 @@ export const PROJECT_LIST = [
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://seobin0224.github.io/2024-studypage/',
     githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/seobin0224/2024-studypage',
+      clientUrl: 'https://github.com/seobin0224/2024-studypage',
+      serverUrl: '',
     },
     summary: '체계적인 학습 관리로 당신의 학업 성취를 높여보세요!',
     introduction:
