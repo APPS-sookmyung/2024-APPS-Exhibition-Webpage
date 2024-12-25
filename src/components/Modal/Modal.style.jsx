@@ -243,11 +243,9 @@ export const SNSSection = styled.div`
 `;
 
 export const Divider = styled.div`
-  margin: 40px 0;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  max-width: 100%;
+  width: 100%; 
+  margin: 20px 0; 
+  }
 
   svg {
     max-width: 100%;
