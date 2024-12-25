@@ -268,15 +268,15 @@ export const QASection = styled.div`
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 46px;
   align-items: flex-start;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    gap: 12px;
+    gap: 32px;
   }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    gap: 8px;
+    gap: 20px;
   }
 `;
 
