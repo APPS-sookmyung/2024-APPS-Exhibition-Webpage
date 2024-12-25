@@ -132,7 +132,7 @@ export default function AboutAppsPage() {
             {MEMBERS.map((member, index) => (
               <MemberCard
                 key={index}
-                image={require(`../../images/memberProfiles/${member.image}`)}
+                image={`/images/memberProfiles/${member.image}`}
                 name={member.name}
                 title={member.title}
                 position={member.position}
