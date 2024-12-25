@@ -9,16 +9,21 @@ export default function Modal({ member, closeModal }) {
   ];
 
   useEffect(() => {
+    const scrollY = window.scrollY;
     document.body.style.overflow = 'hidden';
 
     return () => {
       document.body.style.overflow = 'unset';
+      window.scrollTo(0, scrollY);
     };
   }, []);
 
   return (
     <S.ModalWrapper>
       <S.Modal>
+        <S.CloseButton onClick={closeModal}>
+          <img src="../../images/icons/x_orange.svg" alt="닫기" />
+        </S.CloseButton>
         <S.MemberDetailWrapper>
           <S.MemberCard>
             <S.MemberImage
@@ -133,10 +138,6 @@ export default function Modal({ member, closeModal }) {
             </S.QuestionWrapper>
           ))}
         </S.QASection>
-
-        <S.CloseButton onClick={closeModal}>
-          <img src="../../images/icons/x_orange.svg" alt="닫기" />
-        </S.CloseButton>
       </S.Modal>
     </S.ModalWrapper>
   );

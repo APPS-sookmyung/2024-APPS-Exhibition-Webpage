@@ -495,7 +495,7 @@ export const MemberList = styled.div`
   column-gap: 0;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 30px;
   & > div:nth-child(even) {
     margin-top: 20px;
   }
