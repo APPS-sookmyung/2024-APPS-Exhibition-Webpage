@@ -9,6 +9,9 @@ export default function Modal({ member, closeModal }) {
   ];
 
   useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+
     const handleClickOutside = (e) => {
       if (
         e.target.classList.contains('modal-close') ||
@@ -16,12 +19,16 @@ export default function Modal({ member, closeModal }) {
       ) {
         closeModal();
         document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
       }
     };
 
     document.addEventListener('click', handleClickOutside);
+
     return () => {
       document.removeEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = 'auto';
     };
   }, [closeModal]);
 

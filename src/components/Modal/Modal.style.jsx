@@ -11,8 +11,8 @@ export const ModalWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  over-flow: auto;
+  z-index: 9999;
+  overflow: auto;
 `;
 
 export const Modal = styled.div`
@@ -24,6 +24,8 @@ export const Modal = styled.div`
   flex-direction: column;
   align-items: flex-start;
   overflow-y: auto;
+  border: 1px solid #8f8f8f;
+  border-radius: 20px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 30px 40px;
@@ -266,15 +268,15 @@ export const QASection = styled.div`
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 46px;
   align-items: flex-start;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    gap: 12px;
+    gap: 32px;
   }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    gap: 8px;
+    gap: 20px;
   }
 `;
 
@@ -340,16 +342,16 @@ export const Answer = styled.div`
   font-size: 14px;
   margin: 0;
   word-break: keep-all;
-  line-height: 1.5;
+  line-height: 1.2;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 11px;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 `;
 

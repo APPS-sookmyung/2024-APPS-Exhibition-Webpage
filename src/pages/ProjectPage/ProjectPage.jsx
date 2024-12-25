@@ -3,6 +3,14 @@ import { DeveloperCard, ProjectRecommend, ReviewCard } from '../../components';
 import * as S from './ProjectPage.style';
 import { PROJECT_LIST } from '../../database';
 
+const handleCopyClipBoard = async (copyLink) => {
+  try {
+    await navigator.clipboard.writeText(copyLink);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export default function ProjectPage() {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -25,14 +33,16 @@ export default function ProjectPage() {
       <S.Container>
         <S.CloseBtn
           src="../../images/icons/x_pink.svg"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/?scrollTo=project-section')}
         />
         <S.Top>
           <S.Title>{projectData.name}</S.Title>
-          <S.Description>{projectData.summary}</S.Description>
+          <S.Summary>{projectData.summary}</S.Summary>
           <S.TopBtnContainer>
-            <S.ShareBtn>
-              <S.ShareIcon src="../../images/icons/share.svg" alt="" />
+            <S.ShareBtn
+              onClick={() => handleCopyClipBoard(projectData.webpageLinkUrl)}
+            >
+              <S.ShareIcon src="../../images/icons/share.svg" alt="공유하기" />
               <S.ShareText>프로젝트 공유하기</S.ShareText>
             </S.ShareBtn>
             <S.LinkBtns>
@@ -105,7 +115,6 @@ export default function ProjectPage() {
                 height="315"
                 src={`https://www.youtube.com/embed/${projectData.youtubeVideoId}`}
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
               gyroscope; picture-in-picture"
                 allowFullScreen
@@ -113,7 +122,7 @@ export default function ProjectPage() {
             </S.Youtube>
           </S.YoutubeContainer>
         </S.Top>
-        <S.Line src="images/background/projects_line.svg" alt="" />
+        <S.Line src="../../images/background/projects_line.svg" alt="" />
         <S.Center>
           <S.Content>
             <S.SubTitle>서비스 소개</S.SubTitle>

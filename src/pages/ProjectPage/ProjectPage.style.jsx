@@ -66,11 +66,14 @@ export const Title = styled.h1`
   }
 `;
 
-export const Description = styled.p`
-  font-size: 32px;
+export const Summary = styled.p`
+  font-size: 28px;
   font-weight: 500;
   letter-spacing: -1.6px;
+  line-height: 1.2;
   margin: 0 0 22px 0;
+  color: #cccccc;
+  word-break: keep-all;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 24px;
@@ -98,6 +101,7 @@ export const ShareBtn = styled.div`
   justify-content: center;
   padding: 13px 43px;
   margin: 0 10px 16px 0;
+  cursor: pointer;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 4px 16px;
@@ -220,7 +224,7 @@ export const Content = styled.div`
 
 export const SubTitle = styled.h2`
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -1px;
   padding-bottom: 12px;
   margin: 0;
@@ -238,6 +242,7 @@ export const SubTitle = styled.h2`
 export const ServiceDetail = styled.p`
   font-size: 18px;
   font-weight: 500;
+  color: #cccccc;
   letter-spacing: -0.8px;
   line-height: 140%;
   padding-bottom: 40px;
@@ -279,7 +284,7 @@ export const StackItem = styled.li`
   align-items: center;
   gap: 8px;
   border-radius: 20px;
-  background: #fff;
+  background: #e5e5e5;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 4px 12px;
