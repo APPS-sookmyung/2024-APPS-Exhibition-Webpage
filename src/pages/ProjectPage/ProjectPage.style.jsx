@@ -98,6 +98,7 @@ export const ShareBtn = styled.div`
   justify-content: center;
   padding: 13px 43px;
   margin: 0 10px 16px 0;
+  cursor: pointer;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 4px 16px;

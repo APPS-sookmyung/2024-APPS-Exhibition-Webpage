@@ -3,6 +3,14 @@ import { DeveloperCard, ProjectRecommend, ReviewCard } from '../../components';
 import * as S from './ProjectPage.style';
 import { PROJECT_LIST } from '../../database';
 
+const handleCopyClipBoard = async (copyLink) => {
+  try {
+    await navigator.clipboard.writeText(copyLink);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export default function ProjectPage() {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -31,7 +39,9 @@ export default function ProjectPage() {
           <S.Title>{projectData.name}</S.Title>
           <S.Description>{projectData.summary}</S.Description>
           <S.TopBtnContainer>
-            <S.ShareBtn>
+            <S.ShareBtn
+              onClick={() => handleCopyClipBoard(projectData.webpageLinkUrl)}
+            >
               <S.ShareIcon src="../../images/icons/share.svg" alt="" />
               <S.ShareText>프로젝트 공유하기</S.ShareText>
             </S.ShareBtn>
