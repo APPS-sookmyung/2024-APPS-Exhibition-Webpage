@@ -17,7 +17,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 1100px;
-  padding: 62px 70px 0 70px;
+  padding: 50px 70px 0 70px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 50px;
@@ -27,8 +27,13 @@ export const Container = styled.div`
   }
 `;
 
-export const CloseBtn = styled.img`
+export const CloseBtn = styled.div`
   align-self: flex-end;
+  padding: 10px;
+  cursor: pointer;
+`;
+
+export const CloseIcon = styled.img`
   width: 56px;
   height: 56px;
   padding: 10px;
