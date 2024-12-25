@@ -77,7 +77,7 @@ export default function HomePage() {
             </S.SectionContentWrapper>
           </S.SectionWrapper>
 
-          <S.SectionWrapper>
+          {/* <S.SectionWrapper>
             <S.SectionTitleWrapper>
               <S.SectionTitleImageWrapper>
                 <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
@@ -94,7 +94,7 @@ export default function HomePage() {
             <S.SectionContentWrapper>
               <MemberFeedbackCardList />
             </S.SectionContentWrapper>
-          </S.SectionWrapper>
+          </S.SectionWrapper> */}
           <S.SocialLinks>
             <S.SocialLinksTitle>
               APPS 소식을 더 빨리 알고 싶다면
