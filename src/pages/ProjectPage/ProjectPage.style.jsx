@@ -66,12 +66,14 @@ export const Title = styled.h1`
   }
 `;
 
-export const Description = styled.p`
-  font-size: 32px;
+export const Summary = styled.p`
+  font-size: 28px;
   font-weight: 500;
   letter-spacing: -1.6px;
+  line-height: 1.2;
   margin: 0 0 22px 0;
   color: #cccccc;
+  word-break: keep-all;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 24px;
