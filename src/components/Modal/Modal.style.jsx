@@ -342,16 +342,16 @@ export const Answer = styled.div`
   font-size: 14px;
   margin: 0;
   word-break: keep-all;
-  line-height: 1.5;
+  line-height: 1.2;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 11px;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 `;
 
