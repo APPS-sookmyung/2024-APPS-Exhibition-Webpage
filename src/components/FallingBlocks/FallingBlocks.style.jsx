@@ -3,21 +3,20 @@ import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const FallingBlocksLine = styled.div`
   position: relative;
-  top: ${(props) => props.yPos}px;
-  width: 100%;
-  max-width: 961px;
+  top: ${(props) => props.ypos}px;
+  width: 961px;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 724px;
     height: 40px;
-    width: 1000px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 470px;
     height: 25px;
-    width: 500px;
   }
 `;
 

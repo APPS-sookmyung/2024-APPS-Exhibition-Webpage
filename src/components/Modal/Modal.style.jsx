@@ -1,77 +1,138 @@
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const ModalWrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 1000;
+  over-flow: auto;
 `;
 
 export const Modal = styled.div`
-  background: rgba(0, 0, 0, 0.7);
-  width: 1100px;
-  height: 680px;
+  background: rgba(0, 0, 0, 0.8);
+  max-width: 1100px;
+  max-height: 680px;
+  padding: 60px 70px;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: relative;
+  overflow-y: auto;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 30px 40px;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    padding: 20px 30px;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+  }
 `;
 
 export const CloseButton = styled.button`
-  position: absolute;
-  top: 60px;
-  right: 70px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+  z-index: 200;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  width: 100%;
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
 `;
 
 export const MemberCard = styled.div`
-  position: absolute;
-  top: 97px;
-  left: 70px;
   display: flex;
   align-items: center;
-  width: 294px;
-  height: 142px;
+  justify-content: flex-start;
+  max-width: 294px;
+  aspect-ratio: 294 / 142;
+  padding: 27px 23px;
   border-radius: 20px;
+  gap: 24px;
   background-color: #ff5400;
+  box-sizing: border-box;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 22px;
+    padding: 18px 16px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 20px;
+    padding: 16px 14px;
+  }
 `;
 
 export const MemberImage = styled.img`
   width: 88px;
   height: 88px;
-  flex-shrink: 0;
   border-radius: 100%;
   background-color: #373737;
-  margin-left: 23px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    width: 78px;
+    height: 78px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    width: 68px;
+    height: 68px;
+  }
 `;
 
 export const MemberDetailWrapper = styled.div`
   display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 15px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
-export const InfoWrapper = styled.div`
+export const MemberInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 7px;
-  margin-left: 24px;
   align-items: flex-start;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 5px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 4px;
+  }
 `;
 
 export const NameAndPositionWrapper = styled.div`
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  word-break: keep-all;
+  width: 100%;
+  max-width: 100%;
   gap: 7px;
+  display: flex;
 `;
 
 export const MemberName = styled.h2`
@@ -79,40 +140,66 @@ export const MemberName = styled.h2`
   margin: 0;
   font-size: 20px;
   font-weight: 600;
-  letter-spacing: -1px;
+  max-width: 100%;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 16px;
+  }
 `;
 
 export const MemberPositionInfo = styled.p`
   color: #fff;
   margin: 0;
   font-size: 16px;
-  letter-spacing: -0.8px;
+  max-width: 100%;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 15px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
 
 export const MemberInfo = styled.h3`
   color: var(--orange_sub, #ffe0b8);
   margin: 0;
   font-size: 16px;
-  letter-spacing: -0.8px;
+  word-break: keep-all;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 15px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 14px;
+  }
 `;
 
 export const MemberDetailSection = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   gap: 20px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 15px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 10px;
+  }
 `;
 
 export const TechStackSection = styled.div`
-  position: absolute;
-  top: 97px;
-  left: 394px;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 0;
 `;
 
 export const TechItem = styled.div`
@@ -122,60 +209,167 @@ export const TechItem = styled.div`
   color: #ff5400;
   border-radius: 20px;
   font-size: 14px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 12px;
+  }
 `;
 
 export const SNSSection = styled.div`
-  position: absolute;
-  top: 187px;
-  left: 394px;
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 14px;
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 12px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
 `;
+
 export const Divider = styled.div`
-  position: absolute;
-  top: 268px;
-  left: 70px;
-  background: none;
-  border: 1px;
-  margin: 0;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    margin: 20px 0;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    margin: 10px 0;
+  }
 `;
 
 export const QASection = styled.div`
-  position: absolute;
-  top: 316px;
-  left: 71px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 12px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 8px;
+  }
 `;
 
 export const QuestionWrapper = styled.div`
-  margin-bottom: 46px;
   display: flex;
   gap: 33px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 20px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 12px;
+    flex-direction: column;
+  }
 `;
 
 export const QuestionLabel = styled.strong`
   color: var(--orange, #ff5400);
   font-size: 20px;
-  letter-spacing: -1px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 16px;
+  }
 `;
 
 export const QuestionItem = styled.div`
   gap: 46px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 24px;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 16px;
+  }
 `;
 
 export const Question = styled.p`
   color: #fff;
   font-size: 20px;
-  letter-spacing: -1px;
-  margin: 0 0 4px;
+  padding-bottom: 4px;
+  word-break: keep-all;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 18px;
+    padding-bottom: 2px;
+    font-size:;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 16px;
+    padding-bottom: 1px;
+  }
 `;
 
 export const Answer = styled.div`
   color: #fff;
   font-size: 14px;
-  letter-spacing: -0.7px;
   margin: 0;
+  word-break: keep-all;
+  line-height: 1.5;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+`;
+
+export const SNSLinkWrapper = styled.div`
+  display: flex;
+  gap: 12px;
+`;
+
+export const SNSLink = styled.a`
+  color: #fff;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    font-size: 13px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    font-size: 12px;
+  }
 `;

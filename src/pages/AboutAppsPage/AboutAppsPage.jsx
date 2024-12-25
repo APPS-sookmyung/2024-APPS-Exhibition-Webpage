@@ -101,7 +101,7 @@ export default function AboutAppsPage() {
             <S.RegularCalendarCard>
               <S.RegularCalendarWrapper>
                 <S.RegularCalendarDot></S.RegularCalendarDot>
-                <S.RegularCalendarName>매주 정기 활동</S.RegularCalendarName>
+                <S.RegularCalendarName>매달 정기 활동</S.RegularCalendarName>
               </S.RegularCalendarWrapper>
               <S.RegularScheduleWrapper>
                 {WEEKLY_ACTIVITY_LIST.map((activity, index) => (
@@ -136,7 +136,7 @@ export default function AboutAppsPage() {
                 name={member.name}
                 title={member.title}
                 position={member.position}
-                index={index} // index를 props로 전달
+                index={index}
                 onClick={() => openModal(member)}
               />
             ))}

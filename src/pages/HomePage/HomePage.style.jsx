@@ -18,26 +18,33 @@ const smoothGradientAnimation = keyframes`
   }
 `;
 
-export const HomePageBackground = styled.div`
-  background-image: url('/images/background/home-background.svg');
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: cover;
-  overflow: hidden;
-  height: 100%;
-`;
-
 export const HomePage = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1100px;
   width: 100%;
-  margin: 0 auto 200px;
+  margin: 0 auto;
   gap: 113px;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     gap: 80px;
+  }
+`;
+
+export const HomePageTopBackground = styled.div`
+  background-image: url('/images/background/home-background-top.svg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    background-position: center 50px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    background-position: center 120px;
   }
 `;
 
@@ -344,6 +351,26 @@ export const ProjectList = styled.section`
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     padding: 0 20px;
+  }
+`;
+
+export const HomePageBottomBackground = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/background/home-background-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+  min-height: 700px;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    min-height: 600px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    min-height: 400px;
   }
 `;
 
