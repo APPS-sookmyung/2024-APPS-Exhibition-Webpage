@@ -1,5 +1,6 @@
 import * as S from './ProjectRecommend.style';
 import { PROJECT_LIST } from '../../database';
+import { Link } from 'react-router-dom';
 
 // 랜덤으로 배열에서 3개 항목을 선택하는 함수
 const getRandomProjects = (projects, numberOfProjects) => {
@@ -14,11 +15,13 @@ const ProjectRecommend = () => {
     <S.ProjectCardList>
       <S.ProjectCardContainer>
         {randomProjects.map((project) => (
-          <S.ProjectCard key={project.id}>
-            <S.ProjectCardImage>
-              <img src={`../.${project.imageUrl}`} alt={project.name} />
-            </S.ProjectCardImage>
-          </S.ProjectCard>
+          <Link to={`/projects/${project.id}`}>
+            <S.ProjectCard key={project.id}>
+              <S.ProjectCardImage>
+                <img src={`../.${project.imageUrl}`} alt={project.name} />
+              </S.ProjectCardImage>
+            </S.ProjectCard>
+          </Link>
         ))}
       </S.ProjectCardContainer>
     </S.ProjectCardList>
