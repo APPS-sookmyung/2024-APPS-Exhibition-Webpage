@@ -11,8 +11,8 @@ export const ModalWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  over-flow: auto;
+  z-index: 9999;
+  overflow: auto;
 `;
 
 export const Modal = styled.div`
@@ -24,6 +24,8 @@ export const Modal = styled.div`
   flex-direction: column;
   align-items: flex-start;
   overflow-y: auto;
+  border: 1px solid #8f8f8f;
+  border-radius: 20px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 30px 40px;
