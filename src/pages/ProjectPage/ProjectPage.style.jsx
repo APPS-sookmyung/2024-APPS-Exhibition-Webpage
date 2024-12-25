@@ -53,6 +53,7 @@ export const Top = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-family: 'Dolce Vita Heavy';
   font-size: 65px;
   margin: 0;
   margin-bottom: 4px;
@@ -94,14 +95,15 @@ export const TopBtnContainer = styled.div`
 `;
 
 export const ShareBtn = styled.div`
-  background-color: #ff88fb;
-  border-radius: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 13px 43px;
   margin: 0 10px 16px 0;
+  background-color: #ff88fb;
+  padding: 13px 43px;
+  height: 50px;
   cursor: pointer;
+  border-radius: 32px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 4px 16px;
