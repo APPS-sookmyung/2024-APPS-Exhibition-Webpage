@@ -4,7 +4,7 @@ export const PROJECT_LIST = [
   {
     id: 1,
     name: 'WELLET',
-    generation: [],
+    generation: ['10기', '11기'],
     category: PROJECT_CATEGORIES.WEB,
     imageUrl: '/images/thumbnail/example-thumbnail.png',
     youtubeVideoId: '',
@@ -165,7 +165,7 @@ export const PROJECT_LIST = [
   {
     id: 2,
     name: 'Stattracker',
-    generation: [''],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/stattracker.png',
     youtubeVideoId: '',
@@ -210,7 +210,7 @@ export const PROJECT_LIST = [
   {
     id: 3,
     name: '카공도',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/example-thumbnail.png',
     youtubeVideoId: '',
@@ -266,7 +266,7 @@ export const PROJECT_LIST = [
   {
     id: 4,
     name: '숙메추Real',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/sookmechu-real.jpg',
     youtubeVideoId: 'zxaE0FIQRZ4',
@@ -312,7 +312,7 @@ export const PROJECT_LIST = [
   {
     id: 5,
     name: 'StudyTracker',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/studytracker.png',
     youtubeVideoId: 'PykXOLwgGC0',
@@ -357,7 +357,7 @@ export const PROJECT_LIST = [
   {
     id: 6,
     name: 'studypage',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/studypage.jpg',
     youtubeVideoId: '',
@@ -406,7 +406,7 @@ export const PROJECT_LIST = [
   {
     id: 7,
     name: '여기저기',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/hereandthere.png',
     youtubeVideoId: 'NjM8R7YXVTs',
@@ -452,7 +452,7 @@ export const PROJECT_LIST = [
   {
     id: 8,
     name: '펫토리 (PETTORY)',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/pettory.png',
     youtubeVideoId: '3t1Fp17HLys',
@@ -497,7 +497,7 @@ export const PROJECT_LIST = [
   {
     id: 9,
     name: 'BookMemories',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/bookmemories.png',
     youtubeVideoId: '0v4HJo_0gzk',
@@ -542,7 +542,7 @@ export const PROJECT_LIST = [
   {
     id: 10,
     name: 'GreenTalk',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/greentalk.png',
     youtubeVideoId: 'djZltHR4lRM',
@@ -591,7 +591,7 @@ export const PROJECT_LIST = [
   {
     id: 11,
     name: 'MERRY TREE',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/merry-tree.png',
     youtubeVideoId: 'F2kmcZaM2Fc',
@@ -636,7 +636,7 @@ export const PROJECT_LIST = [
   {
     id: 12,
     name: '주량도',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/juryangdo.png',
     youtubeVideoId: '',
@@ -681,7 +681,7 @@ export const PROJECT_LIST = [
   {
     id: 13,
     name: 'BDB - Birth Day Buddy',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/birthdaybuddy.png',
     youtubeVideoId: 'nmGqivk0R_g',
@@ -726,7 +726,7 @@ export const PROJECT_LIST = [
   {
     id: 14,
     name: 'Cookiee-',
-    generation: [],
+    generation: ['10기기'],
     category: PROJECT_CATEGORIES.APP,
     imageUrl: '/images/thumbnail/cookiee-.png',
     youtubeVideoId: 'ezB4ZwOh0-Y',
@@ -800,7 +800,7 @@ export const PROJECT_LIST = [
   {
     id: 15,
     name: 'Emotion',
-    generation: [],
+    generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/emotion.png',
     youtubeVideoId: 'z4ByAJIVJeM',
@@ -845,7 +845,7 @@ export const PROJECT_LIST = [
   {
     id: 16,
     name: 'OUTFOOT',
-    generation: [],
+    generation: ['10기'],
     category: PROJECT_CATEGORIES.APP,
     imageUrl: '/images/thumbnail/example-thumbnail.png',
     youtubeVideoId: '',
