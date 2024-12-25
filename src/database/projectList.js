@@ -6,7 +6,7 @@ export const PROJECT_LIST = [
     name: 'WELLET',
     generation: ['10기', '10.5기', '11기'],
     category: PROJECT_CATEGORIES.WEB,
-    imageUrl: './images/thumbnails/img-thumbnail-1.png',
+    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://wellet.netlify.app',
@@ -22,7 +22,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/kimjunhee.png',
+        image: '/images/memberProfiles/kimjunhee.png',
         name: '김준희',
         part: 'frontend',
         position: '프론트엔드장',
@@ -32,7 +32,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 1,
-        image: '../../images/memberProfiles/ryumisung.png',
+        image: '/images/memberProfiles/ryumisung.png',
         name: '류미성',
         part: 'frontend',
         position: '프론트엔드',
@@ -42,7 +42,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 2,
-        image: '../../images/memberProfiles/kimhyerim.png',
+        image: '/images/memberProfiles/kimhyerim.png',
         name: '김혜림',
         part: 'frontend',
         position: '프론트엔드',
@@ -52,7 +52,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 3,
-        image: '../../images/memberProfiles/jooajung.png',
+        image: '/images/memberProfiles/jooajung.png',
         name: '주아정',
         part: 'backend',
         position: '백엔드장',
@@ -62,7 +62,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 4,
-        image: '../../images/memberProfiles/leehaerim.png',
+        image: '/images/memberProfiles/leehaerim.png',
         name: '이해림',
         part: 'backend',
         position: '백엔드',
@@ -72,7 +72,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 5,
-        image: '../../images/memberProfiles/hayeyoung.png',
+        image: '/images/memberProfiles/hayeyoung.png',
         name: '하예영',
         part: 'backend',
         position: '백엔드',
@@ -82,7 +82,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 6,
-        image: '../../images/memberProfiles/kimsoojin.png',
+        image: '/images/memberProfiles/kimsoojin.png',
         name: '김수진',
         part: 'design',
         position: '디자인',
@@ -91,7 +91,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 7,
-        image: '../../images/memberProfiles/moonseoyoung.png',
+        image: '/images/memberProfiles/moonseoyoung.png',
         name: '문서영',
         part: 'design',
         position: '디자인',
@@ -164,571 +164,10 @@ export const PROJECT_LIST = [
   },
   {
     id: 2,
-    name: 'Stattracker',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/stattracker.png',
-    youtubeVideoId: '',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://rosaze.github.io/2024-Stattracker/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/rosaze/2024-Stattracker',
-    },
-    summary: '당신의 대학 생활 능력치 스탯을 키워주세요!',
-    introduction:
-      'StatTracker - 대학생활을 하며 당신의 성장을 눈으로 확인하세요! 활동별 통계와 기록으로 나만의 데이터를 시각화하고, 목표를 한눈에 관리하세요. 매일의 작은 성취가 큰 변화를 만든다는 것을 StatTracker와 함께 느껴보세요!',
-    description:
-      '📊 활동별 기록으로 성과 시각화\n활동 데이터를 한눈에 정리하고 시각화하여 나의 발전 상황을 확인할 수 있습니다.\n\n🎯 목표 달성을 위한 카테고리 관리\n활동을 카테고리별로 분류하여 나만의 목표를 체계적으로 관리할 수 있습니다.\n\n📈 실시간 통계로 동기 부여\n활동 통계를 실시간으로 확인하며 꾸준히 동기부여를 얻을 수 있습니다.\n\n🗂️ 기록 저장으로 데이터 아카이빙\n나의 모든 활동 데이터를 저장하고 필요할 때 쉽게 확인할 수 있습니다.',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/yoonjiwon.png',
-        name: '윤지원',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          'stattracker는 노력의 히스토리 아카이브 입니다. 눈에 안 보이는 노력을 가시화하자! 라고 처음 목표를 세웠었는데, 처음 기대한 만큼 결과물이 잘 나와주어서 정말 뿌듯합니다. 하지만 개발 과정은 꽤 난감했습니다. 자바스크립트, CSS 를 만만하게 보고 호기롭게 디자인을 했지만..현실은 눈문 젖은 디버깅과 끊임없는 레이아웃 수정의 연속이었답니다. 특히 어떻게 하면 디자인과 기능의 일관성을 유지할 수 있는지 고민을 많이 했습니다. 그래도 이번 기회에 확실히 프론트엔드를 깊이 경험할 수 있어서 정말 좋았습니다. 특히 반응형 웹 디자인을 구현하면서 이것 저것 찾아보면서 코드를 만들었던 부분이 나중에도 꼭 도움이 될 것 같아요😉.',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: '카공도',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/img-thumbnail-1.png',
-    youtubeVideoId: '',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://cagongdo.netlify.app/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/APPS-sookmyung/2024-Cagongdo',
-    },
-    summary: '내 주변 카공맛집 찾기',
-    introduction:
-      "카페에서 공부하거나 작업하는 것을 좋아하시나요? '카공도'는 카카오맵 API를 활용하여 내 주변 카공에 최적화된 카페를 빠르고 쉽게 찾을 수 있는 서비스입니다. 운영시간, 가격, 콘센트 여부, 분위기 등 카공에 중요한 요소들을 한눈에 제공하며, 카페의 카공 적합도 별점인 ‘카공도’ 점수로 카페 선택을 돕습니다. '카공도'와 함께 카공에 적합한 카페를 손쉽게 찾고, 더 좋은 환경에서 몰입하여 작업을 즐겨보세요!",
-    description:
-      "📍 내 주변 카공 맛집 검색\n카카오맵 API를 활용하여 현재 위치 기반으로 주변 카공에 최적화된 카페를 빠르게 탐색할 수 있습니다.\n\n⭐️ ‘카공도’ 별점 제공\n카페의 '카공 적합도'를 별점으로 확인할 수 있어, 사용자들이 카페를 선택하기 전에 중요한 기준을 참고할 수 있습니다.\n\n📝 카공 맞춤 정보 제공\n운영시간, 가격, 콘센트 유무, 조명, 소음 수준 등 카공에 있어 중요한 카페 정보를 상세히 제공합니다.\n\n💬 리뷰\n다른 사용자가 남긴 카공 카페 리뷰를 참고하거나, 자신의 경험을 공유할 수 있습니다.",
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/kimjunhee.png',
-        name: '김준희',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review: '',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'React',
-        imageUrl: '/images/techStacks/react.png',
-      },
-      {
-        name: 'TypeScript',
-        imageUrl: '/images/techStacks/typescript.png',
-      },
-      {
-        name: 'Styled-Components',
-        imageUrl: '/images/techStacks/styled-components.png',
-      },
-      {
-        name: 'npm',
-        imageUrl: '/images/techStacks/npm.png',
-      },
-      {
-        name: 'CRA',
-        imageUrl: '/images/techStacks/cra.svg',
-      },
-      {
-        name: 'Netlify',
-        imageUrl: '/images/techStacks/netlify.png',
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: '숙메추Real',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/sookmechu-real.jpg',
-    youtubeVideoId: 'zxaE0FIQRZ4',
-    downloadLinkUrl: null,
-    webpageLinkUrl: '',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/Heoooooo/2024-Sookmechu_real.git',
-    },
-    summary:
-      '학교 다니며 매일 고민되는 식사 메뉴, 맛있는 음식들로 추천받아보세요 !',
-    introduction:
-      '숙메추Real 웹페이지를 통해 매일매일 고민되는 식사 메뉴들을 추천받아 보세요 ! 숙대 맛집 지도에 있는 식당들마다 숙대생들이 자주먹는 맛있는 메뉴들과 가게마다 특별한 점을 소개합니다. 일상 속에서 먹었던 음식들과 가게들을 기억하기 쉽게 기록해보세요 !',
-    description:
-      '🐥맛집  지도 속 가게들에 대한 정보얻기\n지도 속 가게들을 클릭하여 가게에 대한 맛있는 메뉴와 특징들을 알 수 있습니다.\n🐥앞으로 갈 To Eat List 작성하기\n가고 싶었던 가게 혹은 갈 예정인 가게와 먹을 메뉴를 리스트할 수 있습니다.\n\n🐥메뉴 추천 받기\n메뉴가 고민된다면 가게들을 랜덤하게 추천받을 수 있습니다.\n\n🐥나의 기록 저장하기\n내가 갔던 가게들에 대한 좋은 점, 안 좋은 점을 기록하여 오랫동안 기억하고, 검색 기능이 있어 편하게 찾아볼 수 있습니다.',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/yuhayeon.png',
-        name: '유하연',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '처음으로 꽤 긴 기간인 반 학기 동안 프로젝트를 진행해봤는데 모르는 개념이 있으면 혼자서 찾아보고 적용해보는 과정에서 책임감을 느끼고 즐겁게 진행할 수 있었습니다. 그 뿐만 아니라 개인프로젝트이더라도 매주 발표를 진행하면서 다른 개인 프로젝트 멤버들의 아이디어와 사용되는 기술들을 보며 많은 것들을 배우고 공유함으로써 많은 도움이 되었습니다. 이후에도 혼자가 아닌 다른 팀원들과 머리를 맞대고 부족한 부분을 해결해가면서 더 많은 것을 배워갈 기회가 있으면 합니다. 🩵',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: 'StudyTracker',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/studytracker.png',
-    youtubeVideoId: 'PykXOLwgGC0',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://yoon-jr.github.io/2024-StudyTracker/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/yoon-jr/2024-StudyTracker',
-    },
-    summary: '나만의 공부 관리 메이트 StudyTacker',
-    introduction:
-      'StudyTracker- 공부 시간을 측정하고 계획을 세우며 효율적으로 나의 공부를 관리해보세요! 오늘 공부한 내용의 노트 작성을 통해 배운 내용을 정리할 수 있습니다.',
-    description:
-      '⏱️ 공부 시간 측정\n공부 시간을 측정하여 오늘 공부한 총 시간을 알 수 있습니다.\n\n✏️ 공부 계획 작성\n오늘 해야 할 공부 계획들을 작성하고 완료 시에 체크할 수 있습니다.\n\n📚 공부 노트 작성\n과목 카테고리별로 공부 노트를 작성할 수 있습니다.',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/yoonjeongran.png',
-        name: '윤정란',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '앱스에서 첫 프로젝트로 공부 관리 웹페이지를 만들었습니다. 1학기 때 배운 내용과 웹시설 수업을 통해 배운 내용을 활용하여 개발했습니다. 생각대로 결과가 잘 나오지 않을 때, 제가 아는 게 너무 없다고 느껴질 때 힘들었지만 최선을 다해 낸 결과를 보는 지금 감회가 새롭습니다. 이번 프로젝트를 통해 웹 프로그래밍 지식을 활용해 볼 수 있었고 오류를 해결하거나 기능을 구현하며 새로운 내용을 배울 수 있었습니다. 앞으로도 많이 배우고 실력을 키워서 더 좋은 결과물을 만들고 싶습니다!',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 6,
-    name: 'studypage',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/studypage.jpg',
-    youtubeVideoId: 'cdGniy_KXRY',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://seobin0224.github.io/2024-studypage/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/seobin0224/2024-studypage',
-    },
-    summary: '체계적인 학습 관리로 당신의 학업 성취를 높여보세요!',
-    introduction:
-      'studypage - 당신의 학업 여정을 더 스마트하게 관리하고 싶으신가요? StudyPlanner와 함께라면 가능합니다! 과목별 학습 계획을 수립하고, 진도를 추적하며, 학습 성과를 한눈에 확인할 수 있습니다.',
-    description:
-      '📚 과목별 맞춤 계획\n\n교수님, 학기 정보와 함께 과목을 등록하고 주차별 학습 계획을 세워보세요\n실제 학습 시간을 기록하고 완료된 학습을 체크하며 동기부여를 얻으세요\n\n📊 직관적인 대시보드\n\n전체 과목의 진행 상황을 한눈에 파악할 수 있어요\n가장 열심히 공부한 과목, 평균 학습 시간 등 인사이트를 제공합니다\n\n📈 상세한 진도 관리\n\n과목별, 주차별 진행률을 다양한 차트로 확인하세요\n전체 완료율과 학습 시간 추이를 그래프로 분석해보세요\n\n✍️ 퀴즈 생성기\n\n학습 내용을 토대로 퀴즈를 만들고 풀어보세요\n즉각적인 채점으로 학습 성취도를 확인할 수 있습니다',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/yoonseobin.png',
-        name: '윤서빈',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '혼자서 프로젝트를 진행하면서 때로는 막막함을 느꼈지만, 주변 동료들의 열정적인 분위기에 힘입어 프로젝트를 성공적으로 완수할 수 있었습니다. 특히 디자인부터 기획까지 전 과정을 주도적으로 수행하면서, 제 적성과 강점을 더 명확히 파악할 수 있었습니다.\n이 과정에서 제가 특히 흥미를 느끼는 분야를 발견했을 뿐만 아니라, 앞으로 더 깊이 공부하고 싶은 영역도 구체화할 수 있었습니다. 혼자서는 달성하기 어려웠을 큰 성장을 이뤄낼 수 있었던 것은, 이런 도전적인 기회가 주어졌기 때문이라고 생각합니다.\n이번 프로젝트는 단순한 과제 수행을 넘어서, 제 역량을 전반적으로 향상시키고 앞으로의 성장 방향을 설정하는 소중한 경험이 되었습니다.',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'TailwindCSS',
-        imageUrl: '/images/techStacks/tailwindcss.png',
-      },
-      {
-        name: 'Chart.js',
-        imageUrl: '/images/techStacks/chartjs.png',
-      },
-    ],
-  },
-  {
-    id: 7,
-    name: '여기저기',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/hereandthere.png',
-    youtubeVideoId: 'NjM8R7YXVTs',
-    downloadLinkUrl: null,
-    webpageLinkUrl:
-      'https://hereandthere-v6q9-bweqxeq5z-yeonjoos-projects.vercel.app',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/y-Joo492/hereandthere.git',
-    },
-    summary: '여행의 순간을 기억하고 간직하세요!',
-    introduction:
-      "여기저기- 여행의 순간을 기억하고 간직하세요. 여러분이 남긴 여행 기록과 사진을 통해 소중한 추억을 자주 떠올리고, 그때의 감정과 느낌을 잊지 않도록 도와줄게요. '여기저기'에서 추억을 남겨보세요!",
-    description:
-      '🧳 나의 여기저기 모아보기\n국내, 해외의 여행기록을 각각 모아볼 수 있습니다.\n\n🧳 사진으로 추억하기\n내가 업로드한 여행 사진들을 모아볼 수 있습니다.',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/hongyeonjoo.png',
-        name: '홍연주',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '2024년에 APPS에 들어와서 하는 첫 프로젝트였습니다. 제가 배운 기능들도 사용해 보고, 찾아보고 사용한 기능들도 사용하면서 많이 성장할 수 있었습니다. 단순히 코딩만 한 게 아니라 하나의 프로젝트를 완성하면서 디자인부터 기능 구현까지 스스로 하면서 웹사이트 개발에 이전보다 다양한 시야를 가지게 되었습니다. 또, 개발을 하는동안 다른 부원들과 이야기를 나누고, 고민을 해결하면서 재미있게 완성할 수 있었습니다.',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 8,
-    name: '펫토리 (PETTORY)',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/pettory.png',
-    youtubeVideoId: '3t1Fp17HLys',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://suminb99.github.io/2024-MYP/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/suminb99/2024-MYP',
-    },
-    summary: '귀여운 동물 사진에 나만의 스토리를 담아보세요!',
-    introduction:
-      '재밌는 동물 밈이나 짤을 직접 만들어보고 싶은 분들을 위한 서비스입니다. 다양한 동물 사진에 텍스트와 그림을 더해 손쉽게 특별하고 재미있는 밈을 제작해보세요!',
-    description:
-      '간편한 편집 도구를 활용하여 나만의 귀여운 동물 밈을 제작할 수 있습니다!\n\n⭐️ 동물 사진(밈 템플릿)은 웹사이트에서 기본 제공되며, 사용자가 직접 원하는 동물 사진을 업로드할 수도 있습니다.\n⭐️ 텍스트, 말풍선, 그림 등을 추가하여 자유롭게 밈을 꾸밀 수 있습니다.\n⭐️ 완성된 밈은 다운로드하여 소장할 수 있습니다.',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/baeksumin.png',
-        name: '백수민',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '요즘 귀여운 동물을 주제로 한 밈이나 짤이 정말 많잖아요. 저 같은 똥손도 쉽고 간단하게 밈을 만들 수 있는 웹사이트가 있으면 좋겠다는 생각에서 출발한 프로젝트입니다. 사용자의 입장에서 필요한 기능과 좋은 디자인이 무엇인지 고민하면서 개발에 임했습니다. 첫 개인 프로젝트라 예상치 못한 시행착오도 많았고 아쉬운 부분도 분명 존재하지만, 무사히 잘 마무리하게 되어 정말 기쁩니다!',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 9,
-    name: 'BookMemories',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/bookmemories.png',
-    youtubeVideoId: '0v4HJo_0gzk',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://jimni3155.github.io/2024-BookMemories/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/jimni3155/2024-BookMemories',
-    },
-    summary: '책 속의 기억을 펼쳐보세요!',
-    introduction:
-      'BookMemories- 당신의 독서 기록을 간직하세요! 읽고 싶은 책과 읽은 책을 모으고, 오늘의 기록을 달력에 남겨보세요. 책 속에서 발견한 소중한 순간들을 기록하며, 나만의 독서 여정을 만들어보세요. 지금 바로 시작해보세요!',
-    description:
-      'BookMemories는 단순히 책 정보를 저장하는 것을 넘어, 독서를 즐기는 모든 순간을 기록하고 간직할 수 있도록 설계된 사용자 중심의 서비스입니다. 독서가 일상에 작은 즐거움이 될 수 있도록 돕는 것을 목표로 합니다.\n📖 ‘읽은 책’ & ‘읽을 책’으로 구분하여 책 표지를 업로드\n📖 책 표지 클릭 시, 해당 책과 관련된 간단한 메모 작성 및 편집 가능\n📖 독서 캘린더 기능을 통해, 오늘 읽은 책을 달력에 기록',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/kimjimin.png',
-        name: '김지민',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '이번 개인 프로젝트는 처음부터 끝까지 직접 웹사이트를 설계하고 구현하며 많은 것을 배울 수 있었던 소중한 기회였습니다. 디자인, 개발, 디버깅 과정에서의 도전은 쉽지 않았지만, 문제를 하나씩 해결하며 스스로 성장하고 있다고 느꼈습니다. 깃허브와 같은 협업 툴을 활용해 크고 작은 팀 프로젝트에도 참여하여 더 깊이 있는 개발 지식을 쌓고 싶습니다. 너무 귀한 경험과 시간이었습니다. 감사합니다.😊',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 10,
-    name: 'GreenTalk',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/greentalk.png',
-    youtubeVideoId: 'djZltHR4lRM',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://apps-sookmyung.github.io/2024-GreenTalk/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/APPS-sookmyung/2024-GreenTalk',
-    },
-    summary: '식물과의 하루를 기록하고 탐색해보세요!',
-    introduction:
-      '다양한 테마로 식물을 탐색하고, 관리 팁을 배우며 나만의 식물 컬렉션을 채워보세요.\nJournal 기능으로 소중한 순간을 기록하고, FAQ로 궁금증을 해결하며 식물과의 유대감을 키워보세요!',
-    description:
-      '🌱 테마별 식물 탐색\n다양한 테마에 따라 식물 정보를 탐색하고 나만의 스타일에 맞는 식물을 추천 받으세요.\n\n🌱 FAQ (자주 묻는 질문)\n식물 관리 중 궁금한 점들을 한눈에 확인하세요. 원하는 정보가 없다면 언제든지 질문해 주세요!\n\n🌱 Journal (일기 작성)\n식물과 함께한 특별한 순간들을 기록하세요!',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/hajimin.png',
-        name: '하지민',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '처음 프로젝트를 시작할 땐 막막하고 걱정도 많았어요. "내가 잘 해낼 수 있을까?" 하는 생각에 걱정도 정말 많았죠. 😅 하지만 이렇게 프로젝트를 끝내고 보니, 그런 걱정과 두려움을 이겨내고 성장했다는 사실에 뿌듯하고 기뻐요! 😄\n물론 첫 프로젝트라 아쉬운 점도 있었어요. 기획 단계에서 예상치 못한 변수가 생겨 일정이 좀 늦어지기도 했고, 리액트로 새로 구현하는 게 생각보다 쉽지 않았거든요. 😔 그래도 이런 경험들을 통해 정말 많은 걸 배우고 느꼈어요. 앞으로 더 멋진 프로젝트를 해낼 수 있다는 자신감도 생겼고요! 💪\n이번 프로젝트에서 결과적으로 리액트로 완벽하게 바꾸진 못했지만 리액트를 전보다  능숙하게 다룰 수 있게 된 게 가장 큰 수확인 것 같아요. 이젠 좀 더 어려운 프로젝트에도 도전해서 스스로를 더 발전시켜 나가고 싶어요. 😊',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-      {
-        name: 'React',
-        imageUrl: '/images/techStacks/react.png',
-      },
-    ],
-  },
-  {
-    id: 11,
-    name: 'MERRY TREE',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/merry-tree.png',
-    youtubeVideoId: 'F2kmcZaM2Fc',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://merry-tree.netlify.app/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/APPS-sookmyung/2024-MERRY-TREE',
-    },
-    summary: '게임을 통해 오너먼트를 얻어 트리를 꾸며보세요!',
-    introduction:
-      '카드 매칭 게임에서 같은 모양의 오너먼트를 찾으면 해당 오너먼트로 트리를 꾸밀 수 있어요. 트리 옆에 메시지를 작성한 후 캡처하여 소중한 사람에게 보내보세요!😊',
-    description:
-      '🎄 카드 매칭 게임하기\n뒤집어진 카드들 중 임의의 카드 2장을 클릭하여 같은 모양의 오너먼트를 짝을 맞춰 찾습니다.\n\n🎄 크리스마스 트리 꾸미기\n카드 매칭 게임을 통해 얻은 오너먼트들로 트리를 직접 꾸밀 수 있습니다.\n\n🎄 메시지 작성하기\n꾸민 트리 옆에 메시지를 작성할 수 있습니다.',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/bangjihee.png',
-        name: '방지희',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '개인 웹 프로젝트를 진행하며 웹 개발에 대한 지식을 많이 쌓을 수 있어서 좋았습니다. 첫 프로젝트여서 처음에는 어디서부터 시작해야 할지 정말 막막했습니다. 하지만 계속해서 공부하며 처음 구상한 대로 프로젝트를 완성할 수 있었습니다. 어려움도 많았고 오류도 자주 발생했는데, 해결하는 과정에서 많이 발전하고 성장한 것 같아서 뿌듯합니다. 이러한 값진 경험을 바탕으로 앞으로도 좋은 프로젝트를 진행하고 싶습니다!',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 12,
-    name: '주량도',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/juryangdo.png',
-    youtubeVideoId: 'Br-72VztyG8',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://juryangdo.netlify.app/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/APPS-sookmyung/2024-Juryangdo',
-    },
-    summary: '당신의 주량을 확인하세요',
-    introduction:
-      '숫자에 불과한 도수, 이제 안녕! 주량을 입력하고 술의 도수를 마실 수 있는 잔으로 확인하세요!',
-    description:
-      '🍾 주량 입력하기\n계산을 위해 주량을 입력합니다.\n\n🍺 마실 수 있는 잔 확인하기\n술의 도수를 마실 수 있는 잔으로 계산한 결과를 확인할 수 있습니다.\n\n🍷 술 정보 확인하기\n주종, 제조사, 제조국, 맛의 특징 등에 대한 정보를 얻을 수 있습니다.',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/leedabin.png',
-        name: '이다빈',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '평소 다양한 술을 맛보는 걸 좋아하고, 숫자로만 적힌 도수에 불편함을 느껴 이번 프로젝트를 기획했습니다. 디자인, 개발을 혼자 해야 한다는 부담이 있었지만, 방학 동안 꾸준히 개발한 덕에 완성할 수 있었습니다. 처음 Vanilla JS로 개발하다 보니 시행착오가 많았지만 html, CSS, JavaScript에 대한 이해를 높이는 보람차고 좋은 경험이었습니다. 주량을 테스트하고 술의 정보를 얻는 재밌고 유익한 프로젝트가 되었으면 합니다.',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 13,
-    name: 'BDB - Birth Day Buddy',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/birthdaybuddy.png',
-    youtubeVideoId: 'nmGqivk0R_g',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://birthdaybuddy2024.vercel.app/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/Kwonyujin04/2024-birthday',
-    },
-    summary: '생일 축하의 새로운 패러다임을 BDB에서 만나보아요.',
-    introduction:
-      'BDB는 간편하게 생일 축하 메시지를 전달할 수 있는 생일 축하 커뮤니티 입니다. 친구, 가족, 반려 동물, 또는 나 자신에게 축하 메시지를 남기고 함께 축하할 수 있습니다. 또한 커뮤니티에 올라온 게시물에 반응을 보내면 BDB에서 주는 선물도 받을 수 있습니다.\n생일 축하를 도와주는 든든한 친구, BDB에 접속해 보아요!',
-    description:
-      '🎉생일 축하 메시지 작성하기\n- 축하해주고 싶은 사람을 떠올리며 메시지를 작성하고 꾸며봅시다. 적어도 생일 하루 전에는 작성해야 함을 주의합시다.\n\n🥳커뮤니티에서 함께 축하하기\n- 작성한 메시지는 커뮤니티에 공유되어 함께 볼 수 있습니다. 다른 사용자가 남긴 메시지에 반응을 남겨 생일을 함께 축하해 봅시다.\n\n🎁BDB가 주는 선물 받기\n- 축하 받는 사람 뿐만 아니라 축하해 주는 사람에게도 특별한 기억을 만들어 주기 위해 BDB에서 선물을 준비했습니다. 선물을 위해 좀 더 많은 사람들을 축하해 보는 건 어떨까요?',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/kwonyujin.png',
-        name: '권유진',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '올해 처음으로 APPS에 들어오고 진행한 프로젝트라서 배운 게 많은 프로젝트였습니다. BDB는 제가 1학기 때 들은 웹 수업에서 만든 결과를 더 발전시켜 만든 웹인데, 그 당시에 만든 결과물과 비교하면 성장하긴 했지만 지금도 조금 아쉬운 부분이 있습니다... 하지만 그 과정에서 정말 많은 것을 배웠고 2025년에 다른 프로젝트를 진행하게 되면 BDB와 함께 배운 것을 펼쳐나가고 싶습니다! ',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 14,
     name: 'Cookiee-',
     generation: ['10기'],
     category: PROJECT_CATEGORIES.APP,
-    imageUrl: './images/thumbnails/cookiee-.png',
+    imageUrl: '/images/thumbnails/cookiee-.png',
     youtubeVideoId: 'ezB4ZwOh0-Y',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -745,7 +184,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/kyungminseo.png',
+        image: '/images/memberProfiles/kyungminseo.png',
         name: '경민서',
         part: 'frontend',
         position: '프론트엔드',
@@ -798,56 +237,11 @@ export const PROJECT_LIST = [
     ],
   },
   {
-    id: 15,
-    name: 'Emotion',
-    generation: ['11기'],
-    category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: './images/thumbnails/emotion.png',
-    youtubeVideoId: 'z4ByAJIVJeM',
-    downloadLinkUrl: null,
-    webpageLinkUrl: 'https://2024-emotion.vercel.app/',
-    githubUrls: {
-      clientUrl: '',
-      serverUrl: 'https://github.com/eunground/2024-Emotion.git',
-    },
-    summary: '당신의 기억을 저장하세요.',
-    introduction:
-      '오늘 당신이 느낀 감정은 무엇인가요? Emotion을 통해 여러분의 기억들을 저장해보세요! 기억을 구슬로 만들어 저장해 시간이 지나도 변하지 않는 감정을 특별하게 간직하세요.',
-    description:
-      '🫧 감정 구슬 만들기\n하루의 감정을 구슬로 만들어 저장합니다.\n\n⭐ 기억 저장소\n저장한 감정 구슬을 꺼내보며 소중한 추억들을 떠올려보세요.\n\n💌 기억할 기억\n잊고 싶지 않은 특별한 기억들을 따로 모아, 언제든 꺼내볼 수 있습니다.',
-    memberList: [
-      {
-        index: 0,
-        image: '../../images/memberProfiles/shinjeongeun.png',
-        name: '신정은',
-        part: 'frontend',
-        position: '프론트엔드',
-        isLeader: false,
-        review:
-          '이번 프로젝트를 통해 그동안 배웠던 이론적인 내용을 실제로 구현해보는 소중한 경험을 할 수 있었습니다. 프로젝트를 진행하는 과정에서 예상치 못한 문제들이 발생했지만, 이를 해결하기 위해 다양한 방법을 고민하고 시도하며 문제 해결 능력을 키울 수 있었습니다. 하나의 프로젝트를 끝까지 완성해내는 과정에서 큰 성취감을 느낄 수 있었고, 이를 통해 제 자신이 한 단계 더 발전했음을 실감했습니다. 앞으로도 이러한 경험을 바탕으로 더 많은 도전과 성장을 이루어내며, 개발자로서의 역량을 지속적으로 강화해 나가고자 합니다💪',
-      },
-    ],
-    techStackList: [
-      {
-        name: 'HTML',
-        imageUrl: '/images/techStacks/html.png',
-      },
-      {
-        name: 'CSS',
-        imageUrl: '/images/techStacks/css.png',
-      },
-      {
-        name: 'JavaScript',
-        imageUrl: '/images/techStacks/javascript.png',
-      },
-    ],
-  },
-  {
-    id: 16,
+    id: 3,
     name: 'OUTFOOT',
     generation: ['10기', '10.5기'],
     category: PROJECT_CATEGORIES.APP,
-    imageUrl: './images/thumbnails/img-thumbnail-1.png',
+    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -864,7 +258,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: '../../images/memberProfiles/jeongjiwon.png',
+        image: '/images/memberProfiles/jeongjiwon.png',
         name: '정지원',
         part: 'frontend',
         position: '프론트엔드장',
@@ -874,7 +268,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 1,
-        image: '../../images/memberProfiles/jeongseoyeon.png',
+        image: '/images/memberProfiles/jeongseoyeon.png',
         name: '정서연',
         part: 'frontend',
         position: '프론트엔드',
@@ -884,7 +278,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 2,
-        image: '../../images/memberProfiles/leehaerim.png',
+        image: '/images/memberProfiles/leehaerim.png',
         name: '이해림',
         part: 'frontend',
         position: '프론트엔드',
@@ -894,7 +288,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 3,
-        image: '../../images/memberProfiles/jooajung.png',
+        image: '/images/memberProfiles/jooajung.png',
         name: '주아정',
         part: 'backend',
         position: '백엔드장',
@@ -904,7 +298,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 4,
-        image: '../../images/memberProfiles/leejieun.png',
+        image: '/images/memberProfiles/leejieun.png',
         name: '이지은',
         part: 'backend',
         position: '백엔드',
@@ -914,7 +308,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 5,
-        image: '../../images/memberProfiles/yoonhyeonseo.png',
+        image: '/images/memberProfiles/yoonhyeonseo.png',
         name: '윤현서',
         part: 'backend',
         position: '백엔드',
@@ -993,6 +387,612 @@ export const PROJECT_LIST = [
       {
         name: 'Apache',
         imageUrl: '/images/techStacks/apache.png',
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: '숙메추Real',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/sookmechu-real.jpg',
+    youtubeVideoId: 'zxaE0FIQRZ4',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://2024-sookmechu-real.vercel.app/',
+    githubUrls: {
+      clientUrl: 'https://github.com/Heoooooo/2024-Sookmechu_real.git',
+      serverUrl: '',
+    },
+    summary:
+      '학교 다니며 매일 고민되는 식사 메뉴, 맛있는 음식들로 추천받아보세요 !',
+    introduction:
+      '숙메추Real 웹페이지를 통해 매일매일 고민되는 식사 메뉴들을 추천받아 보세요 ! 숙대 맛집 지도에 있는 식당들마다 숙대생들이 자주먹는 맛있는 메뉴들과 가게마다 특별한 점을 소개합니다. 일상 속에서 먹었던 음식들과 가게들을 기억하기 쉽게 기록해보세요 !',
+    description:
+      '🐥맛집  지도 속 가게들에 대한 정보얻기\n지도 속 가게들을 클릭하여 가게에 대한 맛있는 메뉴와 특징들을 알 수 있습니다.\n\n🐥앞으로 갈 To Eat List 작성하기\n가고 싶었던 가게 혹은 갈 예정인 가게와 먹을 메뉴를 리스트할 수 있습니다.\n\n🐥메뉴 추천 받기\n메뉴가 고민된다면 가게들을 랜덤하게 추천받을 수 있습니다.\n\n🐥나의 기록 저장하기\n내가 갔던 가게들에 대한 좋은 점, 안 좋은 점을 기록하여 오랫동안 기억하고, 검색 기능이 있어 편하게 찾아볼 수 있습니다.',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/yuhayeon.png',
+        name: '유하연',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '처음으로 꽤 긴 기간인 반 학기 동안 프로젝트를 진행해봤는데 모르는 개념이 있으면 혼자서 찾아보고 적용해보는 과정에서 책임감을 느끼고 즐겁게 진행할 수 있었습니다. 그 뿐만 아니라 개인프로젝트이더라도 매주 발표를 진행하면서 다른 개인 프로젝트 멤버들의 아이디어와 사용되는 기술들을 보며 많은 것들을 배우고 공유함으로써 많은 도움이 되었습니다. 이후에도 혼자가 아닌 다른 팀원들과 머리를 맞대고 부족한 부분을 해결해가면서 더 많은 것을 배워갈 기회가 있으면 합니다. 🩵',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: 'StudyTracker',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/studytracker.png',
+    youtubeVideoId: 'PykXOLwgGC0',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://yoon-jr.github.io/2024-StudyTracker/',
+    githubUrls: {
+      clientUrl: 'https://github.com/yoon-jr/2024-StudyTracker',
+      serverUrl: '',
+    },
+    summary: '나만의 공부 관리 메이트 StudyTacker',
+    introduction:
+      'StudyTracker- 공부 시간을 측정하고 계획을 세우며 효율적으로 나의 공부를 관리해보세요! 오늘 공부한 내용의 노트 작성을 통해 배운 내용을 정리할 수 있습니다.',
+    description:
+      '⏱️ 공부 시간 측정\n공부 시간을 측정하여 오늘 공부한 총 시간을 알 수 있습니다.\n\n✏️ 공부 계획 작성\n오늘 해야 할 공부 계획들을 작성하고 완료 시에 체크할 수 있습니다.\n\n📚 공부 노트 작성\n과목 카테고리별로 공부 노트를 작성할 수 있습니다.',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/yoonjeongran.png',
+        name: '윤정란',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '앱스에서 첫 프로젝트로 공부 관리 웹페이지를 만들었습니다. 1학기 때 배운 내용과 웹시설 수업을 통해 배운 내용을 활용하여 개발했습니다. 생각대로 결과가 잘 나오지 않을 때, 제가 아는 게 너무 없다고 느껴질 때 힘들었지만 최선을 다해 낸 결과를 보는 지금 감회가 새롭습니다. 이번 프로젝트를 통해 웹 프로그래밍 지식을 활용해 볼 수 있었고 오류를 해결하거나 기능을 구현하며 새로운 내용을 배울 수 있었습니다. 앞으로도 많이 배우고 실력을 키워서 더 좋은 결과물을 만들고 싶습니다!',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: 'studypage',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/studypage.jpg',
+    youtubeVideoId: 'cdGniy_KXRY',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://seobin0224.github.io/2024-studypage/',
+    githubUrls: {
+      clientUrl: 'https://github.com/seobin0224/2024-studypage',
+      serverUrl: '',
+    },
+    summary: '체계적인 학습 관리로 당신의 학업 성취를 높여보세요!',
+    introduction:
+      'studypage - 당신의 학업 여정을 더 스마트하게 관리하고 싶으신가요? StudyPlanner와 함께라면 가능합니다! 과목별 학습 계획을 수립하고, 진도를 추적하며, 학습 성과를 한눈에 확인할 수 있습니다.',
+    description:
+      '📚 과목별 맞춤 계획\n\n교수님, 학기 정보와 함께 과목을 등록하고 주차별 학습 계획을 세워보세요\n실제 학습 시간을 기록하고 완료된 학습을 체크하며 동기부여를 얻으세요\n\n📊 직관적인 대시보드\n\n전체 과목의 진행 상황을 한눈에 파악할 수 있어요\n가장 열심히 공부한 과목, 평균 학습 시간 등 인사이트를 제공합니다\n\n📈 상세한 진도 관리\n\n과목별, 주차별 진행률을 다양한 차트로 확인하세요\n전체 완료율과 학습 시간 추이를 그래프로 분석해보세요\n\n✍️ 퀴즈 생성기\n\n학습 내용을 토대로 퀴즈를 만들고 풀어보세요\n즉각적인 채점으로 학습 성취도를 확인할 수 있습니다',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/yoonseobin.png',
+        name: '윤서빈',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '혼자서 프로젝트를 진행하면서 때로는 막막함을 느꼈지만, 주변 동료들의 열정적인 분위기에 힘입어 프로젝트를 성공적으로 완수할 수 있었습니다. 특히 디자인부터 기획까지 전 과정을 주도적으로 수행하면서, 제 적성과 강점을 더 명확히 파악할 수 있었습니다.\n이 과정에서 제가 특히 흥미를 느끼는 분야를 발견했을 뿐만 아니라, 앞으로 더 깊이 공부하고 싶은 영역도 구체화할 수 있었습니다. 혼자서는 달성하기 어려웠을 큰 성장을 이뤄낼 수 있었던 것은, 이런 도전적인 기회가 주어졌기 때문이라고 생각합니다.\n이번 프로젝트는 단순한 과제 수행을 넘어서, 제 역량을 전반적으로 향상시키고 앞으로의 성장 방향을 설정하는 소중한 경험이 되었습니다.',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'TailwindCSS',
+        imageUrl: '/images/techStacks/tailwindcss.png',
+      },
+      {
+        name: 'Chart.js',
+        imageUrl: '/images/techStacks/chartjs.png',
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: '여기저기',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/hereandthere.png',
+    youtubeVideoId: 'NjM8R7YXVTs',
+    downloadLinkUrl: null,
+    webpageLinkUrl:
+      'https://hereandthere-v6q9-bweqxeq5z-yeonjoos-projects.vercel.app',
+    githubUrls: {
+      clientUrl: 'https://github.com/y-Joo492/hereandthere.git',
+      serverUrl: '',
+    },
+    summary: '여행의 순간을 기억하고 간직하세요!',
+    introduction:
+      "여기저기- 여행의 순간을 기억하고 간직하세요. 여러분이 남긴 여행 기록과 사진을 통해 소중한 추억을 자주 떠올리고, 그때의 감정과 느낌을 잊지 않도록 도와줄게요. '여기저기'에서 추억을 남겨보세요!",
+    description:
+      '🧳 나의 여기저기 모아보기\n국내, 해외의 여행기록을 각각 모아볼 수 있습니다.\n\n🧳 사진으로 추억하기\n내가 업로드한 여행 사진들을 모아볼 수 있습니다.',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/hongyeonjoo.png',
+        name: '홍연주',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '2024년에 APPS에 들어와서 하는 첫 프로젝트였습니다. 제가 배운 기능들도 사용해 보고, 찾아보고 사용한 기능들도 사용하면서 많이 성장할 수 있었습니다. 단순히 코딩만 한 게 아니라 하나의 프로젝트를 완성하면서 디자인부터 기능 구현까지 스스로 하면서 웹사이트 개발에 이전보다 다양한 시야를 가지게 되었습니다. 또, 개발을 하는동안 다른 부원들과 이야기를 나누고, 고민을 해결하면서 재미있게 완성할 수 있었습니다.',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: '펫토리 (PETTORY)',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/pettory.png',
+    youtubeVideoId: '3t1Fp17HLys',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://suminb99.github.io/2024-MYP/',
+    githubUrls: {
+      clientUrl: 'https://github.com/suminb99/2024-MYP',
+      serverUrl: '',
+    },
+    summary: '귀여운 동물 사진에 나만의 스토리를 담아보세요!',
+    introduction:
+      '재밌는 동물 밈이나 짤을 직접 만들어보고 싶은 분들을 위한 서비스입니다. 다양한 동물 사진에 텍스트와 그림을 더해 손쉽게 특별하고 재미있는 밈을 제작해보세요!',
+    description:
+      '간편한 편집 도구를 활용하여 나만의 귀여운 동물 밈을 제작할 수 있습니다!\n\n⭐️ 동물 사진(밈 템플릿)은 웹사이트에서 기본 제공되며, 사용자가 직접 원하는 동물 사진을 업로드할 수도 있습니다.\n⭐️ 텍스트, 말풍선, 그림 등을 추가하여 자유롭게 밈을 꾸밀 수 있습니다.\n⭐️ 완성된 밈은 다운로드하여 소장할 수 있습니다.',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/baeksumin.png',
+        name: '백수민',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '요즘 귀여운 동물을 주제로 한 밈이나 짤이 정말 많잖아요. 저 같은 똥손도 쉽고 간단하게 밈을 만들 수 있는 웹사이트가 있으면 좋겠다는 생각에서 출발한 프로젝트입니다. 사용자의 입장에서 필요한 기능과 좋은 디자인이 무엇인지 고민하면서 개발에 임했습니다. 첫 개인 프로젝트라 예상치 못한 시행착오도 많았고 아쉬운 부분도 분명 존재하지만, 무사히 잘 마무리하게 되어 정말 기쁩니다!',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: 'BookMemories',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/bookmemories.png',
+    youtubeVideoId: '0v4HJo_0gzk',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://jimni3155.github.io/2024-BookMemories/',
+    githubUrls: {
+      clientUrl: 'https://github.com/jimni3155/2024-BookMemories',
+      serverUrl: '',
+    },
+    summary: '책 속의 기억을 펼쳐보세요!',
+    introduction:
+      'BookMemories- 당신의 독서 기록을 간직하세요! 읽고 싶은 책과 읽은 책을 모으고, 오늘의 기록을 달력에 남겨보세요. 책 속에서 발견한 소중한 순간들을 기록하며, 나만의 독서 여정을 만들어보세요. 지금 바로 시작해보세요!',
+    description:
+      'BookMemories는 단순히 책 정보를 저장하는 것을 넘어, 독서를 즐기는 모든 순간을 기록하고 간직할 수 있도록 설계된 사용자 중심의 서비스입니다. 독서가 일상에 작은 즐거움이 될 수 있도록 돕는 것을 목표로 합니다.\n📖 ‘읽은 책’ & ‘읽을 책’으로 구분하여 책 표지를 업로드\n📖 책 표지 클릭 시, 해당 책과 관련된 간단한 메모 작성 및 편집 가능\n📖 독서 캘린더 기능을 통해, 오늘 읽은 책을 달력에 기록',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/kimjimin.png',
+        name: '김지민',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '이번 개인 프로젝트는 처음부터 끝까지 직접 웹사이트를 설계하고 구현하며 많은 것을 배울 수 있었던 소중한 기회였습니다. 디자인, 개발, 디버깅 과정에서의 도전은 쉽지 않았지만, 문제를 하나씩 해결하며 스스로 성장하고 있다고 느꼈습니다. 깃허브와 같은 협업 툴을 활용해 크고 작은 팀 프로젝트에도 참여하여 더 깊이 있는 개발 지식을 쌓고 싶습니다. 너무 귀한 경험과 시간이었습니다. 감사합니다.😊',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: 'GreenTalk',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/greentalk.png',
+    youtubeVideoId: 'djZltHR4lRM',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://apps-sookmyung.github.io/2024-GreenTalk/',
+    githubUrls: {
+      clientUrl: 'https://github.com/APPS-sookmyung/2024-GreenTalk',
+      serverUrl: '',
+    },
+    summary: '식물과의 하루를 기록하고 탐색해보세요!',
+    introduction:
+      '다양한 테마로 식물을 탐색하고, 관리 팁을 배우며 나만의 식물 컬렉션을 채워보세요.\nJournal 기능으로 소중한 순간을 기록하고, FAQ로 궁금증을 해결하며 식물과의 유대감을 키워보세요!',
+    description:
+      '🌱 테마별 식물 탐색\n다양한 테마에 따라 식물 정보를 탐색하고 나만의 스타일에 맞는 식물을 추천 받으세요.\n\n🌱 FAQ (자주 묻는 질문)\n식물 관리 중 궁금한 점들을 한눈에 확인하세요. 원하는 정보가 없다면 언제든지 질문해 주세요!\n\n🌱 Journal (일기 작성)\n식물과 함께한 특별한 순간들을 기록하세요!',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/hajimin.png',
+        name: '하지민',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '처음 프로젝트를 시작할 땐 막막하고 걱정도 많았어요. "내가 잘 해낼 수 있을까?" 하는 생각에 걱정도 정말 많았죠. 😅 하지만 이렇게 프로젝트를 끝내고 보니, 그런 걱정과 두려움을 이겨내고 성장했다는 사실에 뿌듯하고 기뻐요! 😄\n물론 첫 프로젝트라 아쉬운 점도 있었어요. 기획 단계에서 예상치 못한 변수가 생겨 일정이 좀 늦어지기도 했고, 리액트로 새로 구현하는 게 생각보다 쉽지 않았거든요. 😔 그래도 이런 경험들을 통해 정말 많은 걸 배우고 느꼈어요. 앞으로 더 멋진 프로젝트를 해낼 수 있다는 자신감도 생겼고요! 💪\n이번 프로젝트에서 결과적으로 리액트로 완벽하게 바꾸진 못했지만 리액트를 전보다  능숙하게 다룰 수 있게 된 게 가장 큰 수확인 것 같아요. 이젠 좀 더 어려운 프로젝트에도 도전해서 스스로를 더 발전시켜 나가고 싶어요. 😊',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+      {
+        name: 'React',
+        imageUrl: '/images/techStacks/react.png',
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: 'MERRY TREE',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/merry-tree.png',
+    youtubeVideoId: 'F2kmcZaM2Fc',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://merry-tree.netlify.app/',
+    githubUrls: {
+      clientUrl: 'https://github.com/APPS-sookmyung/2024-MERRY-TREE',
+      serverUrl: '',
+    },
+    summary: '게임을 통해 오너먼트를 얻어 트리를 꾸며보세요!',
+    introduction:
+      '카드 매칭 게임에서 같은 모양의 오너먼트를 찾으면 해당 오너먼트로 트리를 꾸밀 수 있어요. 트리 옆에 메시지를 작성한 후 캡처하여 소중한 사람에게 보내보세요!😊',
+    description:
+      '🎄 카드 매칭 게임하기\n뒤집어진 카드들 중 임의의 카드 2장을 클릭하여 같은 모양의 오너먼트를 짝을 맞춰 찾습니다.\n\n🎄 크리스마스 트리 꾸미기\n카드 매칭 게임을 통해 얻은 오너먼트들로 트리를 직접 꾸밀 수 있습니다.\n\n🎄 메시지 작성하기\n꾸민 트리 옆에 메시지를 작성할 수 있습니다.',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/bangjihee.png',
+        name: '방지희',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '개인 웹 프로젝트를 진행하며 웹 개발에 대한 지식을 많이 쌓을 수 있어서 좋았습니다. 첫 프로젝트여서 처음에는 어디서부터 시작해야 할지 정말 막막했습니다. 하지만 계속해서 공부하며 처음 구상한 대로 프로젝트를 완성할 수 있었습니다. 어려움도 많았고 오류도 자주 발생했는데, 해결하는 과정에서 많이 발전하고 성장한 것 같아서 뿌듯합니다. 이러한 값진 경험을 바탕으로 앞으로도 좋은 프로젝트를 진행하고 싶습니다!',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: '주량도',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/juryangdo.png',
+    youtubeVideoId: 'Br-72VztyG8',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://juryangdo.netlify.app/',
+    githubUrls: {
+      clientUrl: 'https://github.com/APPS-sookmyung/2024-Juryangdo',
+      serverUrl: '',
+    },
+    summary: '당신의 주량을 확인하세요',
+    introduction:
+      '숫자에 불과한 도수, 이제 안녕! 주량을 입력하고 술의 도수를 마실 수 있는 잔으로 확인하세요!',
+    description:
+      '🍾 주량 입력하기\n계산을 위해 주량을 입력합니다.\n\n🍺 마실 수 있는 잔 확인하기\n술의 도수를 마실 수 있는 잔으로 계산한 결과를 확인할 수 있습니다.\n\n🍷 술 정보 확인하기\n주종, 제조사, 제조국, 맛의 특징 등에 대한 정보를 얻을 수 있습니다.',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/leedabin.png',
+        name: '이다빈',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '평소 다양한 술을 맛보는 걸 좋아하고, 숫자로만 적힌 도수에 불편함을 느껴 이번 프로젝트를 기획했습니다. 디자인, 개발을 혼자 해야 한다는 부담이 있었지만, 방학 동안 꾸준히 개발한 덕에 완성할 수 있었습니다. 처음 Vanilla JS로 개발하다 보니 시행착오가 많았지만 html, CSS, JavaScript에 대한 이해를 높이는 보람차고 좋은 경험이었습니다. 주량을 테스트하고 술의 정보를 얻는 재밌고 유익한 프로젝트가 되었으면 합니다.',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: 'BDB - Birth Day Buddy',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/birthdaybuddy.png',
+    youtubeVideoId: 'nmGqivk0R_g',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://birthdaybuddy2024.vercel.app/',
+    githubUrls: {
+      clientUrl: 'https://github.com/Kwonyujin04/2024-birthday',
+      serverUrl: '',
+    },
+    summary: '생일 축하의 새로운 패러다임을 BDB에서 만나보아요.',
+    introduction:
+      'BDB는 간편하게 생일 축하 메시지를 전달할 수 있는 생일 축하 커뮤니티 입니다. 친구, 가족, 반려 동물, 또는 나 자신에게 축하 메시지를 남기고 함께 축하할 수 있습니다. 또한 커뮤니티에 올라온 게시물에 반응을 보내면 BDB에서 주는 선물도 받을 수 있습니다.\n생일 축하를 도와주는 든든한 친구, BDB에 접속해 보아요!',
+    description:
+      '🎉생일 축하 메시지 작성하기\n- 축하해주고 싶은 사람을 떠올리며 메시지를 작성하고 꾸며봅시다. 적어도 생일 하루 전에는 작성해야 함을 주의합시다.\n\n🥳커뮤니티에서 함께 축하하기\n- 작성한 메시지는 커뮤니티에 공유되어 함께 볼 수 있습니다. 다른 사용자가 남긴 메시지에 반응을 남겨 생일을 함께 축하해 봅시다.\n\n🎁BDB가 주는 선물 받기\n- 축하 받는 사람 뿐만 아니라 축하해 주는 사람에게도 특별한 기억을 만들어 주기 위해 BDB에서 선물을 준비했습니다. 선물을 위해 좀 더 많은 사람들을 축하해 보는 건 어떨까요?',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/kwonyujin.png',
+        name: '권유진',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '올해 처음으로 APPS에 들어오고 진행한 프로젝트라서 배운 게 많은 프로젝트였습니다. BDB는 제가 1학기 때 들은 웹 수업에서 만든 결과를 더 발전시켜 만든 웹인데, 그 당시에 만든 결과물과 비교하면 성장하긴 했지만 지금도 조금 아쉬운 부분이 있습니다... 하지만 그 과정에서 정말 많은 것을 배웠고 2025년에 다른 프로젝트를 진행하게 되면 BDB와 함께 배운 것을 펼쳐나가고 싶습니다! ',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: 'Stattracker',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/stattracker.png',
+    youtubeVideoId: '',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://rosaze.github.io/2024-Stattracker/',
+    githubUrls: {
+      clientUrl: 'https://github.com/rosaze/2024-Stattracker',
+      serverUrl: '',
+    },
+    summary: '당신의 대학 생활 능력치 스탯을 키워주세요!',
+    introduction:
+      'StatTracker - 대학생활을 하며 당신의 성장을 눈으로 확인하세요! 활동별 통계와 기록으로 나만의 데이터를 시각화하고, 목표를 한눈에 관리하세요. 매일의 작은 성취가 큰 변화를 만든다는 것을 StatTracker와 함께 느껴보세요!',
+    description:
+      '📊 활동별 기록으로 성과 시각화\n활동 데이터를 한눈에 정리하고 시각화하여 나의 발전 상황을 확인할 수 있습니다.\n\n🎯 목표 달성을 위한 카테고리 관리\n활동을 카테고리별로 분류하여 나만의 목표를 체계적으로 관리할 수 있습니다.\n\n📈 실시간 통계로 동기 부여\n활동 통계를 실시간으로 확인하며 꾸준히 동기부여를 얻을 수 있습니다.\n\n🗂️ 기록 저장으로 데이터 아카이빙\n나의 모든 활동 데이터를 저장하고 필요할 때 쉽게 확인할 수 있습니다.',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/yoonjiwon.png',
+        name: '윤지원',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          'stattracker는 노력의 히스토리 아카이브 입니다. 눈에 안 보이는 노력을 가시화하자! 라고 처음 목표를 세웠었는데, 처음 기대한 만큼 결과물이 잘 나와주어서 정말 뿌듯합니다. 하지만 개발 과정은 꽤 난감했습니다. 자바스크립트, CSS 를 만만하게 보고 호기롭게 디자인을 했지만..현실은 눈문 젖은 디버깅과 끊임없는 레이아웃 수정의 연속이었답니다. 특히 어떻게 하면 디자인과 기능의 일관성을 유지할 수 있는지 고민을 많이 했습니다. 그래도 이번 기회에 확실히 프론트엔드를 깊이 경험할 수 있어서 정말 좋았습니다. 특히 반응형 웹 디자인을 구현하면서 이것 저것 찾아보면서 코드를 만들었던 부분이 나중에도 꼭 도움이 될 것 같아요😉.',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: 'Emotion',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/emotion.png',
+    youtubeVideoId: 'z4ByAJIVJeM',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://2024-emotion.vercel.app/',
+    githubUrls: {
+      clientUrl: 'https://github.com/eunground/2024-Emotion.git',
+      serverUrl: '',
+    },
+    summary: '당신의 기억을 저장하세요.',
+    introduction:
+      '오늘 당신이 느낀 감정은 무엇인가요? Emotion을 통해 여러분의 기억들을 저장해보세요! 기억을 구슬로 만들어 저장해 시간이 지나도 변하지 않는 감정을 특별하게 간직하세요.',
+    description:
+      '🫧 감정 구슬 만들기\n하루의 감정을 구슬로 만들어 저장합니다.\n\n⭐ 기억 저장소\n저장한 감정 구슬을 꺼내보며 소중한 추억들을 떠올려보세요.\n\n💌 기억할 기억\n잊고 싶지 않은 특별한 기억들을 따로 모아, 언제든 꺼내볼 수 있습니다.',
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/shinjeongeun.png',
+        name: '신정은',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review:
+          '이번 프로젝트를 통해 그동안 배웠던 이론적인 내용을 실제로 구현해보는 소중한 경험을 할 수 있었습니다. 프로젝트를 진행하는 과정에서 예상치 못한 문제들이 발생했지만, 이를 해결하기 위해 다양한 방법을 고민하고 시도하며 문제 해결 능력을 키울 수 있었습니다. 하나의 프로젝트를 끝까지 완성해내는 과정에서 큰 성취감을 느낄 수 있었고, 이를 통해 제 자신이 한 단계 더 발전했음을 실감했습니다. 앞으로도 이러한 경험을 바탕으로 더 많은 도전과 성장을 이루어내며, 개발자로서의 역량을 지속적으로 강화해 나가고자 합니다💪',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'HTML',
+        imageUrl: '/images/techStacks/html.png',
+      },
+      {
+        name: 'CSS',
+        imageUrl: '/images/techStacks/css.png',
+      },
+      {
+        name: 'JavaScript',
+        imageUrl: '/images/techStacks/javascript.png',
+      },
+    ],
+  },
+  {
+    id: 16,
+    name: '카공도',
+    generation: ['11기'],
+    category: PROJECT_CATEGORIES.NEW_MEMBERS,
+    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
+    youtubeVideoId: '',
+    downloadLinkUrl: null,
+    webpageLinkUrl: 'https://cagongdo.netlify.app/',
+    githubUrls: {
+      clientUrl: 'https://github.com/APPS-sookmyung/2024-Cagongdo',
+      serverUrl: '',
+    },
+    summary: '내 주변 카공맛집 찾기',
+    introduction:
+      "카페에서 공부하거나 작업하는 것을 좋아하시나요? '카공도'는 카카오맵 API를 활용하여 내 주변 카공에 최적화된 카페를 빠르고 쉽게 찾을 수 있는 서비스입니다. 운영시간, 가격, 콘센트 여부, 분위기 등 카공에 중요한 요소들을 한눈에 제공하며, 카페의 카공 적합도 별점인 ‘카공도’ 점수로 카페 선택을 돕습니다. '카공도'와 함께 카공에 적합한 카페를 손쉽게 찾고, 더 좋은 환경에서 몰입하여 작업을 즐겨보세요!",
+    description:
+      "📍 내 주변 카공 맛집 검색\n카카오맵 API를 활용하여 현재 위치 기반으로 주변 카공에 최적화된 카페를 빠르게 탐색할 수 있습니다.\n\n⭐️ ‘카공도’ 별점 제공\n카페의 '카공 적합도'를 별점으로 확인할 수 있어, 사용자들이 카페를 선택하기 전에 중요한 기준을 참고할 수 있습니다.\n\n📝 카공 맞춤 정보 제공\n운영시간, 가격, 콘센트 유무, 조명, 소음 수준 등 카공에 있어 중요한 카페 정보를 상세히 제공합니다.\n\n💬 리뷰\n다른 사용자가 남긴 카공 카페 리뷰를 참고하거나, 자신의 경험을 공유할 수 있습니다.",
+    memberList: [
+      {
+        index: 0,
+        image: '/images/memberProfiles/kimjunhee.png',
+        name: '김준희',
+        part: 'frontend',
+        position: '프론트엔드',
+        isLeader: false,
+        review: '',
+      },
+    ],
+    techStackList: [
+      {
+        name: 'React',
+        imageUrl: '/images/techStacks/react.png',
+      },
+      {
+        name: 'TypeScript',
+        imageUrl: '/images/techStacks/typescript.png',
+      },
+      {
+        name: 'Styled-Components',
+        imageUrl: '/images/techStacks/styled-components.png',
+      },
+      {
+        name: 'npm',
+        imageUrl: '/images/techStacks/npm.png',
+      },
+      {
+        name: 'CRA',
+        imageUrl: '/images/techStacks/cra.svg',
+      },
+      {
+        name: 'Netlify',
+        imageUrl: '/images/techStacks/netlify.png',
       },
     ],
   },

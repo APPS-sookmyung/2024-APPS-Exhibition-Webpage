@@ -23,6 +23,7 @@ export const ReviewBox = styled.div`
     margin: 0;
     line-height: 140%;
     word-break: keep-all;
+    color: #cccccc;
   }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {

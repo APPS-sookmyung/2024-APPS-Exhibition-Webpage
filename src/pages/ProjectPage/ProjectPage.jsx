@@ -37,7 +37,7 @@ export default function ProjectPage() {
         />
         <S.Top>
           <S.Title>{projectData.name}</S.Title>
-          <S.Description>{projectData.summary}</S.Description>
+          <S.Summary>{projectData.summary}</S.Summary>
           <S.TopBtnContainer>
             <S.ShareBtn
               onClick={() => handleCopyClipBoard(projectData.webpageLinkUrl)}

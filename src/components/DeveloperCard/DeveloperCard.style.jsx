@@ -46,7 +46,7 @@ export const DeveloperImage = styled.img`
 `;
 
 export const DeveloperName = styled.h2`
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.6px;
   margin: 11px 0 0 0;
@@ -59,7 +59,7 @@ export const DeveloperName = styled.h2`
 
 export const DeveloperPosition = styled.p`
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.5px;
   margin: 2px 0 0 0;
