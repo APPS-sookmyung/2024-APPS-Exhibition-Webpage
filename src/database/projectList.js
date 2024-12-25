@@ -6,7 +6,7 @@ export const PROJECT_LIST = [
     name: 'WELLET',
     generation: [],
     category: PROJECT_CATEGORIES.WEB,
-    imageUrl: '/images/thumbnail/wellet.png',
+    imageUrl: '/images/thumbnail/example-thumbnail.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://wellet.netlify.app',
@@ -134,7 +134,7 @@ export const PROJECT_LIST = [
       },
       {
         name: 'Naver Clova OCR',
-        imageUrl: '/images/techStack/naver-clova-ocr.png',
+        imageUrl: '/images/techStack/naver-clova-ocr.svg',
       },
       {
         name: 'docker',
@@ -212,7 +212,7 @@ export const PROJECT_LIST = [
     name: '카공도',
     generation: [],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/cagongdo.png',
+    imageUrl: '/images/thumbnail/example-thumbnail.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://cagongdo.netlify.app/',
@@ -255,7 +255,7 @@ export const PROJECT_LIST = [
       },
       {
         name: 'CRA',
-        imageUrl: '/images/techStack/cra.png',
+        imageUrl: '/images/techStack/cra.svg',
       },
       {
         name: 'Netlify',
@@ -268,7 +268,7 @@ export const PROJECT_LIST = [
     name: '숙메추Real',
     generation: [],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/sookmechu-real.png',
+    imageUrl: '/images/thumbnail/sookmechu-real.jpg',
     youtubeVideoId: 'zxaE0FIQRZ4',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -359,7 +359,7 @@ export const PROJECT_LIST = [
     name: 'studypage',
     generation: [],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnail/studypage.png',
+    imageUrl: '/images/thumbnail/studypage.jpg',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://seobin0224.github.io/2024-studypage/',
@@ -380,7 +380,8 @@ export const PROJECT_LIST = [
         part: 'frontend',
         position: '프론트엔드',
         isLeader: false,
-        review: '',
+        review:
+          '혼자서 프로젝트를 진행하면서 때로는 막막함을 느꼈지만, 주변 동료들의 열정적인 분위기에 힘입어 프로젝트를 성공적으로 완수할 수 있었습니다. 특히 디자인부터 기획까지 전 과정을 주도적으로 수행하면서, 제 적성과 강점을 더 명확히 파악할 수 있었습니다.\n이 과정에서 제가 특히 흥미를 느끼는 분야를 발견했을 뿐만 아니라, 앞으로 더 깊이 공부하고 싶은 영역도 구체화할 수 있었습니다. 혼자서는 달성하기 어려웠을 큰 성장을 이뤄낼 수 있었던 것은, 이런 도전적인 기회가 주어졌기 때문이라고 생각합니다.\n이번 프로젝트는 단순한 과제 수행을 넘어서, 제 역량을 전반적으로 향상시키고 앞으로의 성장 방향을 설정하는 소중한 경험이 되었습니다.',
       },
     ],
     techStackList: [
@@ -593,7 +594,7 @@ export const PROJECT_LIST = [
     generation: [],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/merry-tree.png',
-    youtubeVideoId: '',
+    youtubeVideoId: 'F2kmcZaM2Fc',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://merry-tree.netlify.app/',
     githubUrls: {
@@ -683,7 +684,7 @@ export const PROJECT_LIST = [
     generation: [],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/birthdaybuddy.png',
-    youtubeVideoId: '',
+    youtubeVideoId: 'nmGqivk0R_g',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://birthdaybuddy2024.vercel.app/',
     githubUrls: {
@@ -792,7 +793,7 @@ export const PROJECT_LIST = [
       },
       {
         name: 'Nginx',
-        imageUrl: '/images/techStack/nginx.png',
+        imageUrl: '/images/techStack/nginx.svg',
       },
     ],
   },
@@ -802,7 +803,7 @@ export const PROJECT_LIST = [
     generation: [],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnail/emotion.png',
-    youtubeVideoId: '',
+    youtubeVideoId: 'z4ByAJIVJeM',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://2024-emotion.vercel.app/',
     githubUrls: {
@@ -846,7 +847,7 @@ export const PROJECT_LIST = [
     name: 'OUTFOOT',
     generation: [],
     category: PROJECT_CATEGORIES.APP,
-    imageUrl: '/images/thumbnail/outfoot.png',
+    imageUrl: '/images/thumbnail/example-thumbnail.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -923,7 +924,7 @@ export const PROJECT_LIST = [
       },
       {
         name: 'Dart',
-        imageUrl: '/images/techStack/dart.png',
+        imageUrl: '/images/techStack/dart.svg',
       },
       {
         name: 'Dio',
