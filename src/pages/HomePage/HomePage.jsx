@@ -21,8 +21,8 @@ const handleCopyClipBoard = async () => {
 export default function HomePage() {
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
-      <S.HomePageBackground>
-        <S.HomePage>
+      <S.HomePage>
+        <S.HomePageTopBackground>
           <S.HomeMainWrapper>
             <S.TitleWrapper>
               <S.ExhibitionTitle>EXHIBITION 2024</S.ExhibitionTitle>
@@ -73,71 +73,71 @@ export default function HomePage() {
               </S.SectionContent>
             </S.SectionContentWrapper>
           </S.SectionWrapper>
+        </S.HomePageTopBackground>
 
-          <S.SectionWrapper>
-            <S.SectionTitleWrapper>
-              <S.SectionTitleImageWrapper>
-                <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
-                <img
-                  src="/images/logo/logo-gradation-motion.svg"
-                  alt="앱스 로고"
-                />
-              </S.SectionTitleImageWrapper>
-              <S.SectionSubTitle>
-                서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
-                지향합니다
-              </S.SectionSubTitle>
-            </S.SectionTitleWrapper>
-            <S.SectionContentWrapper>
-              <MemberFeedbackCardList />
-            </S.SectionContentWrapper>
-          </S.SectionWrapper>
+        <S.SectionWrapper>
+          <S.SectionTitleWrapper>
+            <S.SectionTitleImageWrapper>
+              <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
+              <img
+                src="/images/logo/logo-gradation-motion.svg"
+                alt="앱스 로고"
+              />
+            </S.SectionTitleImageWrapper>
+            <S.SectionSubTitle>
+              서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
+              지향합니다
+            </S.SectionSubTitle>
+          </S.SectionTitleWrapper>
+          <S.SectionContentWrapper>
+            <MemberFeedbackCardList />
+          </S.SectionContentWrapper>
+        </S.SectionWrapper>
 
-          <S.SocialLinks>
-            <S.SocialLinksTitle>
-              APPS 소식을 더 빨리 알고 싶다면
-            </S.SocialLinksTitle>
-            <S.SocialLinksContent>
-              {SOCIAL_MEDIA_LINKS_CARD.map((social) => (
-                <SocialMediaLinkCards
-                  key={social.platform}
-                  platform={social.platform}
-                  link={social.link}
-                  icon={social.icon}
-                  accountName={social.accountName}
-                  activeIcon={social.activeIcon}
-                  deActiveIcon={social.deActiveIcon}
-                />
-              ))}
-            </S.SocialLinksContent>
-          </S.SocialLinks>
+        <S.SocialLinks>
+          <S.SocialLinksTitle>
+            APPS 소식을 더 빨리 알고 싶다면
+          </S.SocialLinksTitle>
+          <S.SocialLinksContent>
+            {SOCIAL_MEDIA_LINKS_CARD.map((social) => (
+              <SocialMediaLinkCards
+                key={social.platform}
+                platform={social.platform}
+                link={social.link}
+                icon={social.icon}
+                accountName={social.accountName}
+                activeIcon={social.activeIcon}
+                deActiveIcon={social.deActiveIcon}
+              />
+            ))}
+          </S.SocialLinksContent>
+        </S.SocialLinks>
 
-          <S.ProjectList>
-            <ProjectCardList />
-          </S.ProjectList>
+        <S.ProjectList>
+          <ProjectCardList />
+        </S.ProjectList>
 
-          <S.ShareLinks>
-            <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
-            <S.ShareLinksContent>
-              <S.StyledLink to="/">
-                <S.LinkButton
-                  onClick={() =>
-                    handleCopyClipBoard('https://2024-apps.netlify.app/')
-                  }
-                >
-                  링크 공유하기
-                </S.LinkButton>
-              </S.StyledLink>
-              <S.StyledLink
-                to="https://forms.gle/k14eA7Kk9bxD7aTm6"
-                target="_blank"
+        <S.ShareLinks>
+          <S.ShareLinksTitle>함께 여정을 떠나볼까요?</S.ShareLinksTitle>
+          <S.ShareLinksContent>
+            <S.StyledLink to="/">
+              <S.LinkButton
+                onClick={() =>
+                  handleCopyClipBoard('https://2024-apps.netlify.app/')
+                }
               >
-                <S.LinkButton>12기 알림 신청하기</S.LinkButton>
-              </S.StyledLink>
-            </S.ShareLinksContent>
-          </S.ShareLinks>
-        </S.HomePage>
-      </S.HomePageBackground>
+                링크 공유하기
+              </S.LinkButton>
+            </S.StyledLink>
+            <S.StyledLink
+              to="https://forms.gle/k14eA7Kk9bxD7aTm6"
+              target="_blank"
+            >
+              <S.LinkButton>12기 알림 신청하기</S.LinkButton>
+            </S.StyledLink>
+          </S.ShareLinksContent>
+        </S.ShareLinks>
+      </S.HomePage>
     </PageLayout>
   );
 }
