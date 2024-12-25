@@ -21,8 +21,9 @@ const handleCopyClipBoard = async () => {
 export default function HomePage() {
   return (
     <PageLayout header={<Header />} footer={<Footer />}>
-      <S.HomePage>
-        <S.HomePageTopBackground>
+      <S.HomePageTopBackground>
+        {' '}
+        <S.HomePage>
           <S.HomeMainWrapper>
             <S.TitleWrapper>
               <S.ExhibitionTitle>EXHIBITION 2024</S.ExhibitionTitle>
@@ -75,47 +76,48 @@ export default function HomePage() {
               </S.SectionContent>
             </S.SectionContentWrapper>
           </S.SectionWrapper>
-        </S.HomePageTopBackground>
-        <S.SectionWrapper>
-          <S.SectionTitleWrapper>
-            <S.SectionTitleImageWrapper>
-              <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
-              <img
-                src="/images/logo/logo-gradation-motion.svg"
-                alt="앱스 로고"
-              />
-            </S.SectionTitleImageWrapper>
-            <S.SectionSubTitle>
-              서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
-              지향합니다
-            </S.SectionSubTitle>
-          </S.SectionTitleWrapper>
-          <S.SectionContentWrapper>
-            <MemberFeedbackCardList />
-          </S.SectionContentWrapper>
-        </S.SectionWrapper>
-        <S.SocialLinks>
-          <S.SocialLinksTitle>
-            APPS 소식을 더 빨리 알고 싶다면
-          </S.SocialLinksTitle>
-          <S.SocialLinksContent>
-            {SOCIAL_MEDIA_LINKS_CARD.map((social) => (
-              <SocialMediaLinkCards
-                key={social.platform}
-                platform={social.platform}
-                link={social.link}
-                icon={social.icon}
-                accountName={social.accountName}
-                activeIcon={social.activeIcon}
-                deActiveIcon={social.deActiveIcon}
-              />
-            ))}
-          </S.SocialLinksContent>
-        </S.SocialLinks>
-        <S.ProjectList>
-          <ProjectCardList />
-        </S.ProjectList>
-      </S.HomePage>
+
+          {/* <S.SectionWrapper>
+            <S.SectionTitleWrapper>
+              <S.SectionTitleImageWrapper>
+                <S.SmallSectionTitle>부원들이 말하는</S.SmallSectionTitle>
+                <img
+                  src="/images/logo/logo-gradation-motion.svg"
+                  alt="앱스 로고"
+                />
+              </S.SectionTitleImageWrapper>
+              <S.SectionSubTitle>
+                서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
+                지향합니다
+              </S.SectionSubTitle>
+            </S.SectionTitleWrapper>
+            <S.SectionContentWrapper>
+              <MemberFeedbackCardList />
+            </S.SectionContentWrapper>
+          </S.SectionWrapper> */}
+          <S.SocialLinks>
+            <S.SocialLinksTitle>
+              APPS 소식을 더 빨리 알고 싶다면
+            </S.SocialLinksTitle>
+            <S.SocialLinksContent>
+              {SOCIAL_MEDIA_LINKS_CARD.map((social) => (
+                <SocialMediaLinkCards
+                  key={social.platform}
+                  platform={social.platform}
+                  link={social.link}
+                  icon={social.icon}
+                  accountName={social.accountName}
+                  activeIcon={social.activeIcon}
+                  deActiveIcon={social.deActiveIcon}
+                />
+              ))}
+            </S.SocialLinksContent>
+          </S.SocialLinks>
+          <S.ProjectList>
+            <ProjectCardList />
+          </S.ProjectList>
+        </S.HomePage>
+      </S.HomePageTopBackground>
 
       <S.HomePage>
         <S.HomePageBottomBackground>

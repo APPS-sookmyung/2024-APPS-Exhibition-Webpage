@@ -34,7 +34,7 @@ export default function Modal({ member, closeModal }) {
         <S.MemberDetailWrapper>
           <S.MemberCard>
             <S.MemberImage
-              src={require(`../../images/memberProfiles/${member.image}`)}
+              src={`/images/memberProfiles/${member.image}`}
               alt={member.name}
             />
             <S.MemberInfoWrapper>

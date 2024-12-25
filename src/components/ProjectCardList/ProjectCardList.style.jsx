@@ -93,6 +93,7 @@ export const ProjectCardContent = styled.div`
     background-color 0.3s ease,
     transform 0.2s ease;
   gap: 8px;
+  flex: 1;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     padding: 16px 16px 12px;
@@ -165,6 +166,7 @@ export const ProjectBadge = styled.div`
 export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   &:nth-child(odd) {
     justify-self: start;
