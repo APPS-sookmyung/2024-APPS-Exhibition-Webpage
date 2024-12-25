@@ -20,8 +20,6 @@ export default function ProjectPage() {
     ));
   };
 
-  const YoutubeLink = 'https://www.youtube.com/watch?v=';
-
   return (
     <S.Root>
       <S.Container>
@@ -38,58 +36,66 @@ export default function ProjectPage() {
               <S.ShareText>프로젝트 공유하기</S.ShareText>
             </S.ShareBtn>
             <S.LinkBtns>
-              <a
-                href={projectData.githubUrls.clientUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <S.LinkBtn>
-                  <S.LinkIcon
-                    src="../../images/socials/github.svg"
-                    alt="github"
-                  />
-                  <p>Client</p>
-                </S.LinkBtn>
-              </a>
-              <a
-                href={projectData.githubUrls.serverUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <S.LinkBtn>
-                  <S.LinkIcon
-                    src="../../images/socials/github.svg"
-                    alt="github"
-                  />
-                  <p>Server</p>
-                </S.LinkBtn>
-              </a>
-              <a
-                href={YoutubeLink + projectData.youtubeVideoId}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <S.LinkBtn>
-                  <S.LinkIcon
-                    src="../../images/socials/webpage-link.svg"
-                    alt="link"
-                  />
-                  <p>Youtube</p>
-                </S.LinkBtn>
-              </a>
-              <a
-                href="https://appstore.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <S.LinkBtn>
-                  <S.LinkIcon
-                    src="../../images/socials/app-store.svg"
-                    alt="appstore"
-                  />
-                  <p>AppStore</p>
-                </S.LinkBtn>
-              </a>
+              {projectData.githubUrls.clientUrl && (
+                <a
+                  href={projectData.githubUrls.clientUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <S.LinkBtn>
+                    <S.LinkIcon
+                      src="../../images/socials/github.svg"
+                      alt="github"
+                    />
+                    <p>Client</p>
+                  </S.LinkBtn>
+                </a>
+              )}
+              {projectData.githubUrls.serverUrl && (
+                <a
+                  href={projectData.githubUrls.serverUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <S.LinkBtn>
+                    <S.LinkIcon
+                      src="../../images/socials/github.svg"
+                      alt="github"
+                    />
+                    <p>Server</p>
+                  </S.LinkBtn>
+                </a>
+              )}
+              {projectData.webpageLinkUrl && (
+                <a
+                  href={projectData.webpageLinkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <S.LinkBtn>
+                    <S.LinkIcon
+                      src="../../images/socials/webpage-link.svg"
+                      alt="link"
+                    />
+                    <p>Link</p>
+                  </S.LinkBtn>
+                </a>
+              )}
+              {projectData.downloadLinkUrl && (
+                <a
+                  href={projectData.downloadLinkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <S.LinkBtn>
+                    <S.LinkIcon
+                      src="../../images/socials/app-store.svg"
+                      alt="appstore"
+                    />
+                    <p>AppStore</p>
+                  </S.LinkBtn>
+                </a>
+              )}
             </S.LinkBtns>
           </S.TopBtnContainer>
           <S.YoutubeContainer>
