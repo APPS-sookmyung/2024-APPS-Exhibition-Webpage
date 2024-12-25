@@ -5,7 +5,11 @@ import { PROJECT_LIST } from '../../database';
 
 export default function ProjectPage() {
   const navigate = useNavigate();
-  const { projectId } = useParams();
+  const { id } = useParams();
+  const projectData = PROJECT_LIST.find(
+    ({ id: projectId }) => projectId === Number(id),
+  );
+  console.log(projectData);
 
   const lineBreaks = (text) => {
     return text.split('\n').map((line, index) => (
@@ -16,67 +20,145 @@ export default function ProjectPage() {
     ));
   };
 
+  const YoutubeLink = 'https://www.youtube.com/watch?v=';
+
   return (
     <S.Root>
       <S.Container>
-        {PROJECT_LIST.map(
-          (project) =>
-            project.id === projectId && (
-              <>
-                <S.CloseBtn
-                  src="images/icons/x_pink.svg"
-                  onClick={() => navigate(-1)}
-                />
-                <S.Top>
-                  <S.Title>{project.name}</S.Title>
-                  <S.Description>{project.summary}</S.Description>
-                  <S.TopBtnContainer>
-                    <S.ShareBtn>
-                      <S.ShareIcon src="images/icons/share.svg" alt="" />
-                      <S.ShareText>프로젝트 공유하기</S.ShareText>
-                    </S.ShareBtn>
-                  </S.TopBtnContainer>
-                </S.Top>
-                <S.Center>
-                  <S.Content>
-                    <S.SubTitle>서비스 소개</S.SubTitle>
-                    <S.ServiceDetail>
-                      {lineBreaks(project.introduction)}
-                    </S.ServiceDetail>
-                  </S.Content>
-                </S.Center>
-                <S.Bottom>
-                  <S.SubTitle>개발자</S.SubTitle>
-                  <S.DeveloperCardContainer>
-                    {project.memberList.map((developer, index) => (
-                      <DeveloperCard
-                        key={index}
-                        image={developer.image}
-                        name={developer.name}
-                        part={developer.part}
-                        position={developer.position}
-                        isLeader={developer.isLeader}
-                      />
-                    ))}
-                  </S.DeveloperCardContainer>
-                  <S.SubTitle>회고</S.SubTitle>
-                  <S.ReviewContainer>
-                    {project.memberList.map((developer, index) => (
-                      <ReviewCard
-                        key={index}
-                        image={developer.image}
-                        name={developer.name}
-                        part={developer.part}
-                        position={developer.position}
-                        review={developer.review}
-                      />
-                    ))}
-                  </S.ReviewContainer>
-                  <ProjectRecommend />
-                </S.Bottom>
-              </>
-            ),
-        )}
+        <S.CloseBtn
+          src="../../images/icons/x_pink.svg"
+          onClick={() => navigate(-1)}
+        />
+        <S.Top>
+          <S.Title>{projectData.name}</S.Title>
+          <S.Description>{projectData.summary}</S.Description>
+          <S.TopBtnContainer>
+            <S.ShareBtn>
+              <S.ShareIcon src="../../images/icons/share.svg" alt="" />
+              <S.ShareText>프로젝트 공유하기</S.ShareText>
+            </S.ShareBtn>
+            <S.LinkBtns>
+              <a
+                href={projectData.githubUrls.clientUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <S.LinkBtn>
+                  <S.LinkIcon
+                    src="../../images/socials/github.svg"
+                    alt="github"
+                  />
+                  <p>Client</p>
+                </S.LinkBtn>
+              </a>
+              <a
+                href={projectData.githubUrls.serverUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <S.LinkBtn>
+                  <S.LinkIcon
+                    src="../../images/socials/github.svg"
+                    alt="github"
+                  />
+                  <p>Server</p>
+                </S.LinkBtn>
+              </a>
+              <a
+                href={YoutubeLink + projectData.youtubeVideoId}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <S.LinkBtn>
+                  <S.LinkIcon
+                    src="../../images/socials/webpage-link.svg"
+                    alt="link"
+                  />
+                  <p>Youtube</p>
+                </S.LinkBtn>
+              </a>
+              <a
+                href="https://appstore.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <S.LinkBtn>
+                  <S.LinkIcon
+                    src="../../images/socials/app-store.svg"
+                    alt="appstore"
+                  />
+                  <p>AppStore</p>
+                </S.LinkBtn>
+              </a>
+            </S.LinkBtns>
+          </S.TopBtnContainer>
+          <S.YoutubeContainer>
+            <S.Youtube>
+              <iframe
+                width="560"
+                height="315"
+                src={`https://www.youtube.com/watch?v=${projectData.youtubeVideoId}`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+              gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </S.Youtube>
+          </S.YoutubeContainer>
+        </S.Top>
+        <S.Line src="images/background/projects_line.svg" alt="" />
+        <S.Center>
+          <S.Content>
+            <S.SubTitle>서비스 소개</S.SubTitle>
+            <S.ServiceDetail>
+              {lineBreaks(projectData.introduction)}
+            </S.ServiceDetail>
+            <S.SubTitle>기능 설명</S.SubTitle>
+            <S.ServiceDetail>
+              {lineBreaks(projectData.description)}
+            </S.ServiceDetail>
+            <S.SubTitle>기술 스택</S.SubTitle>
+            <S.StackList>
+              {projectData.techStackList.map((stack) => (
+                <S.StackItem>
+                  <S.StackIcon src={stack.imageUrl} alt="" />
+                  <S.StackText>{stack.name}</S.StackText>
+                </S.StackItem>
+              ))}
+            </S.StackList>
+          </S.Content>
+        </S.Center>
+        <S.Bottom>
+          <S.SubTitle>개발자</S.SubTitle>
+          <S.DeveloperCardContainer>
+            {projectData.memberList.map((developer) => (
+              <DeveloperCard
+                key={developer.index}
+                image={developer.image}
+                name={developer.name}
+                part={developer.part}
+                position={developer.position}
+                isLeader={developer.isLeader}
+              />
+            ))}
+          </S.DeveloperCardContainer>
+          <S.SubTitle>회고</S.SubTitle>
+          <S.ReviewContainer>
+            {projectData.memberList.map((developer) => (
+              <ReviewCard
+                key={developer.index}
+                image={developer.image}
+                name={developer.name}
+                part={developer.part}
+                position={developer.position}
+                review={developer.review}
+              />
+            ))}
+          </S.ReviewContainer>
+          <S.SubTitle>프로젝트 더보기</S.SubTitle>
+          <ProjectRecommend />
+        </S.Bottom>
       </S.Container>
     </S.Root>
   );

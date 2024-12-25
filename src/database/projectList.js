@@ -22,7 +22,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'kimjunhee.png',
+        image: '../../images/memberProfiles/kimjunhee.png',
         name: '김준희',
         part: 'frontend',
         position: '프론트엔드장',
@@ -32,7 +32,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 1,
-        image: 'ryumisung.png',
+        image: '../../images/memberProfiles/ryumisung.png',
         name: '류미성',
         part: 'frontend',
         position: '프론트엔드',
@@ -42,7 +42,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 2,
-        image: 'kimhyerim.png',
+        image: '../../images/memberProfiles/kimhyerim.png',
         name: '김혜림',
         part: 'frontend',
         position: '프론트엔드',
@@ -52,7 +52,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 3,
-        image: 'jooajung.png',
+        image: '../../images/memberProfiles/jooajung.png',
         name: '주아정',
         part: 'backend',
         position: '백엔드장',
@@ -62,7 +62,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 4,
-        image: 'leehaerim.png',
+        image: '../../images/memberProfiles/leehaerim.png',
         name: '이해림',
         part: 'backend',
         position: '백엔드',
@@ -72,7 +72,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 5,
-        image: 'hayeyoung.png',
+        image: '../../images/memberProfiles/hayeyoung.png',
         name: '하예영',
         part: 'backend',
         position: '백엔드',
@@ -102,63 +102,63 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'React',
-        imageUrl: '/images/techStack/react.png',
+        imageUrl: '/images/techStacks/react.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
       {
         name: 'Styled-Components',
-        imageUrl: '/images/techStack/styled-components.png',
+        imageUrl: '/images/techStacks/styled-components.png',
       },
       {
         name: 'Netlify',
-        imageUrl: '/images/techStack/netlify.png',
+        imageUrl: '/images/techStacks/netlify.png',
       },
       {
         name: 'Spring Boot',
-        imageUrl: '/images/techStack/spring-boot.png',
+        imageUrl: '/images/techStacks/spring-boot.png',
       },
       {
         name: 'MySQL',
-        imageUrl: '/images/techStack/mysql.png',
+        imageUrl: '/images/techStacks/mysql.png',
       },
       {
         name: 'Java17',
-        imageUrl: '/images/techStack/java.png',
+        imageUrl: '/images/techStacks/java.png',
       },
       {
         name: 'AWS',
-        imageUrl: '/images/techStack/aws.png',
+        imageUrl: '/images/techStacks/aws.png',
       },
       {
         name: 'Naver Clova OCR',
-        imageUrl: '/images/techStack/naver-clova-ocr.svg',
+        imageUrl: '/images/techStacks/naver-clova-ocr.svg',
       },
       {
         name: 'docker',
-        imageUrl: '/images/techStack/docker.png',
+        imageUrl: '/images/techStacks/docker.png',
       },
       {
         name: 'GitHub Actions',
-        imageUrl: '/images/techStack/github-actions.png',
+        imageUrl: '/images/techStacks/github-actions.png',
       },
       {
         name: 'Gradle',
-        imageUrl: '/images/techStack/gradle.png',
+        imageUrl: '/images/techStacks/gradle.png',
       },
       {
         name: 'OAuth2.0',
-        imageUrl: '/images/techStack/oauth2.png',
+        imageUrl: '/images/techStacks/oauth2.png',
       },
       {
         name: 'Spring Data JPA',
-        imageUrl: '/images/techStack/spring-data-jpa.png',
+        imageUrl: '/images/techStacks/spring-data-jpa.png',
       },
       {
         name: 'Apache',
-        imageUrl: '/images/techStack/apache.png',
+        imageUrl: '/images/techStacks/apache.png',
       },
     ],
   },
@@ -183,7 +183,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'yoonjiwon.png',
+        image: '../../images/memberProfiles/yoonjiwon.png',
         name: '윤지원',
         part: 'frontend',
         position: '프론트엔드',
@@ -195,15 +195,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -228,7 +228,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'kimjunhee.png',
+        image: '../../images/memberProfiles/kimjunhee.png',
         name: '김준희',
         part: 'frontend',
         position: '프론트엔드',
@@ -239,27 +239,27 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'React',
-        imageUrl: '/images/techStack/react.png',
+        imageUrl: '/images/techStacks/react.png',
       },
       {
         name: 'TypeScript',
-        imageUrl: '/images/techStack/typescript.png',
+        imageUrl: '/images/techStacks/typescript.png',
       },
       {
         name: 'Styled-Components',
-        imageUrl: '/images/techStack/styled-components.png',
+        imageUrl: '/images/techStacks/styled-components.png',
       },
       {
         name: 'npm',
-        imageUrl: '/images/techStack/npm.png',
+        imageUrl: '/images/techStacks/npm.png',
       },
       {
         name: 'CRA',
-        imageUrl: '/images/techStack/cra.svg',
+        imageUrl: '/images/techStacks/cra.svg',
       },
       {
         name: 'Netlify',
-        imageUrl: '/images/techStack/netlify.png',
+        imageUrl: '/images/techStacks/netlify.png',
       },
     ],
   },
@@ -285,7 +285,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'yuhayeon.png',
+        image: '../../images/memberProfiles/yuhayeon.png',
         name: '유하연',
         part: 'frontend',
         position: '프론트엔드',
@@ -297,15 +297,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -330,7 +330,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'yoonjeongran.png',
+        image: '../../images/memberProfiles/yoonjeongran.png',
         name: '윤정란',
         part: 'frontend',
         position: '프론트엔드',
@@ -342,15 +342,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -375,7 +375,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'yoonseobin.png',
+        image: '../../images/memberProfiles/yoonseobin.png',
         name: '윤서빈',
         part: 'frontend',
         position: '프론트엔드',
@@ -387,19 +387,19 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'TailwindCSS',
-        imageUrl: '/images/techStack/tailwindcss.png',
+        imageUrl: '/images/techStacks/tailwindcss.png',
       },
       {
         name: 'Chart.js',
-        imageUrl: '/images/techStack/chartjs.png',
+        imageUrl: '/images/techStacks/chartjs.png',
       },
     ],
   },
@@ -425,7 +425,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'hongyeonjoo.png',
+        image: '../../images/memberProfiles/hongyeonjoo.png',
         name: '홍연주',
         part: 'frontend',
         position: '프론트엔드',
@@ -437,15 +437,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -470,7 +470,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'baeksumin.png',
+        image: '../../images/memberProfiles/baeksumin.png',
         name: '백수민',
         part: 'frontend',
         position: '프론트엔드',
@@ -482,15 +482,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -515,7 +515,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'kimjimin.png',
+        image: '../../images/memberProfiles/kimjimin.png',
         name: '김지민',
         part: 'frontend',
         position: '프론트엔드',
@@ -527,15 +527,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -560,7 +560,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'hajimin.png',
+        image: '../../images/memberProfiles/hajimin.png',
         name: '하지민',
         part: 'frontend',
         position: '프론트엔드',
@@ -572,19 +572,19 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
       {
         name: 'React',
-        imageUrl: '/images/techStack/react.png',
+        imageUrl: '/images/techStacks/react.png',
       },
     ],
   },
@@ -609,7 +609,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'bangjihee.png',
+        image: '../../images/memberProfiles/bangjihee.png',
         name: '방지희',
         part: 'frontend',
         position: '프론트엔드',
@@ -621,15 +621,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -654,7 +654,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'leedabin.png',
+        image: '../../images/memberProfiles/leedabin.png',
         name: '이다빈',
         part: 'frontend',
         position: '프론트엔드',
@@ -666,15 +666,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -699,7 +699,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'kwonyujin.png',
+        image: '../../images/memberProfiles/kwonyujin.png',
         name: '권유진',
         part: 'frontend',
         position: '프론트엔드',
@@ -711,15 +711,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -745,7 +745,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'kyungminseo.png',
+        image: '../../images/memberProfiles/kyungminseo.png',
         name: '경민서',
         part: 'frontend',
         position: '프론트엔드',
@@ -777,23 +777,23 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'Spring Boot',
-        imageUrl: '/images/techStack/spring-boot.png',
+        imageUrl: '/images/techStacks/spring-boot.png',
       },
       {
         name: 'SwiftUI',
-        imageUrl: '/images/techStack/swiftui.png',
+        imageUrl: '/images/techStacks/swiftui.png',
       },
       {
         name: 'MySQL',
-        imageUrl: '/images/techStack/mysql.png',
+        imageUrl: '/images/techStacks/mysql.png',
       },
       {
         name: 'AWS',
-        imageUrl: '/images/techStack/aws.png',
+        imageUrl: '/images/techStacks/aws.png',
       },
       {
         name: 'Nginx',
-        imageUrl: '/images/techStack/nginx.svg',
+        imageUrl: '/images/techStacks/nginx.svg',
       },
     ],
   },
@@ -818,7 +818,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'shinjeongeun.png',
+        image: '../../images/memberProfiles/shinjeongeun.png',
         name: '신정은',
         part: 'frontend',
         position: '프론트엔드',
@@ -830,15 +830,15 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'HTML',
-        imageUrl: '/images/techStack/html.png',
+        imageUrl: '/images/techStacks/html.png',
       },
       {
         name: 'CSS',
-        imageUrl: '/images/techStack/css.png',
+        imageUrl: '/images/techStacks/css.png',
       },
       {
         name: 'JavaScript',
-        imageUrl: '/images/techStack/javascript.png',
+        imageUrl: '/images/techStacks/javascript.png',
       },
     ],
   },
@@ -864,7 +864,7 @@ export const PROJECT_LIST = [
     memberList: [
       {
         index: 0,
-        image: 'jeongjiwon.png',
+        image: '../../images/memberProfiles/jeongjiwon.png',
         name: '정지원',
         part: 'frontend',
         position: '프론트엔드장',
@@ -874,7 +874,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 1,
-        image: 'jeongseoyeon.png',
+        image: '../../images/memberProfiles/jeongseoyeon.png',
         name: '정서연',
         part: 'frontend',
         position: '프론트엔드',
@@ -884,7 +884,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 2,
-        image: 'leehaerim.png',
+        image: '../../images/memberProfiles/leehaerim.png',
         name: '이해림',
         part: 'frontend',
         position: '프론트엔드',
@@ -894,7 +894,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 3,
-        image: 'jooajung.png',
+        image: '../../images/memberProfiles/jooajung.png',
         name: '주아정',
         part: 'backend',
         position: '백엔드장',
@@ -904,7 +904,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 4,
-        image: 'leejieun.png',
+        image: '../../images/memberProfiles/leejieun.png',
         name: '이지은',
         part: 'backend',
         position: '백엔드',
@@ -914,7 +914,7 @@ export const PROJECT_LIST = [
       },
       {
         index: 5,
-        image: 'yoonhyeonseo.png',
+        image: '../../images/memberProfiles/yoonhyeonseo.png',
         name: '윤현서',
         part: 'backend',
         position: '백엔드',
@@ -944,55 +944,55 @@ export const PROJECT_LIST = [
     techStackList: [
       {
         name: 'Flutter',
-        imageUrl: '/images/techStack/flutter.png',
+        imageUrl: '/images/techStacks/flutter.png',
       },
       {
         name: 'Dart',
-        imageUrl: '/images/techStack/dart.svg',
+        imageUrl: '/images/techStacks/dart.svg',
       },
       {
         name: 'Dio',
-        imageUrl: '/images/techStack/dio.png',
+        imageUrl: '/images/techStacks/dio.png',
       },
       {
         name: 'Spring Boot',
-        imageUrl: '/images/techStack/spring-boot.png',
+        imageUrl: '/images/techStacks/spring-boot.png',
       },
       {
         name: 'MySQL',
-        imageUrl: '/images/techStack/mysql.png',
+        imageUrl: '/images/techStacks/mysql.png',
       },
       {
         name: 'Java17',
-        imageUrl: '/images/techStack/java.png',
+        imageUrl: '/images/techStacks/java.png',
       },
       {
         name: 'AWS',
-        imageUrl: '/images/techStack/aws.png',
+        imageUrl: '/images/techStacks/aws.png',
       },
       {
         name: 'docker',
-        imageUrl: '/images/techStack/docker.png',
+        imageUrl: '/images/techStacks/docker.png',
       },
       {
         name: 'GitHub Actions',
-        imageUrl: '/images/techStack/github-actions.png',
+        imageUrl: '/images/techStacks/github-actions.png',
       },
       {
         name: 'Gradle',
-        imageUrl: '/images/techStack/gradle.png',
+        imageUrl: '/images/techStacks/gradle.png',
       },
       {
         name: 'OAuth2.0',
-        imageUrl: '/images/techStack/oauth2.png',
+        imageUrl: '/images/techStacks/oauth2.png',
       },
       {
         name: 'Spring Data JPA',
-        imageUrl: '/images/techStack/spring-data-jpa.png',
+        imageUrl: '/images/techStacks/spring-data-jpa.png',
       },
       {
         name: 'Apache',
-        imageUrl: '/images/techStack/apache.png',
+        imageUrl: '/images/techStacks/apache.png',
       },
     ],
   },

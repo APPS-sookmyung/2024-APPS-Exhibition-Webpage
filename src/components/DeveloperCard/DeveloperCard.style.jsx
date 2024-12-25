@@ -31,6 +31,8 @@ export const DeveloperImage = styled.img`
   border-radius: 100%;
   background-color: #373737;
   margin-top: 20px;
+  object-fit: cover;
+  object-position: center;
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 70px;
