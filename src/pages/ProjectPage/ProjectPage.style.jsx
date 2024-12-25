@@ -3,11 +3,12 @@ import { BREAKPOINTS } from '../../styles/mediaQueries.style';
 
 export const Root = styled.div`
   width: 100%;
-  min-height: 5000px;
+  height: fit-content;
   background-image: url('/images/background/projects_background.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #000;
+  padding-bottom: 120px;
 `;
 
 export const Container = styled.div`
