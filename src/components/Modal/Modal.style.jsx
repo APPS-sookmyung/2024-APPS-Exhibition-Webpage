@@ -133,17 +133,6 @@ export const NameAndPositionWrapper = styled.div`
   max-width: 100%;
   gap: 7px;
   display: flex;
-
-  ${
-    '' /* @media (max-width: ${BREAKPOINTS[1]}px) {
-    flex-direction: column;
-  }
-
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    display: flex;
-    flex-direction: column;
-  } */
-  }
 `;
 
 export const MemberName = styled.h2`
@@ -258,8 +247,10 @@ export const Divider = styled.div`
   box-sizing: border-box;
   max-width: 100%;
 
-  img {
-    width: 100%;
+  svg {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
@@ -270,6 +261,7 @@ export const Divider = styled.div`
     margin: 10px 0;
   }
 `;
+
 export const QASection = styled.div`
   text-align: left;
   display: flex;
@@ -348,13 +340,16 @@ export const Answer = styled.div`
   font-size: 14px;
   margin: 0;
   word-break: keep-all;
+  line-height: 1.5;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 12px;
+    line-height: 1.4;
   }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     font-size: 11px;
+    line-height: 1.3;
   }
 `;
 
