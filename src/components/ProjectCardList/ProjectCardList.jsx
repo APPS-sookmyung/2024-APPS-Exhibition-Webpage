@@ -34,8 +34,8 @@ const ProjectCardList = () => {
             selectedTab === PROJECT_CATEGORIES.ALL ||
             project.category === selectedTab,
         ).map((project) => (
-          <S.ProjectCard key={project.id}>
-            <Link to={`/projects/${project.id}`}>
+          <Link to={`/projects/${project.id}`}>
+            <S.ProjectCard key={project.id}>
               <S.ProjectCardImage>
                 <img src={project.imageUrl} alt={project.name} />
               </S.ProjectCardImage>
@@ -56,8 +56,8 @@ const ProjectCardList = () => {
                 </S.ProjectTitleBadgeWrapper>
                 <S.ProjectSubTitle>{project.summary}</S.ProjectSubTitle>
               </S.ProjectCardContent>
-            </Link>
-          </S.ProjectCard>
+            </S.ProjectCard>
+          </Link>
         ))}
       </S.ProjectCardContainer>
     </S.ProjectCardList>
