@@ -9,29 +9,41 @@ export default function Modal({ member, closeModal }) {
   ];
 
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
-
-    return () => {
-      document.body.style.overflow = 'unset';
+    const handleClickOutside = (e) => {
+      if (
+        e.target.classList.contains('modal-close') ||
+        e.target.classList.contains('modal')
+      ) {
+        closeModal();
+        document.body.style.overflow = 'auto';
+      }
     };
-  }, []);
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [closeModal]);
 
   return (
     <S.ModalWrapper>
       <S.Modal>
+        <S.CloseButton onClick={closeModal}>
+          <img src="../../images/icons/x_orange.svg" alt="닫기" />
+        </S.CloseButton>
         <S.MemberDetailWrapper>
           <S.MemberCard>
             <S.MemberImage
               src={require(`../../images/memberProfiles/${member.image}`)}
               alt={member.name}
             />
-            <S.InfoWrapper>
+            <S.MemberInfoWrapper>
               <S.NameAndPositionWrapper>
                 <S.MemberName>{member.name}</S.MemberName>
                 <S.MemberPositionInfo>{member.position}</S.MemberPositionInfo>
               </S.NameAndPositionWrapper>
               <S.MemberInfo>{member.title}</S.MemberInfo>
-            </S.InfoWrapper>
+            </S.MemberInfoWrapper>
           </S.MemberCard>
 
           <S.MemberDetailSection>
@@ -133,10 +145,6 @@ export default function Modal({ member, closeModal }) {
             </S.QuestionWrapper>
           ))}
         </S.QASection>
-
-        <S.CloseButton onClick={closeModal}>
-          <img src="../../images/icons/x_orange.svg" alt="닫기" />
-        </S.CloseButton>
       </S.Modal>
     </S.ModalWrapper>
   );
