@@ -40,8 +40,21 @@ export default function HomePage() {
         <S.HomePage>
           <S.HomeMainWrapper>
             <S.TitleWrapper>
-              <S.ExhibitionTitle>EXHIBITION 2024</S.ExhibitionTitle>
-              <S.APPSTitle>Sookmyung APPS</S.APPSTitle>
+              <S.ExhibitionTitleWrapper>
+                <S.ImageWrapper1>
+                  <img src="/images/logo/logo-pink.svg" alt="APPS 핑크 로고" />
+                </S.ImageWrapper1>
+                <S.ExhibitionTitleText>EXHIBITION 2024</S.ExhibitionTitleText>
+              </S.ExhibitionTitleWrapper>
+              <S.APPSTitleWrapper>
+                <S.ImageWrapper2>
+                  <img
+                    src="/images/icons/icon-arrow-top-right.svg"
+                    alt="좌상향 화살표"
+                  />
+                </S.ImageWrapper2>
+                <S.APPSTitleText>Sookmyung APPS</S.APPSTitleText>
+              </S.APPSTitleWrapper>
               <S.APPSSubTitle>WEB & APP PROGRAMMING CLUB</S.APPSSubTitle>
             </S.TitleWrapper>
           </S.HomeMainWrapper>
