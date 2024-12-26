@@ -188,23 +188,23 @@ export const PROJECT_LIST = [
         name: '경민서',
         part: 'frontend',
         position: '프론트엔드',
-        isLeader: true,
+        isLeader: false,
         review:
           '이번 년도엔 작년에 React Native로 개발했던 Cookiee를 SwiftUI로, 디자인 업데이트까지 반영하여 개발하게 되었습니다. 이전에 개발했던 RN 프로젝트에서 조금 더 직관적으로 디자인 된 것 같고 불필요한 기능들까지 제거되어 저 스스로 개발하면서도 이전 프로젝트보다 더 발전한 느낌을 받을 수 있어 뿌듯했습니다. 거의 갈아엎은 디자인이고 수료부원인데 열심히 디자인 해준 수연언니에게 많은 도움을 받았습니다 👍🏻 SwiftUI로 개발하면서는 처음부터 이해해야 할 것들이 너무 많았지만, 우선 도전해본다는 마인드로 개발을 시작했는데, 구글링 자료가 많이는 있지 않아서 힘든 부분이 있기도 했습니다. 하지만 Cookiee가 더 좋은 기능을 담을 수 있는 서비스로 발전시키고 싶은 욕심이 들어 더 열심히 개발에 참여했습니다 🫡 두 수료부원 언니들과 작년에 만든 인연을 길게 함께할 수 있어서 너무 좋았고, 또 1년 더 APPS 프로젝트에 참여해주어 감사하다는 말을 전하고 싶습니다. 🥰',
       },
       {
         index: 1,
-        image: null,
+        image: '/images/memberProfiles/joyeongseo.jpg',
         name: '조영서',
         part: 'backend',
         position: '백엔드',
-        isLeader: false,
+        isLeader: true,
         review:
           '작년에 개발하였던 APPS의 Cookiee-를 다른 프론트 스택으로 개발한 한 해였습니다. 그 과정에서 서버도 다시 한 번 돌아볼 수 있는 귀한 시간이었습니다. 작년에 해결하지 못하여 아쉬움이 남았던 기술적인 문제들을 모두 해결하면서 프로젝트의 완성도를 높일 수 있었습니다. 나 자신이 쓴다는 마음으로 개발하다 보니 1년도 훌쩍 지나갔네요. 새로운 기술적인 도전을 한 민서와 수연이한테 모두 존경을 표하며, 남은 3월 전시회까지도 신규 기능 확장에 힘을 더욱 써, 새로운 Cookiee-로 만나볼 수 있도록 노력하겠습니다.',
       },
       {
         index: 2,
-        image: null,
+        image: '/images/memberProfiles/hwangsuyeon.jpg',
         name: '황수연',
         part: 'backend',
         position: '백엔드',
@@ -241,7 +241,7 @@ export const PROJECT_LIST = [
     name: 'OUTFOOT',
     generation: ['10기', '10.5기'],
     category: PROJECT_CATEGORIES.APP,
-    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
+    imageUrl: '/images/thumbnails/outfoot.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
@@ -440,7 +440,7 @@ export const PROJECT_LIST = [
       clientUrl: 'https://github.com/yoon-jr/2024-StudyTracker',
       serverUrl: '',
     },
-    summary: '나만의 공부 관리 메이트 StudyTacker',
+    summary: '나만의 공부 관리 메이트 StudyTracker',
     introduction:
       'StudyTracker- 공부 시간을 측정하고 계획을 세우며 효율적으로 나의 공부를 관리해보세요! 오늘 공부한 내용의 노트 작성을 통해 배운 내용을 정리할 수 있습니다.',
     description:
@@ -584,7 +584,7 @@ export const PROJECT_LIST = [
     introduction:
       '재밌는 동물 밈이나 짤을 직접 만들어보고 싶은 분들을 위한 서비스입니다. 다양한 동물 사진에 텍스트와 그림을 더해 손쉽게 특별하고 재미있는 밈을 제작해보세요!',
     description:
-      '간편한 편집 도구를 활용하여 나만의 귀여운 동물 밈을 제작할 수 있습니다!\n\n⭐️ 동물 사진(밈 템플릿)은 웹사이트에서 기본 제공되며, 사용자가 직접 원하는 동물 사진을 업로드할 수도 있습니다.\n⭐️ 텍스트, 말풍선, 그림 등을 추가하여 자유롭게 밈을 꾸밀 수 있습니다.\n⭐️ 완성된 밈은 다운로드하여 소장할 수 있습니다.',
+      '간편한 편집 도구를 활용하여 나만의 귀여운 동물 밈을 제작할 수 있습니다!\n\n⭐ 원하는 동물 사진을 직접 업로드할 수 있습니다.\n⭐ 텍스트, 말풍선, 그림 등 다양한 요소를 추가하여 자유롭게 밈을 꾸밀 수 있습니다.\n⭐ 완성된 밈은 다운로드하여 소장할 수 있습니다.',
     memberList: [
       {
         index: 0,
@@ -813,7 +813,7 @@ export const PROJECT_LIST = [
     introduction:
       'BDB는 간편하게 생일 축하 메시지를 전달할 수 있는 생일 축하 커뮤니티 입니다. 친구, 가족, 반려 동물, 또는 나 자신에게 축하 메시지를 남기고 함께 축하할 수 있습니다. 또한 커뮤니티에 올라온 게시물에 반응을 보내면 BDB에서 주는 선물도 받을 수 있습니다.\n생일 축하를 도와주는 든든한 친구, BDB에 접속해 보아요!',
     description:
-      '🎉생일 축하 메시지 작성하기\n- 축하해주고 싶은 사람을 떠올리며 메시지를 작성하고 꾸며봅시다. 적어도 생일 하루 전에는 작성해야 함을 주의합시다.\n\n🥳커뮤니티에서 함께 축하하기\n- 작성한 메시지는 커뮤니티에 공유되어 함께 볼 수 있습니다. 다른 사용자가 남긴 메시지에 반응을 남겨 생일을 함께 축하해 봅시다.\n\n🎁BDB가 주는 선물 받기\n- 축하 받는 사람 뿐만 아니라 축하해 주는 사람에게도 특별한 기억을 만들어 주기 위해 BDB에서 선물을 준비했습니다. 선물을 위해 좀 더 많은 사람들을 축하해 보는 건 어떨까요?',
+      '🎉생일 축하 메시지 작성하기\n- 축하해주고 싶은 사람을 떠올리며 메시지를 작성하고 꾸며봅시다. 적어도 생일 하루 전에는 작성해야 함을 주의합시다.\n\n🥳커뮤니티에서 함께 축하하기\n- 작성한 메시지는 커뮤니티에 공유되어 함께 볼 수 있습니다. 다른 사용자가 남긴 메시지에 반응을 남겨 생일을 함께 축하해 봅시다.\n\n🎁BDB가 주는 선물 받기\n- 축하 받는 사람 뿐만 아니라 축하해 주는 사람에게도 특별한 기억을 만들어 주기 위해 BDB에서 선물을 준비했습니다. 선물을 위해 좀 더 많은 사람들을 축하해 보는 건 어떨까요? (자세한 참여 방법은 사이트 내의 선물받기 페이지를 참고해주세요!)',
     memberList: [
       {
         index: 0,
@@ -891,7 +891,7 @@ export const PROJECT_LIST = [
     name: 'Emotion',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnails/emotion.png',
+    imageUrl: '/images/thumbnails/emotion.jpg',
     youtubeVideoId: 'z4ByAJIVJeM',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://2024-emotion.vercel.app/',
@@ -913,7 +913,7 @@ export const PROJECT_LIST = [
         position: '프론트엔드',
         isLeader: false,
         review:
-          '이번 프로젝트를 통해 그동안 배웠던 이론적인 내용을 실제로 구현해보는 소중한 경험을 할 수 있었습니다. 프로젝트를 진행하는 과정에서 예상치 못한 문제들이 발생했지만, 이를 해결하기 위해 다양한 방법을 고민하고 시도하며 문제 해결 능력을 키울 수 있었습니다. 하나의 프로젝트를 끝까지 완성해내는 과정에서 큰 성취감을 느낄 수 있었고, 이를 통해 제 자신이 한 단계 더 발전했음을 실감했습니다. 앞으로도 이러한 경험을 바탕으로 더 많은 도전과 성장을 이루어내며, 개발자로서의 역량을 지속적으로 강화해 나가고자 합니다💪',
+          'Emotion은 영화 인사이드 아웃에서 영감을 받아 제작된 감정 구슬 기록 페이지입니다! 프로젝트를 진행하는 과정에서 예상치 못한 문제들이 발생했지만, 이를 해결하기 위해 다양한 방법을 고민하고 시도하며 문제 해결 능력을 키울 수 있었습니다. 하나의 프로젝트를 끝까지 완성하는 과정에서 큰 성취감을 느낄 수 있었습니다. 앞으로도 이러한 경험을 바탕으로 더 많은 도전과 성장을 이루어내며, 개발자로서의 역량을 지속적으로 강화해 나가고자 합니다💪',
       },
     ],
     techStackList: [
