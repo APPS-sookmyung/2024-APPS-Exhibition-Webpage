@@ -6,7 +6,7 @@ export const PROJECT_LIST = [
     name: 'WELLET',
     generation: ['10기', '10.5기', '11기'],
     category: PROJECT_CATEGORIES.WEB,
-    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
+    imageUrl: '/images/thumbnails/wellet.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://wellet.netlify.app',
@@ -573,7 +573,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/pettory.png',
-    youtubeVideoId: '3t1Fp17HLys',
+    youtubeVideoId: 'lWifRbnsv3w',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://suminb99.github.io/2024-MYP/',
     githubUrls: {
@@ -712,7 +712,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/merry-tree.png',
-    youtubeVideoId: 'F2kmcZaM2Fc',
+    youtubeVideoId: 'XZQLIB2VQhw',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://merry-tree.netlify.app/',
     githubUrls: {
@@ -802,7 +802,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/birthdaybuddy.png',
-    youtubeVideoId: 'nmGqivk0R_g',
+    youtubeVideoId: 'IFhnbUhTuYY',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://birthdaybuddy2024.vercel.app/',
     githubUrls: {
@@ -892,7 +892,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/emotion.jpg',
-    youtubeVideoId: 'z4ByAJIVJeM',
+    youtubeVideoId: 'mn2DxNCmR',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://2024-emotion.vercel.app/',
     githubUrls: {
@@ -936,7 +936,7 @@ export const PROJECT_LIST = [
     name: '카공도',
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
-    imageUrl: '/images/thumbnails/img-thumbnail-1.png',
+    imageUrl: '/images/thumbnails/cagongdo.png',
     youtubeVideoId: '',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://cagongdo.netlify.app/',
