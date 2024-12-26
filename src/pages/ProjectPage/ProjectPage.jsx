@@ -193,7 +193,7 @@ export default function ProjectPage() {
               />
             ))}
           </S.ReviewContainer>
-          <S.SubTitle>프로젝트 더보기</S.SubTitle>
+          <S.SubTitle>다른 프로젝트 더보기</S.SubTitle>
           <ProjectRecommend />
         </S.Bottom>
       </S.Container>
