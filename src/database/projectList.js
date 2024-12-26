@@ -7,7 +7,7 @@ export const PROJECT_LIST = [
     generation: ['10기', '10.5기', '11기'],
     category: PROJECT_CATEGORIES.WEB,
     imageUrl: '/images/thumbnails/wellet.png',
-    youtubeVideoId: 'shorts/G41Sa9YkV78',
+    youtubeVideoId: 'G41Sa9YkV78',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://wellet.netlify.app',
     githubUrls: {
@@ -573,7 +573,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/pettory.png',
-    youtubeVideoId: 'lWifRbnsv3w',
+    youtubeVideoId: 'lWifRbnsv3w&t=4s',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://suminb99.github.io/2024-MYP/',
     githubUrls: {
@@ -892,7 +892,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/emotion.jpg',
-    youtubeVideoId: 'mn2DxNCmR',
+    youtubeVideoId: 'mn2DxNCmR-o',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://2024-emotion.vercel.app/',
     githubUrls: {
