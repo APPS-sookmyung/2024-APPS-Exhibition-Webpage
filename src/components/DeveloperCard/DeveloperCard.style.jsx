@@ -18,10 +18,6 @@ export const DeveloperCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
-  /* &:hover {
-    background-color: #ff5400;
-  } */
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 98px;
