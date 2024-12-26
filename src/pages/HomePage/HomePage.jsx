@@ -29,7 +29,9 @@ export default function HomePage() {
     if (scrollTo) {
       const element = document.getElementById(scrollTo);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
       }
     }
   }, [location]);
