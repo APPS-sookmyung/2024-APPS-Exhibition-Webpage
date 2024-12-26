@@ -937,9 +937,10 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/cagongdo.png',
-    youtubeVideoId: '',
+    youtubeVideoId: 'MbZ8SATr_rc',
     downloadLinkUrl: null,
-    webpageLinkUrl: 'https://cagongdo.netlify.app/',
+    webpageLinkUrl: null,
+    // webpageLinkUrl: 'https://cagongdo.netlify.app/',
     githubUrls: {
       clientUrl: 'https://github.com/APPS-sookmyung/2024-Cagongdo',
       serverUrl: '',
@@ -957,7 +958,8 @@ export const PROJECT_LIST = [
         part: 'frontend',
         position: '프론트엔드',
         isLeader: false,
-        review: '',
+        review:
+          '최근 TypeScript 공부에 대한 필요성을 느끼면서 해당 언어로 프로젝트를 한 번 진행해보고 싶었는데 APPS의 개인 웹 프로젝트가 좋은 기회가 되었던 것 같아요. 셋팅부터 활용까지 제대로 써보는 건 이번이 처음이라 어려움도 많았지만 오히려 그 덕분에 이것저것 찾아보는 계기가 되어 공부가 많이 되었습니다. 그리고 전부터 꼭 써보고 싶었던 카카오맵 API도 써볼 수 있어 좋았어요. 마지막까지 어떤 주제로 프로젝트를 진행할까 고민이 많았는데 결국 제가 좋아하는 카페 관련 서비스를 만들게 되었네요. 카공을 좋아하는 저로서는 늘 카공하기 좋은 카페를 알려주는 서비스가 있으면 좋겠다고 생각했던 게 아이디어가 되었던 것 같아요. 만들면서 너무 재밌었고 공부가 많이 됐습니다!',
       },
     ],
     techStackList: [
