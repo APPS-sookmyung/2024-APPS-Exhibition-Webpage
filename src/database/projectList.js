@@ -165,7 +165,7 @@ export const PROJECT_LIST = [
   {
     id: 2,
     name: 'Cookiee-',
-    generation: ['10기'],
+    generation: ['8기', '10기'],
     category: PROJECT_CATEGORIES.APP,
     imageUrl: '/images/thumbnails/cookiee-.png',
     youtubeVideoId: 'ezB4ZwOh0-Y',
