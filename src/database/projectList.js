@@ -573,7 +573,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/pettory.png',
-    youtubeVideoId: 'lWifRbnsv3w&t=4s',
+    youtubeVideoId: 'lWifRbnsv3w&t=17s',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://suminb99.github.io/2024-MYP/',
     githubUrls: {
@@ -847,7 +847,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/stattracker.png',
-    youtubeVideoId: '',
+    youtubeVideoId: 'Y0Qha5viIpM',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://rosaze.github.io/2024-Stattracker/',
     githubUrls: {
