@@ -68,12 +68,14 @@ export const ProjectCardContainer = styled.div`
 
 export const ProjectCardImage = styled.div`
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
 
   img {
+    display: block;
     width: 100%;
+    height: auto;
     object-fit: cover;
   }
 `;
