@@ -3,9 +3,11 @@ import { DeveloperCard, ProjectRecommend, ReviewCard } from '../../components';
 import * as S from './ProjectPage.style';
 import { PROJECT_LIST } from '../../database';
 
-const handleCopyClipBoard = async (copyLink) => {
+const handleCopyClipBoard = async (id) => {
   try {
-    await navigator.clipboard.writeText(copyLink);
+    await navigator.clipboard.writeText(
+      `https://2024-apps.netlify.app/projects/${id}`,
+    );
   } catch (err) {
     console.log(err);
   }
@@ -40,11 +42,9 @@ export default function ProjectPage() {
           <S.Title>{projectData.name}</S.Title>
           <S.Summary>{projectData.summary}</S.Summary>
           <S.TopBtnContainer>
-            <S.ShareBtn
-              onClick={() => handleCopyClipBoard(projectData.webpageLinkUrl)}
-            >
+            <S.ShareBtn onClick={() => handleCopyClipBoard(id)}>
               <S.ShareIcon src="../../images/icons/share.svg" alt="공유하기" />
-              <S.ShareText>프로젝트 공유하기</S.ShareText>
+              <S.ShareText>프로젝트 링크 복사하기</S.ShareText>
             </S.ShareBtn>
             <S.LinkBtns>
               {projectData.githubUrls.clientUrl && (
