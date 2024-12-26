@@ -7,7 +7,7 @@ export const PROJECT_LIST = [
     generation: ['10기', '10.5기', '11기'],
     category: PROJECT_CATEGORIES.WEB,
     imageUrl: '/images/thumbnails/wellet.png',
-    youtubeVideoId: '',
+    youtubeVideoId: 'shorts/G41Sa9YkV78',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://wellet.netlify.app',
     githubUrls: {
