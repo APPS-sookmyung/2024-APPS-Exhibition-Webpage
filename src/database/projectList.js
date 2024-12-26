@@ -573,7 +573,7 @@ export const PROJECT_LIST = [
     generation: ['11기'],
     category: PROJECT_CATEGORIES.NEW_MEMBERS,
     imageUrl: '/images/thumbnails/pettory.png',
-    youtubeVideoId: 'lWifRbnsv3w&t=17s',
+    youtubeVideoId: 'lWifRbnsv3w',
     downloadLinkUrl: null,
     webpageLinkUrl: 'https://suminb99.github.io/2024-MYP/',
     githubUrls: {
