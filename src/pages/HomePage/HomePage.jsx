@@ -9,7 +9,7 @@ import {
   ProjectCardList,
 } from '../../components';
 import { SOCIAL_MEDIA_LINKS_CARD, APPS_CORE_VALUE_CARDS } from '../../database';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const handleCopyClipBoard = async () => {
@@ -23,13 +23,15 @@ const handleCopyClipBoard = async () => {
 export default function HomePage() {
   const location = useLocation();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const params = new URLSearchParams(location.search);
     const scrollTo = params.get('scrollTo');
     if (scrollTo) {
       const element = document.getElementById(scrollTo);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
       }
     }
   }, [location]);
