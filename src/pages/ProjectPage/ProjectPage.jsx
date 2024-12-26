@@ -17,7 +17,6 @@ export default function ProjectPage() {
   const projectData = PROJECT_LIST.find(
     ({ id: projectId }) => projectId === Number(id),
   );
-  console.log(projectData);
 
   const lineBreaks = (text) => {
     return text.split('\n').map((line, index) => (
