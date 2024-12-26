@@ -104,11 +104,20 @@ export const ShareBtn = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 10px 16px 0;
-  background-color: #ff88fb;
+  background: #fff;
+  color: #000;
   padding: 13px 43px;
   height: 50px;
   cursor: pointer;
   border-radius: 32px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    background: var(--pink, #ff88fb);
+    color: #fff;
+  }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 4px 16px;
@@ -122,6 +131,12 @@ export const ShareIcon = styled.img`
   width: 20px;
   height: 24px;
   margin-right: 10px;
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(0);
+
+  ${ShareBtn}:hover & {
+    filter: brightness(0) invert(1); // changes the icon color to black on hover
+  }
 
   @media (max-width: ${BREAKPOINTS[0]}px) {
     width: 14px;
@@ -130,7 +145,6 @@ export const ShareIcon = styled.img`
 `;
 
 export const ShareText = styled.p`
-  color: #fff;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
