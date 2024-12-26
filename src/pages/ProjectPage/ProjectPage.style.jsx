@@ -17,7 +17,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 1100px;
-  padding: 62px 70px 0 70px;
+  padding: 50px 70px 0 70px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 50px;
@@ -27,8 +27,13 @@ export const Container = styled.div`
   }
 `;
 
-export const CloseBtn = styled.img`
+export const CloseBtn = styled.div`
   align-self: flex-end;
+  padding: 10px;
+  cursor: pointer;
+`;
+
+export const CloseIcon = styled.img`
   width: 56px;
   height: 56px;
   padding: 10px;
@@ -53,6 +58,7 @@ export const Top = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-family: 'Dolce Vita Heavy';
   font-size: 65px;
   margin: 0;
   margin-bottom: 4px;
@@ -94,14 +100,15 @@ export const TopBtnContainer = styled.div`
 `;
 
 export const ShareBtn = styled.div`
-  background-color: #ff88fb;
-  border-radius: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 13px 43px;
   margin: 0 10px 16px 0;
+  background-color: #ff88fb;
+  padding: 13px 43px;
+  height: 50px;
   cursor: pointer;
+  border-radius: 32px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 4px 16px;

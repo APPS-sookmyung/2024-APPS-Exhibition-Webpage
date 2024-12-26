@@ -35,7 +35,7 @@ export const HomePageTopBackground = styled.div`
     background-size: 760px auto;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    background-position: center 90px;
+    background-position: center 60px;
     background-size: 460px auto;
   }
 `;
@@ -56,13 +56,16 @@ export const HomePage = styled.div`
 
 export const HomeMainWrapper = styled.section`
   position: relative;
-  padding: 200px 0 360px;
+  padding: 220px 0 360px;
 
-  @media (max-width: ${BREAKPOINTS[1]}px) {
+  @media (max-width: ${BREAKPOINTS[2]}px) {
     padding: 200px 0 300px;
   }
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    padding: 160px 0 300px;
+  }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 200px 0 240px;
+    padding: 160px 0 240px;
   }
 `;
 
@@ -71,16 +74,83 @@ export const TitleWrapper = styled.div`
   flex-direction: column;
   align-items: end;
   padding-right: 70px;
+  gap: 16px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding-right: 40px;
+    gap: 12px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
     padding-right: 30px;
+    gap: 8px;
   }
 `;
 
-export const ExhibitionTitle = styled.h3`
+export const ExhibitionTitleWrapper = styled.div`
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 17px;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 12px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 8px;
+  }
+`;
+
+export const ImageWrapper1 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  img {
+    height: 100%;
+    width: auto;
+    max-width: 97px;
+    max-height: 67px;
+
+    @media (max-width: ${BREAKPOINTS[2]}px) {
+      max-height: 60px;
+    }
+    @media (max-width: ${BREAKPOINTS[1]}px) {
+      max-height: 50px;
+    }
+    @media (max-width: ${BREAKPOINTS[0]}px) {
+      max-height: 30px;
+    }
+  }
+`;
+
+export const ImageWrapper2 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  img {
+    height: 100%;
+    width: auto;
+    max-width: 67px;
+    max-height: 67px;
+
+    @media (max-width: ${BREAKPOINTS[2]}px) {
+      max-height: 60px;
+    }
+    @media (max-width: ${BREAKPOINTS[1]}px) {
+      max-height: 50px;
+    }
+    @media (max-width: ${BREAKPOINTS[0]}px) {
+      max-height: 30px;
+    }
+  }
+`;
+
+export const ExhibitionTitleText = styled.h3`
   margin: 0;
   color: #fff;
   text-align: center;
@@ -100,7 +170,23 @@ export const ExhibitionTitle = styled.h3`
   }
 `;
 
-export const APPSTitle = styled.h1`
+export const APPSTitleWrapper = styled.div`
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 17px;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    gap: 12px;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    gap: 8px;
+  }
+`;
+
+export const APPSTitleText = styled.h1`
   margin: 0;
   color: #fff;
   text-align: center;

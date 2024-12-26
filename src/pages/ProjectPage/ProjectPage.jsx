@@ -31,10 +31,12 @@ export default function ProjectPage() {
   return (
     <S.Root>
       <S.Container>
-        <S.CloseBtn
-          src="../../images/icons/x_pink.svg"
-          onClick={() => navigate('/?scrollTo=project-section')}
-        />
+        <S.CloseBtn>
+          <S.CloseIcon
+            src="../../images/icons/x_pink.svg"
+            onClick={() => navigate('/?scrollTo=project-section')}
+          />
+        </S.CloseBtn>
         <S.Top>
           <S.Title>{projectData.name}</S.Title>
           <S.Summary>{projectData.summary}</S.Summary>
