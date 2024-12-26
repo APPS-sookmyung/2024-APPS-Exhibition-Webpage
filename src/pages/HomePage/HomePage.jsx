@@ -162,7 +162,7 @@ export default function HomePage() {
                     handleCopyClipBoard('https://2024-apps.netlify.app/')
                   }
                 >
-                  링크 공유하기
+                  링크 복사하기
                 </S.LinkButton>
               </S.StyledLink>
               <S.StyledLink

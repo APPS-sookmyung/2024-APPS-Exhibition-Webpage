@@ -23,13 +23,11 @@ export default function AboutAppsPage() {
   const [selectedMember, setSelectedMember] = useState(null);
 
   const openModal = (member) => {
-    console.log('Opening modal for:', member);
     setSelectedMember(member);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
-    console.log('Closing modal');
     setSelectedMember(null);
     setIsModalOpen(false);
   };
