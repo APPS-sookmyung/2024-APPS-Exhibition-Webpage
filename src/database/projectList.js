@@ -9,7 +9,7 @@ export const PROJECT_LIST = [
     imageUrl: '/images/thumbnails/wellet.png',
     youtubeVideoId: 'G41Sa9YkV78',
     downloadLinkUrl: null,
-    webpageLinkUrl: 'https://wellet.netlify.app',
+    webpageLinkUrl: null,
     githubUrls: {
       clientUrl: 'https://github.com/APPS-sookmyung/2024-WELLET-client',
       serverUrl: 'https://github.com/APPS-sookmyung/2024-WELLET-Server',
@@ -242,7 +242,7 @@ export const PROJECT_LIST = [
     generation: ['10기', '10.5기'],
     category: PROJECT_CATEGORIES.APP,
     imageUrl: '/images/thumbnails/outfoot.png',
-    youtubeVideoId: '',
+    youtubeVideoId: '4VR7WYW68Fw',
     downloadLinkUrl: null,
     webpageLinkUrl: '',
     githubUrls: {
@@ -320,6 +320,15 @@ export const PROJECT_LIST = [
         index: 6,
         image: '/images/memberProfiles/moonseoyoung.png',
         name: '문서영',
+        part: 'design',
+        position: '디자인',
+        isLeader: false,
+        review: '',
+      },
+      {
+        index: 7,
+        image: '/images/memberProfiles/kimhaejoo.png',
+        name: '김해주',
         part: 'design',
         position: '디자인',
         isLeader: false,
