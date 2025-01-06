@@ -1,8 +1,8 @@
 <div align="center">
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/7095ac79-cbbf-4e52-b8bb-2046481125d7/deploy-status)](https://app.netlify.com/sites/2024-apps-exhibition/deploys)
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/d9b2244e-ec0c-4cf9-a3e7-c2da571e8314/deploy-status)](https://app.netlify.com/sites/2024-apps/deploys)
   <h1>Sookmyung APPS Exhibition 2024</h1>
   <p><a href='https://github.com/APPS-sookmyung'>숙명여자대학교 소프트웨어학부 학회 APPS</a>   온라인 전시회</p>
-  <!-- <img src="./readme_assets/img-mainpage.png" align="center" style="width: 700px" alt="APPS 소개" />  -->
+  <img src="./readme_assets/img-mainpage.png" align="center" style="width: 600px" alt="APPS 소개" /> 
 </div>
 
 <br />
@@ -13,8 +13,8 @@
 2. [**기술 스택**](#2)
 3. [**데모 영상**](#3)
 4. [**개발 팀 소개**](#4)
-5. [**Git Convention**](#5)
-6. [**개발 기간**](#6)
+5. [**개발 기간**](#5)
+6. [**Git Convention**](#6)
 
 <br />
 
@@ -24,6 +24,9 @@
 
 숙명여자대학교 소프트웨어학부 학회 APPS의 <U>2024 온라인 전시회 사이트</U> 입니다.<br>
 3월부터 열심히 노력하여 마침내 16개의 작품을 선보이게 되었습니다. 아래 사이트에서 그 힘찬 결실을 만나보실 수 있습니다.
+
+[**🔗 배포된 웹 사이트 바로가기 Click !**](https://2024-apps.netlify.app/) 👈 <br>
+[**🔗 LinkedIn에서 온라인 전시회 글 확인 (24/12/29) Click !**](https://www.linkedin.com/posts/sookmyung-apps_2024-apps-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EC%A0%84%EC%8B%9C%ED%9A%8C-%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%95%99%EB%B6%80-%EC%86%8C%EC%86%8D-activity-7279057739467706368-bJU-?utm_source=share&utm_medium=member_desktop) 👈 <br>
 
 > 새 창 열기 방법 : CTRL+click (on Windows and Linux) | CMD+click (on MacOS)
 
@@ -57,7 +60,25 @@
 
 ## 🎥 데모 영상
 
-- 업데이트 예정
+|                                            홈 화면                                            |
+| :-------------------------------------------------------------------------------------------: |
+| <img src="./readme_assets/gif-home-1.gif" align="center" style="width: 700px" alt="홈화면" /> |
+
+|                                            프로젝트 목록                                             |
+| :--------------------------------------------------------------------------------------------------: |
+| <img src="./readme_assets/gif-home-2.gif" align="center" style="width: 700px" alt="프로젝트 목록" /> |
+
+|                                                   프로젝트 상세 페이지                                                   |
+| :----------------------------------------------------------------------------------------------------------------------: |
+| <img src="./readme_assets/gif-project-detail-page.gif" align="center" style="width: 700px" alt="프로젝트 상세 페이지" /> |
+
+|                                              APPS 소개                                               |
+| :--------------------------------------------------------------------------------------------------: |
+| <img src="./readme_assets/gif-about-apps.gif" align="center" style="width: 700px" alt="APPS 소개" /> |
+
+|                                               APPS 부원 소개                                               |
+| :--------------------------------------------------------------------------------------------------------: |
+| <img src="./readme_assets/gif-apps-member.gif" align="center" style="width: 700px" alt="APPS 부원 소개" /> |
 
 <br />
 
@@ -67,16 +88,24 @@
 
 <br />
 
-|                                               이미지                                                |                                       이름 (세부 전공)                                       |   역할    |                                            개발 내용                                            |
+|                                               이미지                                                |                                         이름 (전공)                                          |   역할    |                                            개발 내용                                            |
 | :-------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :-------: | :---------------------------------------------------------------------------------------------: |
-| <img src="https://avatars.githubusercontent.com/u/100200965?v=4" alt="김준희 프로필" width="80px"/> | <a href="https://github.com/junheekim61" target="_blank">김준희<br />(소프트웨어학부 22)</a> | Front-end |                           프로젝트별 상세 페이지 구현<br>반응형 구현                            |
-| <img src="https://avatars.githubusercontent.com/u/128569095?v=4" alt="류미성 프로필" width="80px"/> | <a href="https://github.com/misung-dev" target="_blank">류미성<br /> (소프트웨어학부 21)</a> | Front-end |                               홈 화면 페이지 구현<br>반응형 구현                                |
-| <img src="https://avatars.githubusercontent.com/u/162579635?v=4" alt="이다빈 프로필" width="80px"/> | <a href="https://github.com/ninum12" target="_blank"> 이다빈<br /> (소프트웨어학부 24) </a>  | Front-end |                           APPS 소개 및 활동 섹션 구현<br>반응형 구현                            |
+| <img src="https://avatars.githubusercontent.com/u/100200965?v=4" alt="김준희 프로필" width="80px"/> | <a href="https://github.com/junheekim61" target="_blank">김준희<br />(소프트웨어학부 22)</a> | Front-end |                         프로젝트별 상세 페이지 view 구현<br>반응형 구현                         |
+| <img src="https://avatars.githubusercontent.com/u/128569095?v=4" alt="류미성 프로필" width="80px"/> | <a href="https://github.com/misung-dev" target="_blank">류미성<br /> (소프트웨어학부 21)</a> | Front-end |                   홈 화면 페이지 구현<br>Header 컴포넌트 구현 <br>반응형 구현                   |
+| <img src="https://avatars.githubusercontent.com/u/162579635?v=4" alt="이다빈 프로필" width="80px"/> | <a href="https://github.com/ninum12" target="_blank"> 이다빈<br /> (소프트웨어학부 24) </a>  | Front-end |    APPS 소개 및 활동 섹션 구현<br>프로젝트별 상세 페이지에 데이터 연동 구현 <br>반응형 구현     |
 | <img src="https://avatars.githubusercontent.com/u/163178666?v=4" alt="하지민 프로필" width="80px"/> | <a href="https://github.com/j1m1n-ha" target="_blank"> 하지민<br /> (소프트웨어학부 22) </a> | Front-end | APPS 부원 소개 섹션 구현<br/> 부원별 상세 소개 모달 구현<br>Footer 컴포넌트 구현<br>반응형 구현 |
 
 <br />
 
 <div id="5"></div>
+
+## 📅 개발 기간
+
+2024년 11월 3일 ~ 12월 27일 (약 2개월)
+
+<br>
+
+<div id="6"></div>
 
 ## 📌 Git Convention
 
@@ -144,9 +173,3 @@
   - `ex) [FEAT] Header 구현`
 
 <br>
-
-<div id="6"></div>
-
-## 📅 개발 기간
-
-2024년 11월 3일 ~ ing
