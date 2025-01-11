@@ -1,5 +1,4 @@
 <div align="center">
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/d9b2244e-ec0c-4cf9-a3e7-c2da571e8314/deploy-status)](https://app.netlify.com/sites/2024-apps/deploys)
   <h1>Sookmyung APPS Exhibition 2024</h1>
   <p><a href='https://github.com/APPS-sookmyung'>숙명여자대학교 소프트웨어학부 학회 APPS</a>   온라인 전시회</p>
   <img src="./readme_assets/img-mainpage.png" align="center" style="width: 600px" alt="APPS 소개" /> 
