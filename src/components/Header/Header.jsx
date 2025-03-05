@@ -15,10 +15,12 @@ export default function Header() {
             <S.AboutApps>APPS 소개</S.AboutApps>
           </S.StyledLink>
           <S.StyledLink
-            to="https://forms.gle/k14eA7Kk9bxD7aTm6"
+            to="https://forms.gle/1GHnyxAjrC2WKj7g7"
             target="_blank"
           >
-            <S.RecruitmentAlertLink>모집 알림 받기</S.RecruitmentAlertLink>
+            <S.RecruitmentAlertLink>
+              12기 신입부원 지원하기
+            </S.RecruitmentAlertLink>
           </S.StyledLink>
         </S.Menu>
       </S.Header>
