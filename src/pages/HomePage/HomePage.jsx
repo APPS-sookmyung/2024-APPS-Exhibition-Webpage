@@ -168,10 +168,10 @@ export default function HomePage() {
                 </S.LinkButton>
               </S.StyledLink>
               <S.StyledLink
-                to="https://forms.gle/k14eA7Kk9bxD7aTm6"
+                to="https://forms.gle/1GHnyxAjrC2WKj7g7"
                 target="_blank"
               >
-                <S.LinkButton>12기 알림 신청하기</S.LinkButton>
+                <S.LinkButton>12기 신입부원 지원하기</S.LinkButton>
               </S.StyledLink>
             </S.ShareLinksContent>
           </S.ShareLinks>

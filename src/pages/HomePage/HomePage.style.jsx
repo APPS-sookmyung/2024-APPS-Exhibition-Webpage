@@ -517,7 +517,7 @@ export const LinkButton = styled.button`
   border: none;
   background: #fff;
   padding: 13px 0;
-  width: 180px;
+  width: 200px;
   color: #000;
   text-align: center;
   font-size: 18px;
@@ -535,11 +535,11 @@ export const LinkButton = styled.button`
   }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    width: 150px;
+    width: 170px;
     font-size: 14px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    width: 130px;
+    width: 150px;
     padding: 10px 0;
     font-size: 14px;
   }
